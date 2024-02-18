@@ -42,3 +42,6 @@ body {
   font-weight: bold; /* Make the angle braces bold */
   color: #007bff; /* Set the color of the angle braces */
 }
+.whiteBackground {
+  background-color: white;
+}

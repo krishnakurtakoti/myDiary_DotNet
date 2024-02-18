@@ -439,6 +439,107 @@ The major differences between my classes and yours, is that the one-to-many rela
 
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://codeblog.jonskeet.uk/2019/03/" style={{ textDecoration: 'underline' }}>https://codeblog.jonskeet.uk/2019/03/27/storing-utc-is-not-a-silver-bullet/</a>
+                <i className="bi bi-calendar-date flex">27/3/2019</i>
+            </p>
+            	
+            <span className="bold">Extra: </span>
+
+
+            <h5 className="font-size: 28px; bold">
+              STORING UTC IS NOT A SILVER BULLET
+            </h5>
+            <p className="font-size: 28px;">
+            Note: this is a pretty long post. If you are not interested in the details, the conclusion at the bottom is intended to be read in a standalone fashion. There is also a related blog post by  <span className="angle-braces"> Lau Taarnskov <a href="https://www.creativedeletion.com/2015/03/19/persisting_future_datetimes.html" style={{ textDecoration: 'underline' }}>https://www.creativedeletion.com/2015/03/19/persisting_future_datetimes.html</a></span> - if you find this one difficult to read for whatever reason, maybe give that a try. 
+
+            </p>
+
+            <p>
+            When I read Stack Overflow questions involving time zones, there &#39;s almost always someone giving the advice to only ever store UTC. Convert to UTC as soon as you can, and convert back to a target time zone as late as you can, for display purposes, and you &#39;ll never have a time zone issue again, they say.
+            </p>
+
+            <p className="font-size: 28px;">
+              This blog post is intended to provide a counterpoint to that advice. I&#39;m certainly not saying storing UTC is always the wrong thing to do, but it s not always the right thing to do either.
+              Note on simplifications: this blog post does not go into supporting non-Gregorian calendar systems, or leap seconds. Hopefully developers writing applications which need to support either of those are already aware of their requirements.
+            </p>
+            <h4 className="bold">
+              Background: EU time zone rule changes
+            </h4>
+            <p>
+            The timing of this blog post is due to recent European Parliament proceedings that look like they will probably end the clocks changing twice a year into “summer time” or “winter time” within EU member states. The precise details are yet to be finalized and are unimportant to the bigger point, but for the purpose of this blog post I&#39;ll assume that each member state has to decide whether they will “spring forward” one last time on March 28th 2021, then staying in permanent “summer time”, or “fall back” one last time on October 31st 2021, then staying in permanent “winter time”. So from November 1st 2021 onwards, the UTC offset of each country will be fixed – but there may be countries which currently always have the same offset as each other, and will have different offsets from some point in 2021. (For example, France could use winter time and Germany could use summer time.)
+            </p>
+            <p>
+            The larger point is that time zone rules change, and that applications should expect that they will change. This isn&#39;t a corner case, it&#39;s the normal way things work. There are usually multiple sets of rule changes (as released by IANA) each year. At least in the European changes, we&#39;re likely to have a long notice period. That often isn&#39;t the case – sometimes we don&#39;t find out about rule changes until a few days before they happen.
+            </p>
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="NodaTime" />, 
+            <Tag value="Coordinated Universal Time/UTC" />
+        </div>
+      </div>
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://github.com/wesdoyle" style={{ textDecoration: 'underline' }}>wesdoyle</a> followed  <i className="bi bi-calendar-date flex">04/01/2024</i> <a href="https://github.com/roji" style={{ textDecoration: 'underline' }}>Shay Rojansky roji</a>, Principal software engineer working on .NET data access and perf, member of the Entity Framework team at Microsoft. Lead dev of Npgsql, the PostgreSQL provider.
+             
+            </p>
+            	<p>
+                <a href="https://www.roji.org/storing-timezones-in-the-db" style={{ textDecoration: 'underline' }}>When “UTC everywhere” isn&#39;t enough - storing time zones in PostgreSQL and SQL Server - Shay Rojansky&#39;s Blog (roji.org) </a>
+                <i className="bi bi-calendar-date flex">27/3/2019</i>
+              </p>
+            <span className="bold">Extra: </span>
+
+
+            <h5 className="font-size: 28px; bold" >
+              When “UTC everywhere” isn&#39;t enough
+            </h5>
+            <p className="font-size: 28px;">
+            I&#39;ve been dealing a lot with timestamps, timezones and database recently - especially on PostgreSQL <a href="https://www.roji.org/postgresql-dotnet-timestamp-mapping" style={{ textDecoration: 'underline' }}>(see this blog post)</a>, but also in general. Recently, on the Entity Framework Core community standup, <a href="https://www.youtube.com/watch?v=ZLJLfImuFqM&list=PLdo4fOcmZ0oX-DBuRG4u58ZTAJgBAeQ-t&index=3" style={{ textDecoration: 'underline' }}>we also hosted <span className="angle-braces">Jon Skeet </span></a> and chatted about NodaTime, timestamps, time zones, UTC and how they all relate to databases - I highly recommend watching that!
+            </p>
+
+            <p>
+            Now, a lot has been said about “UTC everywhere”; according to this pattern, all date/time representations in your system should always be in UTC, and if you get a local timestamp externally (e.g. from a user), you convert it to UTC as early as possible. The idea is to quickly clear away all the icky timezone-related problems, and to have a UTC-only nirvana from that point on. While this works well for many cases - e.g. when you just want to record when something happened in the global timeline - it is not a silver bullet, and you should think carefully about it. Jon Skeet already explained this better than I could, so go read his  <a href="https://www.roji.org/storing-timezones-in-the-db" style={{ textDecoration: 'underline' }}>blog post on this</a>. As a very short tl;dr, time zone conversion rules may change after the moment you perform the conversion, so the user-provided local timestamp (and time zone) may start converting to a <em>different</em> UTC timestamp at some point! As a result, for events which take place on a specific time in a specific time zone, it&#39;s better to store the local timestamp and the time zone (not offset!).
+            </p>
+
+            <p className="font-size: 28px;">
+              So let&#39;s continue Jon&#39;s blog post, and see how to actually perform that on two real databases - PostgreSQL and SQL Server. Following Jon&#39;s preferred option, we want to store the following in the database:
+            </p>
+            <p>
+              <ol>
+                <li> <span className="bold">1. </span>The user-provided local timestamp.</li>
+                <li><span className="bold">2. </span>The user-provided time zone ID. This is not an offset, but rather a daylight savings-aware time zone, represented as a string.</li>
+                <li><span className="bold">3. </span>A UTC timestamp that&#39;s computed (or generated) from the above two values. This can be used to order the rows by their occurrence on the global timeline, and can even be indexed.</li>
+              </ol>
+            </p>
+
+            <p>           
+              In <span className="angle-braces">Jon&#39;s  <a href="https://nodatime.org/" style={{ textDecoration: 'underline' }}>NodaTime library</a>, the <a href="https://nodatime.org/3.0.x/api/NodaTime.ZonedDateTime.html" style={{ textDecoration: 'underline' }}>ZonedDateTime type</a></span> precisely represents the first two values above. Unfortunately, databases typically don&#39;t have such a type; SQL Server does have <span className="whiteBackground">datetimeoffset</span>, but an offset is not a time zone (it isn&#39;t daylight savings-aware). So we must use separate columns to represent the data above.
+            </p>
+            <h4>
+              PostgreSQL
+            </h4>
+
+              <p>
+              PostgreSQL conveniently has a type called timestamp without time zone for local timestamps in an unspecified time zone, and a badly-named type called timestamp with time zone, for UTC timestamps (no time zone is actually persisted); those are perfect for our two timestamps. We also want the UTC timestamp to be generated from the two other values, so we’ll set up a PostgreSQL generated column (called computed column by EF Core) to do that. Here&#39;s the minimal EF Core model and context, using <span className="angle-braces">the NodaTime plugin:</span>
+              </p>
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="NodaTime" />, 
+            <Tag value="Coordinated Universal Time/UTC" />
+        </div>
+      </div>
+
+
+
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <span className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-white">20/1/24</span>
       </div>
