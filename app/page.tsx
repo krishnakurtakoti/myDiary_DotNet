@@ -539,6 +539,287 @@ The major differences between my classes and yours, is that the one-to-many rela
       </div>
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#for-net-framework-35---452-and-not-wcf" style={{ textDecoration: 'underline' }}>Upgrade .NET version of XXX Server Components</a>
+            </p>
+            	
+            <span className="bold">Extra: </span>
+
+
+            <p className="font-size: 28px;">
+              To support TLS 1.2 capabilities, the recommendation to upgrade the app to .NET Framework 4.7 or a later version.
+            </p>
+            <p className="font-size: 28px;">
+              We only upgrade XXX Server components with .NET 4.7.2 and XXX Agent still on .NET 4.5.2
+            </p>
+            <h4 className="bold">
+              Technical Description
+            </h4>
+            <p className="font-size: 28px;">
+              XXX Management Service, XXX Management Tool and Configuration Loader Component will be targeted to .NET 4.7.2 from 4.5.2
+            </p>
+            <p className="font-size: 28px;">
+              All associated Query/3rd party open source will be updated with the right version and the targeting framework.
+            </p>
+
+            <h4 className="bold">
+            For .NET Framework 3.5 - 4.5.2 and not WCF
+            </h4>
+
+            <p>
+              We recommend you upgrade your app to .NET Framework 4.7 or a later version. If you cannot upgrade, take the following steps:
+            </p>
+
+              <p>
+                <ol>
+                  <li>
+                  <span className="bold">1. </span>  Set the values of <a href="https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#schusestrongcrypto" style={{ textDecoration: 'underline' }}>SchUseStrongCrypto</a> and <a href="https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#systemdefaulttlsversions" style={{ textDecoration: 'underline' }}>SystemDefaultTlsVersions</a> registry entries to 1. See <a href="https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#configure-security-via-the-windows-registry" style={{ textDecoration: 'underline' }}>Configuring security via the Windows Registry.</a>               
+                 .NET Framework 3.5 supports the <span className="greyBackground">SchUseStrongCrypto</span> flag only when an explicit TLS value is passed.
+                  </li>
+                  <li>
+                  <span className="bold">2. </span>   If you&#39;re running on .NET Framework 3.5, you need to install a hot patch so that TLS 1.2 can be specified by your program:
+                  </li>
+                </ol>
+            
+              </p>
+              <p>
+           
+              </p>
+   
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Upgrade NET Framework .NET 4.7.2 from 4.5.2" />
+        </div>
+      </div>
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://www.sciencedirect.com/science/article/pii/S221421262200196X" style={{ textDecoration: 'underline' }}>SEAF: A Scalable, Efficient, and Application-independent Framework for container security detection - ScienceDirect </a>
+                <i className="bi bi-calendar-date flex">__/12/2022</i>
+            </p>
+            	
+            <span className="bold">Extra: </span>
+
+            <p className="font-size: 28px;">
+              Author links open overlay panelLibo Chen a, Yihang Xia b, Zhenbang Ma c, Ruijie Zhao a, Yanhao Wang c, Yue Liu d, Wenqi Sun a, Zhi Xue a
+            </p>
+    
+              <p className="font-size: 28px;">
+                Citations: 6
+              </p>
+              
+   
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Docker Security Detection" />
+        </div>
+      </div>
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://github.com/wilsonmar" style={{ textDecoration: 'underline' }}>wilsonmar (Wilson Mar) (github.com)</a> followed <a href="https://github.com/spotakash" style={{ textDecoration: 'underline' }}>@spotakash</a>
+                
+                <i className="bi bi-calendar-date flex">24/10/2021</i>
+            </p>
+            <h4 className="bold">
+            <a href="https://github.com/spotakash/crosstenantazure" style={{ textDecoration: 'underline' }}>Azure Cross Tenant Access (Authentication, Authorization, Private Communication).</a>
+            </h4>
+            <span className="bold">Extra: </span>          
+              <p className="font-size: 28px;">
+                There are two idependent Azure tenants, across which we shall try to build authentication, authorization. Subsequently, we shall have secure private connectivity between both tenant so that communication does not traverse through internet and remain private.
+              </p>
+    
+
+            <p>
+                <ol>
+                  <li>
+                  <span className="bold">1. Source Tenant: </span>  Tenant which is Central Identity Store. This identity store (Azure AD) will create and store Service Principals. In Source Tenant, We are processing data residing in Destination tenant.
+                  </li>
+                  <li>
+                  <span className="bold">2. Destination Tenant:</span>  Tenant where data is coming in and residing. Data from this tenant can not move out. It is data store.
+                  </li>
+                </ol>           
+              </p>
+                <p>Note: <a href="https://learn.microsoft.com/en-us/entra/identity-platform/app-objects-and-service-principals?tabs=browser" style={{ textDecoration: 'underline' }}>Have understanding in Azure Active Diretory what is Application Registration, Enterprise Application (Service Pricipal)</a>                   
+                </p>
+
+
+                <p>
+
+                <ol className="">
+                  <span className="bold">Requirements: </span>  
+                  <li>
+                  <span className="article-post">1.  </span> Systems, running in Source Tenant, should be able to reach Destination Tenant.
+                  </li>
+                  <li>
+                  <span className="article-post">2. </span> While doing so, proper secured authentication and authorization should be performed.
+                  </li>
+                  <li>
+                  <span className="article-post">3. </span> For authentication in Destination Tenant, no guest account access should be used.
+                  </li>
+                  <li>
+                  <span className="article-post">4. </span> Request should not traverse through Internet and traffic should remain total private.
+                  </li>
+                  <li>
+                  <span className="article-post">5. </span> Source and Destination tenant can not have any sort of Virtual Network Peering or Mesh Private Connectivity between them.
+                  </li>
+                  <li>
+                  <span className="article-post">6. </span> All requests at Source Tenant and Destination on Identity, Connectivity and Data Layer should be logged in loganalytics for compliance purpose.
+                  </li>
+                  <li>
+                  <span className="article-post">7. </span> No Private IP hardcoding should be used in any system. Proper FQDNs based DNS resolution happen while accessing/processing data.
+
+                  </li>
+                </ol>           
+              </p>
+
+              <p>
+
+                <ol className="">
+                  <span className="bold">Solution: </span>  
+                  <li>
+                  <span className="article-post">1.  </span> Use Multi-tenant Azure AD Service Principal (Enterprise Application) to authenticate across Source and Destination Tenants.
+                  </li>
+                  <li>
+                  <span className="article-post">2. </span> Use Cross Tenant Private Endpoint to access resources over Private Network (Microsoft Backbone Network), without having any Virtual Network Peering or Mesh Private Connectivity
+                  </li>
+                  <li>
+                  <span className="article-post">3. </span> Centralized Azure Private DNS Zone for DNS Resoluation for Cross Tenant DNS resolution to Private Endpoint
+                  </li>
+                </ol>           
+                </p>
+
+              <p>
+                <img src="https://raw.githubusercontent.com/spotakash/crosstenantazure/main/Images/Cross-Tenant-Access-Azure.jpg" alt="Cross Tenant Access in Azure"></img>
+              </p>
+
+              <p>
+
+                  <ol>
+                  <span className="bold">Pre-Requirements: </span>  
+                    <li>
+                    <span className="article-post">1.  </span> Source and Destination Tenant Administrative Rights to create Application under Application Registration
+                    </li>
+                    <li>
+                    <span className="article-post">2. </span> Have a virtual network with subnet (ideally) to be used for Private Endpoint, in Source Tenant.
+                    </li>
+                    <li>
+                    <span className="article-post">3. </span> Source and Destination Tenant Administratibe Rights to create cross tenant Private Endpoint Request (at Source Tenant) And Approval (at Destination Tenant)
+                    </li>
+                    <li>
+                    <span className="article-post">4. </span> Sufficient IAM Role to assign IAM to Service Principal (created above) on Azure resource example: Storage/DB/Redis/AKS etc. (at Destination Tenant).
+                      <p>
+                        <ol>
+                        <li>
+                          <span className="article-post-sub">4a.  </span> Atleast, Azure Resource Manager Reader role
+                        </li>
+                        <li>
+                          <span className="article-post-sub">4b.  </span> For Storage Access (example), data access role, such as Storage Blob Data Contributor
+                        </li>
+                        <li>
+                          <span className="article-post-sub">4c.  </span> Define your IAM strategy accordingly. Treat both Control Plane and Data Plane permission <a href="https://learn.microsoft.com/en-us/azure/storage/blobs/assign-azure-role-data-access?tabs=portal" style={{ textDecoration: 'underline' }}>Good Azure Document to Refer.</a>                   
+                        </li>
+                        </ol>
+                      </p>
+                    </li>
+                    <li>
+                    <span className="article-post">5. </span> If using existing Centralized Azure Private DNZ Zone (in our case we are using), atleast Private DNZ Zone Contributor to allow you to create DNS Record for Existing Private Endpoint
+                    </li>
+                  </ol>           
+                </p>
+
+                <h2 className="step bold">Technical Steps</h2>
+                  <div className="step">Create Cross Tenant Application</div>
+                  <div className="step">Source Tenant Service Principal Creation</div>
+                  <p>
+
+                      <ol>
+
+                        <li>
+                        <span className="article-post">1.  </span> Have Service Principal in Source Tenant Identity Store (AAD)
+                        <p className="greyBackground">
+                          az ad sp create-for-rbac -n &#34;cross-tenant-app&#34;
+                        </p>
+                        </li>
+                        <li>
+                        <span className="article-post">2. </span> Retrieving and verifying details
+                          <p>
+                            <ol>
+                            <li>
+                              <span className="article-post-sub">2.1.  </span> Note down Application ID and Secret generated in Source Tenant
+                            </li>
+                            <li>
+                              <span className="article-post-sub">2.2.  </span>  Verify Application ID Listed in Application Registration (as <span className="bold">Application (client) ID</span>) and &#39;Enteprise Application&#39; (as <span className="bold">Application ID</span>).
+                            </li>
+
+                            </ol>
+                          </p>
+                        </li>
+                        <li>
+                          <span className="article-post-sub">3. </span>Go to Application Registration/Authentication and Enable for ApplicationID &#39;Accounts in any organizational directory (<span className="bold">Any Azure AD directory - Multitenant</span>)  
+                        </li>
+                 
+                        <li>
+                        <span className="article-post">4. </span> By doing these steps, a multi-tenant Service Principal has been created in Source Tenant.
+                        </li>
+                      </ol>           
+                  </p>
+
+              <p className="font-size: 28px;">
+                Stars: 10
+              </p>               
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Azure Active Diretory, Application Registration, Enterprise Application (Service Pricipal)" />
+        </div>
+      </div>
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://twitter.com/bibryam/status/1728319357854343367" style={{ textDecoration: 'underline' }}>Sidecar Proxy Pattern - The Basis Of Service Mesh by Ivan Velichko</a>
+            
+            </p>
+            <p>
+                <a href="https://iximiuz.com/en/posts/service-proxy-pod-sidecar-oh-my/" style={{ textDecoration: 'underline' }}>Sidecar Proxy Pattern - The Basis Of Service Mesh</a>
+                <i className="bi bi-calendar-date flex">07/08/2021</i>
+            </p>
+            <p>
+                <img src="https://pbs.twimg.com/media/F_XJTR2W8AA8Lz1?format=jpg&name=4096x4096" alt="bibryam status 1728319357854343367"></img>
+              </p>
+       
+            <p className="font-size: 28px;">
+              <a href="https://iximiuz.com/en/posts/service-proxy-pod-sidecar-oh-my/" style={{ textDecoration: 'underline' }}>Sidecar Proxy Pattern - The Basis Of Service Mesh by @iximiuz  
+              </a>
+            </p>
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            Heart: 347
+            </p>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Sidecar Proxy Pattern, Service Mesh" />
+        </div>
+      </div>
+
+
+
+
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <span className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-white">20/1/24</span>

@@ -35,6 +35,9 @@ body {
 .article-post {
   padding: .75em 1em;
 }
+.article-post-sub {
+  padding: .85em 1.25em;
+}
 .bold {
   font-weight: bold;
 }
@@ -44,4 +47,23 @@ body {
 }
 .whiteBackground {
   background-color: white;
+}
+.greyBackground {
+  background-color: lightgray;
+}
+.step {
+  font-size: 18px; /* Initial font size */
+  margin-bottom: 10px; /* Add some space between steps */
+}
+
+.step:nth-child(2) {
+  font-size: 16px; /* Decrease font size for the second step */
+}
+
+.step:nth-child(3) {
+  font-size: 14px; /* Decrease font size for the third step */
+}
+
+p {
+  margin-bottom: 14px; /* Add margin at the bottom of each <p> element */
 }
