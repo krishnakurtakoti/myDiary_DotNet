@@ -4,6 +4,8 @@ import Tag
 import { CompositionRoot } from "./CompositionRoot";
 import { HaraldCoppoolsePullDataInOneSqlQueryLinq1 } from "./HaraldCoppoolsePullDataInOneSqlQueryLinq1";
 import { HaraldCoppoolsePullDataInOneSqlQueryLinq2 } from "./HaraldCoppoolsePullDataInOneSqlQueryLinq2";
+import { TlsSecurityItem } from "./TlsSecurityItem";
+import { TlsSecurityItem1 } from "./TlsSecurityItem1";
 
 export default function Home() {
   return (
@@ -596,6 +598,74 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
       </div>
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://domburf.medium.com/enabling-tls-1-2-on-your-net-application-5e4663d18a96" style={{ textDecoration: 'underline' }}>Enabling TLS 1.2 on your .NET application by Dominic Burford</a>
+                <i className="bi bi-calendar-date flex">12/12/2019</i>
+            </p>
+            <p>
+            I recently came across an issue with several of our ASP.NET WebAPI services which were consuming a third-party set of APIs. These third-party APIs were configured to disable any requests from clients that were using  <span className="bold">TLS 1.0/1.1</span>. Unfortunately, this included our own APIs. All requests to the third-party API were returning empty responses. After some discussion with one of the developers of the third-party APIs, he suggested the issue may be related to <span className="bold">TLS 1.2</span> not being supported as he had seen the issue before.
+            </p>
+   
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+              Claps: 25
+            </p>
+              <div className="quote-container">
+                <p className="quote">
+                  The Transport Layer Security (TLS) protocol is an industry standard designed to help protect the privacy of information communicated over the Internet. TLS 1.2 is a standard that provides security improvements over previous versions. TLS 1.2 will eventually be replaced by the newest released standard TLS 1.3 which is faster and has improved security.
+                </p>
+              </div>
+              <p>    
+                <a href="https://domburf.medium.com/enabling-tls-1-2-on-your-net-application-5e4663d18a96" style={{ textDecoration: 'underline' }}>- Transport Layer Security (TLS) best practices with the .NET Framework | Microsoft Docs</a>
+              </p>
+              <p>    
+                I was able to run the third-party APIs from our local test environment, but not when I ran them from our staging / production environments which were hosted on Azure. I had to make several changes, including code changes to the ASP.NET WebAPI services and changes to our Azure hosting environments.
+              </p>
+              <p>
+                As many current servers are moving towards <span className="bold">TLS 1.2/1.3</span> and removing support for <span className="bold">TLS 1.0 /1.1</span>, connectivity issues between newer servers and older (legacy) .NET applications are becoming more common. Installing a newer version of the .NET Framework onto your development environment is not the answer. The solution is down to the version of the .NET Framework used for compiling your project. This is what actually matters when it comes to selecting the supported <span className="bold">TLS</span> version during the <span className="bold">TLS</span> handshake.
+              </p>
+              <p>
+                In this article I will describe the changes I have made to our Azure hosting (where our ASP.NET WebAPIs are hosted) and the code changes which enabled <span className="bold">TLS 1.2</span> support.
+              </p>
+              <h2 className="step bold">Upgrading our Azure hosting to support TLS 1.2</h2>
+              <p>
+                More accurately the changes I have made to our Azure hosting have removed support for earlier versions of <span className="bold">TLS</span> i.e. <span className="bold">TLS 1.0/1.1</span>. Although this change was not strictly necessary to fix the problem I was experiencing, it was appropriate in terms of tightening up the security of our ASP.NET WebAPIs and to ensure that our own APIs can only be accessed by clients that support <span className="bold">TLS 1.2</span>. This is quite simply achieved by opening the Azure portal and navigating to the App Service hosting. From there the <span className="italics">TLS/SSL</span> Settings blade can be selected.
+              </p>
+
+              <p className="font-size: 28px;">
+              I have set this to TLS 1.2 for both our staging and production environments. This sets the minimum TLS version. Therefore our hosting environments will no longer accept requests from earlier versions of TLS.
+              </p>
+              <h2 className="step bold">Code changes to support TLS 1.2</h2>
+              <p>
+                Depending on what version of .NET Framework your project uses will dictate the possible solutions available to you. If your project compiles against .NET Framework &gt;= 4.7 then you are already good to go. Applications developed in .NET Framework 4.7 or greater automatically default to whatever the operating system they run on considers safe (which currently is TLS 1.2 and will later include TLS 1.3).
+              </p>
+              
+              <p>
+              If your application has been developed in a version of the .NET Framework prior to 4.7 then you have two options.
+              </p>
+              <p>
+              Recompile your application using .NET Framework 4.7 or greater
+              - If recompiling your application is not something you can do then you can update your .config file by adding the following.
+              </p>
+              <p className="greyBackground">
+                <TlsSecurityItem/>
+              </p>
+              <p>
+                Also make sure you have the following set in your .config file.
+              </p>
+              <p className="greyBackground">
+                <TlsSecurityItem1/>
+              </p>
+             <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="TLS 1.2, .NET application" />
+        </div>
+      </div>
+
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
@@ -816,8 +886,6 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="Sidecar Proxy Pattern, Service Mesh" />
         </div>
       </div>
-
-
 
 
 

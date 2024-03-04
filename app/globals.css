@@ -67,3 +67,23 @@ body {
 p {
   margin-bottom: 14px; /* Add margin at the bottom of each <p> element */
 }
+.quote-container {
+  position: relative;
+  padding-left: 20px; /* Adjust the padding as needed */
+}
+.quote-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px; /* Width of the vertical line */
+  height: 100%;
+  background-color: #333; /* Color of the vertical line */
+}
+.quote {
+  font-style: italic;
+  margin-top: 0; /* Remove default margin */
+}
+.italics {
+  font-style: italic;
+}
