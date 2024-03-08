@@ -6,6 +6,7 @@ import { HaraldCoppoolsePullDataInOneSqlQueryLinq1 } from "./HaraldCoppoolsePull
 import { HaraldCoppoolsePullDataInOneSqlQueryLinq2 } from "./HaraldCoppoolsePullDataInOneSqlQueryLinq2";
 import { TlsSecurityItem } from "./TlsSecurityItem";
 import { TlsSecurityItem1 } from "./TlsSecurityItem1";
+import { ReadReplicaRails } from "./ReadReplicaRails";
 
 export default function Home() {
   return (
@@ -618,7 +619,7 @@ The major differences between my classes and yours, is that the one-to-many rela
                 </p>
               </div>
               <p>    
-                <a href="https://domburf.medium.com/enabling-tls-1-2-on-your-net-application-5e4663d18a96" style={{ textDecoration: 'underline' }}>- Transport Layer Security (TLS) best practices with the .NET Framework | Microsoft Docs</a>
+                <a href="https://learn.microsoft.com/en-us/dotnet/framework/network-programming/tls#for-net-framework-35---452-and-not-wcf" style={{ textDecoration: 'underline' }}>- Transport Layer Security (TLS) best practices with the .NET Framework | Microsoft Docs</a>
               </p>
               <p>    
                 I was able to run the third-party APIs from our local test environment, but not when I ran them from our staging / production environments which were hosted on Azure. I had to make several changes, including code changes to the ASP.NET WebAPI services and changes to our Azure hosting environments.
@@ -649,15 +650,17 @@ The major differences between my classes and yours, is that the one-to-many rela
               Recompile your application using .NET Framework 4.7 or greater
               - If recompiling your application is not something you can do then you can update your .config file by adding the following.
               </p>
-              <p className="greyBackground">
+              <div className="greyBackground">
+                <span  style={{ padding: '.75em 1em' }}>Code: </span> 
                 <TlsSecurityItem/>
-              </p>
+              </div>
               <p>
                 Also make sure you have the following set in your .config file.
               </p>
-              <p className="greyBackground">
+              <div className="greyBackground">
+                <span  style={{ padding: '.75em 1em' }}>Code: </span> 
                 <TlsSecurityItem1/>
-              </p>
+              </div>
              <p>Extra_End</p>
         </div>
         <div className="tags">
@@ -887,6 +890,180 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
       </div>
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://github.com/connor11528" style={{ textDecoration: 'underline' }}>Connor Leechconnor11528</a> followed <a href="https://github.com/goodgravy" style={{ textDecoration: 'underline' }}>James Bradygoodgravy</a>              
+                <i className="bi bi-calendar-date flex">18/03/2021</i>
+            </p>
+            	
+            <span className="bold">Extra: </span>
+            <h2 className="step bold">About</h2>
+            <p className="font-size: 28px;">
+              Redirect ActiveRecord (Rails) reads to replica databases while ensuring all writes go to the primary database.
+            </p>
+            <div className="step">Status</div>
+              <p className="font-size: 28px;">
+              This is a slight modification of Rocket Job&#39;s original library, simply renaming it from <span className="greyBackgroundPadding">active_record_slave</span> to <span className="greyBackgroundPadding">active_record_replica</span>.
+                </p>
+                <p className="font-size: 28px;">
+                In order to more clearly distinguish the library from  <span className="greyBackgroundPadding">active_record_slave</span>, we also incremented the major version – it is, however, functionally equivalent.
+                </p>
+              <div className="step">Introduction</div>
+                <p className="font-size: 28px;">
+                <span className="greyBackgroundPadding">active_record_replica</span> redirects all database reads to replica instances while ensuring that all writes go to the primary database. <span className="greyBackgroundPadding">active_record_replica</span> ensures that any reads that are performed within a database transaction are by default directed to the primary database to ensure data consistency.
+                </p>
+              <div className="step">Status</div>
+                <p className="font-size: 28px;">
+                  Production Ready. Actively used in large production environments.
+                </p>
+                
+                <p>
+
+                      <ol>
+
+                        <li>
+                        <span className="article-post">1a.  </span> Redirecting reads to a single replica database.
+
+                        </li>
+                        <li>
+                        <span className="article-post">1b.  </span> Works with any database driver that works with ActiveRecord.
+                        </li>
+                        <li>
+                        <span className="article-post">2. </span> Supports all Rails 3, 4, or 5 read apis.
+                          <p>
+                            <ol>
+                            <li>
+                              <span className="article-post-sub">2.1.  </span>Including dynamic finders, AREL, and ActiveRecord::Base.select.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">2.2.  </span> <span className="bold">NOTE:</span> In Rails 3 and 4, QueryCache is only enabled for BaseConnection by default. In Rails 5, it&#39;s enabled for all connections. <a href="https://github.com/rails/rails/pull/28869" style={{ textDecoration: 'underline' }}>(PR)</a>
+                            </li>
+
+                            </ol>
+                          </p>
+                        </li>
+                        <li>
+                        <span className="article-post">3. </span> Transaction aware
+                          <p>
+                            <ol>
+                            <li>
+                              <span className="article-post-sub">3.1.  </span> Detects when a query is inside of a transaction and sends those reads to the primary by default.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">3.2.  </span> Can be configured to send reads in a transaction to replica databases.
+                            </li>
+
+                            </ol>
+                          </p>
+                        </li>
+
+                        <li>
+                          <span className="article-post-sub">4. </span>Lightweight footprint.
+                        </li>
+                 
+                        <li>
+                        <span className="article-post">5. </span> No overhead whatsoever when a replica is not configured.
+                        </li>
+                        <li>
+                        <span className="article-post">6. </span> Negligible overhead when redirecting reads to the replica.
+                        </li>
+                        <li>
+                        <span className="article-post">7. </span> Connection Pools to both databases are retained and maintained independently by ActiveRecord.
+                        </li>
+                        
+                        <li>
+                        <span className="article-post">8. </span> The primary and replica databases do not have to be of the same type.
+                          <p>
+                            <ol>
+                            <li>
+                              <span className="article-post-sub">8.1.  </span>For example Oracle could be the primary with MySQL as the replica database.
+                            </li>
+
+                            </ol>
+                          </p>
+                        </li>
+
+
+                        <li>
+                        <span className="article-post">9. </span>Debug logs include a prefix of Replica:  to indicate which SQL statements are going to the replica database.
+                        </li>
+                      </ol>           
+                  </p>
+
+              <div className="greyBackground">
+                <span  style={{ padding: '.75em 1em' }}>Code: </span> 
+                <ReadReplicaRails/>
+              </div>
+                
+              <p className="font-size: 28px;">
+                Stars: 160
+              </p>
+              
+   
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Redirect ActiveRecord (Rails) reads to replica databases, write to Primary database" />
+        </div>
+      </div>
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://twitter.com/pim_brouwers/status/1731747678004941061" style={{ textDecoration: 'underline' }}>A reverse proxy as a configurable package on top of Kestrel</a>
+            
+            </p>
+            <p className="font-size: 28px;">
+            Sign me up! Maybe I live under a rock, but I feel like this deserves a ton more attention.
+            </p>
+            <p>
+            About 
+            </p>
+              
+
+
+
+
+            <p className="font-size: 28px;">
+              <a href="https://github.com/microsoft/reverse-proxy" style={{ textDecoration: 'underline' }}>A toolkit for developing high-performance HTTP reverse proxy applications.   
+              </a>
+            </p>
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            Stars: 7.6k 
+            </p>
+             
+            <p className="font-size: 28px;">
+            One popular Author,  <a href="https://twitter.com/mjovanovictech" style={{ textDecoration: 'underline' }}>Milan Jovanović @mjovanovictech
+              </a>,  Practical .NET and Software Architecture Tips | Microsoft MVP   
+            </p>
+
+            <p className="quote">
+                <a href="https://twitter.com/mjovanovictech/status/1731790455249973524" style={{ textDecoration: 'underline' }}>It&#39;s so cool! I wrote an article about it a few months ago. I used it for load balancing, and it was a breeze to set up.  
+                  </a>
+            </p>
+            <p className="font-size: 28px;">
+             Link to the article:
+            </p>
+            <p className="font-size: 28px;">
+              <a href="https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp" style={{ textDecoration: 'underline' }}>https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp 
+              </a>
+            </p>
+
+
+
+
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Sidecar Proxy Pattern, Service Mesh" />
+        </div>
+      </div>
 
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
