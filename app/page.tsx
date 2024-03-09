@@ -921,14 +921,16 @@ The major differences between my classes and yours, is that the one-to-many rela
                 <p>
 
                       <ol>
+                          <p>
+                            <li>
+                          <span className="article-post">1.1  </span> Redirecting reads to a single replica database.
 
-                        <li>
-                        <span className="article-post">1a.  </span> Redirecting reads to a single replica database.
+                          </li>
+                          <li>
+                          <span className="article-post">1.2  </span> Works with any database driver that works with ActiveRecord.
+                          </li>
+                          </p>
 
-                        </li>
-                        <li>
-                        <span className="article-post">1b.  </span> Works with any database driver that works with ActiveRecord.
-                        </li>
                         <li>
                         <span className="article-post">2. </span> Supports all Rails 3, 4, or 5 read apis.
                           <p>
@@ -943,34 +945,49 @@ The major differences between my classes and yours, is that the one-to-many rela
                             </ol>
                           </p>
                         </li>
-                        <li>
-                        <span className="article-post">3. </span> Transaction aware
+
+                              <p>
+                                    <li>
+                                    <span className="article-post">3. </span> Transaction aware
+                                      <p>
+                                        <ol>
+                                        <li>
+                                          <span className="article-post-sub">3.1.  </span> Detects when a query is inside of a transaction and sends those reads to the primary by default.
+                                        </li>
+                                        <li>
+                                          <span className="article-post-sub">3.2.  </span> Can be configured to send reads in a transaction to replica databases.
+                                        </li>
+
+                                        </ol>
+                                      </p>
+                                  </li>
+                              </p>
+
                           <p>
-                            <ol>
                             <li>
-                              <span className="article-post-sub">3.1.  </span> Detects when a query is inside of a transaction and sends those reads to the primary by default.
-                            </li>
-                            <li>
-                              <span className="article-post-sub">3.2.  </span> Can be configured to send reads in a transaction to replica databases.
-                            </li>
-
-                            </ol>
+                            <span className="article-post-sub">4. </span>Lightweight footprint.
+                          </li>
                           </p>
-                        </li>
 
-                        <li>
-                          <span className="article-post-sub">4. </span>Lightweight footprint.
-                        </li>
+                        <p>
+                          <li>
+                          <span className="article-post">5. </span> No overhead whatsoever when a replica is not configured.
+                          </li>
+                        </p>
                  
-                        <li>
-                        <span className="article-post">5. </span> No overhead whatsoever when a replica is not configured.
-                        </li>
-                        <li>
-                        <span className="article-post">6. </span> Negligible overhead when redirecting reads to the replica.
-                        </li>
-                        <li>
-                        <span className="article-post">7. </span> Connection Pools to both databases are retained and maintained independently by ActiveRecord.
-                        </li>
+                        <p>
+                          <li>
+                          <span className="article-post">6. </span> Negligible overhead when redirecting reads to the replica.
+                          </li>
+                        </p>
+
+
+                        <p>
+                          <li>
+                          <span className="article-post">7. </span> Connection Pools to both databases are retained and maintained independently by ActiveRecord.
+                          </li>
+                        </p>
+
                         
                         <li>
                         <span className="article-post">8. </span> The primary and replica databases do not have to be of the same type.
@@ -1008,6 +1025,163 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="Redirect ActiveRecord (Rails) reads to replica databases, write to Primary database" />
         </div>
       </div>
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://ntietz.com/blog/rsa-deceptively-simple/" style={{ textDecoration: 'underline' }}>RSA is deceptively simple (and fun)</a>
+                <i className="bi bi-calendar-date flex">15/01/2024</i>
+            </p>
+            <p>
+              While reading  <a href="https://www.manning.com/books/real-world-cryptography" style={{ textDecoration: 'underline' }}>Real-World Cryptography 
+              </a>, I came across the  <a href="https://en.wikipedia.org/wiki/Adaptive_chosen-ciphertext_attack" style={{ textDecoration: 'underline' }}>&#34;million message attack&#34;. 
+              </a> This is an attack that Daniel Bleichenbacher demonstrated in 1998, which effectively broke RSA with a particular encoding function called PKCS #1. It was only mentioned briefly, so I dug in and decided to try to understand the attack, eventually to implement it.
+            </p>
+            <p>
+              Most crypto libraries do not ship with a vulnerable implementation of this, for good reason. It&#39;s been broken! And if I implement the full attack against a real implementation, it would also come with using realistic key size.
+            </p>
+       
+            <p className="font-size: 28px;">
+              Instead, I decided to implement RSA myself so that I could implement a weak encoding scheme so I could implement the Bleichenbacher attack! So far, I have an implementation of RSA and of PKCS (the vulnerable one). The basics of RSA took an hour to implement, then what felt like days to debug. And now it (seemingly) works! The attack will follow soon, with any luck.
+            </p>
+
+            <h2 className="step bold">What&#39;s RSA, anyway?</h2>
+
+            <p className="font-size: 28px;">
+              RSA is a public-key cryptosystem, in contrast to symmetric key cryptosystems. With symmetric keys, the sender and the recipient both share a key and use the same key to encrypt and decrypt the message. In contrast, public-key cryptosystems have a key pair, a public and a private key. The public key can be used to encrypt messages and the private key to decrypt them<sup>1</sup>.
+            </p>
+            <p className="font-size: 28px;">
+              One of the drawbacks of a symmetric key system is that you have to share the key. This means you have to use a different secure channel to transmit the key, and then both parties need to be really careful to keep it a secret. This isn&#39;t manageable for a system with a lot of participants, like the internet!
+            </p>
+            <p className="font-size: 28px;">
+            But symmetric key encryption is often very fast, and we have some of the operations for it even  <a href="https://en.wikipedia.org/wiki/AES_instruction_set" style={{ textDecoration: 'underline' }}>baked into hardware.</a> It would be nice to use it where we can for that efficiency.
+            </p>
+
+
+            <p className="font-size: 28px;">
+              In contrast, with public-key cryptography, you can freely share the public key, and anyone can then use that to encrypt a message to you. This means you do not need a separate secure channel to share the key! (Although this ignores the whole problem of validating that the key comes from the right person, so you&#39;re not having your connection spoofed by an interloper.) And this is great! This is what RSA gives us, but the computations for RSA are slow and the messages you can send are also small.
+            </p>
+
+            <p className="font-size: 28px;">
+              In practice, RSA was used (regrettably, sometimes still is) to establish a secure connection and perform a key exchange, and then the keys you exchange let you use symmetric key encryption. You probably 
+              <a href="https://blog.trailofbits.com/2019/07/08/fuck-rsa/" style={{ textDecoration: 'underline' }}> shouldn&#39;t use RSA.</a> Modern alternatives exist that are better, like Curve25519 and other forms of elliptic-curve cryptography.
+            </p>
+
+            <p className="font-size: 28px;">
+              But for worse, we run into RSA, and it&#39;s also a fun historical artifact! It&#39;s worth understanding in, and hey, implementing it is just plain fun.
+            </p>
+
+            <h2 className="step bold">The basics of RSA</h2>
+
+              <p>
+                  <a href="https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29" style={{ textDecoration: 'underline' }}>RSA </a>is a nicely elegant cryptosystem. Its security is based on the difficulty of factoring the product of large prime numbers, and in its purest form it has no known breaks<sup>2</sup>.However, as mentioned above, depending on how data is encoded, particular uses of it can be broken.
+              </p>
+
+              <p className="font-size: 28px;">
+                The basic operations of it are straightforward to express. There are three components:
+              </p>                       
+              <p>
+
+                <ol>
+                    <p>
+                      <li>
+                    <span className="article-post">1.  </span> Generating keys
+
+                    </li>
+                    <li>
+                    <span className="article-post">2.  </span> Encrypting and decrypting!
+                    </li>
+
+                    <li>
+                    <span className="article-post">3.  </span>  Encoding messages
+                    </li>
+                    </p>
+                </ol>           
+              </p>
+
+              <p className="font-size: 28px;">
+                We&#39;ll go through each of those, starting with generating keys.
+              </p>  
+
+              <h2 className="step bold">Generating your keys</h2>
+              <p className="font-size: 28px;">
+                First of all, what even is a key? We know that it&#39;s used to encrypt or decrypt a message, but what is inside it?
+              </p>  
+              <p>
+                For RSA, a key comprises two numbers. One of these is called the <span className="bold">exponent</span> and one is the <span className="bold">modulus</span>. A key could be <span className="bold">(exp=3, mod=3233)</span>, for example. It&#39;s really just this pair of numbers<sup>3</sup>.
+              </p>
+
+              <p className="font-size: 28px;">
+                The reason the pieces of it are called the exponent and modulus is because of how we use them! RSA relies on 
+                <a href="https://en.wikipedia.org/wiki/Modular_arithmetic" style={{ textDecoration: 'underline' }}>modular arithmetic </a>
+                 (like clock math, if you&#39;re not familiar). These are the exponents and modulus for the encryption or decryption operations which we&#39;ll see later.
+              </p>  
+            
+              <p className="font-size: 28px;">
+              To generate a key, you follow a short procedure.
+              </p>  
+
+              <p>
+
+                <ol>
+                    <p>
+                      <li>
+                    <span className="article-post">1.  </span> First, pick two prime numbers which we&#39;ll call p and q. Then we compute <span className="bold">n = p * q.</span>
+
+                    </li>
+                    <li>
+                    <span className="article-post">2.  </span> Compute a number <span className="bold">t = lcm(p-1, q-1).</span> This is the totient, and we use this as our modulus for generating the keys but then never again.
+                    </li>
+
+                    <li>
+                    <span className="article-post">3.  </span>  Pick the public exponent, which we&#39;ll call <span className="bold">e.</span> The requirement is that it shares no factors with t and is greater than 2. One simple way is to start with 3, but go up through the primes until you find one coprime with t. Choosing 65537 is also quite common, since it&#39;s small enough to be efficient for encryption but large enough to avoid some particular attacks.
+                    </li>
+
+                    <li>
+                    <span className="article-post">4.  </span>  Calculate the private exponent, which we&#39;ll call <span className="bold">d.</span> We compute this as <span className="bold">d = e^-1 mod t,</span> or the inverse of <span className="bold">e</span> in our modulus.
+                    </li>
+
+                    </p>
+                </ol>           
+              </p>
+
+
+              <p className="font-size: 28px;">
+                Now you have<span className="bold">d</span> and <span className="bold">e</span>, the private and public exponents, and you have n, the modulus. Bundle those up into two tuples and you have your keys!
+              </p> 
+
+
+
+              <p className="font-size: 28px;">
+                Let&#39;s work an example quickly to see how it ends up. For our primes, we can choose <span className="bold">p = 17 </span>and <span className="bold">q = 29</span>. So then <span className="bold">n = 493</span>.
+              </p>
+
+              <p className="font-size: 28px;">
+                Now we find <span className="bold">t = lcm(17 - 1, 29 - 1) = lcm(16, 28) = 112 </span>. We&#39;ll choose e = 3, which works since 2 &lt; 3 and gcd(3, 112) = 1 so we know they share no factors. Now we compute <sub>4</sub> <span className="bold">d = e<sup>-1</sup> = 3<sup>-1</sup> = 75 mod 112.</span>   And then we have our keys!
+              </p>
+
+
+              <p className="font-size: 28px;">
+                Our public key is (exp=3, mod=493), and our private key is (exp=75, mod=493). We&#39;ll use these again in our examples on encrypting and decrypting!
+              </p> 
+
+
+
+
+
+
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="RSA, symmetric key encryption, public-key cryptography" />
+        </div>
+      </div>
+
+
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
@@ -1061,7 +1235,7 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
         <div className="tags">
             <span className="bold">Tags: </span> 
-            <Tag value="Sidecar Proxy Pattern, Service Mesh" />
+            <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
         </div>
       </div>
 
