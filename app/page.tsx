@@ -7,6 +7,7 @@ import { HaraldCoppoolsePullDataInOneSqlQueryLinq2 } from "./HaraldCoppoolsePull
 import { TlsSecurityItem } from "./TlsSecurityItem";
 import { TlsSecurityItem1 } from "./TlsSecurityItem1";
 import { ReadReplicaRails } from "./ReadReplicaRails";
+import { AnalyzeData180000xFasterRust } from "./analyzeData180000xFasterRust";
 
 export default function Home() {
   return (
@@ -1195,12 +1196,7 @@ The major differences between my classes and yours, is that the one-to-many rela
             </p>
             <p>
             About 
-            </p>
-              
-
-
-
-
+            </p>             
             <p className="font-size: 28px;">
               <a href="https://github.com/microsoft/reverse-proxy" style={{ textDecoration: 'underline' }}>A toolkit for developing high-performance HTTP reverse proxy applications.   
               </a>
@@ -1226,11 +1222,6 @@ The major differences between my classes and yours, is that the one-to-many rela
               <a href="https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp" style={{ textDecoration: 'underline' }}>https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp 
               </a>
             </p>
-
-
-
-
-
             <p>Extra_End</p>
         </div>
         <div className="tags">
@@ -1238,6 +1229,105 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
         </div>
       </div>
+
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://willcrichton.net/notes/k-corrset/" style={{ textDecoration: 'underline' }}>Analyzing Data 180,000x Faster with Rust</a>
+                <i className="bi bi-calendar-date flex">20/10/2023</i>
+            </p>
+            <p className="font-size: 28px;">
+              This note documents one of my recent adventures in performance optimization with Rust. By following along, hopefully you&#39;ll learn something about how to write fast Rust.
+            </p>
+            <p>
+            Here&#39;s the context: imagine you have data from an online exam where a set of users answered a set of questions. The raw data looks like this:
+            </p>
+              
+
+            <p className="greyBackground">
+              <AnalyzeData180000xFasterRust />
+            </p>
+
+            <p className="font-size: 28px;">
+              Note that each user only answered a subset of all possible questions, and all scores are either 0 or 1.
+            </p>
+            <p className="font-size: 28px;">
+            Here&#39;s the problem: given a size  <span className="italics">k</span>, which set of <span className="italics">k</span> questions has the highest correlation with overall performance? We&#39;ll call this the <span className="bold">k-CorrSet problem</span>. A simple brute-force algorithm for solving the k-CorrSet problem looks like this pseudocode:
+            </p>
+            
+            <p className="font-size: 28px;">
+              We are going to implement several variations on this algorithm to see how fast we can make it.
+            </p>
+  
+                      <p><strong>Can you explain in depth on this?</strong></p>
+          <p>The algorithm iterates through all possible k-sized subsets of questions, calculates the correlation between the scores on that subset and the grand scores on all questions, and returns the subset with the maximum correlation.</p>
+
+          <p><strong>ChatGPT:</strong></p>
+          <p><strong>Certainly! Let&#39;s break down the key steps of the algorithm that iterates through all possible k-sized subsets of questions, calculates the correlation, and returns the subset with the maximum correlation.</strong></p>
+          <p><strong>Here&#39;s a more detailed explanation:</strong></p>
+
+          <ol>
+            <li>
+              <p><span className="article-post">1.  </span> <strong>Generate all k-sized subsets of questions:</strong></p>
+              <p>The algorithm starts by obtaining all possible questions from the given dataset. Then, it iterates through all k-sized subsets of these questions. For example, if k is 3, it would consider all possible combinations of 3 questions out of the total set of questions.</p>
+            </li>
+            <li>
+              <p><span className="article-post">2.  </span><strong>Identify users who answered every question in the subset:</strong></p>
+              <p>For each k-sized subset of questions, the algorithm identifies all users who answered every question in that subset. This is important because the correlation calculation requires data from users who answered all questions in the subset.</p>
+            </li>
+            <li>
+              <p><span className="article-post">3.  </span><strong>Calculate total scores on the subset for each user:</strong></p>
+              <p>Once the algorithm has the subset of questions and the corresponding users, it calculates the total score on that subset for each user. It sums up the scores of each user for the questions in the subset.</p>
+            </li>
+            <li>
+              <p><span className="article-post">4.  </span><strong>Calculate the grand total scores on all questions for each user:</strong></p>
+              <p>Simultaneously, the algorithm calculates the grand total scores on all questions for each user. This involves summing up the scores of each user for all questions, not just the subset.</p>
+            </li>
+            <li>
+              <p><span className="article-post">5.  </span><strong>Calculate the correlation between subset scores and grand total scores:</strong></p>
+              <p>With the total scores on the subset and the grand total scores for each user, the algorithm calculates the correlation between these two sets of scores. The correlation coefficient is a measure of the linear relationship between two sets of data. It ranges from -1 to 1, where -1 indicates a perfect negative correlation, 1 indicates a perfect positive correlation, and 0 indicates no correlation.</p>
+              <p>The correlation calculation could use statistical methods such as Pearson correlation coefficient, which measures the linear correlation between two variables. The formula for Pearson correlation is:</p>
+              <p>𝑟 = ∑ (𝑥𝑖 − 𝑥¯)(𝑦𝑖 − 𝑦¯ ) / √ ∑ (𝑥𝑖 − 𝑥¯ )^2 ∑ (𝑦 − 𝑦¯ )^2</p>
+              <p>Where:</p>
+              <p>𝑥𝑖xi and 𝑦𝑖yi are the individual scores of the users on the subset and grand total, respectively.</p>
+              <p>𝑥¯xˉ and 𝑦¯yˉ are the means of the scores on the subset and grand total, respectively.</p>
+            </li>
+            <li>
+              <p><span className="article-post">6.  </span><strong>Return the subset with the maximum correlation:</strong></p>
+              <p>After calculating the correlation for each k-sized subset, the algorithm identifies the subset with the maximum correlation coefficient and returns it as the result. This subset is considered to have the highest correlation with overall performance.</p>
+            </li>
+          </ol>
+
+          <p><strong>Note:</strong></p>
+          <p>The described algorithm is a brute-force approach, meaning it considers all possible subsets and calculates correlations for each. While it provides a straightforward solution to the k-CorrSet problem, it might be computationally expensive for large datasets. The author&#39;s exploration in Rust likely involves optimizing this algorithm or exploring alternative approaches to improve its efficiency.</p>
+
+
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            Stars: 42 
+            </p>
+             
+            <p className="font-size: 28px;">
+             Link to the article:
+            </p>
+            <p className="font-size: 28px;">
+              <a href="https://willcrichton.net/notes/k-corrset/" style={{ textDecoration: 'underline' }}>Analyzing Data 180,000x Faster with Rust
+              </a>
+            </p>
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
+        </div>
+      </div>
+
+
+
+
 
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
