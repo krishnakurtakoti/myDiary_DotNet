@@ -69,6 +69,7 @@ body {
 }
 
 p {
+  font-size: 1.5rem; 
   margin-bottom: 14px; /* Add margin at the bottom of each <p> element */
 }
 .quote-container {
@@ -90,4 +91,8 @@ p {
 }
 .italics {
   font-style: italic;
+}
+.font-size-16 {
+  font-size: 16px;
+  line-height: 1.5; /* Adjust the line height as needed */
 }

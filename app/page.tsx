@@ -766,9 +766,10 @@ The major differences between my classes and yours, is that the one-to-many rela
 
               
 
+              <p className="font-size-16">
+                  <strong>Remember:</strong> Make sure it is a secure password! If anyone should get their hands on this cert, it could be used to launch a malicious attack against your machine. So keeping it safe is VERY important! And also make sure that the key pair is stored in a safe place.
+              </p>
 
-                      <p><strong>Remember:</strong>  Make sure it is a secure password! If anyone should get their hands on this cert, it could be used to launch a malicious attach against your machine. So keeping it safe is VERY important! And also make sure that the key pair is stored in a safe place.</p>
-          
                       <p className="font-size: 28px;">
                       Ok, that&#39;s it from the Linux side…
                      </p>
