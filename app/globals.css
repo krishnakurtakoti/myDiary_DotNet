@@ -96,3 +96,18 @@ p {
   font-size: 16px;
   line-height: 1.5; /* Adjust the line height as needed */
 }
+.pinkTextOverlay {
+  color: rgb(216, 31, 62);
+  position: relative;
+  display: inline-block;
+}
+
+.pinkTextOverlay::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:rgb(216, 31, 62);
+  opacity: 0.5;
+  z-index: -1;
+}

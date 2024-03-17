@@ -14,6 +14,11 @@ import { VerifyCurrentlyNotTrustedCertificate } from "./VerifyCurrentlyNotTruste
 import { AddToOurTrustedCertificate } from "./AddToOurTrustedCertificate";
 import { VerifyCertificateIsTrusted } from "./VerifyCertificateIsTrusted";
 import { PKCS12certificate } from "./PKCS12certificate";
+import { SingleMultiStageDockerKubernetes1 } from "./SingleMultiStageDockerKubernetes1";
+import { MikeHadlowWritingDotnetServicesForKubernetes1 } from "./MikeHadlowWritingDotnetServicesForKubernetes1";
+import { MikeHadlowWritingDotnetServicesForKubernetes2 } from "./MikeHadlowWritingDotnetServicesForKubernetes2";
+import { MikeHadlowWritingDotnetServicesForKubernetes3 } from "./MikeHadlowWritingDotnetServicesForKubernetes3";
+import { MikeHadlowWritingDotnetServicesForKubernetes4 } from "./MikeHadlowWritingDotnetServicesForKubernetes4";
 
 export default function Home() {
   return (
@@ -1031,6 +1036,183 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="Sidecar Proxy Pattern, Service Mesh" />
         </div>
       </div>
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://www.fearofoblivion.com/setting-up-asp-net-dev-certs-for-both-wsl-and-windows" style={{ textDecoration: 'underline' }}>Writing .NET Application Services for Kubernetes By Mike Hadlow</a>
+                <i className="bi bi-calendar-date flex">24/06/2022</i>
+            </p>
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            In a traditional .NET distributed application, application services (not to be confused with the Kubernetes &#39;service&#39; object) would either be written as IIS hosted web applications or Windows Services. When building .NET (micro)services to be deployed in a Kubernetes cluster pretty much every facet of the service needs to be reconsidered, not only the hosting environment but the way configuration is accessed, how logging and monitoring work, and the options for state management and memory considerations. In this post I&#39;ll bring my experience of migrating .NET applications to Kubernetes to enumerate some of the main ways that you&#39;ll need to change the way you write them.
+            </p>
+            <p>
+            First some caveats. I don&#39;t intend this post to be an introduction to Kubernetes, or a justification of why you should use Kubernetes. Nor is it a tutorial on how to write distributed applications or .NET application services. It&#39;s intended audience is my past self about a year and a half ago. I would have very much appreciated a short guide on the changes I would have to make to redesign my .NET application services to take full advantage of Kubernetes.
+            </p>
+            <h2 className="step bold">Application Service Design</h2>
+            <p>
+            Some general application design guidelines:
+            </p>
+            <p>
+                            <ol>
+                            <li>
+                              <span className="article-post-sub"> 1.  </span> Build stateless horizontally scalable services. See the <a href="https://12factor.net/" style={{ textDecoration: 'underline' }}>12 factor apps</a> guidelines.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">2.  </span>  Use Linux containers. .NET is now cross platform and runs well on Linux. Avoid the bloat and inevitable friction of Windows Containers.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">3.  </span>  Consider the container immutable. Do not change the local file system. If you need a file system, use a volume mount.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">4.  </span>  One container per pod. Although the <a href="https://learnk8s.io/sidecar-containers-patterns" style={{ textDecoration: 'underline' }}>sidecar pattern</a> is a popular one, it&#39;s perfectly reasonable to have a complete distributed application without a single sidecar in sight. Like all popular patterns, only use it if you have a real need.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">5.  </span> Every application is a console application. Processes are managed by Kubernetes. HTTP services should be standalone console based web apps using the Kestrel webserver.
+                            </li>
+                            </ol>
+                          </p>
+
+
+
+                          <p className="font-size: 28px;">
+                          One of the main advantages you&#39;ll find writing application services for Kubernetes is that the platform now provides many things that you would previously have had to include in your application. As I&#39;ll describe below things such as configuration, logging, metrics, and security all become simpler to implement.
+                          </p>
+
+                          <h2 className="step bold">Building your container images</h2>
+
+                          <p className="font-size: 28px;">
+                          Kubernetes is primarily a container orchestration framework. Your applications/services need to be built and deployed as (usually Docker) containers. Microsoft have published a very good guide to building and running containerized .NET applications,<a href="https://dotnet.microsoft.com/en-us/download/e-book/microservices-architecture/pdf" style={{ textDecoration: 'underline' }}> NET Microservices Architecture for Containerized .NET Applications</a> that I&#39;recommend reading, although it doesn&#39;t cover Kubernetes the advice on creating container images and microservice architecture is very good.
+                          </p>  
+
+                          <p className="font-size: 28px;">
+                          Although it&#39;s possible to compile your application in a traditional build server and then create the runtime container image from the compiled binaries, it&#39;s easier to combine the build and runtime in a single multi-stage docker file, that way you control the environment for both build and deployment. Here is a very simple example:
+                          </p>
+
+
+
+                <p>
+                  <SingleMultiStageDockerKubernetes1 />
+                </p>
+              
+                <p className="font-size: 28px;">
+                As you can see there are multiple <span className="whiteBackground pinkTextOverlay">FROM</span> clauses. Each one discards the previous image so the  <span className="whiteBackground pinkTextOverlay">final</span> image is small.
+            </p>
+            <p className="font-size: 28px;">
+            Note, it&#39;s quite common to see just the .csproj file copied first for the restore phase, then the rest of the <span className="whiteBackground pinkTextOverlay">src</span> contents copied for the build. This will give you smaller, more efficient, layer cacheing. Although if you are using an ephemeral build server such as GitHub Actions, there&#39;s probably little to be gained. Personally I like to keep things simple.
+            </p>
+            <p className="font-size: 28px;">
+            Build the image with docker build:
+            </p>
+                <p>
+                  <MikeHadlowWritingDotnetServicesForKubernetes1 />
+                </p>
+
+                <p className="font-size: 28px;">
+                Once your container images are built, you should publish them to your internal image repository. GitHub provides a container registry as does Azure and all other cloud providers.
+                </p>
+              
+                <h2 className="step bold">Deploying to Kubernetes</h2>
+
+                <p className="font-size: 28px;">
+                In the simplest case for an aspnet service you can deploy your application/service to Kubernetes by simply running a deployment specifying your image and the number of replicas you want:
+                </p>
+
+                <p>
+                  <MikeHadlowWritingDotnetServicesForKubernetes2 />
+                </p>
+
+                <p className="font-size: 28px;">
+                You will also need a Kubernetes “service” to direct traffic to your pods, something like:
+                </p>
+             
+                <p>
+                  <MikeHadlowWritingDotnetServicesForKubernetes3 />
+                </p>
+            <p>
+            Use <span className="whiteBackground pinkTextOverlay">kubectl apply</span> to run the deployment: 
+            </p>
+            <p>
+                  <MikeHadlowWritingDotnetServicesForKubernetes4 />
+                </p>
+            
+            <p>
+            Consider using Helm to template your deployments for any but the very simplest cases. I&#39;ve also had Kustomize recommended to me, which looks a little simpler than Helm, but I&#39;ve not used it myself. 
+            </p>
+
+            <h2 className="step bold">Build and Deployment</h2>
+            <p>
+              Your build and deploy pipeline will look something like this:
+            </p>
+                        <p>
+                            <ol>
+                            <li>
+                              <span className="article-post-sub"> 1.  </span><span className="whiteBackground pinkTextOverlay">docker build .</span> Build your service container image.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">2.  </span><span className="whiteBackground pinkTextOverlay">docker push ...</span> Push your image to your image repository.
+                            </li>
+                            <li>
+                              <span className="article-post-sub">3.  </span><span className="whiteBackground pinkTextOverlay">kubectl apply ...</span> Execute the YAML file defining your deployment against your Kubernetes cluster.
+                            </li>
+                            </ol>
+                          </p>
+
+
+            <p className="font-size: 28px;">
+            If you are using GitHub for source control GitHub actions are a good choice for running these steps on a successful commit or pull request merge.
+                </p>
+
+            
+            <p className="font-size: 28px;">
+            Author of Blog: 
+            <a href="https://mikehadlow.com/top/about/" style={{ textDecoration: 'underline' }}> Mike Hadlow
+              </a>
+            </p>
+             
+            <p className="font-size: 28px;">
+           
+            </p>
+            <p className="font-size: 28px;">
+            If you have any comments or questions, feel free to reach out at <a href="https://twitter.com/mikehadlow" style={{ textDecoration: 'underline' }}>@mikehadlow
+              </a>
+              <p className="font-size: 28px;">
+              Software guy, blogger, author of EasyNetQ, AsmSpy and Guitar Dashboard. Technology, science, history and music geek. Lover of 70&#39;s prog rock, Tintin and Lego.
+              </p>
+          
+            </p>
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Writing .NET Application Services for Kubernetes" />
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
