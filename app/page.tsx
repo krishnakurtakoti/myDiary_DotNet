@@ -19,6 +19,8 @@ import { MikeHadlowWritingDotnetServicesForKubernetes1 } from "./MikeHadlowWriti
 import { MikeHadlowWritingDotnetServicesForKubernetes2 } from "./MikeHadlowWritingDotnetServicesForKubernetes2";
 import { MikeHadlowWritingDotnetServicesForKubernetes3 } from "./MikeHadlowWritingDotnetServicesForKubernetes3";
 import { MikeHadlowWritingDotnetServicesForKubernetes4 } from "./MikeHadlowWritingDotnetServicesForKubernetes4";
+import MikaelGRAComputerInfoComponent from "./MikaelGRAComputerInfoComponent";
+import { MikaelGRAComputerInfoComponent2 } from "./MikaelGRAComputerInfoComponent2";
 
 export default function Home() {
   return (
@@ -295,6 +297,103 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://github.com/MikaelGRA/InfluxDB.Client" style={{ textDecoration: 'underline' }}>https://github.com/MikaelGRA/InfluxDB.Client</a>
+            </p>
+            <p className="font-size: 28px;">
+            About
+            </p>
+            <p className="font-size: 28px;">          
+            InfluxDB Client for .NET.   Timeseries Database - InfluxDB which is very popular and used in many .NET applications.  
+            </p>
+         
+            <h2 className="step bold">InfluxDB Client for .NET</h2>
+            <p>
+            This library makes it easy to be a client for InfluxDB on .NET!
+            </p>
+
+            <p>
+            This library makes it easy to be a client for InfluxDB on .NET!The basic idea behind the library is that it should be able to turn queries directly into objects of your own classes. Much like micro-ORMS such as dapper.            
+            </p>
+
+            <p>
+            The goal is that we want to be able to support LINQ syntax in the future.
+            </p>
+
+            <h2 className="step bold">Installation</h2>
+            <p>
+            Install it through nuget with the following command.
+            </p>
+
+
+            <h2 className="step bold">Reading/Writing</h2>
+            <p>
+            The library exposes all HTTP operations on InfluxDB (1.0+) and can be used for reading/writing data to/from in two primary ways:
+            </p>
+            <h2 className="step bold">Using your Own POCO classes</h2>
+            <p>
+            Start by defining a class that represents a row in InfluxDB that you want to store.
+            </p>
+            <p>
+                  <MikaelGRAComputerInfoComponent2 />
+                </p>
+                <p>
+                  On your POCO class you must specify these things:
+              </p>
+                <p>
+                            <ol>
+                              <p>
+                                <li>
+                                <span className="article-post-sub"> 1.  </span> 1 property with the type DateTime, DateTime?, DateTimeOffset or DateTimeOffset? as the timestamp used in InfluxDB by adding the [InfluxTimestamp] attribute.
+                              </li>
+                              </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">2.  </span>  0-* properties with the type string, long, ulong, int, uint, short, ushort, byte, sbyte, double, float, bool, DateTime, DateTimeOffset, decimal or a user-defined enum (nullables too) with the [InfluxTag] attribute that InfluxDB will use as indexed tags. Note that all tags in InfluxDB is still stored a string. The library will simply making the conversion to the specified type automatically.
+                              </li>
+                            </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">3.  </span>  1-* properties with the type string, long, ulong, int, uint, short, ushort, byte, sbyte, double, float, bool, DateTime, DateTimeOffset, decimal or a user-defined enum (nullables too) with the [InfluxField] attribute that InfluxDB will use as fields.
+                              </li>
+                            </p>
+
+                            </ol>
+                          </p>
+
+              <p>
+              Once you&#39;ve defined your class, you&#39;re ready to use the InfluxClient, which is the main entry point to the API:
+              </p>
+
+              <p>
+              Here&#39;s how to write to the database:
+              </p>
+
+
+              <p>
+                  <MikaelGRAComputerInfoComponent />
+                </p>
+
+          <p className="font-size: 28px;">
+                      Author of Blog: 
+                      <a href="https://github.com/MikaelGRA" style={{ textDecoration: 'underline' }}>  Mikael Guldborg Rask Andersen
+                        </a>
+
+                      </p>
+         <p className="font-size: 28px;">
+                      Stars: 
+                      <a href="https://github.com/MikaelGRA/InfluxDB.Client" style={{ textDecoration: 'underline' }}>  103
+                        </a>
+                        
+                      </p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: InfluxDB Client for .NET, InfluxDB, Timeseries Database</span> 
+            <Tag value="" />
+        </div>
+      </div>
 
       
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
@@ -1042,7 +1141,7 @@ The major differences between my classes and yours, is that the one-to-many rela
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
             <p className="font-size: 28px;">
-                <a href="https://www.fearofoblivion.com/setting-up-asp-net-dev-certs-for-both-wsl-and-windows" style={{ textDecoration: 'underline' }}>Writing .NET Application Services for Kubernetes By Mike Hadlow</a>
+                <a href="https://mikehadlow.com/posts/2022-06-24-writing-dotnet-services-for-kubernetes/" style={{ textDecoration: 'underline' }}>Writing .NET Application Services for Kubernetes By Mike Hadlow</a>
                 <i className="bi bi-calendar-date flex">24/06/2022</i>
             </p>
             <span className="bold">Extra: </span>
@@ -1650,6 +1749,75 @@ The major differences between my classes and yours, is that the one-to-many rela
 
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+            <a href="https://github.com/evertedsphere" style={{ textDecoration: 'underline' }}>Soham Chowdhury</a> followed <a href="https://github.com/pkhuong" style={{ textDecoration: 'underline' }}>Paul Khuong</a>              
+                <a href="https://pvk.ca/Blog/2012/02/22/finally-napa-fft3-is-ready-for-users/" style={{ textDecoration: 'underline' }}>Finally! Napa-FFT3 is ready for users</a>
+                <i className="bi bi-calendar-date flex">22/02/2012</i>
+            </p>
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            <a href="https://github.com/pkhuong/Napa-FFT3" style={{ textDecoration: 'underline' }}> Napa-FFT3 </a>is in the latest Quicklisp release. Unlike previous attempts that were really proofs of concept, this one feels solid enough for actual use.
+            </p>
+            <p>
+            This third version is extremely different from the first two: rather than trying to compute in-order FFTs without blowing caches, it generates code for bit-reversed FFTs. The idea came from Brad Lucier, who sent me a couple emails and showed how nicely his FFT scaled (it&#39;s used in gambit&#39;s bignum code). Bit-reversed FFTs don&#39;t have to go through any special contortion to enjoy nice access patterns: everything is naturally sequential. The downside is that the output is in the wrong order (in bit-reversed order). However, it might still be an overall win over directly computing DFTs in order: we only need to execute one bit-reversal pass, and we can also provide FFT routines that work directly on bit-reversed inputs.
+            </p>
+            <p>
+            My hope when I started writing Napa-FFT3 was that I could get away with a single generator that&#39;d work well at all sizes, and that bit-reversing would either not be too much of an issue, or usually not needed (e.g., for people who only want to perform convolutions or filtering).
+            </p>
+            <h2 className="step bold">Overview of the code</h2>
+            <p>
+            The forward and inverse transform generators are pretty simple implementations of the split-radix FFT.
+            </p>
+            <p>
+            Generator for “flat” base cases output code for a specialised compiler geared toward large basic blocks. The specialised compiler takes potentially very long traces of simple operations on array elements, and performs two optimisations: array elements are cached in variables (registers), and variables are explicitly spilled back into arrays, following Belady&#39;s algorithm. That allows us to easily exploit the register file, without taking its size directly into account in the domain-specific generators, and even when we have to cope with a relatively naïve machine code generator like SBCL&#39;s.
+            </p>
+            <p>
+            Larger input sizes instead use a generator that outputs almost-normal recursive code; theret&#39;s one routine for each input size, which helps move as much address computation as possible to compile-time.
+            </p>
+            <p>
+            Even with code to handle scaling and convolution/filtering, I feel that the generators are easily understood and modified. They currently only support in-order input for the forward transform, and in-order output for the inverse, but the generators are simple enough that adding code for all four combinations (in-order input or output, forward or inverse transform) would be reasonable! I believe thatt&#39;s a win.
+            </p>
+            <p>
+            Better: it seems my hope that we can execute bit reverses quickly was more than justified. It&#39;m not quite sure how to describe it, but the code is based on recursing on the indices from the middle bits toward the least and most significant bits. The result is that the theret&#39;s exactly one swap at each leaf of the recursion, and that, when cache associativity is high enough (as is the case for the x86 chips I use), all the cache misses are mandatory. Better, the recursiveness ensures that the access patterns are also TLB optimal, when the TLB associativity is high enough (or infinite, as for my x86oids).
+            </p>
+            <p>
+            Theret&#39;s one issue with that recursive scheme: itt&#39;s really heavy in integer arithmetic to compute indices. Again, I generate large basic blocks to work around that issue. The last couple levels (three, by default) of the recursion are unrolled and compiled into a long sequence of swaps. The rest of the recursion is executed by looping over a vector that contains indices that were computed at compile-time.
+            </p>
+
+            <h2 className="step bold">Correctness</h2>
+
+            <p>
+            I have a hard time convincing myself that code generators are correct, especially without a nice static type system. Instead, I heavily tested the final generated code. I&#39;m using Common Lisp, so array accesses were all checked automatically, which was very useful early in the development processes. Once I was convinced certain that all accesses were correct, I turned bound and type checking off. The first test file implements a set of randomised tests proposed by Funda Ergün. That was enough for me to assume that the FFTs themselves were correct. I then turned to a second set of tests to try and catch issues in the rest of the code that builds on straight FFT
+            </p>
+            <p>
+            The process did catch a couple bugs, and makes me feel confident enough to let other people use Napa-FFT3 in their programs.
+            </p>
+
+
+            <h2 className="step bold">Performance</h2>
+
+            <p>
+            Napa-FFT and Napa-FFT2 managed to come reasonably close to FFTW&#39;s performance. When I started working on Napa-FFT3, I hoped that it could come as close, with much less complexity. In fact, it performs even better than expected: Napa-FFT3 is faster than Napa-FFT(2) at nearly all sizes, and outperforms FFTW&#39;s default planner for out-of-cache transforms (even with the bit-reversal pass).
+            </p>
+
+
+            
+            <p className="font-size: 28px;">
+            Author of Blog: 
+            <a href="https://pvk.ca/" style={{ textDecoration: 'underline' }}> PAUL KHUONG: SOME LISP
+              </a>
+            </p>
+             
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Writing .NET Application Services for Kubernetes" />
+        </div>
+      </div>
 
 
 

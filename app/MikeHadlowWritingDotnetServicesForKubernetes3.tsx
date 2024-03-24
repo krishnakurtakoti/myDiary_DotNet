@@ -2,14 +2,14 @@ import React from 'react';
 
 export const MikeHadlowWritingDotnetServicesForKubernetes3: React.FC = () => {
     const pinkStyle = {
-        color: 'darkpink'
+        color: 'rgb(216, 31, 62)'
     };
 
     const purpleStyle = {
         color: 'purple'
     };
     const preStyle = {
-        backgroundColor: 'black',
+        backgroundColor: '#454545;',
         color: 'white',
         padding: '10px 20px', // Add padding for the border effect
         borderLeft: '3px solid pink', // Add left border
