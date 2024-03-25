@@ -21,6 +21,7 @@ import { MikeHadlowWritingDotnetServicesForKubernetes3 } from "./MikeHadlowWriti
 import { MikeHadlowWritingDotnetServicesForKubernetes4 } from "./MikeHadlowWritingDotnetServicesForKubernetes4";
 import MikaelGRAComputerInfoComponent from "./MikaelGRAComputerInfoComponent";
 import { MikaelGRAComputerInfoComponent2 } from "./MikaelGRAComputerInfoComponent2";
+import { PKHuongNapaFFT3_1 } from "./PKHuongNapaFFT3_1";
 
 export default function Home() {
   return (
@@ -1802,8 +1803,140 @@ The major differences between my classes and yours, is that the one-to-many rela
             Napa-FFT and Napa-FFT2 managed to come reasonably close to FFTW&#39;s performance. When I started working on Napa-FFT3, I hoped that it could come as close, with much less complexity. In fact, it performs even better than expected: Napa-FFT3 is faster than Napa-FFT(2) at nearly all sizes, and outperforms FFTW&#39;s default planner for out-of-cache transforms (even with the bit-reversal pass).
             </p>
 
+            <h2 className="step bold">Napa-FFT3: Overview</h2>
+            <p>
+            Napa-FFT3 is a complete rewrite of Napa-FFT (version 2 is an aborted experiment). The goal is still the same: to provide, via a mixture of cache-friendly algorithms and code generation, FFT routines in Common Lisp that offer performance comparable to the state of the art. In that regard, it is a success: depending on how it&#39;s used, Napa-FFT3 is, at most, around three times as slow as FFTW on small or medium inputs, and can be faster than FFTW for large inputs. The complete picture is more complicated than this; see the Performance section for details.
+            </p>
 
-            
+            <p>
+            The goal of Napa-FFT3 isn&#39;t only to provide Discrete Fourier Transform (DFT) routines, but also (rather) to provide buildings blocks to express common operations that involve DFTs: filtering, convolutions, etc. This is what enables Napa-FFT to achieve such high performance without optimizing at the assembly level. The Easy Interface section should suffice for most developers; the Low-level Interface is described in another section, and may be of interest to some.
+            </p>
+
+            <p>
+            Napa-FFT3 also expressly supports FFTs on real data and inverse FFTs back to real data. The Real Interface section describes the facility, and is used in conjunction with the Easy Interface.
+            </p>
+
+            <p>
+            Finally, see the Installation section for installation instructions, and the Implementation section for all the gory details.
+            </p>
+
+            <p>
+            Note that Napa-FFT3 currently only supports power-of-two-sized inputs; even when/if it will gain code for arbitrary sizes, powers of two will most likely be much more efficient, both in terms of runtime and space usage.
+            </p>
+
+
+            <p>
+            To recapitulate:
+            </p>
+                  <p>
+                            <ol>
+                              <p>
+                                <li>
+                                <span className="article-post-sub"> 1.  </span> Installation: installation instructions;
+                              </li>
+                              </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">2.  </span> Easy Interface: convenience functions;
+                              </li>
+                            </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">3.  </span>  Real Interface: convenience functions for real-only input or output;
+                              </li>
+                            </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">4.  </span>  Examples: more examples;
+                              </li>
+                            </p>
+                            </ol>
+                          </p>
+
+                          <h2 className="step bold">Installation</h2>
+
+
+            <p>
+            Napa-FFT3 is a regular ASDF system defined in napa-fft3.asd. If Quicklisp is installed, it suffices to copy the Napa-FFT3 directory under ~/quicklisp/local-projects.
+            </p>
+            <p>
+            Once registered with ASDF, Napa-FFT3 can be loaded by executing (asdf:oos &#39;asdf:load-op &#34;napa-fft3&#34;), or, with Quicklisp, (ql:quickload &#34;napa-fft3&#34;).
+            </p>
+
+            <h2 className="step bold">Installation</h2>
+
+            <h3 className="step bold">FFT</h3>
+            <p>
+            Syntax: fft vec &key dst size in-order scale window =&gt; vector.
+            </p>
+
+            <p>
+            Arguments and Values:
+            </p>
+                  <p>
+                            <ol>
+                              <p>
+                                <li>
+                                <span className="article-post-sub"> 1.  </span> vec: sequence of samples.
+                              </li>
+                              </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">2.  </span> dst: nil (default) or a simple vector of complex samples (destructively reused).
+                              </li>
+                            </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">3.  </span>  size: size of the transform to perform (must be a power of two). (length vec) if nil (default).
+                              </li>
+                            </p>
+                            <p>
+                              <li>
+                                <span className="article-post-sub">4.  </span> in-order: whether the result should be in-order (default, t) or bit-reversed (nil).
+                              </li>
+                            </p>
+
+
+                            <p>
+                              <li>
+                                <span className="article-post-sub">5.  </span>                       scale: how the result should be scaled: not at all (default, nil), by 1/sqrt(size) (:sqrt or sqrt), or by 1/n (t, or :inv).
+                              </li>
+                            </p>
+
+                            <p>
+                              <li>
+                                <span className="article-post-sub">6.  </span>vector: a simple array of complex doubles. dst if not nil, otherwise a newly-allocated array.
+                              </li>
+                            </p>
+                            </ol>
+                          </p>
+
+
+    
+                          <p>
+                          FFT computes the DFT of the first size values in vec.
+            </p>
+
+            <p>
+            First, vec is converted to a simple array of complex samples if necessary. The result is stored in dst, or a fresh array of complex doubles. dst may be the same object as vec for an in-place transform.
+            </p>
+
+            <p>
+            If window is non-nil, each value in vec is multiplied by the corresponding value in window during the transform; similarly, the values are scaled according to the value of scale.
+            </p>
+
+            <p>
+            If in-order is true, the result is then converted to be in order, which can take more than half as much time as the FFT itself.
+            </p>
+
+            <p>
+            Examples:
+            </p>
+            <p className="FFT">
+              <PKHuongNapaFFT3_1 />
+            </p>
+
+
             <p className="font-size: 28px;">
             Author of Blog: 
             <a href="https://pvk.ca/" style={{ textDecoration: 'underline' }}> PAUL KHUONG: SOME LISP
