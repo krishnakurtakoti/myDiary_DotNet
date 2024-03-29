@@ -1954,6 +1954,81 @@ The major differences between my classes and yours, is that the one-to-many rela
 
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://softwaredoug.com/blog/2023/03/12/reconstruct-dot-product-from-other-dot-products" style={{ textDecoration: 'underline' }}>Reconstructing a cosine similarity</a>
+            
+                <i className="bi bi-calendar-date flex">12/03/2023</i>
+                <p>Let&#39;s say we have vectors <code className="language-plaintext highlighter-rouge">A1..An</code>. We know their dot products to <code className="language-plaintext highlighter-rouge">u</code> and <code className="language-plaintext highlighter-rouge">v</code>, but not <code className="language-plaintext highlighter-rouge">u</code> and <code className="language-plaintext highlighter-rouge">v</code> themselves. Can we estimate <code className="language-plaintext highlighter-rouge">u.v</code> (ie their cosine similarity)?</p>
+            </p>
+
+            <span className="bold">Extra: </span>
+
+            <p>This could be handy in vector similarity systems. With just a few strategically selected reference points <code className="language-plaintext highlighter-rouge">A1..An</code> we might get an accurate view of <code className="language-plaintext highlighter-rouge">u.v</code> without storing the full vector. Or at least that&#39;s the hope!</p>
+
+
+            <p>We first asked this question with <a href="blog/2023/03/02/shared-dot-product.html">just one reference point</a>. Then <a href="/blog/2023/03/10/two-shared-reference-points">we upgraded to two</a>. Next we <em>reach out with our feelings</em> to get to all <code className="language-plaintext highlighter-rouge">An</code> reference points.</p>
+
+            <h2 id="recap---using-two-reference-points">Recap - using two reference points</h2>
+           
+            <p>With just one reference point, we can estimate <code className="language-plaintext highlighter-rouge">u.v</code> with just <code className="language-plaintext highlighter-rouge">u.A1 * v.A1</code>. Easy enough.</p>
+           
+            <p>To add a second, <code className="language-plaintext highlighter-rouge">A2</code>, we figure out how much of <code className="language-plaintext highlighter-rouge">u.A2*v.A2</code> to include in <code className="language-plaintext highlighter-rouge">u.v</code>. We see how much of <code className="language-plaintext highlighter-rouge">A2</code> is already included in the original reference point <code className="language-plaintext highlighter-rouge">A1</code>. The leftover parts parts, we add to <code className="language-plaintext highlighter-rouge">u.v</code>.</p>
+
+            <p>
+              <img src="https://softwaredoug.com/assets/media/2023/angle_leftover.png" alt="software doug angle_leftover" width="500" height="300"></img>
+            </p>
+
+
+              <p>Applying the trig knowledge you told your teacher you&#39;d never need, you know that &#39;leftover&#39; here is really &#39;sin&#39;. So we get:</p>
+
+              <div className="language-plaintext highlighter-rouge"><div className="highlight"><pre className="highlight"><code>u.v = u.A1*v.A1 + sin(θ1)*u.A2*v.A2
+              </code></pre></div></div>
+
+
+              <p>Or put another way. if <code className="language-plaintext highlighter-rouge">A1</code> and <code className="language-plaintext highlighter-rouge">A2</code> are parallel, there&#39;s no point in looking at the dot product <code className="language-plaintext highlighter-rouge">u.A2</code> - it’s just <code className="language-plaintext highlighter-rouge">u.A1</code> again. But as A2 rotates away, we add more and more of <code className="language-plaintext highlighter-rouge">u.A2</code> in.</p>
+             
+              <h2 id="up-to-3-or-n-reference-points">Up to 3 (or n) reference points</h2>
+            
+              <p>Going up to 3 (or n) dimensions, we need a similar procedure. However we need the leftovers of <code className="language-plaintext highlighter-rouge">A3</code> outside the <em>plane</em> created by <code className="language-plaintext highlighter-rouge">A1</code> and <code className="language-plaintext highlighter-rouge">A2</code>. That little slice of heaven shown below:</p>
+
+              <p><img src="https://softwaredoug.com/assets/media/2023/slice_of_heaven.png" alt="image.png"></img></p>
+
+              <p>The mathy way of defining the “plane” where <code className="language-plaintext highlighter-rouge">A1</code> and <code className="language-plaintext highlighter-rouge">A2</code> lie (really any <code className="language-plaintext highlighter-rouge">A1...An-1</code>) is called a <a href="https://www.statlect.com/matrix-algebra/linear-span">span</a>.</p>
+
+              <p>The problem becomes, how do we find an angle, <code className="language-plaintext highlighter-rouge">θ</code>, between <code className="language-plaintext highlighter-rouge">An</code> - not on the span - and its closest point on the span <code className="language-plaintext highlighter-rouge">A1...An-1</code>.</p>
+
+              <p><img src="https://softwaredoug.com/assets/media/2023/theta_onto_heaven.png" alt="image.png theta"></img></p>
+
+              <p>If we find <code className="language-plaintext highlighter-rouge">θ</code> we can add another <code className="language-plaintext highlighter-rouge">+ sin(θ)*u.An*v.An</code> to the dot product and improve our estimate.</p>
+              <p>The &#39;closest point&#39; of <code className="language-plaintext highlighter-rouge">An</code> on the span is known as a vector&#39;s <a href="https://en.wikipedia.org/wiki/Projection_(linear_algebra)">orthogonal projection</a>, shown below:</p>
+            
+
+              <p>If we could find the projection, a little trig can get us <code className="language-plaintext highlighter-rouge">θ</code> - the angle between <code className="language-plaintext highlighter-rouge">An</code> and its <code className="language-plaintext highlighter-rouge">projection</code> - and thus <code className="language-plaintext highlighter-rouge">sin(θ)</code> - and viola leftovers 🍰!</p>
+
+              <p>How do we find the projection? Luckily there&#39;s an existing algorithm. However, it requires an important input: the vectors describing the <code className="language-plaintext highlighter-rouge">A1..An-1</code> “slice of heaven” span must be made orthogonal to each other.</p>
+
+  
+            <p>
+            About 
+            </p>             
+            <p className="font-size: 28px;">
+              <a href="https://softwaredoug.com/" style={{ textDecoration: 'underline' }}>DOUG TURNBULL   
+              </a>
+            </p>
+             
+           
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
+        </div>
+      </div>
+
+
+   
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <span className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-white">20/1/24</span>
