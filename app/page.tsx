@@ -2023,12 +2023,79 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
         <div className="tags">
             <span className="bold">Tags: </span> 
-            <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
+            <Tag value="Reconstructing a cosine similarity" />
         </div>
       </div>
 
 
-   
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://www.codeproject.com/Articles/1107480/DSPLib-FFT-DFT-Fourier-Transform-Library-for-NET-6" style={{ textDecoration: 'underline' }}>DSPLib - FFT / DFT Fourier Transform Library for .NET 4 by Steve Hageman</a>
+            
+                <i className="bi bi-calendar-date flex">11/06/2023</i>
+                <p>DSPLib is a complete DSP Library that is an end to end solution for performing FFT&#39;s with .NET 4</p>
+            </p>
+            <p>
+            In this post, you will find a practical, organized and complete .NET 4+ Open Source library of DSP oriented routines released under the very non-restrictive MIT License.
+            </p>
+            <span className="bold">Extra: </span>
+
+            <h2>Introduction</h2>
+            <p>There is a real need for a ready to use Fourier Transform Library that users can take right out of the box and perform Fast Fourier Transforms (FFT) or Discrete Fourier Transforms (DFT) and get a classical spectrum versus frequency plot.</p>
+            
+            <p>The vast majority of code that you will find in Commercial packages, Open Source libraries, Textbooks and on the Web are simply unsuited for this task and takes hours of further tweaking to get a classic and properly scaled spectrum plot.</p>
+            
+            <p>The library presented here is a practical, organized and complete .NET 4+ Open Source library of DSP oriented routines released under the very non-restrictive MIT License.</p>
+
+            <h2>What DSPLib Does</h2>
+            <p>DSPLib has several main parts, but its basic goal is to allow a real Fourier Transform to be preformed on a time series input array, resulting in a usable classic spectrum output without any further tweaking required by the user.</p>
+           
+            <p>Basic Fourier Transforms (FT) come in two basic types: the most general form can produce a spectrum output from any length of input data. This type of transform is called the Discrete Fourier Transform or DFT. The code is simple and brute force.</p>
+
+            <ul>
+	<li>The pros are: The input data can be any length.</li>	<li>The cons are: Since it is a general method, it is computationally intensive and large input data sets can take a very long time to calculate.</li></ul>
+
+  <p>A more specific type of FT is called the Fast Fourier Transform or FFT.</p>
+
+  <ul>
+	<li>The pros are: It is much, much faster to compute than the DFT.</li>	<li>The cons are: The input data length is constrained to be power of twos. The code is more complex to understand.</li></ul>
+
+  <p>As an example: A 8192 point FFT takes: less than 1 Millisecond on my i7 Computer. A DFT of the same length takes 360 Milliseconds. Hence you can see why the FFT is much more popular than the brute force DFT in real time applications.</p>
+
+  <p>DSPLib implements both kinds of Fourier Transform.</p>
+
+  <div><em><strong>Note</strong>: For the remainder of this article, the generalized Fourier Transform will be referred to as a &#39;FT&#39; when the discussion can apply to either a &#39;FFT&#39; or &#39;DFT&#39; as they both produce the same result for equivalent input data.</em></div>
+
+  <p>All FTs can take a real or complex number input and naturally produce a complex number result. All FTs produced to date have implemented their own Complex Number type and this naturally leads to incompatibilities between libraries. .NET 4.0 finally includes (in the <code>System.Numerics</code> namespace) a Complex number structure and many math methods for operating on complex numbers. <code>DSPLib</code> incorporates the .NET 4 Complex Number Type.</p>
+
+  <p>To have real speed improvements and to automatically scale the speed on processors with multiple cores and/or threads, <code>DSPLib</code> also implements the Task Parallel Extensions built into .NET 4. This leads to a real improvement in execution time that automatically scales with the number of processor cores / threads available. For instance, on a 2 core / 4 thread i7 processor, using the Task Parallel extensions decreases the execution time of a 10,000 point DFT by more than 3X.</p>
+
+  <p>Smart caching of Sine and Cosine multiplication terms on smaller DFTs also increases performance by around 3X.</p>
+
+  <p>Both of these easy to implement features increase the raw DFT Speed by around 9 times even on a low end i7 processor.</p>
+  <h3>Real and Imaginary Spectrum Parts</h3>
+  <p>All FT implementations naturally produce an output data array that is the same length as the input array. The output however consists not only of complex numbers, but Real and Imaginary parts of the Spectrum itself – sometimes called negative frequencies depending on how one wants to think about it. The Imaginary part of the spectrum is just the mirror image of the Real part and does not contain any additional information about the spectrum.</p>
+           
+           
+            <p>
+            About 
+            </p>             
+            <p className="font-size: 28px;">
+              <a href="https://www.codeproject.com/script/Membership/View.aspx?mid=960353" style={{ textDecoration: 'underline' }}>Steve Hageman  
+              </a>
+            </p>
+             
+            <p className="font-size: 28px;">
+            Rating: 4.93/5 (69 votes) 
+            </p>
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="DSPLib - FFT / DFT Fourier Transform Library for .NET 4" />
+        </div>
+      </div>
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <span className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-white">20/1/24</span>
