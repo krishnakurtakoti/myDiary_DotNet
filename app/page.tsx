@@ -22,6 +22,8 @@ import { MikeHadlowWritingDotnetServicesForKubernetes4 } from "./MikeHadlowWriti
 import MikaelGRAComputerInfoComponent from "./MikaelGRAComputerInfoComponent";
 import { MikaelGRAComputerInfoComponent2 } from "./MikaelGRAComputerInfoComponent2";
 import { PKHuongNapaFFT3_1 } from "./PKHuongNapaFFT3_1";
+import DspLib_FFT_DFT_Fourier_Transform_Library_For_NET6 from "./DspLib_FFT_DFT_Fourier_Transform_Library_For_NET6";
+import ThisisparkerHigginsPublicDomians from "./ThisisparkerHigginsPublicDomians";
 
 export default function Home() {
   return (
@@ -1128,7 +1130,39 @@ The major differences between my classes and yours, is that the one-to-many rela
             <p className="font-size: 28px;">
             Heart: 347
             </p>
+            <p className="font-size: 28px;">
+            Author of Blog: 
+            <a href="https://iximiuz.com/en/" style={{ textDecoration: 'underline' }}> Ivan Velichko
+              </a>
+            </p>
+            <h1 className="page-header-title">Learning Containers, Kubernetes, and Backend Development</h1>
+            <p>Want to learn <strong>Docker</strong> or <strong>Kubernetes</strong>? Struggle to understand what this <strong>Cloud Native</strong> buzz is about? On a mission to master <strong>Server-Side Craft</strong>? Then you&#39;re at the right place!</p>
+            <p>
+              <ul>
+                <li>✔&nbsp;&nbsp;In-depth technical materials.</li>
+                <li>✔&nbsp;&nbsp;Focus on true fundamentals.</li>
+                <li>✔&nbsp;&nbsp;Clear and visual explanations.</li>
+                <li>✔&nbsp;&nbsp;Interactive playgrounds.<span className="badge-new">New</span></li>
+              </ul>
+            </p>
+            <p>As someone going through a similar learning journey, I keep my articles <strong>experiential</strong> and put a great deal of effort into <a href="https://twitter.com/iximiuz/status/1356308063603585024" style={{ textDecoration: 'underline' }}>explanatory drawings</a> and <a href="https://labs.iximiuz.com/" style={{ textDecoration: 'underline' }}>interactive playgrounds</a>.</p>
+            
+            <h3 id="most-popular-posts">Most popular posts</h3>
+                <p>
+                <ul>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/kubernetes-vs-virtual-machines/" style={{ textDecoration: 'underline' }}>How Kubernetes Reinvented Virtual Machines</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/container-learning-path/" style={{ textDecoration: 'underline' }}>Learning Containers From The Bottom Up</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/containers-vs-pods/" style={{ textDecoration: 'underline' }}>Containers vs. Pods - Taking a Deeper Look</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/container-networking-is-simple/" style={{ textDecoration: 'underline' }}>Container Networking Is Simple!</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/computer-networking-101/" style={{ textDecoration: 'underline' }}>Computer Networking Basics For Developers</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/ssh-tunnels/" style={{ textDecoration: 'underline' }}>A Visual Guide to SSH Tunnels</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/from-docker-container-to-bootable-linux-disk-image/" style={{ textDecoration: 'underline' }}>From Docker Container to Bootable Linux Disk Image</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/thick-container-vulnerabilities/" style={{ textDecoration: 'underline' }}>The Need For Slimmer Containers</a></li>
+                <li>⭐&nbsp;&nbsp;<a href="https://iximiuz.com/en/posts/devops-sre-and-platform-engineering/" style={{ textDecoration: 'underline' }}>DevOps, SRE, and Platform Engineering</a></li>
+                </ul>
+                </p>
 
+            
             <p>Extra_End</p>
         </div>
         <div className="tags">
@@ -1137,7 +1171,7 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
       </div>
 
-
+     
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
@@ -1748,7 +1782,73 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
       </div>
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://parkerhiggins.net/2022/11/public-sub-domains" style={{ textDecoration: 'underline' }}>Public (sub-)domains</a>
+                <i className="bi bi-calendar-date flex">04/11/2022</i>
+            </p>
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            The tremendous influx of traffic to Mastodon got me thinking that it might finally be time to set up my own instance, and how-to posts from <a href="https://jacobian.org/til/my-mastodon-instance/" style={{ textDecoration: 'underline' }}>Jacob</a> and <a href="https://til.simonwillison.net/mastodon/custom-domain-mastodon" style={{ textDecoration: 'underline' }}>Simon</a> have only increased that interest. But as a little branding excercise, and <em>especially</em> if I want to offer accounts to a few close friends, surely I could do something a little more fun than just my first and last name.
+            </p>
+            <p>
+            <a href="https://instances.social/" style={{ textDecoration: 'underline' }}>Many Mastodon instances</a> are on subdomains, and since the early days weirder new-style TLDs have been de rigueur. (The flagship has always been at a <code className="language-plaintext highlighter-rouge">.social</code>!) So I set out to find three-word phrases where the third word is a 4+-letter top-level domain, using as my first source text Moby Dick. 
+            </p>             
+            <p className="font-size: 28px;">
+              The results were great! The script I wrote output all possible options, which I then spot-checked to see which were available, but I’ve since updated the script to do a quick <code className="language-plaintext highlighter-rouge">whois</code> check to see if the domain is already registered. (<code className="language-plaintext highlighter-rouge">whois</code> support is a little spotty for some of the weirder domains, so many are inconclusive, but I was surprised at some of the good ones available.) As of right now, here are some possible instances available for registration:
+            </p>
+            
+            <p className="font-size: 28px;">
+              <ul>
+                <li>certain.fragmentary.parts</li>
+                <li>famous.whaling.house</li>
+                <li>moreover.unhesitatingly.expert</li>
+                <li>however.temporary.fail</li>
+                <li>almost.microscopic.network</li>
+                <li>should.nominally.live</li>
+                <li>another.whaling.voyage</li>
+                <li>surprising.terrible.events</li>
+              </ul>
+            </p>
+            <p>People responded with some cool possible instance names from <a href="https://mastodon.social/@MattHodges/109282389881819378" style={{ textDecoration: 'underline' }}>The Great Gatsby</a>, <a href="https://mastodon.social/@ashur/109282921833199535" style={{ textDecoration: 'underline' }}>Frankenstein</a>, <a href="https://post.lurk.org/@samplereality/109282791738200388" style={{ textDecoration: 'underline' }}>White Noise</a>, the <a href="https://code4lib.social/@pbinkley/109282743661309956" style={{ textDecoration: 'underline' }}>King James Bible</a> and more. Really fun.</p>
+             <p>Normally I would wonder to myself if this kind of thought experiment is cool but this time I feel like I’ve got external validation in the form of <a href="https://mastodon.xyz/web/@xor/109281433411212592">the reaction to this thread on Mastodon</a>, which has also been great. Somebody even bought the saddest.city domain on the strength of the strangest.saddest.city find.</p>
+             
 
+             <p>The <a href="https://gist.github.com/thisisparker/f091f01852911bd849d03c4e09d89856" style={{ textDecoration: 'underline' }}>little Python script that finds these</a> uses <a href="https://www.nltk.org/" style={{ textDecoration: 'underline' }}>NLTK</a> to tokenize big text files first into sentences and then, within sentences, into words. Then it checks to see if there are three long-ish words in a row where the third one is on a list of TLDs. Since posting that script on Mastodon yesterday, I have updated it with the built-in <code className="language-plaintext highlighter-rouge">whois</code> check as well.</p>
+             <p className="ThisisparkerPublicDomians">
+              <ThisisparkerHigginsPublicDomians />
+             </p>
+                <h3 className="f5 text-normal">
+                      <div>
+                        
+
+                        <strong>
+                            <a className="author Link--primary text-bold css-overflow-wrap-anywhere " data-hovercard-type="user" data-hovercard-url="/users/thisisparker/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/thisisparker" style={{ textDecoration: 'underline' }}>thisisparker</a>
+                    
+
+                        </strong>
+
+                        
+
+                        commented 
+
+
+                          <a href="/thisisparker/f091f01852911bd849d03c4e09d89856?permalink_comment_id=4385494#gistcomment-4385494" id="gistcomment-4385494-permalink" className="Link--secondary js-timestamp"><span>Nov 30, 2022</span></a>
+
+
+                        
+                      </div>
+
+                  </h3>
+             <p dir="auto">This script was expanded into a better and more robust package, <a href="https://github.com/thisisparker/public_domains" style={{ textDecoration: 'underline' }}>now available on Github</a>.</p>
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Little Python script that finds these uses NLTK to tokenize" />
+        </div>
+      </div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
@@ -2039,7 +2139,23 @@ The major differences between my classes and yours, is that the one-to-many rela
             <p>
             In this post, you will find a practical, organized and complete .NET 4+ Open Source library of DSP oriented routines released under the very non-restrictive MIT License.
             </p>
+
+            <p>
+              <img src="https://www.codeproject.com/KB/Articles/1107480/SplashScreen.png" alt="software dsplib"  className="img-fluid"></img>
+            </p>
+            <h2>Examples</h2>
+
+            <p>Enough talk about the general aspects of <code>DSPLib</code>. The examples below will show how easy it is to apply in practice.</p>
+
+            <h3>Example 1</h3>
+            <p>
+              <DspLib_FFT_DFT_Fourier_Transform_Library_For_NET6 />
+            </p>
+           
             <span className="bold">Extra: </span>
+
+
+
 
             <h2>Introduction</h2>
             <p>There is a real need for a ready to use Fourier Transform Library that users can take right out of the box and perform Fast Fourier Transforms (FFT) or Discrete Fourier Transforms (DFT) and get a classical spectrum versus frequency plot.</p>
@@ -2076,16 +2192,26 @@ The major differences between my classes and yours, is that the one-to-many rela
   <p>Both of these easy to implement features increase the raw DFT Speed by around 9 times even on a low end i7 processor.</p>
   <h3>Real and Imaginary Spectrum Parts</h3>
   <p>All FT implementations naturally produce an output data array that is the same length as the input array. The output however consists not only of complex numbers, but Real and Imaginary parts of the Spectrum itself – sometimes called negative frequencies depending on how one wants to think about it. The Imaginary part of the spectrum is just the mirror image of the Real part and does not contain any additional information about the spectrum.</p>
-           
-           
+  <h3>Zero Padding and Scaling</h3>
+  <p>Zero padding is a very useful trick that is used with FFTs and DFTs. One use is to round the length of input data up to the next power of two so that a faster FFT can be used for the transform method. For instance, if you had 1000 points of input data, you can zero pad an additional 24 points onto the data so that a 1024 point FFT can be preformed instead of a slower 1000 point DFT (nearly a 9X speed improvement on my computer).</p>
+   
+  <p>Another use for zero padding is to make the display look more like an expected spectrum display. Zero padding broadens any peak(s) by interpolating points on the display and this makes a plot look better on a display screen or a plot. Zero padding also interpolates the space between calculated points reducing amplitude error when signals are not directly at the bin centers of the FT.</p>
+
+  <p>Finally, zero padding allows a very fine look at the sidelobes and sideband suppression added by the window.</p>
+  <p>Zero padding has an influence on the resulting spectrum output amplitudes even when the signals are at the bin centers. The FT routines presented here take an initialization parameter that includes the desired zero padding number so that the proper re-scaling factors can automatically be taken into account. Since the FT routines know about the desired zero padding for scaling reasons, they add the requested amount of zeros to the input data so the user does not have to.</p>
+
+  <p>Reference [2] has more information on Zero Padding and even more uses for it.</p>
             <p>
             About 
             </p>             
             <p className="font-size: 28px;">
               <a href="https://www.codeproject.com/script/Membership/View.aspx?mid=960353" style={{ textDecoration: 'underline' }}>Steve Hageman  
               </a>
+           
             </p>
-             
+                  <p>
+                  Steve Hageman has been a confirmed &#39;Analog-Crazy&#39; since about the fifth grade. He has had the pleasure of designing op-amps, switched-mode power supplies, gigahertz-sampling oscilloscopes, Lock In Amplifiers, Radio Receivers, RF Circuits to 50 GHz and test equipment for digital wireless products. Steve knows that all designs can&#39;t be done with Rs, Ls, and Cs, so he dabbles with programming PC&#39;s and embedded systems just enough to get the job done (like for this project).
+                  </p>
             <p className="font-size: 28px;">
             Rating: 4.93/5 (69 votes) 
             </p>
