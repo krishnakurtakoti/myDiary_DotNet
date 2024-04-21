@@ -1327,20 +1327,186 @@ The major differences between my classes and yours, is that the one-to-many rela
       </div>
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+        <p className="font-size: 28px;">
+                <a href="https://github.com/codahale" style={{ textDecoration: 'underline' }}>Coda Hale codahale (github.com)</a> followed <a href="https://github.com/samuel-lucas6" style={{ textDecoration: 'underline' }}>@samuel-lucas6</a>
+        </p>
+            <p className="font-size: 28px;">
+                <a href="https://github.com/samuel-lucas6/Cryptography-Guidelines" style={{ textDecoration: 'underline' }}>Guidance on implementing cryptography as a developer by Samuel Lucas</a>
+                <i className="bi bi-calendar-date flex">12/01/2023</i>
+            </p>
+            <span className="bold">Extra: </span>
+          
+            <p><a href="https://www.kryptor.co.uk/" style={{ textDecoration: 'underline' }}>Kryptor</a>: A simple, modern, and secure encryption and signing tool.</p>
+
+            <p><a href="https://www.geralt.xyz/" style={{ textDecoration: 'underline' }}>Geralt</a>: A modern cryptographic library for .NET based on libsodium and inspired by Monocypher.</p>
+            <p><a href="https://github.com/samuel-lucas6/Cahir" style={{ textDecoration: 'underline' }}>Cahir</a>: A deterministic password manager.</p>
+            <p><a href="https://github.com/samuel-lucas6/Milva" style={{ textDecoration: 'underline' }}>Milva</a>: A simple, cross-platform command line tool for hashing files and text.</p>
+            <p><a href="https://github.com/samuel-lucas6/Vanity" style={{ textDecoration: 'underline' }}>Vanity</a>: A simple WireGuard vanity public key generator.</p>
+            <p><a href="https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-aegis-aead" style={{ textDecoration: 'underline' }}>The AEGIS Family of Authenticated Encryption Algorithms</a>: The AEGIS-128L, AEGIS-256, AEGIS-128X, and AEGIS-256X Internet-Draft.</p>
+            <p><a href="https://github.com/samuel-lucas6/draft-lucas-balloon-hashing" style={{ textDecoration: 'underline' }}>Balloon Hashing</a>: An Internet-Draft for the Balloon password hashing function.</p>
+            <p><a href="https://github.com/samuel-lucas6/draft-lucas-generalised-committing-aead" style={{ textDecoration: 'underline' }}>Encrypt-then-MAC for Committing AEAD (cAEAD)</a>: An Internet-Draft and committing ChaCha20-BLAKE2b AEAD implementation.</p>
+            <p><a href="https://github.com/samuel-lucas6/Cryptography-Guidelines" style={{ textDecoration: 'underline' }}>Cryptography Guidelines</a>: Guidance on implementing cryptography as a developer.</p>
+
+
+
+            <p dir="auto">This document outlines recommendations for cryptographic algorithm choices and parameters as well as important implementation details based on what I have learnt from reading about the subject and the consensus I have observed online. Note that <em>some</em> knowledge of cryptography is required to understand the terminology used in these guidelines.</p>
+            
+            <p dir="auto">My goal with these guidelines is to provide a resource that I wish I had access to when I first started writing programs related to cryptography. If this information helps prevent even just one vulnerability, then I consider it time well spent.</p>
+
+  
+            <div className="quote-container">
+                <p dir="auto"><strong>Note</strong></p>
+                <p className="quote" dir="auto">This document is slowly being rewritten and split into individual pages. Please view the sections folder for the latest information.</p>
+              </div>
+
+              <h3 className="f5 text-normal">Acknowledgements</h3>
+
+              <p dir="auto">These guidelines were inspired by <a href="https://gist.github.com/atoponce/07d8d4c833873be2f68c34f9afc5a78a#file-gistfile1-md"  style={{ textDecoration: 'underline' }}>this</a> Cryptographic Best Practices gist, Latacora&#39;s <a href="https://latacora.singles/2018/04/03/cryptographic-right-answers.html" rel="nofollow" style={{ textDecoration: 'underline' }}>Cryptographic Right Answers</a>, and <a href="https://github.com/SalusaSecondus/CryptoGotchas" style={{ textDecoration: 'underline' }}>Crypto Gotchas</a>, which is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" style={{ textDecoration: 'underline' }}>Creative Commons Attribution 4.0 International License</a>. The difference is that I mention newer algorithms and have tried to justify my algorithm recommendations whilst also offering important notes about using them correctly.</p>
+          
+              <h3 className="f5 text-normal">Disclaimer</h3>
+             
+
+            <p dir="auto">I am a psychology undergraduate with an interest in applied cryptography, not an experienced cryptographer. I primarily have experience with the <a href="https://doc.libsodium.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>libsodium</a> library since that&#39;s what I&#39;ve used for my projects, but I&#39;ve also reported some security vulnerabilities related to cryptography.</p>
+           
+            <p dir="auto">Most experienced cryptographers don&#39;t have the time to write things like this, and the following information is freely available online or in books, so whilst more experience would be beneficial, I&#39;m trying my best to provide accurate information that can be fact checked. <strong>If I&#39;ve made a mistake, please contact me to get it fixed</strong>.</p>
+              <p dir="auto">Note that the rankings are based on my opinion, algorithm availability in cryptographic libraries, and which algorithms are typically used in modern protocols, such as <a href="https://www.davidwong.fr/tls13/" rel="nofollow" style={{ textDecoration: 'underline' }}>TLS 1.3</a>, <a href="https://noiseprotocol.org/noise.html" rel="nofollow" style={{ textDecoration: 'underline' }}>Noise Protocol Framework</a>, <a href="https://www.wireguard.com/protocol/" rel="nofollow" style={{ textDecoration: 'underline' }}>WireGuard</a>, and so on. Such protocols and recommended practices make for the best guidelines because they have been approved by experienced professionals.</p>
+
+           
+            <h3 className="f5 text-normal">General Guidelines</h3>
+            <ol dir="auto">
+                <li>
+                <p dir="auto">Research, research, research: you often don&#39;t need to know how cryptographic algorithms work under the hood to implement them correctly, just like how you don&#39;t need to know how a car works to drive. However, you need to know enough about what you&#39;re trying to do, which requires looking up relevant information online or in books, reading the documentation for the cryptographic library you&#39;re using, reading RFC standards, reading helpful blog posts, and reading guidelines like this one. Furthermore, reading books about the subject in general will be beneficial, again like how knowing about cars can help if you break down. For a list of great resources, check out my <a href="https://samuellucas.com/blog/how-to-learn-about-cryptography.html" rel="nofollow" style={{ textDecoration: 'underline' }}>How to Learn About Cryptography</a> blog post.</p>
+                </li>
+                <li>
+                <p dir="auto">Check and check again: it&#39;s your responsibility to get things right the first time around to the best of your ability rather than relying on peer review. Therefore, I <strong>strongly</strong> recommend always reading over security sensitive code at least twice and testing it to ensure that it&#39;s operating as expected (e.g. checking the value of variables line by line using a debugger, using test vectors, etc).</p>
+                </li>
+                <li>
+                <p dir="auto">Peer review is great but often doesn&#39;t happen: unless your project is popular, you have a bug bounty program with cash rewards, or what you&#39;re developing is for an organisation, very few people, perhaps none, will look through the code to find and report vulnerabilities. Similarly, receiving funding for a code audit will probably be impossible.</p>
+                </li>
+                <li>
+                <p dir="auto"><strong>Please don&#39;t create your own custom cryptographic algorithms (e.g. a custom cipher or hash function)</strong>: this is like flying a Boeing 747 without a pilot license but worse because even experienced cryptographers design <a href="https://competitions.cr.yp.to/sha3.html" rel="nofollow" style={{ textDecoration: 'underline' }}>insecure</a> algorithms, which is why cryptographic algorithms are thoroughly analysed by a large number of cryptanalysts, usually as part of a <a href="https://competitions.cr.yp.to/index.html" rel="nofollow" style={{ textDecoration: 'underline' }}>competition</a>. By contrast, you rarely see experienced airline pilots crashing planes. The only <em>exception</em> to this rule is implementing something like Encrypt-then-MAC with secure, <strong>existing</strong> cryptographic algorithms <strong>when you know what you&#39;re doing</strong>.</p>
+                </li>
+                <li>
+                <p dir="auto"><strong>Please avoid coding existing cryptographic algorithms yourself (e.g. coding AES yourself)</strong>: cryptographic libraries provide access to these algorithms for you to prevent people from making mistakes that cause vulnerabilities and to offer good performance. Whilst a select few algorithms are relatively simple to implement, like <a href="https://datatracker.ietf.org/doc/html/rfc5869" rel="nofollow" style={{ textDecoration: 'underline' }}>HKDF</a>, <a href="https://loup-vaillant.fr/articles/implementing-elligator" rel="nofollow" style={{ textDecoration: 'underline' }}>many aren&#39;t</a> and require a great deal of experience to implement correctly. Lastly, another reason to avoid doing this is that it&#39;s not much fun since academic papers and reference implementations can be very difficult to understand.</p>
+                </li>
+            </ol>
+            <h2 className="f5 text-normal"> Cryptographic Libraries</h2>
+           
+            <p>
+              Use(In Order)
+            </p>
+            <ol dir="auto">
+              <li>
+              <p dir="auto"><a href="https://doc.libsodium.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>Libsodium</a>: a modern, extremely fast, easy-to-use, well documented, and <a href="https://www.privateinternetaccess.com/blog/libsodium-v1-0-12-and-v1-0-13-security-assessment/" rel="nofollow" style={{ textDecoration: 'underline' }}>audited</a> library that covers all common use cases, except for implementing TLS. However, it&#39;s much bigger than Monocypher, meaning it&#39;s harder to audit and not suitable for constrained environments, and requires the <a href="https://support.microsoft.com/sl-si/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0" rel="nofollow" style={{ textDecoration: 'underline' }}>Visual C++ Redistributable</a> to work on Windows.</p>
+              </li>
+              <li>
+              <p dir="auto"><a href="https://monocypher.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>Monocypher</a>: another modern, easy-to-use, well documented, and <a href="https://monocypher.org/quality-assurance/audit" rel="nofollow" style={{ textDecoration: 'underline' }}>audited</a> library, but it&#39;s about <a href="https://monocypher.org/speed" rel="nofollow" style={{ textDecoration: 'underline' }}>half</a> the speed of libsodium on desktops/servers, has no misuse resistant functions (e.g. like libsodium&#39;s <a href="https://doc.libsodium.org/secret-key_cryptography/secretstream" rel="nofollow" style={{ textDecoration: 'underline' }}>secretstream()</a> and <a href="https://doc.libsodium.org/secret-key_cryptography/secretbox" rel="nofollow" style={{ textDecoration: 'underline' }}>secretbox()</a>), only supports Argon2i for password hashing, allowing for insecure parameters (please see the <a href="#notes-6">Password Hashing/Password-Based Key Derivation Notes</a> section), and offers no memory locking, random number generation, or convenience functions (e.g. Base64/hex encoding, padding, etc). However, it&#39;s compatible with libsodium whilst being much smaller, portable, and fast for constrained environments (e.g microcontrollers).</p>
+              </li>
+              <li>
+              <p dir="auto"><a href="https://developers.google.com/tink" rel="nofollow" style={{ textDecoration: 'underline' }}>Tink</a>: a misuse resistant library that prevents common pitfalls, like nonce reuse. However, it doesn&#39;t support hashing or password hashing, it&#39;s not available in as many programming languages as libsodium and Monocypher, the documentation is a bit harder to navigate, and it provides access to some algorithms that you shouldn&#39;t use.</p>
+              </li>
+              <li>
+              <p dir="auto"><a href="https://libhydrogen.org" rel="nofollow" style={{ textDecoration: 'underline' }}>LibHydrogen</a>: a lightweight, easy-to-use, hard-to-misuse, and well documented library suitable for constrained environments. The downsides are that it&#39;s not compatible with libsodium whilst also running <a href="https://monocypher.org/speed" rel="nofollow" style={{ textDecoration: 'underline' }}>slower</a> than Monocypher. However, it has some advantages over Monocypher, like support for random number generation, even on Arduino boards, and easy access to key exchange patterns, among other things.</p>
+              </li>
+              </ol>
+
+              <p>
+                Avoid(In Order)
+              </p>
+              <ol dir="auto">
+                  <li>
+                  <p dir="auto">A random library (e.g. with 0 stars) on GitHub: assuming it&#39;s not been written by an experienced professional and it&#39;s not a libsodium or Monocypher <a href="https://github.com/ektrah/nsec" style={{ textDecoration: 'underline' }}>binding</a> to another programming language, you should generally stay away from less popular, unaudited libraries. They are much more likely to suffer from vulnerabilities and be significantly slower than the more popular, audited libraries. Also, note that even <a href="https://www.daemonology.net/blog/2011-01-18-tarsnap-critical-security-bug.html" rel="nofollow" style={{ textDecoration: 'underline' }}>experienced professionals make mistakes</a>.</p>
+                  </li>
+                  <li>
+                  <p dir="auto"><a href="https://www.openssl.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>OpenSSL</a>: very <a href="https://blog.trailofbits.com/2020/05/29/detecting-bad-openssl-usage/" rel="nofollow" style={{ textDecoration: 'underline' }}>difficult</a> to use, let alone use correctly, offers access to algorithms and functions that you shouldn&#39;t use, the <a href="https://www.openssl.org/docs/" rel="nofollow" style={{ textDecoration: 'underline' }}>documentation</a> is a mess, and lots of <a href="https://www.openssl.org/news/vulnerabilities.html" rel="nofollow" style={{ textDecoration: 'underline' }}>vulnerabilities</a> have been found over the years. These issues have led to OpenSSL <a href="https://www.libressl.org/index.html" rel="nofollow" style={{ textDecoration: 'underline' }}>forks</a> and new, non-forked <a href="https://bearssl.org/goals.html" rel="nofollow" style={{ textDecoration: 'underline' }}>libraries</a> that aim to be better alternatives if you need to implement TLS.</p>
+                  </li>
+                  <li>
+                  <p dir="auto">The library available in your <a href="https://docs.microsoft.com/en-us/dotnet/api/system.security.cryptography?view=net-6.0" rel="nofollow" style={{ textDecoration: 'underline' }}>programming language</a>: most languages provide access to old algorithms (e.g. MD5 and SHA1) that shouldn&#39;t be used anymore instead of newer ones (e.g. BLAKE2, BLAKE3, and SHA3), which can lead to poor algorithm choices. Furthermore, the APIs are typically easy to misuse, the documentation may fail to mention important security related information, and the implementations will be slower than libsodium. However, certain languages, such as <a href="https://golang.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>Go</a> and <a href="https://ziglang.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>Zig</a> have impressive modern cryptography support.</p>
+                  </li>
+                  <li>
+                  <p dir="auto">Other popular libraries I haven&#39;t mentioned (e.g. <a href="https://bouncycastle.org/" rel="nofollow" style={{ textDecoration: 'underline' }}>BouncyCastle</a>, <a href="https://cryptojs.gitbook.io/docs/" rel="nofollow" style={{ textDecoration: 'underline' }}>CryptoJS</a>, etc): these again often provide or rely on dated algorithms and typically have bad documentation. For instance, CryptoJS uses an <a href="https://www.npmjs.com/package/evp_bytestokey" rel="nofollow" style={{ textDecoration: 'underline' }}>insecure</a> KDF called <a href="https://www.openssl.org/docs/man1.1.1/man3/EVP_BytesToKey.html" rel="nofollow" style={{ textDecoration: 'underline' }}>EVP_BytesToKey()</a> in OpenSSL when you pass a string password to <a href="https://cryptojs.gitbook.io/docs/#ciphers" rel="nofollow" style={{ textDecoration: 'underline' }}>AES.encrypt()</a>, and BouncyCastle has no C# documentation. However, this recommendation is too broad really since there are <em>some</em> libraries that I haven&#39;t mentioned that are worth using, like <a href="https://github.com/paragonie/paseto" style={{ textDecoration: 'underline' }}>PASETO</a>. Therefore, as a rule of thumb, <strong>if it doesn&#39;t include several of the algorithms I recommend in this document, then it&#39;s probably bad</strong>. Just do your research and assess the quality of the documentation. There&#39;s no excuse for poor documentation.</p>
+                  </li>
+                  <li>
+                  <p dir="auto"><a href="https://nacl.cr.yp.to/" rel="nofollow" style={{ textDecoration: 'underline' }}>NaCl</a>: an unmaintained, less modern, and more confusing version of libsodium and Monocypher. For example, <a href="https://nacl.cr.yp.to/sign.html" rel="nofollow" style={{ textDecoration: 'underline' }}>crypto_sign()</a> for digital signatures has been <a href="https://nacl.cr.yp.to/sign.html" rel="nofollow" style={{ textDecoration: 'underline' }}>experimental</a> for several years. It also doesn&#39;t have password hashing support and is <a href="https://monocypher.org/why" rel="nofollow" style={{ textDecoration: 'underline' }}>difficult to install/package</a>.</p>
+                  </li>
+                  <li>
+                  <p dir="auto"><a href="https://tweetnacl.cr.yp.to/" rel="nofollow" style={{ textDecoration: 'underline' }}>TweetNaCl</a>: unmaintained, <a href="https://monocypher.org/speed" rel="nofollow" style={{ textDecoration: 'underline' }}>slower</a> than Monocypher, doesn&#39;t offer access to newer algorithms, doesn&#39;t have password hashing, and <a href="https://monocypher.org/why" rel="nofollow" style={{ textDecoration: 'underline' }}>does not zero out buffers</a>.</p>
+                  </li>
+              </ol>
+              <p>
+                Notes
+              </p>
+              <ol dir="auto">
+                <li>
+                <p dir="auto">If the library you&#39;re currently using/planning to use doesn&#39;t support several of the algorithms I&#39;m recommending, then it&#39;s time to upgrade and take advantage of the improved security and performance benefits available to you if you switch.</p>
+                </li>
+                <li>
+                <p dir="auto">Please read the documentation: don&#39;t immediately jump into coding something because that&#39;s how mistakes are made. Good libraries have high quality documentation that will explain potential security pitfalls and how to avoid them.</p>
+                </li>
+                <li>
+                <p dir="auto">Some libraries release unauthenticated plaintext when using AEADs: for example, OpenSSL and BouncyCastle <a href="https://github.com/SalusaSecondus/CryptoGotchas">apparently do</a>. Firstly, don&#39;t use these libraries for this reason and the reasons I&#39;ve already listed. Secondly, <strong>never do anything with unauthenticated plaintext; ignore it to be safe</strong>.</p>
+                </li>
+                <li>
+                <p dir="auto">Older doesn&#39;t mean better: you can argue that older algorithms are more battle tested and therefore proven to be a safe choice, but the reality is that most modern algorithms, like ChaCha20, BLAKE2, and Argon2, have been properly analysed at this point and shown to offer security and performance benefits over their older counterparts. Therefore, it doesn&#39;t make sense to stick to this overly cautious mindset of avoiding newer algorithms, except for algorithms that are still candidates in a <a href="https://csrc.nist.gov/projects/post-quantum-cryptography" rel="nofollow">competition</a> (e.g. new post-quantum algorithms), which do need further analysis to be considered safe.</p>
+                </li>
+                <li>
+                <p dir="auto">You should prioritise speed: this can make a noticeable difference for the user. For example, a C# Argon2 library is going to be significantly slower than Argon2 in libsodium, meaning unnecessary and unwanted extra delay during key derivation. Libsodium is the go-to for speed on desktops/servers, and Monocypher is the go-to for constrained environments (e.g. microcontrollers).</p>
+                </li>
+                </ol>
+            <p className="font-size: 28px;">
+            Stars: 395
+            </p>
+          
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Cryptography-Guidelines" />
+        </div>
+      </div>
 
 
 
 
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+            <div className="quote-container">
+                <p dir="auto"><strong>Reference from this Article:</strong></p>    <p><a href="https://github.com/samuel-lucas6/Cryptography-Guidelines" style={{ textDecoration: 'underline' }}>Cryptography Guidelines</a>: Guidance on implementing cryptography as a developer.</p>
+               <p className="quote" dir="auto">These guidelines were inspired by <a href="https://gist.github.com/atoponce/07d8d4c833873be2f68c34f9afc5a78a#file-gistfile1-md"  style={{ textDecoration: 'underline' }}>this</a> Cryptographic Best Practices gist, Latacora&#39;s <a href="https://latacora.singles/2018/04/03/cryptographic-right-answers.html" rel="nofollow" style={{ textDecoration: 'underline' }}>Cryptographic Right Answers</a>, and <a href="https://github.com/SalusaSecondus/CryptoGotchas" style={{ textDecoration: 'underline' }}>Crypto Gotchas</a>, which is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/" rel="nofollow" style={{ textDecoration: 'underline' }}>Creative Commons Attribution 4.0 International License</a>. The difference is that I mention newer algorithms and have tried to justify my algorithm recommendations whilst also offering important notes about using them correctly.</p>
+              
+              </div>
+
+
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">
+            Stars: 685
+            </p>
+            <p className="font-size: 28px;">
+            Author of Blog: 
+            <a href="https://gist.github.com/atoponce/07d8d4c833873be2f68c34f9afc5a78a#file-gistfile1-md" style={{ textDecoration: 'underline' }}>Aaron Toponce
+              </a>
+            </p>
+            <h1 className="page-header-title">Cryptographic Best Practices</h1>
+
+            
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Cryptographic Best Practices" />
+        </div>
+      </div>
 
 
 
 
-
-
-
-
+    
 
 
 
