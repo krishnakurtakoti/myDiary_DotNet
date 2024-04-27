@@ -24,6 +24,12 @@ import { MikaelGRAComputerInfoComponent2 } from "./MikaelGRAComputerInfoComponen
 import { PKHuongNapaFFT3_1 } from "./PKHuongNapaFFT3_1";
 import DspLib_FFT_DFT_Fourier_Transform_Library_For_NET6 from "./DspLib_FFT_DFT_Fourier_Transform_Library_For_NET6";
 import ThisisparkerHigginsPublicDomians from "./ThisisparkerHigginsPublicDomians";
+import { AlexanderMorgan_minbpe_speedups_ipynb1 } from "./AlexanderMorgan_minbpe_speedups_ipynb1";
+import { AlexanderMorgan_minbpe_speedups_ipynb2 } from "./AlexanderMorgan_minbpe_speedups_ipynb2";
+import { AlexanderMorgan_minbpe_speedups_ipynb3 } from "./AlexanderMorgan_minbpe_speedups_ipynb3";
+import { AlexanderMorgan_minbpe_speedups_ipynb5 } from "./AlexanderMorgan_minbpe_speedups_ipynb5";
+import { AlexanderMorgan_minbpe_speedups_ipynb6 } from "./AlexanderMorgan_minbpe_speedups_ipynb6";
+import { AlexanderMorgan_minbpe_speedups_ipynb4 } from "./AlexanderMorgan_minbpe_speedups_ipynb4";
 
 export default function Home() {
   return (
@@ -1854,6 +1860,149 @@ The major differences between my classes and yours, is that the one-to-many rela
       </div>
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+        <p className="font-size: 28px;">
+                <a href="https://lilianweng.github.io/" style={{ textDecoration: 'underline' }}> Welcome to Lil&#39;Log</a>          
+                <a href="https://github.com/lilianweng" style={{ textDecoration: 'underline' }}> GitHub Link</a>  
+            </p>
+
+              <p>
+              Hi, this is Lilian. I&#39;m documenting my learning notes in this blog. Besides, I&#39;m leading a team working on practical AI safety and alignment at OpenAI. Based on the number of grammar mistakes in my posts, you can tell how much ChatGPT is involved 😉.
+              </p>
+
+              <p className="font-size: 28px;">
+                Author of Blog: 
+                <a href="https://github.com/lilianweng" style={{ textDecoration: 'underline' }}>Lilian
+                  </a>
+                  <p className="font-size: 28px;">
+                    Followers on GitHub: 7k
+                  </p>
+              </p>
+            <h1 className="page-header-title">Other Blog Posts by the Author</h1>
+
+            <span className="bold">Extra: </span>
+              <p>
+                    <ul>
+                    <li>
+                        <p>
+                        <span className="article-post">4.  </span>  <a href="https://lilianweng.github.io/posts/2022-09-08-ntk/"  style={{ textDecoration: 'underline' }}>Some Math behind Neural Tangent Kernel</a>    
+                        <i className="bi bi-calendar-date flex">8/09/2022</i>  
+                        </p>
+                        <p>
+                        Neural networks are well known to be over-parameterized and can often easily fit data with near-zero training loss with decent generalization performance on test dataset. Although all these parameters are initialized at random, the optimization process can consistently lead to similarly good outcomes. And this is true even when the number of model parameters exceeds the number of training data points.
+                        </p>
+                      </li>
+                      <li><p>
+                      <span className="article-post">3.  </span>  <a href="https://lilianweng.github.io/posts/2017-10-15-word-embedding/"  style={{ textDecoration: 'underline' }}>Learning Word Embedding</a>
+                      <i className="bi bi-calendar-date flex">15/10/2017</i>
+                      </p>
+
+                      </li>
+                      <li>
+                        <p>
+                        <span className="article-post">2.  </span>  <a href="https://lilianweng.github.io/posts/2017-07-22-stock-rnn-part-2/"  style={{ textDecoration: 'underline' }}>Predict Stock Prices Using RNN: Part 2</a> 
+                        <i className="bi bi-calendar-date flex">22/07/2017</i>        
+                        </p>
+                          <p>
+                          Link to GitHub: <a href="https://github.com/lilianweng/stock-rnn" style={{ textDecoration: 'underline' }}> lilianweng/stock-rnn</a> 
+
+                          </p>
+                          <p className="font-size: 28px;">
+                          Stars: 1.7k 
+                        </p>
+                        <p><strong>Predict stock market prices using RNN</strong></p>
+                      </li>
+                      <p>
+                      <span className="article-post">1.  </span>     <a href="https://lilianweng.github.io/posts/2017-07-08-stock-rnn-part-1/"  style={{ textDecoration: 'underline' }}>Predict Stock Prices Using RNN: Part 1</a>      
+                      <i className="bi bi-calendar-date flex">8/07/2017</i>   
+                      </p>
+                      <p>This is a tutorial for how to build a recurrent neural network using Tensorflow to predict stock market prices. The full working code is available in <a href="https://github.com/lilianweng/stock-rnn" style={{ textDecoration: 'underline' }}>github.com/lilianweng/stock-rnn</a>. If you don’t know what is recurrent neural network or LSTM cell, feel free to check <a href="https://lilianweng.github.io/posts/2017-06-21-overview/#recurrent-neural-network" style={{ textDecoration: 'underline' }}>my previous post</a>.</p>
+                      <blockquote>
+                      <p><em>One thing I would like to emphasize that because my motivation for writing this post is more on demonstrating how to build and train an RNN model in Tensorflow and less on solve the stock prediction problem, I didn’t try hard on improving the prediction outcomes. You are more than welcome to take my <a href="https://github.com/lilianweng/stock-rnn" style={{ textDecoration: 'underline' }}>code</a> as a reference point and add more stock prediction related ideas to improve it. Enjoy!</em></p>
+                      </blockquote>
+
+                      <li>
+
+                      </li>
+ 
+                    </ul>
+              </p>
+
+              <p><strong>Predict stock market prices using RNN</strong></p>
+
+              <p dir="auto">One thing I would like to emphasize that because my motivation is more on demonstrating how to build and train an RNN model in Tensorflow and less on solve the stock prediction problem, I didn&#39;t try too hard on improving the prediction outcomes. You are more than welcome to take this repo as a reference point and add more stock prediction related ideas to improve it. Enjoy.</p>
+
+              <p dir="auto">Check my blog post &#34;Predict Stock Prices Using RNN&#34;: <a href="https://lilianweng.github.io/lil-log/2017/07/08/predict-stock-prices-using-RNN-part-1.html" rel="nofollow" style={{ textDecoration: 'underline' }}>Part 1</a> and <a href="https://lilianweng.github.io/lil-log/2017/07/22/predict-stock-prices-using-RNN-part-2.html" rel="nofollow" style={{ textDecoration: 'underline' }}>Part 2</a> for the tutorial associated.</p>
+                <p>
+                    <ol dir="auto">
+                     
+                       <li> <p>
+                        <span className="article-post">1.  </span> 
+                        Make sure <code>tensorflow</code> has been installed.
+                          </p>
+                        </li>
+
+
+                        <li>
+                            <p>
+                            <span className="article-post">2.  </span>   First download the full S&amp;P 500 data from <a href="https://finance.yahoo.com/quote/%5EGSPC?p=%5EGSPC" rel="nofollow" style={{ textDecoration: 'underline' }}>Yahoo! Finance ^GSPC</a> (click the &#34;Historical Data&#34; tab and select the max time period). And save the .csv file to <code>data/SP500.csv</code>.
+                            </p>
+                          </li>
+
+                        
+                     
+                        
+                   
+                       
+                     
+                           <li>
+                           <p>
+                            <span className="article-post">3.  </span>  
+                          Run <code>python data_fetcher.py</code> to download the prices of individual stocks in S &amp; P 500, each saved to <code>data/&#123; &#123; stock_abbreviation.csv &#125; &#125;</code>.
+                          (NOTE: Google Finance API returns the prices for 4000 days maximum. If you are curious about the data in even early times, try modify <code>data_fetcher.py</code> code to send multiple queries for one stock. Here is the data archive (<a href="https://drive.google.com/open?id=1QKVkiwgCNJsdQMEsfoi6KpqoPgc4O6DD" rel="nofollow" style={{ textDecoration: 'underline' }}>stock-data-lilianweng.tar.gz</a>) of stock prices I crawled up to Jul, 2017. Please untar this file to replace the &#34;data&#34; folder in the repo for test runs.)
+                          </p>
+                        </li>
+                     
+                      
+                       <li>
+                       <p>
+                        <span className="article-post">4.  </span>Run <code>python main.py --help</code> to check the available command line args.
+                        </p>
+
+                        </li>
+                     
+                   
+                        
+                      <li>
+                        <p>
+                        <span className="article-post">5.  </span>  
+                          Run <code>python main.py</code> to train the model.
+                          </p>                     
+                      </li>
+                      
+
+                    </ol>
+                </p>
+                <p dir="auto">For examples,</p>
+                <p>
+                  <ul dir="auto">
+                              <li>Train a model only on SP500.csv; no embedding</li>
+                  </ul>
+                  
+                </p>
+                <p>
+                  python main.py --stock_symbol=SP500 --train --input_size=1 --lstm_size=128 --max_epoch=50
+                </p>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Predict stock market prices using RNN model with multilayer LSTM cells + optional multi-stock embeddings." />
+        </div>
+      </div>
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
@@ -1948,6 +2097,323 @@ The major differences between my classes and yours, is that the one-to-many rela
         </div>
       </div>
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+        <p className="font-size: 28px;">
+                <a href="https://github.com/osanseviero" style={{ textDecoration: 'underline' }}>osanseviero</a> followed <a href="https://github.com/FL33TW00D" style={{ textDecoration: 'underline' }}>Christopher Fleetwood</a>              
+                <i className="bi bi-calendar-date flex">10/07/2021</i>
+            </p>
+
+            <p className="text-gray-800">I am a Machine Learning Engineer at <a href="https://www.huggingface.co" className="font-semibold underline hover:text-red-700" style={{ textDecoration: 'underline' }}>HuggingFace</a> in London, UK.</p>
+
+                <p>
+                  <a className="text-black text-lg font-medium hover:text-red-700 hover:no-underline" href="https://fleetwood.dev/posts/fmri-timeseries-similarity" style={{ textDecoration: 'underline' }}>An exploration of fMRI timeseries similarity metrics</a>
+                </p>
+           
+
+                  <p>In order to perform classification on a functional brain scan it first undergoes many preprocessing steps. One of these steps is the transformation from the timeseries output of the fMRI scan, transforming a 
+                                                𝑚 ×
+                                                𝑛
+                                                m×n (where 
+                                                𝑚
+                                                m is the number of timepoints recorded and 
+                                                𝑛
+                                                n is the number of brain regions used) to an 
+                                                𝑛
+                                                ×
+                                                𝑛
+                                                n×n matrix of similiarity values (called a connectome). This similarity value is a measure of the neural synchronization between the 2 regions.
+                </p>
+
+
+                <p>
+                  So how do we quantify the similarity of 2 different timeseries? This blog post will
+                  explore the common ways of quantifying time series similarity in a neuroscientific
+                  setting. Before we get into the actual methods used to calculate time series similarity,
+                  we need to cover the corner stone of almost all of the methods we are about to
+                  explore - covariance.
+                </p>
+
+    <h2>Covariance</h2>
+
+                  <p>
+                    <strong>Covariance</strong> is simply a measure of how two random variables change together.
+                    Below is the formula for calculating covariance:
+                  </p>
+                  <p>
+                    
+                  Σ=E[(X−E[X])(X−E[X]) 
+                  T
+                  ]
+                  </p>
+
+                <p>
+                      In the case of fMRI, we have a multivariate random variable, allowing us to use
+                      Maximum Likelihood Estimation to estimate the covariance matrix. Below is a toy
+                      example of our estimated covariance matrix.
+                    </p>
+              <img src="../public/Fleetwood_fmri_timeseries_covariance_matrix-Screenshot 2024-04-26 205835.png">
+              </img>
+
+       
+            <p>
+
+                <ul>
+                  <li><p>
+                  <span className="article-post">1.  </span>   Covariance is bound between 
+                      −
+                      ∞
+                      −∞ and 
+                      ∞
+                      ∞ making it less suitable for downstream classifiers.
+                  </p>
+                
+                  </li>
+                  <li>
+                    <p>
+                    <span className="article-post">2.  </span>             Covariance coefficients are not standardized and cannot be used to quantify the
+                    strength of the relationship.
+                    </p>
+
+                  </li>
+                  <p>
+                  <span className="article-post">3.  </span>            Symmetric Positive semi-definite (SPD) matricies do not naturally form a Euclidean space (this will be
+                    important later).
+                  </p>
+                  <li>
+
+                  </li>
+                  <li>
+                    <p>
+                    <span className="article-post">4.  </span>           When the number of features is large relative to the number of observations,
+                    the sample/empirical covariance matrix has excessive estimation error.
+                    </p>
+          
+                  </li>
+                </ul>
+            </p>
+
+    <p>
+      Many of the following approaches will aim to address some or all of the above
+      drawbacks with empirical covariance.
+    </p>
+
+
+    <p>
+      To address the excessive estimation error, it is common to perform a
+      transformation to the covariance coefficients, known as <strong>&#34;shrinkage&#34;</strong>. In
+      their seminal paper, &#34;Honey, I shrunk the Sample Covariance Matrix&#34; [<a href="http://www.ledoit.net/honey.pdf" target="_blank" rel="nofollow noopener noreferrer" style={{ textDecoration: 'underline' }}>1</a>], Ledoit &amp; Wolf
+      proposed using shrinkage to regularize the sample covariance matrix.
+      &#34;Shrinkage&#34; as the name implies, pulls the most extreme covariance coefficients
+      towards more central values. This not only resolves our excessive estimation
+      error, it can also make the matrix easily invertable by encouraging numerical
+      stability. (The interested reader should consult the scikit-learn docs
+      [<a href="https://scikit-learn.org/stable/auto_examples/covariance/plot_covariance_estimation.html" target="_blank" rel="nofollow noopener noreferrer" style={{ textDecoration: 'underline' }}>2</a>] )
+    </p>
+
+    <p>
+      Now that we have a well conditioned covariance matrix, we can attempt to address
+      some of the other identified drawbacks.
+    </p>
+
+    <h2>Canonical Approaches</h2>
+      <p>
+      Pearson&#39;s correlation coefficient (Pearson&#39;s 
+      𝑅
+      R) or simply correlation, is the most commonly used method to quantify similarity between 2 fMRI timeseries. Correlation is a linear metric computed from the covariance of the 2 timeseries. Below is the mathematical formula to compute correlation for a pair of random variables:
+      </p>
+
+
+      <p>
+      Correlation is widely used in neuroscience as it has long statistical history
+      and is bound between -1 and 1. However, correlation does have some disadvantages.
+      The below figure should demonstrate one clearly:
+    </p>
+
+    <p>
+      <img src="https://fleetwood.dev/corr.gif" alt="Correlation Decay" title="Correlation Decay"></img>
+    </p>
+
+    <p>
+      Due to correlations linear nature, the same timeseries being slightly out of
+      phase causes a huge decrease in the correlation value. Additionally, correlation
+      provides no distinction between whether 2 regions are directly
+      connected or indirectly connected via another region. To account for this, we
+      can use partial correlation!
+    </p>
+    <p>
+      <strong>Partial correlation</strong> is a variant of PCC that attempts to address
+      distinguishing between direct and indirect connections. This is done by
+      computing correlation between regions after regressing all other timeseries.
+      Partial correlation is computed from the inverse of the covariance matrix
+      (this is where the shrinkage comes in handy), also known as the precision matrix.
+      Below is the mathematical formula for computing partial correlation for a pair
+      of random variables:
+    </p>
+            <span className="bold">Extra: </span>
+
+            <p className="font-size: 28px;">
+            Author of Blog: 
+            <a href="https://fleetwood.dev/" style={{ textDecoration: 'underline' }}>Chris
+              </a>
+            </p>
+            <h1 className="page-header-title">Other Blog Posts by the Author</h1>
+
+            
+            <p>
+
+<ul>
+  <li><p>
+  <span className="article-post">1.  </span>  <a href="https://fleetwood.dev/posts/layernorm-as-fast-as-possibley"  style={{ textDecoration: 'underline' }}>Layer Normalization as fast as possible.</a>  Details: One pass algorithm, Two-pass algorithm, Welford&#39;s algorithm, and Implementing Welford&#39;s Algorithm
+  <i className="bi bi-calendar-date flex">11/12/2023</i>
+  </p>
+
+  </li>
+  <li>
+    <p>
+    <span className="article-post">2.  </span>  <a href="https://fleetwood.dev/posts/running-llms-in-the-browser"  style={{ textDecoration: 'underline' }}>Running LLMs with Browser in Rust</a> 
+    <i className="bi bi-calendar-date flex">26/04/2023</i>        
+    </p>
+
+  </li>
+  <p>
+  <span className="article-post">3.  </span>     <a href="https://fleetwood.dev/posts/steelix"  style={{ textDecoration: 'underline' }}> Rust based ML model analyzer</a>      
+  <i className="bi bi-calendar-date flex">18/10/2022</i>   
+  </p>
+  <li>
+
+  </li>
+  <li>
+    <p>
+    <span className="article-post">4.  </span>  <a href="https://fleetwood.dev/posts/fmri-timeseries-similarity"  style={{ textDecoration: 'underline' }}>An exploration of fMRI timeseries similarity metrics</a>    
+    <i className="bi bi-calendar-date flex">10/07/2021</i>  
+    </p>
+
+  </li>
+</ul>
+</p>
+
+
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Cryptographic Best Practices" />
+        </div>
+      </div>
+
+
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+            <div className="quote-container">
+               <blockquote className="twitter-tweet"><p lang="en" dir="ltr">Hey <a href="https://twitter.com/karpathy?ref_src=twsrc%5Etfw" style={{ textDecoration: 'underline' }}>@karpathy</a> I tinkered with minbpe until I got the tokenization process to run 10x faster, still in python. Safely merging multiple token pairs simultaneously was the most interesting find. Here&#39;s the notebook: <a href="https://t.co/MkTecNoWNP" style={{ textDecoration: 'underline' }}>https://t.co/MkTecNoWNP</a></p>&mdash; Alexander Morgan (@lexandermorgan) <a href="https://twitter.com/lexandermorgan/status/1778793836929495098?ref_src=twsrc%5Etfw" style={{ textDecoration: 'underline' }}>April 12, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script>
+              </div>
+
+            <span className="bold">Extra: </span>
+            <h2>MinBPE Speedups</h2>
+            <h3>Updates</h3>
+            <p>This notebook started with a 5X speed improvement, then 10X, and now is at 25X+. If you&#34;re returning to this notebook after some time, be sure to read through to the end.</p>
+            <p><strong>Optimization Exploration of Andrej Karpathy&#39;s Tokenization Tutorial</strong></p>
+            <p>One way of actively engaging with new concepts presented in code, is to try to optimize that code. <a href="https://www.youtube.com/watch?v=zduSFxRajkE" target="_blank" rel="nofollow" aria-label="Andrej's video tutorial on tokenization Link will open in a new tab" style={{ textDecoration: 'underline' }}>Andrej&#39;s video tutorial on tokenization</a> was focused on code clarity since his objective was to demonstrate the ideas and processes of tokenization. If you haven&#39;t watched that video and worked through the <a href="https://colab.research.google.com/drive/1y0KnCFZvGVf_odSfcNAws6kcDD7HsI0L?usp=sharing#scrollTo=YfOyfLVYOhvm" target="_blank" rel="nofollow" aria-label="notebook Link will open in a new tab" style={{ textDecoration: 'underline' }}>notebook</a>, definitely do that first. This notebook shares the best speed-ups I found and the things I learned about tokenization along the way.</p>
+           <p><strong>Algorithmic Complexity of Tokenization</strong></p>
+            <p>Every time we add a new token to our vocabulary, we make a slightly edited copy of the whole list of tokens. Very roughly speaking the complexity of tokenization is equal to:</p>
+
+            <p>Tokens×Vocabulary</p>
+           
+  
+           <p>
+           If we want to get picky, each time we go through the process it does slightly lower the length of the list of tokens. And the &#34;vocabulary&#34; here is just the additions to the vocabulary beyond the 256 initial tokens. But GPT4 used about 100,000 tokens, so almost all of them were additions. Tokens×Vocabulary is a lot work to do, so let&#39;s get to work speeding it up.
+           </p>
+
+           <p><strong>Ground Rules</strong></p>
+
+            <p>
+            All the timings referenced were measured in a very simple manner using <span className="angle-braces">timeit</span> in Python 3.10.11 on an m1 macbook air. In each case I leave Andrej&#39;s methods the same except I remove any print statements. Alternatives to his methods always have the same name, but with 2 or 3 added on.
+            </p>
+
+            <p>
+            The cost/benefits of these tweaks will depend on your number of tokens and vocabulary size and I only tested them out on the two texts Andrej provided in his notebook. The shorter of these is provided below to so you can test out these functions (the longer one causes pagination issues in colab so I&#39;m not including it). I&#39;ll always refer to speed improvements as a percentage reduction in runtime as in, going from 10 seconds to 8 seconds is a 20% reduction in runtime. In all cases, the end result is the same.
+            </p>
+            <p>
+            <AlexanderMorgan_minbpe_speedups_ipynb1 />
+            </p>
+
+
+        <p>
+          <strong>Optimize get_stats() and merge():</strong>
+        </p>
+      <p>get_stats() vs collections.Counter vs collections.defaultdict</p>
+
+      <p>
+      The <span className="angle-braces">get_stats</span> function turns a list of tokens into a dictionary mapping consecutive pairs of tokens to the number of times that consecutive pair appears in the whole list. Since the &#34;counter&#34; dictionary refers to itself when incrementing its values in the for loop, <span className="angle-braces">get_stats</span> can&#39;t be written as a dictionary comprehension. <span className="angle-braces">get_stats</span> is a very clear &#34;show your work&#34; version of what Python&#39;s <span className="angle-braces">collections.Counter</span> does. You can also imagine doing this using a defaultdict, giving us three potential implementations:
+      </p>
+
+      <p>
+        <AlexanderMorgan_minbpe_speedups_ipynb2 />
+      </p>
+
+
+      <p>
+      Comparing the runtimes of the three implementations above, collections.Counter (get_stats2) wins with a ~50% reduction in runtime compared to get_stats when testing on Andrej&#34;s longer sample text. Not bad! It depends on the length and distribution of the token list, but it seems reliably faster on non-trivial token list sizes. The accepted answer to this <a href="https://stackoverflow.com/questions/41594940/why-is-collections-counter-so-slow" style={{ textDecoration: 'underline' }}>stack overflow question</a> explains the cost/benefit of collections.Counter pretty well. The defaultdict implementation in get_stats3 is actually slightly slower on Andrej&#39;s short demo text, but provides a ~25% reduction in runtime on the longer text.
+      </p>
+
+      <p>
+          <strong>  merge() vs List Comprehension</strong>
+        </p>
+
+      <p>
+      The <span className="angle-braces">merge</span> function takes a list of tokens, a target pair of tokens, and a new token to replace the target pair with. It returns a new list tokens which is a slightly modified copy of the original. Keeping the relative simplicity of the function in mind will help to optimize it. Here is the original implementation:
+      </p>
+          <p>
+          <AlexanderMorgan_minbpe_speedups_ipynb3 />
+          </p>
+
+      <p>
+      Since we&#39;re just copying a list plus a tiny amount of logic, the structure of the loop is an uncommonly large proportion of the runtime. The loop condition while i &lt; len(ids) will run once for every token in the ids list. We always need to do the comparison, but we don&#39;t need all those calls to python&#39;s len function. So if we move that out of the loop we only have 1 call to len instead of 1 for each token. Calling that variable stop the first few lines look like this:
+      </p>
+      <p>
+      <AlexanderMorgan_minbpe_speedups_ipynb4 />
+      </p>
+
+      <p>
+      Then the first thing we see in the loop is another call to len, this time with - 1 tagged on, and another comparison of that length to i. We can omit all that if we make this the condition at the top of the while loop. Adapting our stop variable we now have:
+      </p>
+<p>
+<AlexanderMorgan_minbpe_speedups_ipynb5 />
+</p>
+      <p>
+      That eliminates a ton of work but it does fail to consider the last token in the ids list. We can&#39;t just add the last one by default, because the last two tokens might have gotten merged. But if the last pair resulted in a merge, then i should go from being 1 less than stop to 1 more than stop since we iterate by 2 in that case. So we can add the last token if i == stop once we&#39;re outside of the loop. It might seem a little awkward to have to handle the last token as a special case, but the way you enter and exit a loop often requires special attention, so this is pretty normal. The payoff is great as merge2 brings a ~50% reduction in runtime compared to merge. Here is the full function:
+      </p>
+
+      <p>
+<AlexanderMorgan_minbpe_speedups_ipynb6 />
+</p>
+      <p>
+      What&#39;s even left in the loop? We just have the logic (which we absolutely need), some .append calls, and some iteration. If we could somehow put this in a list comprehension, we could avoid all the .append calls and allocate the memory needed for the list more efficiently. Since we iterate by different amounts based on our condition, this comprehension is hard to write. But it&#39;s possible thanks to the <a href="https://realpython.com/python-walrus-operator/"  style={{ textDecoration: 'underline' }}>walrus operator</a> and <a href="https://peps.python.org/pep-0572/"  style={{ textDecoration: 'underline' }}>assignment expressions</a> which were added in python 3.8. To make this work, I save the result of the last condition outside of the list comprehension to the skip variable. skip is always False unless the condition was met. If skip is True, it means the previous pair was replaced by the new token (idx), so we just skip this iteration in the loop, but we have to sneak in another walrus operator so that skip will be False again at the next iteration in the loop. This is probably not the kind of thing the <a href="https://realpython.com/python-walrus-operator/">walrus operator</a> was intended for, but merge3 provides a ~65% reduction in runtime.
+      </p>
+
+            <p className="font-size: 28px;">
+            Author of Blog: 
+            <a href="https://twitter.com/lexandermorgan" style={{ textDecoration: 'underline' }}>Alexander Morgan
+              </a>
+            </p>
+            <h1 className="page-header-title">@karpathy, I tinkered with minbpe until I got the tokenization process to run 10x faster, still in python.</h1>
+
+            
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Optimization Exploration of Andrej Karpathy's Tokenization Tutorial" />
+        </div>
+      </div>
+ 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
             <p className="font-size: 28px;">
