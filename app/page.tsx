@@ -30,6 +30,12 @@ import { AlexanderMorgan_minbpe_speedups_ipynb3 } from "./AlexanderMorgan_minbpe
 import { AlexanderMorgan_minbpe_speedups_ipynb5 } from "./AlexanderMorgan_minbpe_speedups_ipynb5";
 import { AlexanderMorgan_minbpe_speedups_ipynb6 } from "./AlexanderMorgan_minbpe_speedups_ipynb6";
 import { AlexanderMorgan_minbpe_speedups_ipynb4 } from "./AlexanderMorgan_minbpe_speedups_ipynb4";
+import { MuellerzBlogWeek1ComputationalLinearAlgebra1 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra1";
+import { MuellerzBlogWeek1ComputationalLinearAlgebra2 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra2";
+import { MuellerzBlogWeek1ComputationalLinearAlgebra3 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra3";
+import { MuellerzBlogWeek1ComputationalLinearAlgebra4 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra4";
+import { MuellerzBlogWeek1ComputationalLinearAlgebra5 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra5";
+import { MuellerzBlogWeek1ComputationalLinearAlgebra6 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra6";
 
 export default function Home() {
   return (
@@ -2305,7 +2311,189 @@ The major differences between my classes and yours, is that the one-to-many rela
       </div>
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
 
+        <p className="font-size: 28px;">
+                <a href="https://muellerzr.github.io/" style={{ textDecoration: 'underline' }}>Zach Mueller</a>          
+                <a href="https://github.com/muellerzr" style={{ textDecoration: 'underline' }}> GitHub Link</a>  
+            </p>
+
+            <p>Hi! My name is Zachary Mueller, and I&#39;m a <strong>Machine Learning Software Engineer</strong> at 🤗. I majored in <strong>Software Design and Development</strong> and I have minors in both <strong>Computer Science</strong> and <strong>Environmental Science</strong>.</p>
+            <p>I have a heavy passion for <strong>Deep Learning</strong> and <strong>Open Source</strong> libraries. As a result, below you will find some notable articles I&#39;ve written, a few courses I&#39;ve made, some of software libraries I&#39;ve written, interesting projects, and the open source libraries I have tried to contribute the most to.</p>
+              <p className="font-size: 28px;">
+                Author of Blog: 
+                <a href="https://github.com/lilianweng" style={{ textDecoration: 'underline' }}>Zach Mueller
+                  </a>
+                  <p className="font-size: 28px;">
+                    Followers on GitHub: 1.2k
+                  </p>
+              </p>
+            <h1 className="page-header-title">Other Blog Posts by the Author</h1>
+
+            <span className="bold">Extra: </span>
+              <p>
+                    <ul>                                  
+                  <p>
+                      <span className="article-post">1.  </span>     <a href="https://muellerzr.github.io/blog/Week-1.html"  style={{ textDecoration: 'underline' }}>Summer Smackdown - Week 1</a>      
+                      <i className="bi bi-calendar-date flex">7/07/2019</i>   
+                      </p>
+
+                      <p>These posts will most likely wind up being a bit of an odd bunch in terms of formatting until I figure out a style I like and enjoy, as the goal is to merge all <em>Four</em> of the lessons into one big post.</p>
+                      <p>Given I wanted to update all of these blogs on Sundays, I decided I would include the first ‘day’ of work as well.</p>
+                      <p>Overall how the schedule I plan to follow looks is as such:</p>
+
+                        <p>
+                        <ul>
+                          <li><strong>M:</strong> Linear Algebra</li>
+                          <li><strong>T:</strong> NLP, Matrix Calculus</li>
+                          <li><strong>Th:</strong> Foundations, Matrix Calculus, Linear Algebra</li>
+                          <li><strong>F:</strong> Foundations, NLP</li>
+                          <li><strong>Sa:</strong> NLP, Linear Algebra, Matrix Calc, Foundations</li>
+                          </ul>
+                        </p>
+                        <p>As I started this goal on a Saturday, this week there will not be much in my recap, but I’ll be as inclusive as I can into the small lessons I learned.</p>
+                      
+                      
+                        <p><strong>Computational Linear Algebra</strong></p>
+                        <p>We start off learning about the <strong>Markov Chain</strong>, a way to describe a sequence of events where the probably of each event depends on the state of the previous event. Also known as the next event is determined by the previous event. The course utilizes the Numpy library to hold matrix multiplications to solve the various problems. My notes go through and futher explain what each answer means in context.</p>
+
+                        <p>For example, problem 1 is about using a <strong>stochastic matrix</strong>, which is a square probablity matrix, in order to predict how health-related incidents will be in the following year.</p>
+
+                        <p>We start off knowing that the current year had 85% asymtpmatic, 10% symptomatic, 5% AIDS, and 0% death. Next, we were given the following probability table:</p>
+
+                        <p><img src="https://muellerzr.github.io/blog/media/blog/Week-1/01.png" className="img-fluid figure-img"></img></p>
+
+                        <p>Now that we’re here, we use matrix multiplication to get our answer:</p>
+                        <p>
+                         <MuellerzBlogWeek1ComputationalLinearAlgebra1 />
+                        </p>
+                        <p>
+
+                            <ul>
+                                <li>The @ symbol is used when doing matrix multiplication, where we multiply each row by the column, and then sum them together.</li>
+                            </ul>
+                        </p>
+                        <p>One thing Jeremy points out is another way to write the above:</p>
+
+
+                        <p><code>(i @ mat).T)</code> which saves us a few seconds of code, and looks cleaner.</p>
+
+                        <p>The answer winds up being:</p>
+
+                        <p>
+                         <MuellerzBlogWeek1ComputationalLinearAlgebra2 />
+                        </p>
+                        <p>However, what does the answer mean? Well, it means that within the next year:</p>
+
+                        <p>
+                        <ul>
+                          <li>76.5% of people will be asymptomatic</li>
+                          <li>15.25% of people will be symptomatic</li>
+                          <li>6.45% of people will have AIDS</li>
+                          <li>1.8% of people will die as a result of their illnesses</li>
+                          </ul>
+                        </p>
+
+                        <p>We’ve started using some matrix multiplication to get solutions, but can we get a bit more advanced with it?</p>
+
+                        <p>Take problem 2:</p>
+
+                        <p><img src="https://muellerzr.github.io/blog/media/blog/Week-1/04.png" className="img-fluid figure-img"></img></p>
+
+
+                        <p>Given the above table, figure out which store is best for what individual. This is a straight matrix by matrix multiplication problem where we will have ‘dem’ represent a matrix of the demand per individual, and ‘p’ be the prices for each item in two particular shops.</p>
+
+                        <p>
+                         <MuellerzBlogWeek1ComputationalLinearAlgebra3 />
+                        </p>
+
+                        <p>We yet again solve this by doing <code>dem@p</code>, which gives us a table that looks like the following:</p>
+
+                        <p>
+                         <MuellerzBlogWeek1ComputationalLinearAlgebra4 />
+                        </p>
+
+                        <p>The above table is now described as having the rows be an individual, and the columns being a particular store with the content as the price they would pay for the items they need. We can see that for Person 1 shop 2 would be the best, for Person 2 shop 1 would be the best, and for Person 3 they could go to either one.</p>
+
+                        <p>Then Rachel goes further to describe images a little bit and convolutions, which I was already familar with from the Practical Deep Learning for Coders course, however this Medium article she mentions I found especially helpful: <a href="https://medium.com/impactai/cnns-from-different-viewpoints-fab7f52d159c" style={{ textDecoration: 'underline' }}>CNNs from Different Viewpoints</a></p>
+
+                        <p>What this helped show for me was how matrix multiplication is actually applied within these Neural Networks we are generating through the Fast.AI library, especially the following image:</p>
+
+
+                        <p><img src="https://muellerzr.github.io/blog/media/blog/Week-1/04.png" className="img-fluid figure-img"></img></p>
+
+                        <p>Here we have a 2x2 matrix (filter) being applied on a single-channel image (3x3), to get our four results: P,W,R,S. I enjoy this view of how our layers are working as I can see each product mapped with corresponding coordinates, versus a Neural Network viewpoint: <img src="https://muellerzr.github.io/blog/media/blog/Week-1/06.png" className="img-fluid figure-img" alt="alt text"></img></p>
+
+                        <p>Where alpha, beta, gamma, etc are the connections or lines from each node to result.</p>
+
+                        <p>This is as far as I got yesterday, so next week lesson 1 should be fully completed.</p>
+
+
+                        <p><strong>Matrix Calculus</strong></p>
+                        <p>One thing Jeremy suggests us to do during the Foundations course is turn paper to code, so I wanted to apply that to this course, despite it being pure-math heavy. The goal of doing this was just to know how to apply various scary-looking math into code easier, as my experience before this was none.</p>
+
+                        <p>This week I went over the Introduction and Review sections of the paper, as I last took AP Calculus senior year of high school… It’s been a few years.</p>
+
+
+                        <p>So! The introduction segment. Any activation of a single unit inside a nerual network is done using the “dot product of an edge weight vector, <strong>w</strong>, with an input vector <strong>x</strong>, plus a scalar bias <em>b</em>.” Okay. That was a lot thrown out at me. Let’s make that a bit easier. The above can also be written as y=mx+b, a basic linear function where m and x are both matrix’s. The better way to right that would be like so:</p>
+
+                     
+                        <p><img src="https://muellerzr.github.io/blog/media/blog/Week-1/07.svg" className="img-fluid figure-img"></img></p>
+
+                        <p>Where <code>n</code> and <code>i</code> are how many layers or activation uits we have. This could then also be written as <code>z = w * x + b</code> where z, the &#39;affine function&#39; (linear function), is derived from a linear unit that clips negative values to zero from the bias.</p>
+
+
+                        <p>Another way to visualize a neuron is like so:</p>
+
+                        <p><img src="https://explained.ai/matrix-calculus/images/neuron.png" className="img-fluid figure-img"></img></p>
+
+                        <p>Now, when we are training our models, all we are doing is choosing a <strong>w</strong> and <strong>b</strong> so we can get our desired output for all of our inputs. We can help choose and navigate what are our best options by using a loss function to grade the final activations to the target for all of our inputs. To help minimize, a variation of gradient decent is used where we take the partial derivitive (gradient) of an activation with respect to <strong>w</strong> and <em>b</em>.</p>
+
+                        <p>In laymans terms? Gradually tweaking <strong>w</strong> and <em>b</em> in order to make some loss function as close to zero as we can.</p>
+
+                        <p>The next example shown in the paper is taking a function we’re familair with, Mean Squared Error, and showing us its derivitive (gradient): <img src="https://muellerzr.github.io/blog/media/blog/Week-1/08.svg" className="img-fluid figure-img" alt="alt text"></img></p>
+
+                        <p>At first glance that looks absolutely disgustingly terrifying. But let’s try to break it down into code instead and see if we can try to understand it better.</p>
+
+                        <p>So first, the original where N is the number of inputs</p>
+
+                        <p>
+                         <MuellerzBlogWeek1ComputationalLinearAlgebra5 />
+                        </p>
+
+
+                        <p>Okay, doesn’t look too bad now. For all inputs, we take the square of our target minus our activation (or our answer). Let’s look at that derivitive now. I made two functions, actf and grad as we have that interior summation.</p>
+
+                        <p>
+                         <MuellerzBlogWeek1ComputationalLinearAlgebra6 />
+                        </p>
+
+                        <p>That looks a bit better, we can see that <strong>w</strong> and <strong>x</strong> are both going to be matrix’s, weight and input respectivly, and <strong>b</strong> is our bias.</p>
+                        <p>Alright, not as scary anymore. The last bit I did was a review on the Scalar derivative rules, and attempting to recreate this in code. For this I found the sympy library a huge help, as we can visualize functions and their derivitives.</p>
+
+                        <p>For example, say I have the equation <img src="https://muellerzr.github.io/blog/media/blog/Week-1/09.png" className="img-fluid"></img></p>
+
+                        <p>We can write this in code as <code>y = 3*x**2</code>. Well, if we want the derivitive all we have to do is first declare ‘x’ as a ‘Symbol’, then use the <code>.diff</code> function to get the derivitive!</p>
+
+                        <p>The result will give us <code>6*x</code>, what we were expecting.</p>
+
+                      <li>
+
+                      </li>
+ 
+                    </ul>
+              </p>
+
+
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Computational Linear Algebra, Linear Algebra, Natural Language Processing" />
+        </div>
+      </div>
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
