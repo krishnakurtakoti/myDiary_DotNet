@@ -36,6 +36,8 @@ import { MuellerzBlogWeek1ComputationalLinearAlgebra3 } from "./MuellerzBlogWeek
 import { MuellerzBlogWeek1ComputationalLinearAlgebra4 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra4";
 import { MuellerzBlogWeek1ComputationalLinearAlgebra5 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra5";
 import { MuellerzBlogWeek1ComputationalLinearAlgebra6 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra6";
+import {AmitMishraCumulativeDistributonPlotsForFrequencyDataInR} from "./AmitMishraCumulativeDistributonPlotsForFrequencyDataInR";
+import { AmitMishraCumulativeDistributonPlotsForFrequencyDataInR_2 } from "./AmitMishraCumulativeDistributonPlotsForFrequencyDataInR_2";
 
 export default function Home() {
   return (
@@ -2311,6 +2313,58 @@ The major differences between my classes and yours, is that the one-to-many rela
       </div>
 
 
+
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+   
+              <p>
+                One interesting Blog Post by the Author: <a href="https://www.philschmid.de/" style={{ textDecoration: 'underline' }}>PHILSCHMID</a>
+              </p>
+                <p className="font-size: 28px;">
+                    <a href="https://www.philschmid.de/getting-started-with-cnn-by-calculating-lenet-layer-manually" style={{ textDecoration: 'underline' }}>Getting started with CNNs by calculating LeNet-Layer manually</a>
+                    <i className="bi bi-calendar-date flex">28/02/2020</i>
+                </p>
+
+
+                        <p>The idea of CNNs is intelligently adapt to the properties of images by reducing the dimension. To achieve this
+            convolutional layer and pooling layer are used. Convolutional layers are reducing the dimensions by adding filters
+            (kernel windows) to the Input. The dimension can reduce by applying kernel windows to calculate new outputs. Assuming
+            the input shape is &#39;expression&#39; and the kernel window ist &#39;expression&#39; then the output shape will be.</p>
+
+            <p>Pooling Layers are reducing the dimension by aggregating the input elements. Assuming the input shape is
+            &#39;expression&#39; and the pooling method is average with a kernel window of &#39;expression&#39; then the output shape will
+            be</p>
+
+            <h3 id="example-cnns-architecture-lenet-5"><a href="#example-cnns-architecture-lenet-5" aria-hidden="true" ><span className="icon icon-link"></span></a>Example CNNs Architecture LeNet-5</h3>
+
+                  <p><img src="https://www.philschmid.de/static/blog/getting-started-with-cnn-by-calculating-lenet-layer-manually/lenet-5.svg" alt="lenet-5-architecture"></img></p>
+                  <p> This is the architecture of LeNet-5 created by <strong>Yann LeCun</strong> in 1998 and
+                  widely used for written digits recognition (MNIST).</p>
+                  <p>To understand what is happening in each layer we have to clarify a few basics. Let&#39;s start with Stride and Padding</p>
+
+                  <p>You can define padding as adding extra pixels as filler around the original input to decrease the erasion of
+                    information.</p>
+
+                    <p><img src="https://www.philschmid.de/static/blog/getting-started-with-cnn-by-calculating-lenet-layer-manually/example-of-padding-1x1.svg" alt="example-of-padding-1x1"></img></p>
+                    <p>   Example of adding p (1x1) to an input. If we add padding to our input the formula for calculating the output changes to</p>
+
+              <p></p>
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Getting started with CNNs by calculating LeNet-Layer manually" />
+        </div>
+      </div>
+
+
+
+
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
 
@@ -3042,6 +3096,153 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="DSPLib - FFT / DFT Fourier Transform Library for .NET 4" />
         </div>
       </div>
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="http://www.amitsharma.in/post/cumulative-distribution-plots-for-frequency-data-in-r/" style={{ textDecoration: 'underline' }}>Cumulative Distribution Plots for Frequency Data in R</a>
+                <i className="bi bi-calendar-date flex">13/09/2015</i>
+            </p>
+              <p className="font-size: 28px;">
+              <h1>Cumulative Distribution Plots for Frequency Data in R</h1>
+              </p>
+            <p>
+              Under this Tab, <a href="https://x.com/AMakelov/following" style={{ textDecoration: 'underline' }}>https://x.com/AMakelov/following</a>, I get the Author: <a href="https://x.com/amt_shrma" style={{ textDecoration: 'underline' }}>Amit Sharma</a>
+            </p>
+
+            <p>
+            <img src="http://www.amitsharma.in/post/cumulative-distribution-plots-for-frequency-data-in-r/featured.png" alt="" className="featured-image"></img>
+            </p>
+
+            <p>R has some great <a href="http://stackoverflow.com/questions/3544002/easier-way-to-plot-the-cumulative-frequency-distribution-in-ggplot" style={{ textDecoration: 'underline' }}>tools</a> for generating and plotting cumulative distribution functions. However, they are suited for raw data, not when the data is summarized in frequency counts. However, reducing to frequency counts is often necessary when processing data at the scale of tens of gigabytes or more. Here I describe a convenient two-liner in R to plot CDFs in R based on aggregated frequency data.</p>
+            
+            <p>For example, suppose you want to analyze the number of times people exercise in a month. One option would be to work with a data table consisting of the number of active days for each person.</p>
+              <p>
+              <AmitMishraCumulativeDistributonPlotsForFrequencyDataInR />
+              </p>
+
+              <p>
+              <AmitMishraCumulativeDistributonPlotsForFrequencyDataInR_2 />
+              </p>
+
+             <p>
+               <h2> CDFs from raw data</h2>
+              </p>
+
+
+
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Cumulative Distribution Plots for Frequency Data in R" />
+        </div>
+      </div>
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+        <p>
+              In this Tweet, <a href="https://x.com/AMakelov/status/1793701961055059991" style={{ textDecoration: 'underline' }}>https://x.com/AMakelov/status/1793701961055059991</a>, I get the Author&#39;s Blog at: <a href="https://amakelov.github.io/" style={{ textDecoration: 'underline' }}>Alex Makelov</a>.Here, I find in one of Auhtor&#39;s blog post, this article: <a href="https://amakelov.github.io/blog/deps/" style={{ textDecoration: 'underline' }}>Practical dependency tracking for Python function calls</a>
+            </p>
+
+        <p>
+
+                <ol><li id="fn:1">
+                  <p><strong>I learned this trick from <a href="https://www.benkuhn.net/deps/" style={{ textDecoration: 'underline' }}>this blog post</a>&nbsp;<a href="#fnref:1" className="footnote-backref" role="doc-backlink">↩︎</a></strong></p></li>
+                  <li id="fn:2"><h3>Makes you wonder what happened to leg A? This is out of scope for this
+        blog post.&nbsp;<a href="#fnref:2" className="footnote-backref" role="doc-backlink">↩︎</a></h3></li>
+        <li id="fn:3"><h3>Closures are more complex to track than code available at import time. To
+        make life simpler, you may choose to detect closures at runtime and raise an
+        error to disable them.&nbsp;<a href="#fnref:3" className="footnote-backref" role="doc-backlink">↩︎</a></h3></li>
+        </ol>
+
+
+        </p>
+
+<p>
+  Clicking the link to <strong>&#39;I learned this trick from <a href="https://www.benkuhn.net/deps/" style={{ textDecoration: 'underline' }}>this blog post</a> &#39;, I have seen a new Author.</strong>
+
+</p>
+<p>
+  One interesting Blog Post by the Author: <a href="https://www.benkuhn.net/squared/" style={{ textDecoration: 'underline' }}></a>
+</p>
+            <p className="font-size: 28px;">
+                <a href="https://www.benkuhn.net/squared/" style={{ textDecoration: 'underline' }}>Why squared error?</a>
+                <i className="bi bi-calendar-date flex">--/12/2014</i>
+            </p>
+            <p>Someone recently asked on the statistics Stack Exchange <a href="http://stats.stackexchange.com/questions/127598/square-things-in-statistics-generalized-rationale/128619" target="_blank" style={{ textDecoration: 'underline' }}>why the squared error is used in statistics</a>. This is something I&#39;d been wondering about myself recently, so I decided to take a crack at answering it. The post below is adapted from <a href="http://stats.stackexchange.com/questions/127598/square-things-in-statistics-generalized-rationale/128619#128619" target="_blank" style={{ textDecoration: 'underline' }}>that answer</a>.</p>
+            
+
+            <h2 id="why-squared-error">Why squared error?</h2>
+
+            <p>
+            It&#39;s true that one could choose to use, say, the absolute error instead of the squared error. In fact, the absolute error is often closer to what you “care about” when making predictions from your model. For instance, if you buy a stock expecting its future price to be <strong>Ppredicted</strong>
+ and its future price is <strong>Pactual</strong> instead, you lose money proportional to <strong>(Ppredicted−Pactual)</strong>, not its square! The same is true in many other contexts.
+            </p>
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Why squared error?" />
+        </div>
+      </div>
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+      
+          <p>
+            One interesting Blog Post by the Author: <a href="https://twitter.com/mattecapu" style={{ textDecoration: 'underline' }}>Matteo Capucci</a>
+          </p>
+            <p className="font-size: 28px;">
+                <a href="https://matteocapucci.wordpress.com/2021/02/14/differential-forms-reverse-derivatives-and-machine-learning/" style={{ textDecoration: 'underline' }}>Differential forms, reverse derivatives and machine learning</a>
+                <i className="bi bi-calendar-date flex">14/02/2021</i>
+            </p>
+
+            <p>I was recently trying to convince <a href="https://www.brunogavranovic.com/" style={{ textDecoration: 'underline' }} target="_blank" rel="noreferrer noopener">Bruno</a> that covectors (in the form of differentials of functions) are the real deal in gradient descent, despite the misleading name and countless pictures showing little arrows pointing downhill.</p>
+
+            <p>The reasons are two:</p>
+            <p>
+            <ol className="wp-block-list"><li><strong>Derivatives are </strong>really<strong> differential forms</strong>, not vector fields (huge pedagogical confusion on this point, since derivatives are sold everywhere as &#39;tangent vectors at a point&#39;).</li><li><strong>Reverse derivative</strong> (the star of backpropagation) <strong>is</strong> actually <strong>pullback of differential forms</strong> in disguise.</li></ol>
+            </p>
+            <p>I believe the culprit of the confusion is the constant abuse of Euclidean spaces and the conflation of their tangent vectors with their points, or even worse, the habit of identifying tangent fibers on different points. Euclidean spaces are cool but very special as manifolds. Therefore if you want to know the full story of differential geometry you really shouldn&#39;t focus on them as an example.</p>
+            <p>Add to this the ubiquity of Riemannian and symplectic structures, which allow one to freely identify tangent and cotangent spaces by raising and lowering indices, and you get a recipe for disaster.</p>
+            <h2 className="wp-block-heading">Derivatives are differential forms</h2>
+
+            <p>On the other hand, one may understand it in the following way: a smooth function is also a map of smooth manifolds, say <img src="https://s0.wp.com/latex.php?latex=f%3AM+%5Cto+%5Cmathbb+R&bg=ffffff&fg=000000&s=0&c=20201002"></img>,  therefore it induces a map between its tangent bundles
+              </p>
+
+              <p>In 1-dimensional Euclidean differential geometry, aka calculus, this is witnessed by the definition</p>
+              <p><img src="https://s0.wp.com/latex.php?latex=df+%3D+f%27+dx&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002"  alt="df = f' dx" className="latex"></img></p>
+              <p>which students usually think of as a byproduct of</p>
+              <p><img src="https://s0.wp.com/latex.php?latex=%5Cdfrac%7Bdf%7D%7Bdx%7D+%3D+f%27&amp;bg=ffffff&amp;fg=000000&amp;s=0&amp;c=20201002"  alt="\dfrac{df}{dx} = f'" className="latex"></img></p>
+              <p>at which teachers angrily react by screaming <em>yOu cAn&#39;T diViDe bY a diFFeRenTial</em>!</p>
+             
+              <p></p>
+           
+              <p></p>
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Differential forms, reverse derivatives and machine learning" />
+        </div>
+      </div>
+
+
+
+
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <span className="absolute inset-0 flex items-center justify-center text-3xl font-bold text-white">20/1/24</span>
