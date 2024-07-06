@@ -38,6 +38,7 @@ import { MuellerzBlogWeek1ComputationalLinearAlgebra5 } from "./MuellerzBlogWeek
 import { MuellerzBlogWeek1ComputationalLinearAlgebra6 } from "./MuellerzBlogWeek1ComputationalLinearAlgebra6";
 import {AmitMishraCumulativeDistributonPlotsForFrequencyDataInR} from "./AmitMishraCumulativeDistributonPlotsForFrequencyDataInR";
 import { AmitMishraCumulativeDistributonPlotsForFrequencyDataInR_2 } from "./AmitMishraCumulativeDistributonPlotsForFrequencyDataInR_2";
+import { BrandonAmosUniformDistributionBetweenMinusOneAndOne } from "./BrandonAmosUniformDistributionBetweenMinusOneAndOne";
 
 export default function Home() {
   return (
@@ -2313,8 +2314,217 @@ The major differences between my classes and yours, is that the one-to-many rela
       </div>
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+   
+              <p>
+                Author: <a href="https://timdettmers.com/" style={{ textDecoration: 'underline' }}>Tim Dettmers </a>
+              </p>
+                <p className="font-size: 28px;">
+                    <a href="https://timdettmers.com/2015/03/26/convolution-deep-learning/" style={{ textDecoration: 'underline' }}>Understanding Convolution in Deep Learning</a>
+                    <i className="bi bi-calendar-date flex">26/03/2015</i>
+                </p>
+
+                <p className="font-size: 28px;">There are already some blog post regarding convolution in deep learning, but I found all of them highly confusing with unnecessary mathematical details that do not further the understanding in any meaningful way. This blog post will also have many mathematical details, but I will approach them from a conceptual point of view where I represent the underlying mathematics with images everybody should be able to understand. The first part of this blog post is aimed at anybody who&nbsp;wants to understand the general concept of convolution and convolutional nets in deep learning. The second part of this blog post includes advanced concepts and is aimed to further and enhance the understanding of convolution for deep learning researchers and specialists.</p>
+
+                <h3>What is convolution?</h3>
+
+                <p className="font-size: 28px;">You can imagine convolution as the mixing of information. Imagine two buckets full of information which are poured into one single bucket and then mixed according to a specific rule. Each bucket of information has its own recipe, which describes how the information in one bucket mixes with the other. So convolution is an orderly procedure where two sources of information are intertwined.</p>
+              
+                <p className="font-size: 28px;">Convolution can also be described mathematically, in fact, it is a mathematical operation like addition, multiplication or a derivative, and while this operation is complex&nbsp;in&nbsp;itself, it can be very useful to simplify even more complex equations. Convolutions are heavily used in physics and engineering to simplify such complex equations and in the second part — after a short mathematical development of convolution — we will relate and integrate ideas between&nbsp;these fields of science and deep learning to gain a deeper&nbsp;understanding of convolution. But for now we will look at convolution from a practical perspective.</p>
+              
+                <h3>How do&nbsp;we apply convolution to images?</h3>
+
+                <p className="font-size: 28px;">When we apply convolution to images, we apply it in two dimensions — that is the width and height of the image. We mix two buckets of information: The first bucket is&nbsp;the input image, which has a total of three matrices&nbsp;of pixels — one matrix&nbsp;each for the red, blue and green color channels; a pixel consists of&nbsp;an integer value between 0 and 255 in each color channel. The second bucket is&nbsp;the convolution kernel, a single matrix of floating point numbers where the pattern and the size of the numbers can be thought of as a recipe for how to intertwine the input image with the kernel in the convolution operation. The output of the kernel is the altered image which is often called a feature map in deep learning. There will be one feature map for every color channel.</p>
+
+                <p>
+                <img src="https://i0.wp.com/timdettmers.com/wp-content/uploads/2015/03/convolution.png?ssl=1"></img>
+                </p>
+                
+                <p>
+                Convolution of an image with an edge detector convolution kernel. Sources: 
+                </p>
+               
+                <p className="font-size: 28px;">We now perform the actual intertwining of these two pieces of information through convolution. One way to apply convolution is to take an image patch from the input image of the size of the kernel — here we have a 100×100 image, and a 3×3 kernel, so we would take 3×3 patches — and then do an element wise multiplication with the image patch and convolution kernel. The sum of this multiplication then results in&nbsp;<em>one</em>&nbsp;pixel of the feature map. After one pixel of the feature map has been computed, the center&nbsp;of the image patch extractor slides one pixel into another direction, and repeats this computation. The computation ends when all pixels of the feature map have been computed this way. This procedure is illustrated for one image patch in the following gif.</p>
+                  <p>
+                  <img src="https://i0.wp.com/timdettmers.com/wp-content/uploads/2015/03/aa-convolution-02.gif?ssl=1"></img>
+
+                  </p>
 
 
+              <p >As you can see there is also a normalization procedure where the output value is normalized by the size of the kernel (9); this is to ensure that the total intensity of the picture and the feature map stays the same.</p>
+
+
+              <p></p>
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Understanding Convolution in Deep Learning" />
+        </div>
+      </div>
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+   
+              <p>
+                One interesting Blog Post by the Author: <a href="https://bamos.github.io/" style={{ textDecoration: 'underline' }}>Brandon Amos, Research Scientist, Meta, AI (FAIR), bda@meta.com</a>
+              </p>
+                <p className="font-size: 28px;">
+                    <a href="https://bamos.github.io/2016/08/09/deep-completion/#step-1-interpreting-images-as-samples-from-a-probability-distribution" style={{ textDecoration: 'underline' }}>Image Completion with Deep Learning in TensorFlow</a>
+                    <i className="bi bi-calendar-date flex">09/08/2016</i>
+                </p>
+
+                <p>Content-aware fill is a powerful tool designers and photographers
+                        use to fill in unwanted or missing parts of images.
+                        Image completion and <a href="https://en.wikipedia.org/wiki/Inpainting" style={{ textDecoration: 'underline' }}>inpainting </a>
+                        are closely related technologies used to fill in
+                        missing or corrupted parts of images.
+                        There are many ways to do content-aware fill,
+                        image completion, and inpainting.
+                        In this blog post, I present Raymond Yeh and Chen Chen et al.s paper
+                        “<a href="https://arxiv.org/abs/1607.07539" style={{ textDecoration: 'underline' }}>Semantic Image Inpainting with Perceptual and Contextual Losses</a>,”
+                        which was just posted on arXiv on July 26, 2016.
+                        This paper shows how to use deep learning for image completion with
+                        a <a href="https://arxiv.org/abs/1511.06434" style={{ textDecoration: 'underline' }}>DCGAN</a>.
+                        This blog post is meant for a general technical audience with some deeper
+                        portions for people with a machine learning background.
+                        I&#39;ve added <span className="bold">[ML-Heavy] </span> tags to sections to indicate that the section
+                        can be skipped if you don&#39;t want too many details.
+                        We will only look at the constrained case of completing missing
+                        pixels from images of faces.
+                        I have released all of the <a href="https://www.tensorflow.org/">TensorFlow</a>
+                        source code behind this post on GitHub at
+                        <a href="https://github.com/bamos/dcgan-completion.tensorflow" style={{ textDecoration: 'underline' }}>bamos/dcgan-completion.tensorflow</a>.</p>
+
+                  <p>
+                                      <ol>
+                                            <li><a href="#step-1-interpreting-images-as-samples-from-a-probability-distribution" style={{ textDecoration: 'underline' }}>We&#39;ll first interpret images as being samples from a probability distribution</a>.</li>
+                                            <li><a href="#step-2-quickly-generating-fake-images" style={{ textDecoration: 'underline' }}>This interpretation lets us learn how to generate fake images</a>.</li>
+                                            <li><a href="#step-3-using-fake-image-generation-for-image-completion" style={{ textDecoration: 'underline' }}>Then we&#39;ll find the best fake image for completion</a>.</li>
+                                          </ol>
+                  </p>
+
+                  <h2 id="step-1-interpreting-images-as-samples-from-a-probability-distribution">Step 1: Interpreting images as samples from a probability distribution</h2>
+
+                  <h3 id="how-would-you-fill-in-the-missing-information">How would you fill in the missing information?</h3>
+                  <p>In the examples above, imagine you&#39;re building a system to
+                    fill in the missing pieces.
+                    <em>How would you do it?
+                    How do you think the human brain does it?
+                    What kind of information would you use?</em></p>
+
+
+                    <p>In this post we will focus on two types of information:</p>
+                              <p>
+                                <ol>
+                                  <li><strong>Contextual information:</strong> You can infer what
+                                missing pixels are based on information provided
+                                by surrounding pixels.</li>
+                                  <li><strong>Perceptual information:</strong> You interpret the
+                                filled in portions as being “normal,” like from what
+                                you&#39;ve seen in real life or from other pictures.</li>
+                                </ol>
+                              </p>
+
+
+                              <p>Both of these are important.
+                          Without contextual information, how do you know what to fill in?
+                          Without perceptual information, there are many valid completions
+                          for a context. Something that looks “normal” to a machine learning
+                          system might not look normal to humans.</p>
+
+                          <p>It would be nice to have an exact, intuitive algorithm that
+                            captures both of these properties that says step-by-step how
+                            to complete an image.
+                            Creating such an algorithm may be possible for specific cases,
+                            but in general, nobody knows how.
+                            Today&#39;s best approaches use statistics and machine learning
+                            to learn an <em>approximate</em> technique.</p>
+
+                            <h3 id="but-where-does-statistics-fit-in-these-are-images">But where does statistics fit in? These are images.</h3>
+
+                            <p>To motivate the problem, let&#39;s start by looking at a
+                      <a href="https://en.wikipedia.org/wiki/Probability_distribution" style={{ textDecoration: 'underline' }}> probability distribution </a>
+                      that is well-understood and can be represented concisely in closed form:
+                      a <a href="https://en.wikipedia.org/wiki/Normal_distribution" style={{ textDecoration: 'underline' }}>normal distribution</a>.
+                      Here&#39;s the <a href="https://en.wikipedia.org/wiki/Probability_density_function" style={{ textDecoration: 'underline' }}>probability density function</a> (PDF) for a normal distribution.
+                      You can interpret the PDF as going over the <em>input</em> space horizontally
+                      with the vertical axis showing the probability that some value occurs.
+                      (If you&#39;re interested, the code to create these plots is available at
+                      <a href="https://github.com/bamos/dcgan-completion.tensorflow/blob/master/simple-distributions.py" style={{ textDecoration: 'underline' }}> bamos/dcgan-completion.tensorflow:simple-distributions.py</a>.)</p>
+
+                  <div className="image-wrapper">
+                    <p><img src="https://bamos.github.io/data/2016-08-09/normal-pdf.png" alt=""></img></p>
+                    <p className="image-caption">PDF for a normal distribution.</p>
+                  </div>
+
+
+                  <p>Let&#39;s <em>sample</em> from the distribution to get some data.
+                      Make sure you understand the connection between the
+                      PDF and the samples.</p>
+
+
+                      <h3 id="ml-heavy-generative-adversarial-net-gan-building-blocks">[ML-Heavy] Generative Adversarial Net (GAN) building blocks</h3>
+
+                      <div className="image-wrapper">
+                        <p><img src="https://bamos.github.io/data/2016-08-09/normal-samples.png" alt=""></img></p>
+                        <p className="image-caption">Samples from a normal distribution.</p>
+                        </div>
+
+
+                      <p>These ideas started with Ian Goodfellow et al.&#39;s landmark paper
+                      “<a href="http://papers.nips.cc/paper/5423-generative-adversarial" style={{ textDecoration: 'underline' }}>Generative Adversarial Nets</a>”
+                      (GANs),
+                      published at the <a href="https://nips.cc/" style={{ textDecoration: 'underline' }}>Neural Information Processing Systems (NIPS)</a>
+                      conference in 2014.
+                      The idea is that we define a simple, well-known distribution
+                      and represent it as 
+                      For the rest of this post, well use ... as a uniform distribution
+                      between -1 and 1 (inclusively).
+                      We represent sampling a number from this distribution as ... line of Python with <a href="http://www.numpy.org/" style={{ textDecoration: 'underline' }}>numpy</a>:</p>
+
+
+              <p>
+              <pre><code className="language-python" data-lang="python"><span className="n">z</span> <span className="o">=</span> <span className="n">np</span><span className="p">.</span><span className="n">random</span><span className="p">.</span><span className="n">uniform</span><span className="p">(</span><span className="o">-</span><span className="mi">1</span><span className="p">,</span> <span className="mi">1</span><span className="p">,</span> <span className="mi">5</span><span className="p">)</span>
+              <span className="n">array</span><span className="p">([</span> <span className="mf">0.77356483</span><span className="p">,</span>  <span className="mf">0.95258473</span><span className="p">,</span> <span className="o">-</span><span className="mf">0.18345086</span><span className="p">,</span>  <span className="mf">0.69224724</span><span className="p">,</span> <span className="o">-</span><span className="mf">0.34718733</span><span className="p">])</span></code></pre>
+                </p>
+                            <p>
+                              <BrandonAmosUniformDistributionBetweenMinusOneAndOne />
+                            </p>
+               
+
+                        <div className="image-wrapper">
+                            <p><img src="https://bamos.github.io/data/2016-08-09/padding_strides.gif" alt=""></img></p>
+                            <p className="image-caption">Illustration of a convolution from the input (blue) to output (green). This image is from <a href="https://github.com/vdumoulin/conv_arithmetic" style={{ textDecoration: 'underline' }}>vdumoulin/conv_arithmetic</a>.</p>
+                      </div>
+
+                      <p>Next, suppose that you have a 3x3 input.
+                      Our goal is to upsample so that the output is larger.
+                      You can interpret a fractionally-strided convolution as expanding
+                      the pixels so that there are zeros in-between the pixels.
+                      Then the convolution over this expanded space will
+                      result in a larger output space.
+                      Here, it&#39;s 5x5.</p>
+
+                      <div className="image-wrapper">
+                      <p><img src="https://bamos.github.io/data/2016-08-09/padding_strides_transposed.gif" alt=""></img></p>
+                      <p className="image-caption">Illustration of a fractionally-strided convolution from the input (blue) to output (green). This image is from <a href="https://github.com/vdumoulin/conv_arithmetic">vdumoulin/conv_arithmetic</a>.</p>
+                      </div>
+
+
+              <p></p>
+            <span className="bold">Extra: </span>
+
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Image Completion with Deep Learning in TensorFlow" />
+        </div>
+      </div>
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
@@ -3000,6 +3210,118 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="Reconstructing a cosine similarity" />
         </div>
       </div>
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://www.rhotter.com/posts/ml-for-mri" style={{ textDecoration: 'underline' }}>Machine Learning for MRI Image Reconstruction</a>
+            
+                <i className="bi bi-calendar-date flex">01/01/2022</i>
+             </p>
+
+             <span className="bold">Extra: </span>
+
+
+                <p>Magnetic resonance imaging (MRI) has long scan times, sometimes close to an hour for an exam. This sucks because long scan times makes MRI exams more expensive, less accessible, and unpleasant.</p>
+
+                <h2 className="subheading-h2">MRI Image Reconstruction<span className="nx-absolute -nx-mt-7" id="mri-image-reconstruction"></span></h2>
+
+
+                <p>In most medical imaging methods, what you see on the screen isnt&#39;t just a raw feed of what the devicet&#39;s sensors are picking up.</p>
+
+                <p>In MRI, this is what the sensors pick up:</p>
+                          <p>   <img src="https://www.rhotter.com/ml-for-mri/mri-sensor-data.png"></img> </p>
+                          <p>How in the world is this data useful? Image reconstruction is this incredible procedure that can turn this mess of sensor data into an actual image. After doing image reconstruction on the sensor data above, we get:</p>
+                          <img src="https://www.rhotter.com/ml-for-mri/mri-knee.png"></img>
+
+
+                          <p>Now that&#39;s much better! (this is an MRI of the knee.) So how does this magical procedure of turning sensor data into images work?</p>
+
+                          <p>A nice way to frame this problem is to consider the signals the sensors pick up as a mathematical transformation of the image. In this framing, creating an image is inverting this mathematical transformation. This might seem backward, but it&#39;ll become handy soon.</p>
+
+                          <p>In MRI, the transformation from image to sensor data is a <a target="_blank" rel="noreferrer" href="https://youtu.be/spUNpyF58BY" style={{ textDecoration: 'underline' }}>2D or 3D Fourier transform<span className="nx-sr-only"> (opens in a new tab)</span></a>. This is super wacky! It means the sensors somehow measure the spatial frequencies in the image<sup><a href="/posts/ml-for-mri#user-content-fn-1" id="user-content-fnref-1" data-footnote-ref="true" aria-describedby="footnote-label" style={{ textDecoration: 'underline' }}>1</a></sup>! We can write this as:</p>
+
+                  
+        
+            <p>
+            About 
+            </p>             
+            <p className="font-size: 28px;">
+              <a href="https://www.rhotter.com/" style={{ textDecoration: 'underline' }}>Raffi Hotter  
+              </a>
+            </p>
+            <p>I am currently a research fellow at the <a target="_blank" rel="noreferrer" href="https://cohenweb.rc.fas.harvard.edu/">Cohen Lab<span className="nx-sr-only"> (opens in a new tab)</span></a> at Harvard and trying to learn as much physics as possible. My goal is to build magical brain computer interfaces for humanity.</p>
+
+            <p>In the past, I studied math, computer science, and a touch of physics and neuroscience at McGill. I spent most of my summers in college trying to build a <a target="_blank" rel="noreferrer" href="https://pioneer.app/winners/raffi-hotter">low-cost ultrasound-based brain scanner<span className="nx-sr-only"> (opens in a new tab)</span></a>, but recently put it on pause. In the past past, I loved taking part in science fairs and won 2nd place in Physics at ISEF.</p>
+           
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Machine Learning for MRI Image Reconstruction" />
+        </div>
+      </div>
+
+
+
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+            <p className="font-size: 28px;">
+                <a href="https://sander.ai/2014/05/12/fft-convolutions-in-theano.html" style={{ textDecoration: 'underline' }}>Even faster convolutions in Theano using FFTs</a>
+            
+                <i className="bi bi-calendar-date flex">12/05/2014</i>
+                <p>Let&#39;s say we have vectors <code className="language-plaintext highlighter-rouge">A1..An</code>. We know their dot products to <code className="language-plaintext highlighter-rouge">u</code> and <code className="language-plaintext highlighter-rouge">v</code>, but not <code className="language-plaintext highlighter-rouge">u</code> and <code className="language-plaintext highlighter-rouge">v</code> themselves. Can we estimate <code className="language-plaintext highlighter-rouge">u.v</code> (ie their cosine similarity)?</p>
+            </p>
+
+            <span className="bold">Extra: </span>
+
+            <p><a href="http://benanne.github.io/2014/04/03/faster-convolutions-in-theano.html" style={{ textDecoration: 'underline' }}>Last month</a> I wrote about how you can use the cuda-convnet wrappers in pylearn2 to get up to 3x faster GPU convolutions in Theano. Since then I&#39;ve been working on an FFT-based convolution implementation for Theano. Preliminary tests indicate that this approach is again 2-4x faster than the cuda-convnet wrappers.</p>
+
+            <p>I wrote the code in pure Python, using <a href="https://github.com/lebedov/scikits.cuda" style={{ textDecoration: 'underline' }}>scikits.cuda</a> and <a href="http://mathema.tician.de/software/pycuda/" style={{ textDecoration: 'underline' }}>PyCUDA</a> to do the heavy lifting. The Theano team is <a href="https://groups.google.com/forum/#!topic/theano-users/6xiFFpBBDq0" style={{ textDecoration: 'underline' }}>currently working on integrating this code into Theano</a>. They also plan to create a proper C/CUDA implementation to guarantee the best performance.</p>
+            <p>I put everything up on GitHub, you can find the code there, or clone it and try it yourself:</p>
+           
+            <ul>
+            <li><strong><a href="https://github.com/benanne/theano_fftconv" style={{ textDecoration: 'underline' }}>https://github.com/benanne/theano_fftconv</a></strong></li>
+          </ul>
+          <p>
+          <h2 id="fft-based-convolution">FFT-based convolution</h2>
+          </p>
+
+
+          <p>The Fourier transform of a convolution of two functions is the product of the Fourier transforms of those functions. This is the <a href="http://en.wikipedia.org/wiki/Convolution_theorem" style={{ textDecoration: 'underline' }}>convolution theorem</a>. This result can be used to quickly compute convolutions in the Fourier domain, since an elementwise product is much less computationally intensive than a convolution.</p>
+
+          <p>However, there is a price to be paid: the inputs need to be transformed using the Fast Fourier Transform (FFT), and the product of these transformed inputs needs to be transformed again using the inverse FFT. Depending on the sizes of the inputs, these costs can be pretty significant, so sometimes it is a better idea to just compute the convolution in the original domain.</p>
+
+          <p>I was somewhat surprised to learn that all popular implementations of convolutional neural networks (CNNs) use the latter approach, including that of Theano and cuda-convnet. The reason is that typically, convolutions in CNNs involve relatively small filters, so I think people just assumed it wasn&#39;t worth it.</p>
+
+          <p>However, a paper published at ICLR 2014 recently caught my eye: <a href="http://openreview.net/document/aa6ab717-ca19-47e1-a958-823b9a106ca9#aa6ab717-ca19-47e1-a958-823b9a106ca9" style={{ textDecoration: 'underline' }}>Fast Training of Convolutional Networks through FFTs</a> by Mathieu, Henaff and LeCun. They implemented the FFT-based approach in the <a href="http://torch.ch/" style={{ textDecoration: 'underline' }}>Torch7 framework</a> and compared its performance to Torch7&#39;s own &#39;classical&#39; implementation. They concluded that it is actually advantageous to use FFT-based convolutions in CNNs in many cases.</p>
+
+          <p>The reason is actually quite straightforward: compared to the general case, the overhead of computing the FFTs of the inputs is drastically reduced. We need to compute the convolution of each input example in a given minibatch with each filter. If there are <code className="language-plaintext highlighter-rouge">m</code> examples in the minibatch with <code className="language-plaintext highlighter-rouge">k</code> input channels, and <code className="language-plaintext highlighter-rouge">n</code> filters, this means we need to compute <code className="language-plaintext highlighter-rouge">m * n * k</code> convolutions. In the Fourier domain, this turns into <code className="language-plaintext highlighter-rouge">m * n * k</code> elementwise products. However, <strong>we only need to compute the FFT of each input example and each filter once</strong>. So the total number of FFTs to compute is not <code className="language-plaintext highlighter-rouge">2 * m * n * k</code>, but <code className="language-plaintext highlighter-rouge">(m + n) * k</code>.</p>
+
+          <p>But that&#39;s not everything: the output of a convolutional layer in a CNN is actually a sum of convolutions across all <code className="language-plaintext highlighter-rouge">k</code> input channels. Because the FFT is a linear operator, we can compute this sum in the Fourier domain, and then take the IFFT of this sum (instead of the other way around). This means we only need to compute <code className="language-plaintext highlighter-rouge">m * n</code> IFFTs, instead of <code className="language-plaintext highlighter-rouge">m * n * k</code>. It turns out that these savings can be very significant.</p>
+
+  
+            <p>
+            About 
+            </p>             
+            <p className="font-size: 28px;">
+              <a href="https://sander.ai/" style={{ textDecoration: 'underline' }}>Sander Dieleman  
+              </a>
+            </p>
+             
+           
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Even faster convolutions in Theano using FFTs" />
+        </div>
+      </div>
+
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
