@@ -2587,58 +2587,59 @@ The major differences between my classes and yours, is that the one-to-many rela
                  <a href="https://sgugger.github.io/archives.html" style={{ textDecoration: 'underline' }}>Sylvain Gugger</a> <a href="https://github.com/sgugger" style={{ textDecoration: 'underline' }}>GitHub: 3.2k Followers</a>
               </p>
                 <p className="font-size: 28px;">
-                    <a href="https://sgugger.github.io/a-neural-net-in-pytorch.html" style={{ textDecoration: 'underline' }}>A Neural Net In Pytorch</a>
+                    <a href="https://sgugger.github.io/a-neural-net-in-pytorch.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>A Neural Net In Pytorch</a>
                     <i className="bi bi-calendar-date flex">16/03/2018</i>
                 </p>
-
+                      <h1>    Archives
+                      </h1>
                     <p>
                     <dl>
                           <dt>Thu 03 May 2018</dt>
-                          <dd><a href="https://sgugger.github.io/deep-painterly-harmonization.html" style={{ textDecoration: 'underline' }}>Deep Painterly Harmonization</a></dd>
+                          <dd><a href="https://sgugger.github.io/deep-painterly-harmonization.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>Deep Painterly Harmonization</a></dd>
                           <dt>Thu 26 April 2018</dt>
-                          <dd><a href="https://sgugger.github.io/pointer-cache-for-language-model.html" style={{ textDecoration: 'underline' }}>Pointer cache for Language Model</a></dd>
+                          <dd><a href="https://sgugger.github.io/pointer-cache-for-language-model.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>Pointer cache for Language Model</a></dd>
                           <dt>Sat 14 April 2018</dt>
-                          <dd><a href="https://sgugger.github.io/recurrent-neural-network.html" style={{ textDecoration: 'underline' }}>Recurrent Neural Network</a></dd>
+                          <dd><a className="" href="https://sgugger.github.io/recurrent-neural-network.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>Recurrent Neural Network</a></dd>
                           <dt>Sat 07 April 2018</dt>
-                          <dd><a href="https://sgugger.github.io/the-1cycle-policy.html" style={{ textDecoration: 'underline' }}>The 1cycle policy</a></dd>
+                          <dd><a href="https://sgugger.github.io/the-1cycle-policy.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>The 1cycle policy</a></dd>
                           <dt>Thu 05 April 2018</dt>
-                          <dd><a href="https://sgugger.github.io/convolution-in-depth.html" style={{ textDecoration: 'underline' }}>Convolution in depth</a></dd>
+                          <dd><a href="https://sgugger.github.io/convolution-in-depth.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>Convolution in depth</a></dd>
                           <dt>Thu 29 March 2018</dt>
-                          <dd><a href="https://sgugger.github.io/sgd-variants.html" style={{ textDecoration: 'underline' }}>SGD Variants</a></dd>
+                          <dd><a href="https://sgugger.github.io/sgd-variants.html" style={{ textDecoration: 'underline',color: '#d9411e' }}>SGD Variants</a></dd>
                           <dt>Tue 20 March 2018</dt>
-                          <dd><a href="https://sgugger.github.io/a-simple-neural-net-in-numpy.html" style={{ textDecoration: 'underline' }}>A simple neural net in numpy</a></dd>
+                          <dd><a href="https://sgugger.github.io/a-simple-neural-net-in-numpy.html" style={{ textDecoration: 'underline',color: '#d9411e' }}>A simple neural net in numpy</a></dd>
                           <dt>Tue 20 March 2018</dt>
-                          <dd><a href="https://sgugger.github.io/how-do-you-find-a-good-learning-rate.html" style={{ textDecoration: 'underline' }}>How Do You Find A Good Learning Rate</a></dd>
+                          <dd><a href="https://sgugger.github.io/how-do-you-find-a-good-learning-rate.html" style={{ textDecoration: 'underline',color: '#d9411e' }}>How Do You Find A Good Learning Rate</a></dd>
                           <dt>Fri 16 March 2018</dt>
-                          <dd><a href="https://sgugger.github.io/a-neural-net-in-pytorch.html" style={{ textDecoration: 'underline' }}>A Neural Net In Pytorch</a></dd>
+                          <dd><a href="https://sgugger.github.io/a-neural-net-in-pytorch.html" style={{ textDecoration: 'underline',color: '#d9411e' }}>A Neural Net In Pytorch</a></dd>
                           <dt>Tue 13 March 2018</dt>
-                          <dd><a href="https://sgugger.github.io/what-is-deep-learning.html" style={{ textDecoration: 'underline' }}>What Is Deep Learning?</a></dd>
+                          <dd><a href="https://sgugger.github.io/what-is-deep-learning.html" style={{ textDecoration: 'underline',color: '#d9411e' }}>What Is Deep Learning?</a></dd>
                           <dt>Mon 12 March 2018</dt>
-                          <dd><a href="https://sgugger.github.io/why-write-a-blog.html" style={{ textDecoration: 'underline' }}>Why Write A Blog?</a></dd>
+                          <dd><a href="https://sgugger.github.io/why-write-a-blog.html" style={{ textDecoration: 'underline',color: '#d9411e' }}>Why Write A Blog?</a></dd>
                         </dl>
                     </p>
 
             <h3 id="sgugger-neural-net">MNIST Dataset</h3>
             <h2></h2>
-            <p>To have some data on which try our neural net, we will use the MNIST Dataset. It&#39;s a set of hand-written digits that contains 70,000 pictures with their labels. It&#39;s divided
+            <p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>To have some data on which try our neural net, we will use the MNIST Dataset. It&#39;s a set of hand-written digits that contains 70,000 pictures with their labels. It&#39;s divided
 in two parts, one training set with 60,000 digits (on which we will train our model) and 10,000 others that form the test. These were drawn by different people from the ones
 in the first test, and by evaluating how well on this set, we will see how well it actually generalizes what it learned.</p>
             <p>
-            <p>We&#39;ll skip the part as to how to get those sets and how to treat them since it&#39;s all shown in the notebook. Let&#39;s go to the part where we define our neural net instead. The
+            <p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>We&#39;ll skip the part as to how to get those sets and how to treat them since it&#39;s all shown in the notebook. Let&#39;s go to the part where we define our neural net instead. The
 pictures we are given have a size of 28 by 28 pixels, each pixel having a value of 0 (white) to 1 (black), so that makes 784 inputs. For this simple model, we choose one
 hidden layer of 100 neurons, and then an output size of 10 since we have ten different digits.</p>
             </p>
             
-            <p>Why 10 and not 1? It&#39;s true that in this case we could have asked for just one output going from 0 to 9 (and there are ways to make sure itt&#39;d behave like this) but in
+            <p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>Why 10 and not 1? It&#39;s true that in this case we could have asked for just one output going from 0 to 9 (and there are ways to make sure itt&#39;d behave like this) but in
 image classification problems, we often give as many outputs as they are classes to determine. What if our next problem is to say if the picture if of a dog, a cat, a frog or
 a horse? One output wont&#39;t really represent this, whereas four outputs will certainly help, each of them representing the probability itt&#39;s in a given class.</p>
 
             <h3>Softmax</h3>
-            <p>
+            <p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>
               When we have a classification problem and a neural network trying to solve it with <span><SGugger_MathMLComponent_1 /></span> outputs (the number of classes), we would like those outputs to represent the probabilities
 the input is in each of the classes. To make sure that our final <span><SGugger_MathMLComponent_1 /> </span>  numbers are all positive and add up to one, we use the softmax activation for the last layer.            </p> 
               
-                <p>If
+                <p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>If
                 <span><SGugger_MathMLComponent_4 /> </span> are the last activations given by our final linear layer, instead of pushing them through a ReLU or a sigmoid, we define the outputs <span> <SGugger_MathMLComponent_3 /> </span> by
                 </p> 
                 <p>
@@ -2654,7 +2655,7 @@ the input is in each of the classes. To make sure that our final <span><SGugger_
                 <h1 id="convolution-in-depth">Convolution in depth</h1>
 
                 <p>Since AlexNet won the ImageNet competition in 2012, linear layers have been progressively replaced by convolutional ones in neural networks trained to perform a task related to
-image recognition. Let's see what those layers do and how to implement them from scratch.</p>
+image recognition. Let&#39;s see what those layers do and how to implement them from scratch.</p>
             
             
             <h2>What is convolution?</h2>
@@ -2662,8 +2663,8 @@ image recognition. Let's see what those layers do and how to implement them from
 is best shown on <a className="reference external" href="http://setosa.io/ev/image-kernels/" style={{ textDecoration: 'underline' }}>this super cool page</a> where you can actually see the direct effect on any image you like.</p>
 <p>The core idea is that an image is just a bunch of numbers. Its representation in a computer is an array of size width by heights pixels, and each pixel is associated to three float
 values ranging from 0 to 1 (or integers going from 0 to 255). This three numbers represent the red-ness, green-ness and blue-ness of said pixel, the combination of the three
-capturing its color. A fourth channel can be added to represent the transparency of the pixel but we won't focus on that.</p>
-<p>If the image is black and white, a single value can be use per pixel, with 0 meaning black and 1 (or 255) meaning white. Let's begin with this for the explanation. The convolution
+capturing its color. A fourth channel can be added to represent the transparency of the pixel but we won&#39;t focus on that.</p>
+<p>If the image is black and white, a single value can be use per pixel, with 0 meaning black and 1 (or 255) meaning white. Let&#39;s begin with this for the explanation. The convolution
 of our image by a given kernel of a given size is obtained by putting the kernel in front of every area of the picture, like a sliding window, to then do the element-wise product
 of the numbers in our kernel by the ones in the picture it overlaps and summing all of these, like in this picture:</p>
 <img alt="One convolution" className="align-center" src="https://sgugger.github.io/images/art4_one_conv.png" style={{width: 600}}></img>
@@ -2672,7 +2673,7 @@ of the numbers in our kernel by the ones in the picture it overlaps and summing 
 <p>As shown on <a className="reference external" href="http://setosa.io/ev/image-kernels/" style={{ textDecoration: 'underline' }}>this page mentioned earlier</a>, by doing this on all the areas of our picture, sliding the kernel in all the possible positions, it will give another array of number that
 we can also interpret as a picture, and depending on the values inside of our kernel, this will apply different effects on the original image. The process is shown on <a className="reference external" style={{ textDecoration: 'underline' }} href="https://youtu.be/Oqm9vsf_hvU">this video</a></p>
 <p>The idea behind a convolutional layer in a neural net is then to initialize the weights of kernels like the one we just saw at random, then use SGD to find the best possible
-parameters. It's possible to do this since the operation we are doing withour sliding window looks like <span> <SGugger_MathMLComponent_5_Operation/> </span> with the <SGugger_MathMLComponent_5_wij /> being the weights in our kernel and the <SGugger_MathMLComponent_5_xij />  being the values of our pixels. We can even decide to add a bias to have exactly the same
+parameters. It&#39;s possible to do this since the operation we are doing withour sliding window looks like <span> <SGugger_MathMLComponent_5_Operation/> </span> with the <SGugger_MathMLComponent_5_wij /> being the weights in our kernel and the <SGugger_MathMLComponent_5_xij />  being the values of our pixels. We can even decide to add a bias to have exactly the same
 transformation as a linear layer, the only difference being that the weights of a given kernel are the same and applied to the whole picture.</p>
 <p>By stacking several convolutional layers one on top of the other, the hope is to get a neural network that captures the information we want on our image.</p>
 
