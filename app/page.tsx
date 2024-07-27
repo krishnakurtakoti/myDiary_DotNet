@@ -2011,8 +2011,7 @@ The major differences between my classes and yours, is that the one-to-many rela
                 </p>
                 <p>
                   python main.py --stock_symbol=SP500 --train --input_size=1 --lstm_size=128 --max_epoch=50
-                </p>
-
+                </p>          
             <p>Extra_End</p>
         </div>
         <div className="tags">
@@ -2020,6 +2019,85 @@ The major differences between my classes and yours, is that the one-to-many rela
             <Tag value="Predict stock market prices using RNN model with multilayer LSTM cells + optional multi-stock embeddings." />
         </div>
       </div>
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+
+      <div className="lilianweng">
+              <article className="post-entry"> 
+              <a className="entry-link" aria-label="post link to Object Detection for Dummies Part 1: Gradient Vector, HOG, and SS" href="https://lilianweng.github.io/posts/2017-10-29-object-recognition-part-1/">
+                <header className="entry-header">
+                  <h2>Object Detection for Dummies Part 1: Gradient Vector, HOG, and SS
+                  </h2>
+                </header>
+                <section className="entry-content">
+                  <p>I&#39;ve never worked in the field of computer vision and has no idea how the magic could work when an autonomous car is configured to tell apart a stop sign from a pedestrian in a red hat. To motivate myself to look into the maths behind object recognition and detection algorithms, I’m writing a few posts on this topic “Object Detection for Dummies”. This post, part 1, starts with super rudimentary concepts in image processing and a few methods for image segmentation....</p>
+                </section>
+                <footer className="entry-footer">Date: October 29, 2017  |  Estimated Reading Time: 15 min  |  Author: Lilian Weng</footer>
+              </a>
+            </article>
+    </div>
+
+
+      <div className="lilianweng">
+              <article className="post-entry"> 
+              <a className="entry-link" aria-label="post link to Learning Word Embedding" href="https://lilianweng.github.io/posts/2017-10-15-word-embedding/">
+              <header className="entry-header">
+                <h2>Learning Word Embedding
+                </h2>
+              </header>
+              <section className="entry-content">
+                <p>Human vocabulary comes in free text. In order to make a machine learning model understand and process the natural language, we need to transform the free-text words into numeric values. One of the simplest transformation approaches is to do a one-hot encoding in which each distinct word stands for one dimension of the resulting vector and a binary value indicates whether the word presents (1) or not (0).
+            However, one-hot encoding is impractical computationally when dealing with the entire vocabulary, as the representation demands hundreds of thousands of dimensions....</p>
+              </section>
+              <footer className="entry-footer">Date: October 15, 2017  |  Estimated Reading Time: 18 min  |  Author: Lilian Weng</footer>
+              </a>
+            </article>
+        </div>
+
+
+
+  <div className="lilianweng">
+      <article className="post-entry">
+      <a className="entry-link" aria-label="post link to Predict Stock Prices Using RNN: Part 2" href="https://lilianweng.github.io/posts/2017-07-15-stock-rnn-part-2/">
+        <header className="entry-header">
+          <h2>Predict Stock Prices Using RNN: Part 2</h2>
+        </header>
+        <section className="entry-content">
+          <p>In the second part of this tutorial, we will dive deeper into the technical details of building and training an RNN model for stock price prediction using Tensorflow. Make sure to follow along with the code available on github.com/lilianweng/stock-rnn. If you have missed the first part, be sure to check it out to understand the basics of recurrent neural networks and LSTM cells.</p>
+        </section>
+        <footer className="entry-footer">
+          Date: July 15, 2017  |  Estimated Reading Time: 15 min  |  Author: Lilian Weng
+        </footer>
+      </a>
+      </article>
+    </div>
+
+
+
+
+
+    <div className="lilianweng">
+      <article className="post-entry">
+      <a className="entry-link" aria-label="post link to Predict Stock Prices Using RNN: Part 1" href="https://lilianweng.github.io/posts/2017-07-08-stock-rnn-part-1/">
+        <header className="entry-header">
+          <h2>Predict Stock Prices Using RNN: Part 1</h2>
+        </header>
+        <section className="entry-content">
+          <p>This is a tutorial for how to build a recurrent neural network using Tensorflow to predict stock market prices. The full working code is available in github.com/lilianweng/stock-rnn. If you don&#39;t know what is recurrent neural network or LSTM cell, feel free to check my previous post.
+          One thing I would like to emphasize that because my motivation for writing this post is more on demonstrating how to build and train an RNN model in Tensorflow and less on solve the stock prediction problem, I didn&#39;t try hard on improving the prediction outcomes....</p>
+        </section>
+        <footer className="entry-footer">
+          Date: July 8, 2017  |  Estimated Reading Time: 12 min  |  Author: Lilian Weng
+        </footer>
+      </a>
+      </article>
+    </div>
+
+
+  </div>
+</div>
+
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
@@ -2659,23 +2737,23 @@ image recognition. Let&#39;s see what those layers do and how to implement them 
             
             
             <h2>What is convolution?</h2>
-<p>The idea behind convolution is the use of image kernels. A kernel is a small matrix (usually of size 3 by 3) used to apply effect to an image (like sharpening, blurring...). This
+<p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>The idea behind convolution is the use of image kernels. A kernel is a small matrix (usually of size 3 by 3) used to apply effect to an image (like sharpening, blurring...). This
 is best shown on <a className="reference external" href="http://setosa.io/ev/image-kernels/" style={{ textDecoration: 'underline' }}>this super cool page</a> where you can actually see the direct effect on any image you like.</p>
-<p>The core idea is that an image is just a bunch of numbers. Its representation in a computer is an array of size width by heights pixels, and each pixel is associated to three float
+<p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>The core idea is that an image is just a bunch of numbers. Its representation in a computer is an array of size width by heights pixels, and each pixel is associated to three float
 values ranging from 0 to 1 (or integers going from 0 to 255). This three numbers represent the red-ness, green-ness and blue-ness of said pixel, the combination of the three
 capturing its color. A fourth channel can be added to represent the transparency of the pixel but we won&#39;t focus on that.</p>
 <p>If the image is black and white, a single value can be use per pixel, with 0 meaning black and 1 (or 255) meaning white. Let&#39;s begin with this for the explanation. The convolution
 of our image by a given kernel of a given size is obtained by putting the kernel in front of every area of the picture, like a sliding window, to then do the element-wise product
 of the numbers in our kernel by the ones in the picture it overlaps and summing all of these, like in this picture:</p>
 <img alt="One convolution" className="align-center" src="https://sgugger.github.io/images/art4_one_conv.png" style={{width: 600}}></img>
-<p>Then we repeat the process by moving the kernel on every possible area of the picture.</p>
+<p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>Then we repeat the process by moving the kernel on every possible area of the picture.</p>
 <img alt="Full_convolutional_map_1" className="align-center" src="https://sgugger.github.io/images/art4_full_conv.png" style={{width: 600}}></img>
-<p>As shown on <a className="reference external" href="http://setosa.io/ev/image-kernels/" style={{ textDecoration: 'underline' }}>this page mentioned earlier</a>, by doing this on all the areas of our picture, sliding the kernel in all the possible positions, it will give another array of number that
+<p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>As shown on <a className="reference external" href="http://setosa.io/ev/image-kernels/" style={{ textDecoration: 'underline' }}>this page mentioned earlier</a>, by doing this on all the areas of our picture, sliding the kernel in all the possible positions, it will give another array of number that
 we can also interpret as a picture, and depending on the values inside of our kernel, this will apply different effects on the original image. The process is shown on <a className="reference external" style={{ textDecoration: 'underline' }} href="https://youtu.be/Oqm9vsf_hvU">this video</a></p>
 <p>The idea behind a convolutional layer in a neural net is then to initialize the weights of kernels like the one we just saw at random, then use SGD to find the best possible
 parameters. It&#39;s possible to do this since the operation we are doing withour sliding window looks like <span> <SGugger_MathMLComponent_5_Operation/> </span> with the <SGugger_MathMLComponent_5_wij /> being the weights in our kernel and the <SGugger_MathMLComponent_5_xij />  being the values of our pixels. We can even decide to add a bias to have exactly the same
 transformation as a linear layer, the only difference being that the weights of a given kernel are the same and applied to the whole picture.</p>
-<p>By stacking several convolutional layers one on top of the other, the hope is to get a neural network that captures the information we want on our image.</p>
+<p style={{display: 'block', marginBlockStart: '1em', marginBlockEnd: '1em', marginInlineStart: '0px', marginInlineEnd: '0px', unicodeBidi: 'isolate'}}>By stacking several convolutional layers one on top of the other, the hope is to get a neural network that captures the information we want on our image.</p>
 
 
             
@@ -2692,6 +2770,263 @@ transformation as a linear layer, the only difference being that the weights of 
         </div>
       </div>
      
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+   
+              <p>
+                 <a href="https://sgugger.github.io/archives.html" style={{ textDecoration: 'underline' }}>https://amaarora.github.io/</a> <a href="https://github.com/sgugger" style={{ textDecoration: 'underline' }}>Aman Arora</a>
+              </p>
+              <h1>Adam and friends</h1>
+                <p className="pAmanArora">
+                    <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" style={{ textDecoration: 'underline', color: '#d9411e' }}>Adam, SGD, RMSProp from scratch in PyTorch.</a>
+                    <i className="bi bi-calendar-date flex">13/03/2021</i>
+                </p>
+                <h3 className="h3AmanArora" data-number="4.1" data-anchor-id="what-is-stochastic-gradient-descent"><span className="header-section-number">4.1</span> What is Stochastic Gradient Descent?</h3>
+                <p className="pAmanArora">For an intuitive understanding, refer <code>fig-2</code> below:</p>
+                <p><img src="https://amaarora.github.io/images/SGD_intuition.png" title="fig-2 Gradient Descent" className="img-fluid"></img></p>
+                <p className="pAmanArora">
+                Let&#39;s say we are standing at a certain point <code className="codeAmanArora">A</code> of a parabolic hill as shown in <code className="codeAmanArora">fig-2</code> and we wish to find the lowest point on this curve. Can you think of some ways to do this? Well, we could try going in a random direction, calculate the value of the function and if it&#39;s lower than the previous value, we could take a step in that direction. But this process is slow. With some mathematical magic, we can make this process faster. In fact, the fastest way down a function or the steepest way down the hill is the one in the opposite direction of the gradient. Gradient at point <code className="codeAmanArora">A</code> is the slope of the parabolic function, and by calculating the gradients, we can find the steepest direction in which to move to minimize the value of the function. This is referred to as Gradient Descent. Of course in a high dimensional space, calculating the gradients is a little bit more complicated than in <code className="codeAmanArora">fig-2</code> but the idea remains the same. We take a step from point <code className="codeAmanArora">A</code> directed by the gradients to follow the steepest path downwards to point <code className="codeAmanArora">B</code> to find the lowest value of the curve. The step-size is governed by a parameter called learning rate. The new position <code className="codeAmanArora">B</code> then can be defined as <code className="codeAmanArora">B = A - lr * A.grad</code> where <code className="codeAmanArora">A.grad</code> represents the slope/gradients of the curve at point <code className="codeAmanArora">A</code>.
+            </p>
+            <p>The stochasticity in <strong>Stochastic Gradient Descent</strong> arises when we compute the batch gradients. This has been explained below through pseudo-code in <code className="codeAmanArora">Vanilla Stochastic Gradient Descent</code>.</p>
+            <p>From the <a href="https://youtu.be/ccMHJeQU4Qw?t=4587" style={{ textDecoration: 'underline'}}>Introduction to SGD by Jeremy Howard</a>, and from <code className="codeAmanArora">fig-2</code>, we already know that to perform Gradient Descent, we need to be able to calculate the gradients of some function that we wish to minimise with respect to the parameters.</p>
+      
+            <p>We don&#39;t need to manually calculate the gradients and as mentioned in <a href="https://youtu.be/ccMHJeQU4Qw?t=4575">this</a> video by Jeremy, PyTorch can already do this for us using <a href="https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html" style={{ textDecoration: 'underline'}}>torch.autorgrad</a>.</p>
+            <p>So now that we know that we can compute the gradients, the procedure of repeatedly evaluating the gradient and then performing a parameter update is called <code className="codeAmanArora">Gradient Descent</code>. Its vanilla version looks as follows:</p>
+      <p>Extra_End</p>
+        </div>
+
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="COMPUTER VISION" />
+        </div>
+      </div>
+
+
+
+      <div className="amanarora-row pr-2" style={{ padding: '.75em 1em' }}>
+          <div className="amanarora-col">
+            <div className="amanarora-list quarto-listing-default">
+
+                <div className="quarto-post image-right" data-index="14" data-categories="Computer Vision" data-listing-date-sort="1615593600000" data-listing-file-modified-sort="1688187490337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4559">
+                    <div className="thumbnail">
+                    <p><a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external"></a></p><a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">
+                    <p className="card-img-top"><img src="https://amaarora.github.io/images/optimizers.png" title="fig-1 Adam and Friends" className="thumbnail-image card-img"></img></p>
+                    </a><p><a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external"></a></p>
+                    </div>
+                    <div className="body">
+                            <h3 className="no-anchor listing-title">
+                            <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">Adam and friends</a>
+                            </h3>
+                            <div className="listing-subtitle">
+                            <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">Adam, SGD, RMSProp from scratch in PyTorch.</a>
+                            </div>
+                              <div className="listing-categories">
+                              <div className="listing-category" 
+                              >
+                              Computer Vision
+                              </div>
+                              </div>
+                              <div className="listing-description">
+                              <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">Basic optimizers from scratch in PyTorch with working notebook. </a>
+                              </div>
+                    </div>
+                      <div className="metadata">
+                                  <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">
+                                  <div className="listing-date">
+                                  Mar 13, 2021
+                                  </div>
+                                  <div className="listing-author">
+                                  Aman Arora
+                                  </div>
+                                  </a>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="amanarora-row pr-2" style={{ padding: '.75em 1em' }}>
+          <div className="amanarora-col">
+            <div className="amanarora-list quarto-listing-default">
+              <div className="amanarora-post image-right" data-index="14" data-categories="Computer Vision" data-listing-date-sort="1615593600000" data-listing-file-modified-sort="1688187490337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="23" data-listing-word-count-sort="4559">
+                <div className="thumbnail">
+                  <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">
+                    <p className="card-img-top">
+                      <img src="https://amaarora.github.io/images/optimizers.png" title="fig-1 Adam and Friends" className="thumbnail-image card-img" />
+                    </p>
+                  </a>
+                </div>
+                <div className="body">
+                  <h3 className="no-anchor listing-title">
+                    <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">Adam and friends</a>
+                  </h3>
+                  <div className="listing-subtitle">
+                    <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">Adam, SGD, RMSProp from scratch in PyTorch.</a>
+                  </div>
+                  <div className="listing-categories">
+                    <div className="listing-category">Computer Vision</div>
+                  </div>
+                  <div className="listing-description">
+                    <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">Basic optimizers from scratch in PyTorch with working notebook.</a>
+                  </div>
+                </div>
+                <div className="metadata">
+                  <a href="https://amaarora.github.io/posts/2021-03-13-optimizers.html" className="no-external">
+                    <div className="listing-date">Mar 13, 2021</div>
+                    <div className="listing-author">Aman Arora</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      <div className="amanarora-row pr-2" style={{ padding: '.75em 1em' }}>
+          <div className="amanarora-col">
+            <div className="amanarora-list quarto-listing-default">
+              <div className="amanarora-post quarto-post image-right" data-index="15" data-categories="Computer Vision,Model Architecture,Transformers" data-listing-date-sort="1610928000000" data-listing-file-modified-sort="1688187490337" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="20" data-listing-word-count-sort="3906">
+                    <div className="thumbnail">
+                    <p><a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external"></a></p><a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external">
+                    <p className="card-img-top"><img src="https://amaarora.github.io/images/ViT.png" title="fig-1 The Model Overview" className="thumbnail-image card-img"></img></p>
+                    </a><p><a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external"></a></p>
+                    </div>
+                    <div className="body">
+                            <h3 className="no-anchor listing-title">
+                            <a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external">Vision Transformer</a>
+                            </h3>
+                            <div className="listing-subtitle">
+                            <a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external">An Image is Worth 16x16 Words - Transformers for Image Recognition at Scale</a>
+                            </div>
+                          <div className="listing-categories">
+                                <div className="listing-category" /* onclick="window.quartoListingCategory('Computer Vision'); return false;" */
+                                >
+                                Computer Vision
+                                </div>
+                                <div className="listing-category" /* onclick="window.quartoListingCategory('Model Architecture'); return false;" */
+                                >
+                                Model Architecture
+                                </div>
+                              <div className="listing-category" /* onclick="window.quartoListingCategory('Transformers'); return false;" */
+                              >
+                              Transformers
+                              </div>
+                          </div>
+                          <div className="listing-description">
+                          <a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external">In this blog post, we will be looking at the Vision Transformer architectures in detail, and also re-implement in PyTorch from scratch. </a>
+                          </div>
+                    </div>
+                    <div className="metadata">
+                        <a href="https://amaarora.github.io/posts/2021-01-18-ViT.html" className="no-external">
+                            <div className="listing-date">
+                            Jan 18, 2021
+                            </div>
+                            <div className="listing-author">
+                            Aman Arora
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                </div>
+          </div>
+        </div>
+
+
+        <div className="amanarora-row pr-2" style={{ padding: '.75em 1em' }}>
+          <div className="amanarora-col">
+            <div className="amanarora-list quarto-listing-default">
+                          <div className="quarto-post image-right" data-index="20" data-categories="Computer Vision,Model Architecture,Image Segmentation" data-listing-date-sort="1598745600000" data-listing-file-modified-sort="1688187490333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2839">
+                              <div className="thumbnail">
+                              <p><a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external"></a></p><a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external">
+                              <p className="card-img-top"><img src="https://amaarora.github.io/images/unet.png" title="fig-1 The U-Net Architecture" className="thumbnail-image card-img"></img></p>
+                              </a><p><a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external"></a></p>
+                              </div>
+                            <div className="body">
+                                    <h3 className="no-anchor listing-title">
+                                    <a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external">U-Net A PyTorch Implementation in 60 lines of Code</a>
+                                    </h3>
+                                      <div className="listing-subtitle">
+                                      <a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external">U-Net Convolutional Networks for Biomedical Image Segmentation</a>
+                                      </div>
+                                  <div className="listing-categories">
+                                          <div className="listing-category" /* onclick="window.quartoListingCategory('Computer Vision'); return false;" */ 
+                                          >
+                                          Computer Vision
+                                          </div>
+                                        <div className="listing-category" /* onclick="window.quartoListingCategory('Model Architecture'); return false;" */ 
+                                        >
+                                        Model Architecture
+                                        </div>
+                                          <div className="listing-category" /* onclick="window.quartoListingCategory('Image Segmentation'); return false;" */ 
+                                          >
+                                          Image Segmentation
+                                          </div>
+                                  </div>
+                                <div className="listing-description">
+                                <a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external">As part of this blog post we will implement the U-Net architecture in PyTorch in 60 lines of code. </a>
+                                </div>
+                            </div>
+                        <div className="metadata">
+                            <a href="https://amaarora.github.io/posts/2020-09-13-unet.html" className="no-external">
+                                  <div className="listing-date">
+                                  Aug 30, 2020
+                                  </div>
+                                  <div className="listing-author">
+                                  Aman Arora
+                                  </div>
+                            </a>
+                        </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="amanarora-row pr-2" style={{ padding: '.75em 1em' }}>
+          <div className="amanarora-col">
+            <div className="amanarora-list quarto-listing-default">
+                      <div className="amanarora-post quarto-post image-right" data-index="26" data-categories="Computer Vision" data-listing-date-sort="1595030400000" data-listing-file-modified-sort="1688187490333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2801">
+                          <div className="thumbnail">
+                          <p><a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external"></a></p><a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external">
+                          <p className="card-img-top"><img title="cross entropy loss" className="thumbnail-image card-img" src="https://amaarora.github.io/images/cross_entropy.png"></img></p>
+                          </a><p><a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external"></a></p>
+                          </div>
+                          <div className="body">
+                                <h3 className="no-anchor listing-title">
+                                <a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external">Label Smoothing Explained using Microsoft Excel</a>
+                                </h3>
+                                <div className="listing-subtitle">
+                                <a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external">Better language models and their implications</a>
+                                </div>
+                                <div className="listing-categories">
+                                <div className="listing-category" /* onclick="window.quartoListingCategory('Computer Vision'); return false;"*/
+                                >
+                                Computer Vision
+                                </div>
+                                </div>
+                                <div className="listing-description">
+                                <a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external">In this blogpost, we re-implement Label Smoothing in Microsoft Excel step by step. </a>
+                                </div>
+                          </div>
+                          <div className="metadata">
+                            <a href="https://amaarora.github.io/posts/2020-07-18-label-smoothing.html" className="no-external">
+                              <div className="listing-date">
+                              Jul 18, 2020
+                              </div>
+                              <div className="listing-author">
+                              Aman Arora
+                              </div>
+                            </a>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
