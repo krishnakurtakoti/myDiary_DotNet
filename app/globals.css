@@ -305,3 +305,13 @@ div.quarto-post .thumbnail {
   padding: 0.5em 1em;
   background: #f9f9f9;
 }
+
+html.light {
+  --timdeschryver-base-color: 0, 0%, 0%;
+  --timdeschryver-background-color: hsla(0, 0%, 100%, .9);
+  --timdeschryver-background-color-subtle: rgba(0, 0, 0, .025);
+  --timdeschryver-background-color-transparent: hsla(0, 0%, 0%, .07);
+  --timdeschryver-text-color: hsla(0, 0%, 0%, .9);
+  --timdeschryver-text-color-light: hsla(0, 0%, 0%, .7);
+  --timdeschryver-text-color-subtle: hsla(0, 0%, 0%, .4);
+}

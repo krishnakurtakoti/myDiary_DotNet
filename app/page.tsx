@@ -290,11 +290,186 @@ export default function Home() {
         </div>
 
 
+
+
+        <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+                      <div className="amanarora-post quarto-post image-right" data-index="26" data-categories="Computer Vision" data-listing-date-sort="1595030400000" data-listing-file-modified-sort="1688187490333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2801">
+                       
+                          <div className="body">
+                                <h1 className="no-anchor listing-title">
+                                <a href="https://blog.ploeh.dk/" className="no-external">ploeh blog | danish software design</a>
+                                </h1>
+
+                                              <p>
+                                              <ul>
+                                              <li><a href="https://blog.ploeh.dk/2014/05/01/autofixture-conventions-with-albedo/" style={{ textDecoration: 'underline' }}>AutoFixture conventions with Albedo</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/06/27/ndc-2013-session-recordings/" style={{ textDecoration: 'underline' }}>NDC 2013 session recordings</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/04/08/how-to-automatically-populate-properties-with-automoq/" style={{ textDecoration: 'underline' }}>How to automatically populate properties with AutoMoq</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/04/05/how-to-configure-automoq-to-set-up-all-properties/" style={{ textDecoration: 'underline' }}>How to configure AutoMoq to set up all properties</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/03/01/AutoFixture3/" style={{ textDecoration: 'underline' }}>AutoFixture 3</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/18/StringCalculatorkatawithAutofixtureexercise8/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 8</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/15/StringCalculatorkatawithAutofixtureexercise7/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 7</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/14/StringCalculatorkatawithAutofixtureexercise6/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 6</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/13/StringCalculatorkatawithAutofixtureexercise5/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 5</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/12/StringCalculatorkatawithAutofixtureexercise4/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 4</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/11/StringCalculatorkatawithAutofixtureexercise3/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 3</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/07/StringCalculatorkatawithAutofixtureexercise2/" style={{ textDecoration: 'underline' }}>String Calculator kata with Autofixture exercise 2</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/06/StringCalculatorkatawithAutoFixtureexercise1/" style={{ textDecoration: 'underline' }}>String Calculator kata with AutoFixture exercise 1</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/02/06/StringCalculatorkatawithAutoFixture/" style={{ textDecoration: 'underline' }}>String Calculator kata with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2013/01/09/NSubstituteAuto-mockingwithAutoFixture/" style={{ textDecoration: 'underline' }}>NSubstitute Auto-mocking with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2012/07/31/TheorderofAutoFixtureCustomizationsmatter/" style={{ textDecoration: 'underline' }}>The order of AutoFixture Customizations matter</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2012/06/22/ResemblanceandLikeness/" style={{ textDecoration: 'underline' }}>Resemblance and Likeness</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2012/01/03/SOLIDisAppend-only/" style={{ textDecoration: 'underline' }}>SOLID is Append-only</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/10/25/SOLIDconcrete/" style={{ textDecoration: 'underline' }}>SOLID concrete</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/09/06/AutoFixturegoesContinuousDeliverywithSemanticVersioning/" style={{ textDecoration: 'underline' }}>AutoFixture goes Continuous Delivery with Semantic Versioning</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/05/16/TennisKatawithimmutabletypesandacyclomaticcomplexityof1/" style={{ textDecoration: 'underline' }}>Tennis Kata with immutable types and a cyclomatic complexity of 1</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/05/02/AutoFixture2.1/" style={{ textDecoration: 'underline' }}>AutoFixture 2.1</a></li> 
+                                              <li><a href="https://blog.ploeh.dk/2011/04/19/AutoFixture2.1beta1/" style={{ textDecoration: 'underline' }}>AutoFixture 2.1 beta 1</a></li>      
+                                              <li><a href="https://blog.ploeh.dk/2011/04/19/ConstructorstrategiesforAutoFixture/" style={{ textDecoration: 'underline' }}>Constructor strategies for AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/04/18/EnumerablesaredynamicalsoinAutoFixture/" style={{ textDecoration: 'underline' }}>Enumerables are dynamic - also in AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/04/05/MSDNMagazinearticleaboutCQRSonWindowsAzure/" style={{ textDecoration: 'underline' }}>MSDN Magazine article about CQRS on Windows Azure</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/03/18/EncapsulatingAutoFixtureCustomizations/" style={{ textDecoration: 'underline' }}>Encapsulating AutoFixture Customizations</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/02/08/CreatinggeneralpopulatedlistswithAutoFixture/" style={{ textDecoration: 'underline' }}>Creating general populated lists with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2011/02/07/CreatingspecificpopulatedlistswithAutoFixture/" style={{ textDecoration: 'underline' }}>Creating specific populated lists with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/11/22/IntegratingAutoFixturewithObjectHydrator/" style={{ textDecoration: 'underline' }}>Integrating AutoFixture with ObjectHydrator</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/11/13/RhinoMocks-basedauto-mockingwithAutoFixture/" style={{ textDecoration: 'underline' }}>Rhino Mocks-based auto-mocking with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/10/19/Convention-basedCustomizationswithAutoFixture/" style={{ textDecoration: 'underline' }}>Convention-based Customizations with AutoFixture</a></li> 
+                                              <li><a href="https://blog.ploeh.dk/2010/10/10/AutoFixture2.0Released/" style={{ textDecoration: 'underline' }}>AutoFixture 2.0 Released</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/10/08/AutoDataTheorieswithAutoFixture/" style={{ textDecoration: 'underline' }}>AutoData Theories with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/08/25/ChangingthebehaviorofAutoFixtureauto-mockingwithMoq/" style={{ textDecoration: 'underline' }}>Changing the behavior of AutoFixture auto-mocking with Moq</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/08/19/AutoFixtureasanauto-mockingcontainer/" style={{ textDecoration: 'underline' }}>AutoFixture as an auto-mocking container</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/08/09/AutoFixture2.0beta1/" style={{ textDecoration: 'underline' }}>AutoFixture 2.0 beta 1</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/06/29/IntroducingAutoFixtureLikeness/" style={{ textDecoration: 'underline' }}>Introducing AutoFixture Likeness</a></li> 
+                                              <li><a href="https://blog.ploeh.dk/2010/04/10/AutoFixture1.1/" style={{ textDecoration: 'underline' }}>AutoFixture 1.1</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/04/06/MappingtypeswithAutoFixture/" style={{ textDecoration: 'underline' }}>Mapping types with AutoFixture</a></li>
+                                              <li><a href="https://blog.ploeh.dk/2010/04/02/AutoFixture1.1RC1/" style={{ textDecoration: 'underline' }}>AutoFixture 1.1 RC1</a></li>   
+                                              <li><a href="https://blog.ploeh.dk/2010/03/27/Freezingmocks/" style={{ textDecoration: 'underline' }}>Freezing mocks</a></li>  
+                                              <li><a href="/2010/03/26/Moreaboutfrozenpizza/">More about frozen pizza</a></li>  
+                                              <li><a href="/2010/03/17/AutoFixtureFreeze/">AutoFixture Freeze</a></li> 
+                                              <li><a href="/2010/01/27/AutoFixture1.0/">AutoFixture 1.0</a></li>   
+                                              <li><a href="/2010/01/20/AutoFixture1.0RC2/">AutoFixture 1.0 RC2</a></li>  
+                                              <li><a href="/2010/01/13/AutoFixture1.0RC1/">AutoFixture 1.0 RC1</a></li>
+                                              <li><a href="/2010/01/04/AnonymousGet/">Anonymous Get</a></li>
+                                              <li><a href="/2009/12/05/BuildingandassigningarrayswithAutoFixture/">Building and assigning arrays with AutoFixture</a></li>    
+                                              <li><a href="/2009/11/26/AnonymousDo/">Anonymous Do</a></li>
+                                              <li><a href="/2009/11/07/Creatinglength-constrainedstringswithAutoFixture/">Creating length-constrained strings with AutoFixture</a></li>  
+                                              <li><a href="/2009/10/31/AutoFixturebeta1/">AutoFixture beta 1</a></li>   
+                                              <li><a href="/2009/10/26/AnonymousWith/">Anonymous With</a></li>
+                                              <li><a href="/2009/09/22/CustomizingAType'sBuilderWithAutoFixture/">Customizing A Type's Builder With AutoFixture</a></li>  
+                                              <li><a href="/2009/09/21/AutoFixture.8.6Released/">AutoFixture .8.6 Released</a></li>
+                                              <li><a href="/2009/09/02/AutoFixture.8.5Released/">AutoFixture .8.5 Released</a></li>  
+                                              <li><a href="/2009/08/25/DoRedux/">Do Redux</a></li>
+                                              <li><a href="/2009/08/17/OmittingOnlyCertainPropertiesWithAutoFixture/">Omitting Only Certain Properties With AutoFixture</a></li>
+                                              <li><a href="/2009/07/23/DisablingAutoPropertiesInAutoFixture/">Disabling AutoProperties In AutoFixture</a></li>
+                                              <li><a href="/2009/07/11/AutoFixture.8.4AndRoadmap/">AutoFixture .8.4 And Roadmap</a></li>
+                                              <li><a href="/2009/07/01/AutoFixtureAsTestDataBuilder/">AutoFixture As Test Data Builder</a></li>
+                                              <li><a href="/2009/06/20/AutoFixture.8.3Released/">AutoFixture .8.3 Released</a></li>
+                                              <li><a href="/2009/06/18/AutoFixture.8.2Released/">AutoFixture .8.2 Released</a></li>
+                                              <li><a href="/2009/06/09/CallingMethodsWhileBuildingAnonymousVariablesWithAutoFixture/">Calling Methods While Building Anonymous Variables With AutoFixture</a></li> 
+                                              <li><a href="/2009/06/04/AutoFixtureCheatSheet/">AutoFixture Cheat Sheet</a></li>    
+                                              <li><a href="/2009/06/01/SettingPropertyValuesWhileBuildingAnonymousVariablesWithAutoFixture/">Setting Property Values While Building Anonymous Variables With AutoFixture</a></li> 
+                                              <li><a href="/2009/05/26/TheAutoFixtureBuilder/">The AutoFixture Builder</a></li>  
+                                              <li><a href="/2009/05/17/AutoFixture.8.1Released/">AutoFixture .8.1 Released</a></li>
+                                              <li><a href="/2009/05/15/AutoFixtureAsFixtureObject/">AutoFixture As Fixture Object</a></li>
+                                              <li><a href="/2009/05/11/AnonymousSequencesWithAutoFixture/">Anonymous Sequences With AutoFixture</a></li>
+                                              <li><a href="/2009/05/01/DealingWithConstrainedInput/">Dealing With Constrained Input</a></li>   
+                                              <li><a href="/2009/04/27/ReplacingAutoFixturesDefaultAlgorithms/">Replacing AutoFixture's Default Algorithms</a></li>   
+                                              <li><a href="/2009/04/23/DealingWithTypesWithoutPublicConstructors/">Dealing With Types Without Public Constructors</a></li>      
+                                              <li><a href="/2009/04/19/CreatingBooleansWithAutoFixture/">Creating Booleans With AutoFixture</a></li>    
+                                              <li><a href="/2009/04/03/CreatingNumbersWithAutoFixture/">Creating Numbers With AutoFixture</a></li>    
+                                              <li><a href="/2009/04/02/CreatingStringsWithAutoFixture/">Creating Strings With AutoFixture</a></li>     
+                                              <li><a href="/2009/03/24/HowAutoFixtureCreatesObjects/">How AutoFixture Creates Objects</a></li>     
+                                              <li><a href="/2009/03/22/AnnouncingAutoFixture/">Announcing: AutoFixture</a></li>
+                                            
+                                  </ul>
+                                                
+                                              </p>
+                                   
+                    </div>
+                </div>
+          </div>
+        </div>
+
+
+
         <div className="tags">
             <span className="bold">Tags: </span>
-            <Tag value="Dependency-Injection" />
+            <Tag value="AutoFixture" />
         </div>
       </div>
+
+
+
+      {/* <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+
+
+          <h1>Hi, I'm Tim <div className="wave">👋</div></h1>
+          <p>A software engineer from Belgium who enjoys to <strong><a className="mark mark-hover" href="https://timdeschryver.dev/blog"  style={{ textDecoration: 'underline' }}>blog </a></strong>
+            about my experiences with the aim to help others and my future self, primarily on
+            <strong> Angular</strong> and
+            <strong> .NET</strong>.</p>
+
+            <p>Lifelong learner and <strong><a className="mark mark-hover" href="https://github.com/timdeschryver" rel="external">open-source enthusiast</a></strong>, mainly working on <a className="mark mark-hover" href="https://ngrx.io/" rel="external" style={{ textDecoration: 'underline' }}>NgRx</a> and <a className="mark mark-hover" href="https://testing-library.com/angular" rel="external" style={{ textDecoration: 'underline' }}>Angular Testing Library</a>.</p>
+
+            <p className="font-size: 28px;">
+                <a href="https://timdeschryver.dev/blog/how-to-test-your-csharp-web-api#" style={{ textDecoration: 'underline' }}>How to test your C# Web API by Tim Deschryver</a>
+                <i className="bi bi-calendar-date flex">2/8/2024</i>
+            </p>
+            	
+            <span className="bold">Extra: </span>
+            <p className="font-size: 28px;">The full example can be found on 
+            <a href="https://github.com/timdeschryver/HowToTestYourCsharpWebApi" style={{ textDecoration: 'underline' }}> GitHub.</a>
+            </p>
+
+            <p className="font-size: 28px;">
+            <a href="https://timdeschryver.dev/blog/why-i-stopped-worrying-about-test-setups-by-using-autofixture#" style={{ textDecoration: 'underline' }}>Why I stopped worrying about test setups by using AutoFixture</a>
+                <i className="bi bi-calendar-date flex">5/11/2022</i>
+         
+            </p>
+        
+            <p>Extra_End</p>
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="Entity-Framework" />
+        </div>
+      </div> */}
+
+
+      <div className="timdeschryver-row pr-2" style={{ padding: '.75em 1em', background: 'var(--timdeschryver-background-color)' }}>
+    <div className="timdeschryver-col-sm-12">
+        <h1>Hi, I'm Tim <div className="timdeschryver-wave">👋</div></h1>
+        <p>A software engineer from Belgium who enjoys to <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://timdeschryver.dev/blog" style={{ textDecoration: 'underline' }}>blog</a></strong>
+            about my experiences with the aim to help others and my future self, primarily on
+            <strong> Angular</strong> and
+            <strong> .NET</strong>.</p>
+
+        <p>Lifelong learner and <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://github.com/timdeschryver" rel="external">open-source enthusiast</a></strong>, mainly working on <a className="timdeschryver-mark timdeschryver-mark-hover" href="https://ngrx.io/" rel="external" style={{ textDecoration: 'underline' }}>NgRx</a> and <a className="timdeschryver-mark timdeschryver-mark-hover" href="https://testing-library.com/angular" rel="external" style={{ textDecoration: 'underline' }}>Angular Testing Library</a>.</p>
+
+        <p style={{ fontSize: '28px' }}>
+            <a href="https://timdeschryver.dev/blog/how-to-test-your-csharp-web-api#" style={{ textDecoration: 'underline' }}>How to test your C# Web API by Tim Deschryver</a>
+            <i className="bi bi-calendar-date flex">2/8/2024</i>
+        </p>
+        
+        <span className="timdeschryver-bold">Extra: </span>
+        <p style={{ fontSize: '28px' }}>The full example can be found on 
+        <a href="https://github.com/timdeschryver/HowToTestYourCsharpWebApi" style={{ textDecoration: 'underline' }}> GitHub.</a>
+        </p>
+
+        <p style={{ fontSize: '28px' }}>
+        <a href="https://timdeschryver.dev/blog/why-i-stopped-worrying-about-test-setups-by-using-autofixture#" style={{ textDecoration: 'underline' }}>Why I stopped worrying about test setups by using AutoFixture</a>
+            <i className="bi bi-calendar-date flex">5/11/2022</i>
+        </p>
+    
+        <p>Extra_End</p>
+    </div>
+    <div className="timdeschryver-tags">
+        <span className="timdeschryver-bold">Tags: </span> 
+        <Tag value="Entity-Framework" />
+    </div>
+</div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
