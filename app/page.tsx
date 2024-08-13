@@ -356,7 +356,7 @@ export default function Home() {
                                               <li><a href="/2009/11/07/Creatinglength-constrainedstringswithAutoFixture/">Creating length-constrained strings with AutoFixture</a></li>  
                                               <li><a href="/2009/10/31/AutoFixturebeta1/">AutoFixture beta 1</a></li>   
                                               <li><a href="/2009/10/26/AnonymousWith/">Anonymous With</a></li>
-                                              <li><a href="/2009/09/22/CustomizingAType'sBuilderWithAutoFixture/">Customizing A Type's Builder With AutoFixture</a></li>  
+                                              <li><a href="/2009/09/22/CustomizingAType'sBuilderWithAutoFixture/">Customizing A Type&#39;s Builder With AutoFixture</a></li>  
                                               <li><a href="/2009/09/21/AutoFixture.8.6Released/">AutoFixture .8.6 Released</a></li>
                                               <li><a href="/2009/09/02/AutoFixture.8.5Released/">AutoFixture .8.5 Released</a></li>  
                                               <li><a href="/2009/08/25/DoRedux/">Do Redux</a></li>
@@ -374,7 +374,7 @@ export default function Home() {
                                               <li><a href="/2009/05/15/AutoFixtureAsFixtureObject/">AutoFixture As Fixture Object</a></li>
                                               <li><a href="/2009/05/11/AnonymousSequencesWithAutoFixture/">Anonymous Sequences With AutoFixture</a></li>
                                               <li><a href="/2009/05/01/DealingWithConstrainedInput/">Dealing With Constrained Input</a></li>   
-                                              <li><a href="/2009/04/27/ReplacingAutoFixturesDefaultAlgorithms/">Replacing AutoFixture's Default Algorithms</a></li>   
+                                              <li><a href="/2009/04/27/ReplacingAutoFixturesDefaultAlgorithms/">Replacing AutoFixture&#39;s Default Algorithms</a></li>   
                                               <li><a href="/2009/04/23/DealingWithTypesWithoutPublicConstructors/">Dealing With Types Without Public Constructors</a></li>      
                                               <li><a href="/2009/04/19/CreatingBooleansWithAutoFixture/">Creating Booleans With AutoFixture</a></li>    
                                               <li><a href="/2009/04/03/CreatingNumbersWithAutoFixture/">Creating Numbers With AutoFixture</a></li>    
@@ -440,7 +440,7 @@ export default function Home() {
 
       <div className="timdeschryver-row pr-2" style={{ padding: '.75em 1em', background: 'var(--timdeschryver-background-color)' }}>
     <div className="timdeschryver-col-sm-12">
-        <h1>Hi, I'm Tim <div className="timdeschryver-wave">👋</div></h1>
+        <h1>Hi, I&#39;m Tim <div className="timdeschryver-wave">👋</div></h1>
         <p>A software engineer from Belgium who enjoys to <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://timdeschryver.dev/blog" style={{ textDecoration: 'underline' }}>blog</a></strong>
             about my experiences with the aim to help others and my future self, primarily on
             <strong> Angular</strong> and
