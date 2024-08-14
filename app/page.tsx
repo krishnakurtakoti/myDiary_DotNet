@@ -3324,7 +3324,7 @@ transformation as a linear layer, the only difference being that the weights of 
                 <h2 className="lernapparat-h2"><a href="https://lernapparat.de/pytorch-101-session1" style={{ textDecoration: 'underline' }}>A PyTorch videocourse</a></h2>
                 <div className="date">Sept. 21, 2022</div>
                 <p>
-                </p><p>Earlier this year, I started recording a PyTorch course with the idea to finally offer a PyTorch 101 certificate for those interested. Today, I'm giving you the first lecture video and notebook for free.</p>
+                </p><p>Earlier this year, I started recording a PyTorch course with the idea to finally offer a PyTorch 101 certificate for those interested. Today, I&#39;m giving you the first lecture video and notebook for free.</p>
                 <p></p>
                 <p className="text-right">
                 <a href="https://lernapparat.de/pytorch-101-session1" style={{ textDecoration: 'underline' }}>Mehr&gt;</a>
