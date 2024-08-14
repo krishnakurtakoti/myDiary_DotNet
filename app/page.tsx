@@ -3254,6 +3254,100 @@ transformation as a linear layer, the only difference being that the weights of 
         </div>
 
 
+
+        <div className="lernapparat-row">
+
+
+          <div className="lernapparat-blog-header">
+            <h1 className="lernapparat-blog-title">Lernapparat</h1>
+            <p className="lead blog-description">Maschinelles Lernen Lernen</p>
+          </div>
+      </div>
+
+        <div className="lernapparat-row">
+
+          <div className="lernapparat-blog-sidebar" style={{ marginRight: '1rem' }}>
+              <div className="lernapparat-sidebar-module">
+                  <p>Thank you for visiting!</p>
+                  <p>
+                      I recently founded a great new consultancy, MathInf GmbH, to help your business with PyTorch training and AI modeling. Do check it out!
+                      <span style={{ color: '#428bca', borderRadius: '10%', padding: '0.5rem' }}>
+                          <a href="https://mathinf.eu/">
+                              <img src="https://lernapparat.de/static/mathinf_logo.png" alt="MathInf Logo" style={{ padding: '0.5rem', border: '0.5rem solid rgba(255, 255, 255, 0.2)' }} />
+                          </a>
+                      </span>
+                  </p>
+                  <p>What is your experience with machine learning? Are there things you can recommend? Is there something you find missing?</p>
+                  <p>I appreciate and read every <a href="mailto:tv@lernapparat.de" style={{ textDecoration: 'underline' }}>email</a>, thank you for sharing your feedback.</p>
+                  <p className="lernapparat-text-right">
+                      <em>Thomas Viehmann</em>
+                  </p>
+              </div>
+          </div>
+
+          <div className="lernapparat-blog-main">
+              <div className="lernapparat-post">
+                  <h2 className="lernapparat-h2"><a href="https://lernapparat.de/pytorch-incremental-save" style={{ textDecoration: 'underline' }}>More memory-efficiency: conversion of weights for large models</a></h2>
+                  <div className="date">June 29, 2023</div>
+                  <p>Working with large language models has us wanting to make the most on invariably limited hardware. Today we consider converting weights and improve on memory efficiency for that.</p>
+                  <p className="lernapparat-text-right">
+                      <a href="https://lernapparat.de/pytorch-incremental-save" style={{ textDecoration: 'underline' }}>Mehr&gt;</a>
+                  </p>
+              </div>
+
+              <div className="lernapparat-post">
+                <h2 className="lernapparat-h2"><a href="https://lernapparat.de/loading-model-weights"  style={{ textDecoration: 'underline' }}>Memory-efficient loading of model weights</a></h2>
+                <div className="date">April 18, 2023</div>
+                <p>
+                </p><p>I have been intrigued by what computers can do for most of my life, and these days that includes large language models (LLMs) running on my own computer. It seems that I am not the only one. But one thing about these LLMs is that they are not kidding when they say large. The amounts of GPU and CPU memory to run them is huge. And, to be perfectly honest, I have a hunch that PyTorch, my favourite modelling library, is not always as economical with memory as it could be.</p>
+                <p></p>
+                <p className="text-right">
+                <a href="https://lernapparat.de/loading-model-weights"  style={{ textDecoration: 'underline' }}>Mehr&gt;</a>
+                </p>
+              </div>
+
+
+
+              <div className="lernapparat-post">
+                <h2 className="lernapparat-h2"><a href="https://lernapparat.de/faster-model-init" style={{ textDecoration: 'underline' }}>Making model initialization faster</a></h2>
+                <div className="date">March 4, 2023</div>
+                <p>
+                </p><p>Recently, largeish pretrained models are the rage. But these take long to init. What can we do?</p>
+                <p></p>
+                <p className="text-right">
+                <a href="https://lernapparat.de/faster-model-init" style={{ textDecoration: 'underline' }}>Mehr&gt;</a>
+                </p>
+              </div>
+
+
+              <div className="lernapparat-post">
+                <h2 className="lernapparat-h2"><a href="https://lernapparat.de/pytorch-101-session1" style={{ textDecoration: 'underline' }}>A PyTorch videocourse</a></h2>
+                <div className="date">Sept. 21, 2022</div>
+                <p>
+                </p><p>Earlier this year, I started recording a PyTorch course with the idea to finally offer a PyTorch 101 certificate for those interested. Today, I'm giving you the first lecture video and notebook for free.</p>
+                <p></p>
+                <p className="text-right">
+                <a href="https://lernapparat.de/pytorch-101-session1" style={{ textDecoration: 'underline' }}>Mehr&gt;</a>
+                </p>
+              </div>
+
+              <div className="lernapparat-post">
+                <h2 className="lernapparat-h2"><a href="https://lernapparat.de/statistics-deep-learning-nonparametric" style={{ textDecoration: 'underline' }}>What does it mean that Deep Learning is Non-Parametric?</a></h2>
+                <div className="date">March 19, 2022</div>
+                <p>
+                </p><p>Most days, I write here about getting my hands dirty with code and keep mathematical insights for my friends and clients. Today, we look at a very high, almost philosophical level, of deep learning instead and discuss a small piece of intuition about deep learning.</p>
+                <p></p>
+                <p className="text-right">
+                <a href="https://lernapparat.de/statistics-deep-learning-nonparametric" style={{ textDecoration: 'underline' }}>Mehr&gt;</a>
+                </p>
+              </div>
+
+          </div>
+</div>
+
+
+
+
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
 
