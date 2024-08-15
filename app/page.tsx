@@ -3346,6 +3346,669 @@ transformation as a linear layer, the only difference being that the weights of 
 </div>
 
 
+<div className="row">
+
+
+      <div className="alex-rogozhnikov-post">
+
+        <header className="alex-rogozhnikov-post-header">
+          <h1 className="alex-rogozhnikov-post-title">Alex Rogozhnikov</h1>
+        </header>
+
+        <article className="alex-rogozhnikov-post-content">
+          <center>
+            <div
+              style={{
+                width: '200px',
+                height: '200px',
+                borderRadius: '100px',
+                boxShadow: '0px 0px 5px 0 #000',
+                backgroundPosition: 'center center',
+                backgroundSize: 'cover',
+                backgroundImage: "url('/images/alex_rogozhnikov.jpeg')"
+              }}
+            />
+          </center>
+
+          <p>Hello.</p>
+
+          <p>My name is Alex Rogozhnikov (Алексей Михайлович Рогожников), and &#39;brilliantly wrong&#39; is my personal blog.</p>
+
+          <p>Area of my interest is development and improvement of Machine Learning methods.</p>
+
+          <p>I have PhD in mathematics and physics from <a href="http://www.msu.ru/en/">Moscow University</a>.</p>
+
+          <p>I have some other degrees as well :)</p>
+          <p>
+              <ul>
+                 <li>  <span className="article-post">1.  </span>  master degree in Math &amp; CS from Computer Science faculty of MSU</li>
+                   <li>   <span className="article-post">2.  </span>      master degree from <a href="http://math.hse.ru" style={{ textDecoration: 'underline' }}>faculty of mathematics</a> of Higher School of Economics (definitely great place if you want to devote your life to math)</li>
+                    <li>  <span className="article-post">3.  </span>     degree from <a href="http://yandexdataschool.com" style={{ textDecoration: 'underline' }}>Yandex School of Data Analysis</a>, 
+                          which is one of the best places (or simply best place?) to study programming, data analysis and machine learning.</li>
+                          <li>  <span className="article-post">4.  </span>     I also have many <a href="https://en.wikipedia.org/wiki/Degrees_of_freedom_(mechanics)" style={{ textDecoration: 'underline' }}>degrees of freedom</a> (as many other complex physical systems :)</li>
+                        </ul>
+          </p>
+
+
+          <p>If you&#39;re interested in things I am doing, take a look at</p>
+          <p>
+              <ul>
+                          <li> <span className="article-post">1.  </span>  <a href="https://github.com/arogozhnikov/einops" style={{ textDecoration: 'underline' }}>einops</a> - a new way for tensor manipulation, 107 stars.</li>
+                          <li> <span className="article-post">2.  </span>  <a href="https://github.com/arogozhnikov/infiniteboost" style={{ textDecoration: 'underline' }}>InfiniteBoost</a></li>
+                          <li> <span className="article-post">3.  </span>  <a href="https://arogozhnikov.github.io/2016/04/28/demonstrations-for-ml-courses.html" style={{ textDecoration: 'underline' }}>machine learning demonstrations</a></li>
+                          <li> <span className="article-post">4.  </span>  <a href="https://github.com/arogozhnikov/hep_ml/blob/master/notebooks/DemoReweighting.ipynb" style={{ textDecoration: 'underline' }}>gradient boosted reweighter</a></li>
+                          <li> <span className="article-post">5.  </span>  <a href="https://github.com/arogozhnikov/hep_ml/blob/master/notebooks/BoostingToUniformity.ipynb" style={{ textDecoration: 'underline' }}>uniform gradient boosting</a></li>
+                          <li> <span className="article-post">6.  </span> <a href="http://arogozhnikov.github.io/2015/12/19/optimal-control-of-oscillations.html" style={{ textDecoration: 'underline' }}>visualization of optimal control of oscillations</a></li>
+                        </ul>
+          </p>
+
+
+          <p>Sometimes I give courses of Machine Learning: 
+          Take a look at <a href="/2016/07/12/mlhep-2016-slides.html" style={{ textDecoration: 'underline' }}>MLHEP 2016 slides</a> and <a href="https://github.com/yandexdataschool/mlhep2016" style={{ textDecoration: 'underline' }}>repository</a> or <a href="https://github.com/yandexdataschool/MLatImperial2017" style={{ textDecoration: 'underline' }}>course</a> at Imperial College, London.</p>
+
+          <p>There is also quite complete course of <a href="/2017/04/20/machine-learning-in-science-and-industry.html" style={{ textDecoration: 'underline' }}>machine learning in science and industry</a></p>
+
+        </article>
+
+      </div>
+
+
+</div>
+
+<div className="row">
+<ul className="post-list">
+    
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Dec 28, 2023</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2023/12/28/fastest-autograd.html">Fastest Autograd in the West</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Aug 20, 2023</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2023/08/20/optical-pooled-screens.html">Optical pooled screens of cells (overview of emerging biotechnology)</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Jul 13, 2023</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2023/07/13/retrospective-thoughts-on-einops.html">Einops, retrospective of 5 years</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Jan 29, 2023</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2023/01/29/migrations.html">Schema migration should be a responsibility of DB</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Nov 29, 2022</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2022/11/29/delimiter-comes-first.html">Delimiter-first code</a>
+      </h2>
+    </li>
+  
+    <li className="alex-rogozhnikov-li">
+      <span className="post-meta">Nov 1, 2020</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2020/11/01/microscopy.html">Things I wish someone told me about microscopy</a>
+      </h2>
+    </li>
+  
+    <li className="alex-rogozhnikov-li">
+      <span className="post-meta">Oct 1, 2020</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2020/10/01/dont-write-cli.html">Don&#39;t write command-line interfaces (generate them)</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Feb 1, 2020</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2020/02/01/93-percent-of-readers.html">Statistics: numbers that lie to you</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jan 1, 2019</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2019/01/01/trick-for-model-comparison.html">Twin training: trick for better model comparisons</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Dec 6, 2018</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2018/12/06/einops.html">Einops — a new style of deep learning code</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Jul 10, 2017</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2017/07/10/opera-clustering.html">Clustering applied to showers in the OPERA</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Jun 24, 2017</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2017/06/24/opera.html">Machine learning applied to showers in the OPERA</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Apr 20, 2017</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2017/04/20/machine-learning-in-science-and-industry.html">Machine Learning in Science and Industry slides</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Dec 19, 2016</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2016/12/19/markov_chain_monte_carlo.html">Hamiltonian Monte Carlo explained</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Sep 10, 2016</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2016/09/10/jupyter-features.html">Jupyter (IPython) notebooks features</a>
+      </h2>
+    </li>
+  
+    <li  className="alex-rogozhnikov-li">
+      <span className="post-meta">Jul 12, 2016</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2016/07/12/secret-of-ml.html">Occam razor vs. machine learning</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 12, 2016</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2016/07/12/mlhep-2016-slides.html">MLHEP 2016 lectures slides</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 5, 2016</span>
+
+      <h2 className="alex-rogozhnikov-h2">
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2016/07/05/gradient_boosting_playground.html">Gradient Boosting Interactive Playground</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jun 24, 2016</span>
+
+      <h2>
+        <a className="alex-rogozhnikov-a" href="https://arogozhnikov.github.io/2016/06/24/gradient_boosting_explained.html">Gradient Boosting explained [demonstration]</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 22, 2016</span>
+
+      <h2>
+        <a className="post-link" href="https://arogozhnikov.github.io/2016/05/22/new-item-for-lists.html">.new_item for python lists</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Apr 28, 2016</span>
+
+      <h2>
+        <a className="post-link" href="/2016/04/28/demonstrations-for-ml-courses.html">Interactive demonstrations for ML courses</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Feb 15, 2016</span>
+
+      <h2>
+        <a className="post-link" href="/2016/02/15/TestingLibFM.html">Testing implementations of LibFM</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Feb 9, 2016</span>
+
+      <h2>
+        <a className="post-link" href="/2016/02/09/DrawingPictureWithML.html">Reconstructing pictures with machine learning [demonstration]</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Dec 19, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/12/19/optimal-control-of-oscillations.html">Optimal control of oscillations [demonstration]</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Dec 11, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/12/11/cumulative-sum-as-test-for-your-environment.html">Cumulative sum as a test for your programming environment</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Dec 2, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/12/02/rule-of-statistical-error.html">Rule of statistical error</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Nov 29, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/11/29/using-fortran-from-python.html">Using fortran from python</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Oct 15, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/10/15/so-you-decided-to-write-classifier.html">So you decided to write a machine learning library (bad advice)</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Oct 9, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/10/09/gradient-boosted-reweighter.html">Reweighting with Boosted Decision Trees</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Oct 7, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/10/07/splot.html">sPlot: a technique to reconstruct components of a mixture</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Oct 5, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/10/05/roc-curve.html">ROC curve demonstration</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Sep 30, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/09/30/NumpyTipsAndTricks2.html">Data manipulation with numpy: tips and tricks, part 2</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Sep 29, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/09/29/NumpyTipsAndTricks1.html">Data manipulation with numpy: tips and tricks, part 1</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Sep 8, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/09/08/SpeedBenchmarks.html">Log-likelihood benchmark</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Sep 7, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/09/07/mlhep-slides.html">MLHEP 2015 lectures slides</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 5, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/07/05/machine-learning-in-comet-experiment.html">Machine learning in COMET experiment (part II)</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 4, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/07/04/multimixture-fitting.html">Multimixture fitting</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 4, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/07/04/libfm-in-python.html">LibFM in python</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 1, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/07/01/do-you-know-that-convolution-operation.html">Do you know that convolution operation was implemented in deep learning systems via matrix multiplication?</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jun 26, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/06/26/learning-to-rank-software-datasets.html">Learning to rank (software, datasets)</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jun 25, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/06/25/a-programming-language.html">A Programming Language</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jun 22, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/06/22/machine-learning-used-in-tracking-of.html">Machine learning used in tracking of COMET (japanese particle physics experiment), part I</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jun 4, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/06/04/automatic-reweighting-with-gradient.html">Automatic
+reweighting with gradient boosting</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 22, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/22/decision-train-classifier.html">Decision train classifier</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 17, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/17/removing-margins-of-pdfs.html">Removing margins of PDFs</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 17, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/17/back-to-future-vector-representation-of.html">Back to the future (vector representation of future, an approach to analysis of time series)</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 12, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/12/libraries-of-machine-learning.html">Theano-based libraries for machine learning</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 11, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/11/tensor-train.html">Thoughts about tensor train</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 10, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/10/very-deep-neural-network.html">Very deep neural network</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 10, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/10/anomaly-detection-at-cern-experiments.html">Anomaly detection at CERN experiments</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 4, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/04/links-on-deep-learning.html">Links on deep learning</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 4, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/04/vector-representations-of-categories.html">Vector representations of categories</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">May 4, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/05/04/code-and-importance-of-vectorization.html">Code and the importance of vectorization</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Apr 30, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/04/30/numpy-exercises.html">Numpy exercises</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Apr 30, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/04/30/plans-for-ml-experiments.html">Plans for ML experiments</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Mar 31, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/03/31/simplification-vs-usability.html">Simplification vs usability</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Mar 15, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/03/15/good-list-of-nn-trainin-methods.html">Good list of NN training methods</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Feb 6, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/02/06/just-interesting-equality-from-linear.html">An interesting equality from linear algebra</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jan 6, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/01/06/benchmarks-of-speed-numpy-vs-all.html">Benchmarks of speed (Numpy vs all)</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jan 1, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/01/01/why-using-hdf5.html">Why using HDF5?</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jan 1, 2015</span>
+
+      <h2>
+        <a className="post-link" href="/2015/01/01/neural-networks.html">Pairwise layer in Neural Networks</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Dec 26, 2014</span>
+
+      <h2>
+        <a className="post-link" href="/2014/12/26/so-many-names.html">So many names </a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Dec 14, 2014</span>
+
+      <h2>
+        <a className="post-link" href="/2014/12/14/cousteau.html">Cousteau</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Dec 7, 2014</span>
+
+      <h2>
+        <a className="post-link" href="/2014/12/07/optimization-of-vector-operations.html">Optimization of vector operations with bit hacks</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Nov 23, 2014</span>
+
+      <h2>
+        <a className="post-link" href="/2014/11/23/minibus-stochastic-process-part-1.html">Minibus stochastic process</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Nov 1, 2014</span>
+
+      <h2>
+        <a className="post-link" href="/2014/11/01/theano-python-library.html">Theano (python library)</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Sep 5, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/09/05/numbers-and-naturalness-part-3.html">Numbers and Naturalness, part 3</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Aug 12, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/08/12/legendre-transformation-without.html">Legendre transformation without Legendre transformation</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Aug 10, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/08/10/redundant-numeral-systems.html">Redundant numeral systems</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Aug 10, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/08/10/soviet-computer.html">Soviet computer &#34;Сетунь&#34;</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 22, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/07/22/numbers-and-naturalness-part-2.html">Numbers and Naturalness, part 2.</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 21, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/07/21/real-numbers-and-naturalness-part-1.html">Numbers and Naturalness, part 1.</a>
+      </h2>
+    </li>
+  
+    <li>
+      <span className="post-meta">Jul 20, 2013</span>
+
+      <h2>
+        <a className="post-link" href="/2013/07/20/blog-post.html">Why and What</a>
+      </h2>
+    </li>
+  
+</ul>
+
+</div>
+
+
+
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>

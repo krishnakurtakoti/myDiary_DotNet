@@ -369,3 +369,45 @@ html.light {
   font-size: 60px;
   font-weight: normal;
 }
+
+.alex-rogozhnikov-post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.alex-rogozhnikov-h1, .alex-rogozhnikov-h2, .alex-rogozhnikov-h3, 
+.alex-rogozhnikov-h4, .alex-rogozhnikov-h5, .alex-rogozhnikov-h6 {
+  font-weight: 300;
+}
+
+.alex-rogozhnikov-h1, .alex-rogozhnikov-h2, .alex-rogozhnikov-h3, 
+.alex-rogozhnikov-h4, .alex-rogozhnikov-h5, .alex-rogozhnikov-h6, 
+.alex-rogozhnikov-p, .alex-rogozhnikov-blockquote, 
+.alex-rogozhnikov-pre, .alex-rogozhnikov-ul, .alex-rogozhnikov-ol, 
+.alex-rogozhnikov-dl, .alex-rogozhnikov-figure {
+  margin-bottom: 15px;
+}
+
+.alex-rogozhnikov-li .alex-rogozhnikov-h2 {
+  margin-bottom: 15px;
+}
+.alex-rogozhnikov-body, .alex-rogozhnikov-h1, .alex-rogozhnikov-h2, 
+.alex-rogozhnikov-h3, .alex-rogozhnikov-h4, .alex-rogozhnikov-h5, 
+.alex-rogozhnikov-h6, .alex-rogozhnikov-p, .alex-rogozhnikov-blockquote, 
+.alex-rogozhnikov-pre, .alex-rogozhnikov-hr, .alex-rogozhnikov-dl, 
+.alex-rogozhnikov-dd, .alex-rogozhnikov-ol, .alex-rogozhnikov-ul, 
+.alex-rogozhnikov-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.alex-rogozhnikov-h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.alex-rogozhnikov-a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
