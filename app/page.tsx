@@ -3401,7 +3401,7 @@ transformation as a linear layer, the only difference being that the weights of 
 <p dir="auto">We all know about the computer vision applications which allow us to perform object detection, to name just one.</p>
 <p dir="auto">How these Conv2D networks work <a href="https://www.machinecurve.com/index.php/2018/12/07/convolutional-neural-networks-and-their-components-for-computer-vision/" rel="nofollow" style={{ textDecoration: 'underline' }}>has been explained in another blog post.</a></p>
 <p dir="auto">For many applications, however, it&#39;s not enough to stick to two dimensions. Rather, the <em>height</em> or <em>time</em> dimension is also important. In videos, which are essentially many images stacked together, time is this third axis. It can however also be height or <em>number of layers</em>, in e.g. the layered image structure of an MRI scan. In both cases, the third axis intrinsically links the two-dimensional parts together, and hence cannot be ignored.</p>
-<p dir="auto">Enter three-dimensional convolutional neural networks, or Conv3Ds. In this blog post, we&#39;ll cover this type of CNNs. More specifically, we will first take a look at the differences between 'normal' convolutional neural networks (Conv2Ds) versus the three-dimensional ones (Conv3D). Subsequently, we will actually provide a TensorFlow 2/Keras-based implementation of a Conv3D, with the <a href="https://www.kaggle.com/daavoo/3d-mnist" rel="nofollow" style={{ textDecoration: 'underline' }}>3D MNIST</a> dataset available at Kaggle. We discuss all the individual parts of the implementation before arriving at the final code, which ensures that you&#39;ll understand what happens on the fly.</p>
+<p dir="auto">Enter three-dimensional convolutional neural networks, or Conv3Ds. In this blog post, we&#39;ll cover this type of CNNs. More specifically, we will first take a look at the differences between &#39;normal&#39; convolutional neural networks (Conv2Ds) versus the three-dimensional ones (Conv3D). Subsequently, we will actually provide a TensorFlow 2/Keras-based implementation of a Conv3D, with the <a href="https://www.kaggle.com/daavoo/3d-mnist" rel="nofollow" style={{ textDecoration: 'underline' }}>3D MNIST</a> dataset available at Kaggle. We discuss all the individual parts of the implementation before arriving at the final code, which ensures that you&#39;ll understand what happens on the fly.</p>
 <p dir="auto">After reading this tutorial, you will understand...</p>
 
 
@@ -3412,7 +3412,7 @@ transformation as a linear layer, the only difference being that the weights of 
     <li><strong>How to build a 3D Convolutional Neural Network with TensorFlow 2 based Keras.</strong></li>
   </ul>
 
-  <p dir="auto">All right, let's go! 😄</p>
+  <p dir="auto">All right, let&#39;s go! 😄</p>
   <p dir="auto"><em>Note that the code for this blog post is also available on <a href="https://github.com/christianversloot/keras-cnn" style={{ textDecoration: 'underline' }}>GitHub</a>.</em></p>
 </div>
 <div className="markdown-heading" dir="auto"><h2  className="heading-element" dir="auto">Example code: using Conv3D with TensorFlow 2 based Keras</h2></div>
@@ -3434,7 +3434,7 @@ transformation as a linear layer, the only difference being that the weights of 
   <p dir="auto"><em>For more information, I&#39;d really recommend my other blog post, <a href="https://www.machinecurve.com/index.php/2018/12/07/convolutional-neural-networks-and-their-components-for-computer-vision/" rel="nofollow" style={{ textDecoration: 'underline' }}>Convolutional Neural Networks and their components for computer vision</a>.</em></p>
 
 
-  <p dir="auto">Now, with three-dimensional convolutional layers, things are different - but not too different. Instead of three dimensions in the input image (the two image dimensions and the <em>channels</em> dimension, you'll have four: the two image dimensions, the time/height dimension, and the channels dimension). As such, the feature map is also three-dimensional. This means that the filters move in three dimensions instead of two: not only from left to right and from the top to the bottom, but also forward and backward. Three-dimensional convolutional layers will therefore be more expensive in terms of the required computational resources, but allow you to retrieve much richer insights.</p>
+  <p dir="auto">Now, with three-dimensional convolutional layers, things are different - but not too different. Instead of three dimensions in the input image (the two image dimensions and the <em>channels</em> dimension, you&#39;ll have four: the two image dimensions, the time/height dimension, and the channels dimension). As such, the feature map is also three-dimensional. This means that the filters move in three dimensions instead of two: not only from left to right and from the top to the bottom, but also forward and backward. Three-dimensional convolutional layers will therefore be more expensive in terms of the required computational resources, but allow you to retrieve much richer insights.</p>
 
 
   <h1 className="christianversloot">
