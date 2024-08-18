@@ -411,3 +411,94 @@ html.light {
   color: #2a7ae2;
   text-decoration: none;
 }
+.user-status-container {
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.user-status-container, .user-status-container .team-mention, .user-status-container .user-mention {
+  white-space: normal;
+}
+.mt-2 {
+  /* margin-top: var(--base-size-8, 8px) !important; */
+}
+.vcard-names {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.p-name {
+  font-weight: bold;
+}
+
+.p-nickname {
+  color: gray;
+}
+.christianversloot {
+  font-size: 28px; /* Custom font size */
+  font-weight: bold; /* Make the text bold */
+  color: #333; /* Set a custom text color */
+  margin-bottom: 16px; /* Space below the header */
+  line-height: 1.5; /* Line height for readability */
+}
+
+.christianversloot a {
+  text-decoration: underline; /* Ensure links are underlined */
+  color: #007bff; /* Custom link color */
+}
+
+.christianversloot a:hover {
+  color: #0056b3; /* Darker link color on hover */
+}
+/* General Reset */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling for elements within .christianversloot-markdown-body */
+.christianversloot-markdown-body p, 
+.christianversloot-markdown-body blockquote, 
+.christianversloot-markdown-body ul, 
+.christianversloot-markdown-body ol, 
+.christianversloot-markdown-body dl, 
+.christianversloot-markdown-body table, 
+.christianversloot-markdown-body pre, 
+.christianversloot-markdown-body details {
+  margin-top: 0;
+  margin-bottom: var(--base-size-16); /* Make sure this variable is defined */
+}
+
+/* Styling for ul and ol inside .christianversloot-markdown-body */
+.christianversloot-markdown-body ul, 
+.christianversloot-markdown-body ol {
+  padding-left: 2em; /* Adjust the indentation */
+}
+
+/* Default styling for ul and ol */
+ul, 
+ol {
+  padding-left: 0; /* Override padding if needed */
+  margin-top: 0; /* Remove default top margin */
+  margin-bottom: 0; /* Remove default bottom margin */
+}
+
+/* Ensure list items are displayed correctly */
+ul {
+  display: block;
+  list-style-type: disc; /* Bullet points */
+  margin-block-start: 1em; /* Space above the list */
+  margin-block-end: 1em; /* Space below the list */
+  margin-inline-start: 0px; /* Remove default inline margin */
+  margin-inline-end: 0px; /* Remove default inline margin */
+  padding-inline-start: 40px; /* Space before list items */
+  unicode-bidi: isolate; /* Handle text direction */
+}
+
+/* Link styling within .christianversloot-markdown-body */
+.christianversloot-markdown-body a {
+  text-decoration: underline; /* Underline links */
+  color: #007bff; /* Link color */
+}
+
+.christianversloot-markdown-body a:hover {
+  color: #0056b3; /* Link color on hover */
+}

@@ -47,7 +47,7 @@ import SGugger_MathMLComponent_4 from "./SGugger_MathMLComponent_4";
 import SGugger_MathMLComponent_5_Operation from "./SGugger_MathMLComponent_5";
 import SGugger_MathMLComponent_5_wij from "./SGugger_MathMLComponent_5_wij";
 import SGugger_MathMLComponent_5_xij from "./SGugger_MathMLComponent_5_xij";
-
+import ChristianversLootASimpleConv3dExampleWithKeras_1 from './christianversLootASimpleConv3dExampleWithKeras'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -3345,6 +3345,116 @@ transformation as a linear layer, the only difference being that the weights of 
           </div>
 </div>
 
+
+
+
+<div className="row">
+
+
+                              <h1 className="vcard-names1">
+                                <span className="p-name vcard-fullname d-block overflow-hidden">
+                                  Christian Versloot
+                                </span>
+                                <span className="p-nickname vcard-username d-block"  style={{ marginLeft: '8px' }}>
+                                  christianversloot
+                                </span>
+                              </h1>
+                        <div  className="vcard-names ">
+                                                
+                        </div>
+   
+      <div className="mt-2 user-status-container d-md-none">
+        <div className="d-flex flex-items-center flex-items-stretch">
+          <div className="f6 d-flex flex-items-center p-2 width-full" data-team-hovercards-enabled="">
+            <div className="user-status-emoji-container flex-shrink-0 mr-2 d-flex flex-items-center flex-justify-center">
+              <div>🏠</div>
+            </div>
+            <div className="user-status-message-wrapper f6 color-fg-default ws-normal lh-condensed">
+              <div>Working from home</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>Software engineering, machine learning and weather - and thunderstorms in particular ⚡</div>
+    <h1 className="heading-element" dir="auto">Machine learning articles</h1>
+
+  <p dir="auto">I wrote these articles about machine learning in the peroid between May 2019 and February 2022. As I&#39;m no longer maintaining MachineCurve.com, I&#39;ve moved them here so that they remain available for the public. Enjoy!</p>
+  <p dir="auto"><a href="https://star-history.com/#christianversloot/machine-learning-articles&Date" rel="nofollow" style={{ textDecoration: 'underline' }}>
+    <img
+      src="https://camo.githubusercontent.com/f572aaf2106e7e98653d839cf0d03aed83d9ebafaca78a8af871b720a03165e8/68747470733a2f2f6170692e737461722d686973746f72792e636f6d2f7376673f7265706f733d63687269737469616e766572736c6f6f742f6d616368696e652d6c6561726e696e672d61727469636c657326747970653d44617465"
+      alt="Star History Chart"
+      data-canonical-src="https://api.star-history.com/svg?repos=christianversloot/machine-learning-articles&type=Date"
+      style={{ maxWidth: '100%' }}
+    />
+  </a>
+</p>
+
+
+<h1 className="christianversloot">
+  <a href="https://github.com/christianversloot/machine-learning-articles/blob/main/a-simple-conv3d-example-with-keras.md">
+    A simple Conv3D example with TensorFlow 2 and Keras
+  </a>
+</h1>
+
+<p dir="auto">These past few years, convolutional neural networks have become known for the boost they gave to machine learning, or artificial intelligence in a broader sense. Primarily, these networks have been applied to two-dimensional data: data with two axes (x and y), such as images.</p>
+<p dir="auto"><em>The cover image is courtesy of <a href="https://github.com/daavoo?tab=repositories" style={{ textDecoration: 'underline' }}>David de la Iglesia Castro</a>, the creator of the 3D MNIST dataset.</em></p>
+<p dir="auto">We all know about the computer vision applications which allow us to perform object detection, to name just one.</p>
+<p dir="auto">How these Conv2D networks work <a href="https://www.machinecurve.com/index.php/2018/12/07/convolutional-neural-networks-and-their-components-for-computer-vision/" rel="nofollow" style={{ textDecoration: 'underline' }}>has been explained in another blog post.</a></p>
+<p dir="auto">For many applications, however, it&#39;s not enough to stick to two dimensions. Rather, the <em>height</em> or <em>time</em> dimension is also important. In videos, which are essentially many images stacked together, time is this third axis. It can however also be height or <em>number of layers</em>, in e.g. the layered image structure of an MRI scan. In both cases, the third axis intrinsically links the two-dimensional parts together, and hence cannot be ignored.</p>
+<p dir="auto">Enter three-dimensional convolutional neural networks, or Conv3Ds. In this blog post, we&#39;ll cover this type of CNNs. More specifically, we will first take a look at the differences between 'normal' convolutional neural networks (Conv2Ds) versus the three-dimensional ones (Conv3D). Subsequently, we will actually provide a TensorFlow 2/Keras-based implementation of a Conv3D, with the <a href="https://www.kaggle.com/daavoo/3d-mnist" rel="nofollow" style={{ textDecoration: 'underline' }}>3D MNIST</a> dataset available at Kaggle. We discuss all the individual parts of the implementation before arriving at the final code, which ensures that you&#39;ll understand what happens on the fly.</p>
+<p dir="auto">After reading this tutorial, you will understand...</p>
+
+
+<div className="christianversloot-markdown-body">
+  <ul dir="auto">
+    <li><strong>What the differences are between <code>Conv2D</code> and <code>Conv3D</code> layers.</strong></li>
+    <li><strong>What the 3D MNIST dataset contains.</strong></li>
+    <li><strong>How to build a 3D Convolutional Neural Network with TensorFlow 2 based Keras.</strong></li>
+  </ul>
+
+  <p dir="auto">All right, let's go! 😄</p>
+  <p dir="auto"><em>Note that the code for this blog post is also available on <a href="https://github.com/christianversloot/keras-cnn" style={{ textDecoration: 'underline' }}>GitHub</a>.</em></p>
+</div>
+<div className="markdown-heading" dir="auto"><h2  className="heading-element" dir="auto">Example code: using Conv3D with TensorFlow 2 based Keras</h2></div>
+
+<p dir="auto">This example shows how you can <strong>create 3D convolutional neural networks</strong> with TensorFlow 2 based Keras through <code>Conv3D</code> layers. You can immediately use it in your neural network code. However, if you want to understand 3D Convolutions in more detail or wish to get step-by-step examples for creating your own 3D ConvNet, make sure to read the rest of this tutorial too 🚀</p>
+
+  <p>
+  <ChristianversLootASimpleConv3dExampleWithKeras_1 />
+  </p>
+  <h1 className="christianversloot"  dir="auto">Conv2D vs Conv3D</h1>
+  <p dir="auto">If you are familiar with convolutional neural networks, it&#39;s likely that you understand what happens in a traditional or two-dimensional CNN:</p>
+
+
+
+  <p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://github.com/christianversloot/machine-learning-articles/blob/main/images/CNN.jpg" style={{ textDecoration: 'underline' }}><img src="https://raw.githubusercontent.com/christianversloot/machine-learning-articles/main/images/CNN.jpg" alt=""  style={{ maxWidth: '100%' }}></img></a></p>
+
+  <p dir="auto">A two-dimensional image, with multiple channels (three in the RGB input in the image above), is interpreted by a certain number (<code>N</code>) kernels of some size, in our case 3x3x3. The actual <em>interpretation</em> happens because each kernel <em>slides over the input image</em>; literally, from the left to the right, then down a bit; from the left to the right, and so on. By means of element-wise multiplications, it generates a <em>feature map</em> which is smaller than the original input, and in fact is a <em>more abstract summary</em> of the original input image. Hence, by stacking multiple convolutional layers, it becomes possible to generate a very abstract representation of some input representing some <em>average object</em>, which allows us to classify them into groups.</p>
+
+  <p dir="auto"><em>For more information, I&#39;d really recommend my other blog post, <a href="https://www.machinecurve.com/index.php/2018/12/07/convolutional-neural-networks-and-their-components-for-computer-vision/" rel="nofollow" style={{ textDecoration: 'underline' }}>Convolutional Neural Networks and their components for computer vision</a>.</em></p>
+
+
+  <p dir="auto">Now, with three-dimensional convolutional layers, things are different - but not too different. Instead of three dimensions in the input image (the two image dimensions and the <em>channels</em> dimension, you'll have four: the two image dimensions, the time/height dimension, and the channels dimension). As such, the feature map is also three-dimensional. This means that the filters move in three dimensions instead of two: not only from left to right and from the top to the bottom, but also forward and backward. Three-dimensional convolutional layers will therefore be more expensive in terms of the required computational resources, but allow you to retrieve much richer insights.</p>
+
+
+  <h1 className="christianversloot">
+  <a href="https://github.com/christianversloot/machine-learning-articles/blob/main/from-vanilla-rnns-to-transformers-a-history-of-seq2seq-learning.md">
+  From vanilla RNNs to Transformers: a history of Seq2Seq learning
+  </a>
+</h1>
+<h1 className="christianversloot"  dir="auto">Sequence-to-Sequence learning in Natural Language Processing</h1>
+<p dir="auto">Natural Language Processing is a wide field and many techniques and algorithms have been used for interpreting text. If, however, we look at Machine Learning approaches closely, many of them have focused on <strong>Sequence-to-Sequence learning</strong>, or Seq2Seq. Here&#39;s how Wikipedia describes it:</p>
+
+
+<blockquote>
+                      <p><em>Seq2seq turns one sequence into another sequence. It does so by use of a&nbsp;recurrent neural network&nbsp;(RNN) or more often&nbsp;<a href="https://www.machinecurve.com/index.php/2020/12/29/a-gentle-introduction-to-long-short-term-memory-networks-lstm/" rel="nofollow" style={{ textDecoration: 'underline' }}>LSTM</a>&nbsp;or&nbsp;GRU&nbsp;to avoid the problem of&nbsp;vanishing gradient. The context for each item is the output from the previous step. The primary components are one encoder and one decoder network. The encoder turns each item into a corresponding hidden vector containing the item and its context. The decoder reverses the process, turning the vector into an output item, using the previous output as the input context.</em></p>
+                      <p><em>Wikipedia (2019)</em></p>
+                      </blockquote>
+
+
+                      <h1 className="christianversloot"  dir="auto">Evolution of techniques for Sequence-to-Sequence Learning</h1>        
+
+</div>
 
 <div className="row">
 
