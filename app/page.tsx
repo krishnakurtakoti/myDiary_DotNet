@@ -48,6 +48,7 @@ import SGugger_MathMLComponent_5_Operation from "./SGugger_MathMLComponent_5";
 import SGugger_MathMLComponent_5_wij from "./SGugger_MathMLComponent_5_wij";
 import SGugger_MathMLComponent_5_xij from "./SGugger_MathMLComponent_5_xij";
 import ChristianversLootASimpleConv3dExampleWithKeras_1 from './christianversLootASimpleConv3dExampleWithKeras'
+import ItzamiAccordion from "./ItzamiAccordian";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -2996,6 +2997,12 @@ transformation as a linear layer, the only difference being that the weights of 
         </div>
       </div>
      
+
+     
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+   
+        <ItzamiAccordion />          
+        </div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
