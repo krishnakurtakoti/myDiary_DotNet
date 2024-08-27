@@ -532,10 +532,10 @@ Because there&#39;s a low coupling between the application code and test code, i
 
 <h1 className="article-title">About Me</h1>
 <p>Hi, I&#39;m Jimmy Bogard. I&#39;m a software developer, architect, consultant, author, blogger, OSS maintainer, trainer, and speaker. I&#39;ve worked at startups, product companies, corporate IT shops, and consulting firms.</p>
-<p>I started out in the software world back in 2000, building websites with FrontPage 2000 and ASP and moved on to building web apps with .NET when it released. Since then, I've shipped systems in just about every industry.</p>
+<p>I started out in the software world back in 2000, building websites with FrontPage 2000 and ASP and moved on to building web apps with .NET when it released. Since then, I&#39;ve shipped systems in just about every industry.</p>
 
 <p>Over the years, I&#39;ve strived to improve how I and my teams deliver value to the clients, customers, and end-users. That has led me down the path of exploring Agile, Domain-Driven Design, REST, messaging, distributed systems, and anything else I thought could help.</p>
-<p>Along the way, I&#39;ve tried to share what I&#39;ve learned, blogging, speaking, and training. I also share OSS projects that I've built and used along the way, including <a href="https://github.com/automapper/automapper?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>AutoMapper</a>, <a href="https://github.com/jbogard/mediatr?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>MediatR</a>, and <a href="https://github.com/jbogard/respawn?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>Respawn</a>. Because of those efforts, I've received the <a href="https://mvp.microsoft.com/en-US/mvp/profile/258878ba-3c9a-e411-93f2-9cb65495d3c4?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>Microsoft MVP award</a> every year since 2009, and <a href="https://particular.net/champions?ref=jimmybogard.com#jimmy-bogard" rel="noreferrer" style={{ textDecoration: 'underline' }}>NServiceBus Champ</a>.</p>
+<p>Along the way, I&#39;ve tried to share what I&#39;ve learned, blogging, speaking, and training. I also share OSS projects that I&#39;ve built and used along the way, including <a href="https://github.com/automapper/automapper?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>AutoMapper</a>, <a href="https://github.com/jbogard/mediatr?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>MediatR</a>, and <a href="https://github.com/jbogard/respawn?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>Respawn</a>. Because of those efforts, I&#39;ve received the <a href="https://mvp.microsoft.com/en-US/mvp/profile/258878ba-3c9a-e411-93f2-9cb65495d3c4?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>Microsoft MVP award</a> every year since 2009, and <a href="https://particular.net/champions?ref=jimmybogard.com#jimmy-bogard" rel="noreferrer" style={{ textDecoration: 'underline' }}>NServiceBus Champ</a>.</p>
 
 <h1 className="post-card-title">Testing</h1>
 <p>A collection of 6 posts</p>
@@ -570,7 +570,7 @@ Because there&#39;s a low coupling between the application code and test code, i
         End-to-End Integration Testing with NServiceBus
         </h1>
       </header>
-      <div className="post-card-excerpt">One of the interesting side effects of adding diagnostic events to infrastructure is that you can now "listen in" to what's going on in your applications for black box testing. This can be especially useful in scenarios where you&#39;re building on top of a framework that includes a lot of built-in behavior, such as ASP.NET Core and NServiceBus.
+      <div className="post-card-excerpt">One of the interesting side effects of adding diagnostic events to infrastructure is that you can now &#34;listen in&#34; to what&#39;s going on in your applications for black box testing. This can be especially useful in scenarios where you&#39;re building on top of a framework that includes a lot of built-in behavior, such as ASP.NET Core and NServiceBus.
       </div>
     </a>
 
