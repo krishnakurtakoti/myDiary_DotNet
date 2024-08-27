@@ -523,6 +523,157 @@ Because there&#39;s a low coupling between the application code and test code, i
     </div>
 </div>
 
+
+
+
+
+<div className="jimmybogard-row pr-2" style={{ padding: '.75em 1em', background: 'var(--jimmybogard-background-color)' }}>
+<div className="jimmybogard-col-sm-12">
+
+<h1 className="article-title">About Me</h1>
+<p>Hi, I&#39;m Jimmy Bogard. I&#39;m a software developer, architect, consultant, author, blogger, OSS maintainer, trainer, and speaker. I&#39;ve worked at startups, product companies, corporate IT shops, and consulting firms.</p>
+<p>I started out in the software world back in 2000, building websites with FrontPage 2000 and ASP and moved on to building web apps with .NET when it released. Since then, I've shipped systems in just about every industry.</p>
+
+<p>Over the years, I&#39;ve strived to improve how I and my teams deliver value to the clients, customers, and end-users. That has led me down the path of exploring Agile, Domain-Driven Design, REST, messaging, distributed systems, and anything else I thought could help.</p>
+<p>Along the way, I&#39;ve tried to share what I&#39;ve learned, blogging, speaking, and training. I also share OSS projects that I've built and used along the way, including <a href="https://github.com/automapper/automapper?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>AutoMapper</a>, <a href="https://github.com/jbogard/mediatr?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>MediatR</a>, and <a href="https://github.com/jbogard/respawn?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>Respawn</a>. Because of those efforts, I've received the <a href="https://mvp.microsoft.com/en-US/mvp/profile/258878ba-3c9a-e411-93f2-9cb65495d3c4?ref=jimmybogard.com" rel="noreferrer" style={{ textDecoration: 'underline' }}>Microsoft MVP award</a> every year since 2009, and <a href="https://particular.net/champions?ref=jimmybogard.com#jimmy-bogard" rel="noreferrer" style={{ textDecoration: 'underline' }}>NServiceBus Champ</a>.</p>
+
+<h1 className="post-card-title">Testing</h1>
+<p>A collection of 6 posts</p>
+<div className="post-card-content">
+    <a className="post-card-content-link" href="https://www.jimmybogard.com/end-to-end-integration-testing-with-nservicebus-how-it-works/">
+      <header className="post-card-header">
+        <div className="post-card-tags">
+        <span className="post-card-primary-tag">Testing</span>
+        </div>
+        <h1 className="post-card-title">
+        End-to-End Integration Testing with NServiceBus: How It Works
+        </h1>
+      </header>
+      <div className="post-card-excerpt">In my last post, I walked through setting up end-to-end integration testing with NServiceBus, and how we can use it to black box test message endpoints similar to how the ASP.NET Core integration testing works. In this post, I want to walk through how it all works underneath the covers.
+      </div>
+    </a>
+
+    <footer className="post-card-meta" style={{ marginBottom: '6px !important' }}>
+      <time className="post-card-meta-date" dateTime="2017-09-27">Jul 14, 2020</time>
+      <span className="post-card-meta-length"> . 6 min read</span>
+    </footer>
+ </div>
+
+
+<div className="post-card-content">
+    <a className="post-card-content-link" href="https://www.jimmybogard.com/end-to-end-integration-testing-with-nservicebus/">
+      <header className="post-card-header">
+        <div className="post-card-tags">
+        <span className="post-card-primary-tag">Testing</span>
+        </div>
+        <h1 className="post-card-title">
+        End-to-End Integration Testing with NServiceBus
+        </h1>
+      </header>
+      <div className="post-card-excerpt">One of the interesting side effects of adding diagnostic events to infrastructure is that you can now "listen in" to what's going on in your applications for black box testing. This can be especially useful in scenarios where you&#39;re building on top of a framework that includes a lot of built-in behavior, such as ASP.NET Core and NServiceBus.
+      </div>
+    </a>
+
+    <footer className="post-card-meta" style={{ marginBottom: '6px !important' }}>
+      <time className="post-card-meta-date" dateTime="2017-09-27">Jul 8, 2020</time>
+      <span className="post-card-meta-length"> . 3 min read</span>
+    </footer>
+ </div>
+
+
+<div className="post-card-content">
+    <a className="post-card-content-link" href="https://www.jimmybogard.com/avoid-in-memory-databases-for-tests/">
+      <header className="post-card-header">
+        <div className="post-card-tags">
+        <span className="post-card-primary-tag">Testing</span>
+        </div>
+        <h1 className="post-card-title">
+        Avoid In-Memory Databases for Tests
+        </h1>
+      </header>
+      <div className="post-card-excerpt">A controversial GitHub issue came to my attention a couple of weeks ago around ditching the in-memory provider for Entity Framework Core. This seemed like a no-brainer to me - these database providers are far from trivial to maintain, even for in-memory strategies.</div>
+    </a>
+
+    <footer className="post-card-meta" style={{ marginBottom: '6px !important' }}>
+      <time className="post-card-meta-date" dateTime="2017-09-27">Mar 18, 2020</time>
+      <span className="post-card-meta-length"> . 6 min read</span>
+    </footer>
+ </div>
+
+
+ <div className="post-card-content">
+    <a className="post-card-content-link" href="https://www.jimmybogard.com/integration-testing-with-xunit/">
+      <header className="post-card-header">
+        <div className="post-card-tags">
+        <span className="post-card-primary-tag">Testing</span>
+        </div>
+        <h1 className="post-card-title">
+        Integration Testing with xUnit
+        </h1>
+      </header>
+      <div className="post-card-excerpt">A few years back, I had given up on xUnit in favor of Fixie because of the flexibility that Fixie provides. The xUnit project is highly opinionated, and geared strictly towards unit tests. It&#39;s great for that.</div>
+    </a>
+
+    <footer className="post-card-meta" style={{ marginBottom: '6px !important' }}>
+      <time className="post-card-meta-date" dateTime="2017-09-27">Mar 18, 2020</time>
+      <span className="post-card-meta-length"> . 6 min read</span>
+    </footer>
+ </div>
+
+
+<div className="post-card-content">
+    <a className="post-card-content-link" href="https://www.jimmybogard.com/respawn-vs-sql-server-snapshots/">
+      <header className="post-card-header">
+        <div className="post-card-tags">
+        <span className="post-card-primary-tag">Testing</span>
+        </div>
+        <h1 className="post-card-title">
+        Respawn vs SQL Server Snapshots
+        </h1>
+      </header>
+      <div className="post-card-excerpt">One of the newer features of SQL Server is the ability to snapshot a database at a point in time, and restore it. A commenter on the Respawn announcement asked if I had looked at this feature for resetting a test database to a known point. I hadn&#39;t,</div>
+    </a>
+
+    <footer className="post-card-meta" style={{ marginBottom: '6px !important' }}>
+      <time className="post-card-meta-date" dateTime="2017-09-27">Oct 5, 2017</time>
+      <span className="post-card-meta-length"> . 2 min read</span>
+    </footer>
+ </div>
+
+
+
+<div className="post-card-content">
+    <a className="post-card-content-link" href="https://www.jimmybogard.com/respawn-1-0-0-released/">
+      <header className="post-card-header">
+        <div className="post-card-tags"  style={{ marginBottom: '6px !important' }}>
+        <span className="post-card-primary-tag">Testing</span>
+        </div>
+        <h1 className="post-card-title">
+        Respawn 1.0.0 released
+        </h1>
+      </header>
+    <div className="post-card-excerpt">
+    Respawn is a small library to help reset your database to a known state before tests. If you&#39;re like our teams and rely on integration/subcutaneous tests as your final &#34;green&#34; test for feature complete, keeping a consistent database state can be frustrating. Respawn solves this.
+    </div>
+    </a>
+
+    <footer className="post-card-meta" style={{ marginBottom: '6px !important' }}>
+      <time className="post-card-meta-date" dateTime="2017-09-27">Sep 27, 2017</time>
+      <span className="post-card-meta-length"> . 1 min read</span>
+    </footer>
+
+ </div>
+
+ <p>Extra_End</p>
+ </div>
+
+ <div className="jimmybogard-tags">
+ <span className="jimmybogard-bold">Tags: </span> 
+ <Tag value="" />
+ </div>
+</div>
+
+
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
             <p className="font-size: 28px;">

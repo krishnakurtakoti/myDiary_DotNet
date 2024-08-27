@@ -502,3 +502,38 @@ ul {
 .christianversloot-markdown-body a:hover {
   color: #0056b3; /* Link color on hover */
 }
+.post-card-excerpt {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.post-card-excerpt {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-top: 12px;
+  /* max-width: 720px; */
+  overflow-y: hidden;
+  word-break: break-word;
+}
+.post-card-tags {
+  align-items: center;
+  color: var(--color-secondary-text);
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  gap: 12px;
+  letter-spacing: -.005em;
+  line-height: 1;
+  margin: 0 0 10px;
+  margin-bottom: 6px;
+}
+.post-card-jimmybogard {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+  position: relative;
+  word-break: break-word;
+}
