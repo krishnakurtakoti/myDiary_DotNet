@@ -49,6 +49,7 @@ import SGugger_MathMLComponent_5_wij from "./SGugger_MathMLComponent_5_wij";
 import SGugger_MathMLComponent_5_xij from "./SGugger_MathMLComponent_5_xij";
 import ChristianversLootASimpleConv3dExampleWithKeras_1 from './christianversLootASimpleConv3dExampleWithKeras'
 import ItzamiAccordion from "./ItzamiAccordian";
+import MikaelGRAAccordion from "./MikaelGRAAccordian";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -714,7 +715,13 @@ Because there&#39;s a low coupling between the application code and test code, i
             </p>
          
             <h2 className="step bold">InfluxDB Client for .NET</h2>
-            <p>
+
+             
+                <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+            
+                  <MikaelGRAAccordion />          
+            </div>
+            {/* <p>
             This library makes it easy to be a client for InfluxDB on .NET!
             </p>
 
@@ -778,7 +785,7 @@ Because there&#39;s a low coupling between the application code and test code, i
 
               <p>
                   <MikaelGRAComputerInfoComponent />
-                </p>
+                </p> */}
 
           <p className="font-size: 28px;">
                       Author of Blog: 
