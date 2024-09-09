@@ -750,7 +750,7 @@ Because there&#39;s a low coupling between the application code and test code, i
             <li>Singleton</li>
             <li>Scoped</li>
           </ul>
-          Here's how they work.
+          Here&#39;s how they work.
         </span>
         <img
           alt="👇"
