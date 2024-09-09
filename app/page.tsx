@@ -50,7 +50,44 @@ import SGugger_MathMLComponent_5_xij from "./SGugger_MathMLComponent_5_xij";
 import ChristianversLootASimpleConv3dExampleWithKeras_1 from './christianversLootASimpleConv3dExampleWithKeras'
 import ItzamiAccordion from "./ItzamiAccordian";
 import MikaelGRAAccordion from "./MikaelGRAAccordian";
+import RedditRSharpSingletonScopedTransient from "./RedditRSharpSingletonScopedTransient";
+import RedditRCSharpCommentsSection from "./RedditRCSharpCommentsSection";
+
 export default function Home() {
+  const comments = [
+    {
+        id: 't1_kjxaz5y',
+        author: 'zaibuf',
+        avatarUrl: 'https://styles.redditmedia.com/t5_c93iq/styles/profileIcon_snoo02fcba28-730c-4e96-bc45-97a947a7e674-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=c497d82a39dd0b764c8025c208a4080cbb20d868',
+        userProfile: '/user/zaibuf/',
+        timestamp: '7mo ago',
+        content:  `<p>
+        <strong>Singleton</strong>: This creates only one instance of a class during the application&#39;s lifecycle. Every time you request this class, you get the same instance. Use it for classes that are expensive to create or maintain a common state throughout the application, like a database connection.
+    </p>
+    <p>
+        <strong>Transient</strong>: Every time you request a transient class, a new instance is created. This is useful for lightweight, stateless services where each operation requires a clean and independent instance.
+    </p>
+    <p>
+        <strong>Scoped</strong>: Scoped instances are created once per client request. In a web application, for example, a new instance is created for each HTTP request but is shared across that request. Use it for services that need to maintain state within a request but not beyond it, like shopping cart in an e-commerce site.
+    </p>`,// 'A SQL database connection should be created and disposed of after its usage.',
+        score: 7,
+        permalink: '/r/csharp/comments/1acwtar/comment/kjxaz5y/',
+        depth: 1,
+        parentId: 't1_kjx8ht6'
+    },
+    {
+        id: 't1_kjxa49j',
+        author: 'mcb2001',
+        avatarUrl: 'https://styles.redditmedia.com/t5_178waq/styles/profileIcon_snooefa26ab7-a5a1-463c-b9b7-c590b74a10f7-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=ee46a32c8708da6de4be8374850bf381ac265eee',
+        userProfile: '/user/mcb2001/',
+        timestamp: '7mo ago',
+        content: `<p>Ef core is a unit of work pattern in it self, and should always be scoped </p>`,
+        score: 41,
+        permalink: '/r/csharp/comments/1acwtar/comment/kjxa49j/',
+        depth: 2,
+        parentId: 't1_kjx8ht6'
+    }
+];
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -798,6 +835,140 @@ Because there&#39;s a low coupling between the application code and test code, i
     <Tag value="" />
   </div>
 </div>
+
+
+{/*
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+
+
+
+<div className="reddit_rsharp_singleton_scoped_transient">
+   {// <!-- Comment Level 1 --> 
+   }
+    <div className="reddit_rsharp_singleton_scoped_transient_comment" id="t1_kjxaz5y" aria-label="Comment thread level 1: Reply from zaibuf 7 months ago">
+        {
+        // <!-- Avatar and User Info --> /
+        }
+        <div className="reddit_rsharp_singleton_scoped_transient_comment_avatar">
+            <a href="/user/zaibuf/" aria-label="zaibuf's profile" aria-haspopup="dialog" aria-expanded="false">
+                <div className="reddit_rsharp_singleton_scoped_transient_avatar_container">
+                    <img src="https://styles.redditmedia.com/t5_c93iq/styles/profileIcon_snoo02fcba28-730c-4e96-bc45-97a947a7e674-headshot.png?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64:64,smart&amp;s=c497d82a39dd0b764c8025c208a4080cbb20d868" alt="User Avatar" className="reddit_rsharp_singleton_scoped_transient_avatar"></img>
+                </div>
+            </a>
+        </div>
+        {// <!-- Comment Meta Information --> /
+        }
+        <div className="reddit_rsharp_singleton_scoped_transient_comment_meta">
+            <a href="/user/zaibuf/" className="reddit_rsharp_singleton_scoped_transient_author" aria-label="zaibuf's profile">zaibuf</a>
+            <span className="reddit_rsharp_singleton_scoped_transient_separator">•</span>
+            <a href="/r/csharp/comments/1acwtar/comment/kjxaz5y/" className="reddit_rsharp_singleton_scoped_transient_timestamp" rel="nofollow noopener noreferrer">          
+               <p>7mo ago</p>
+                {//* <time datetime="2024-01-28T07:51:56.261Z">7mo ago</time> /
+                }
+            </a>
+        </div>
+        {//* <!-- Comment Content --> /
+        }
+        <div className="reddit_rsharp_singleton_scoped_transient_comment_content">
+            <p>A SQL database connection should be created and disposed of after its usage.</p>
+        </div>
+        {//* <!-- Comment Action Row --> /
+        }
+        <div className="reddit_rsharp_singleton_scoped_transient_vote_buttons">
+                  <button className="reddit_rsharp_singleton_scoped_transient_vote_button upvote" aria-label="Upvote this comment">
+                      <span className="arrow-up">▲</span>
+                  </button>
+                  <span className="reddit_rsharp_singleton_scoped_transient_vote_count" aria-label="Comment score: 7">7</span>
+                  <button className="reddit_rsharp_singleton_scoped_transient_vote_button downvote" aria-label="Downvote this comment">
+                      <span className="arrow-down">▼</span>
+                  </button>
+            </div>
+        <div className="reddit_rsharp_singleton_scoped_transient_comment_action_row">
+            <button className="reddit_rsharp_singleton_scoped_transient_reply_button" aria-label="Reply to zaibuf's comment">Reply</button>
+            <button className="reddit_rsharp_singleton_scoped_transient_award_button" aria-label="Award zaibuf's comment">Award</button>
+            <button className="reddit_rsharp_singleton_scoped_transient_share_button" aria-label="Share zaibuf's comment">Share</button>
+        </div>
+        {// * <!-- Nested Comment Level 2 --> /
+        }
+        <div className="reddit_rsharp_singleton_scoped_transient_comment nested" id="t1_kjxdwif" aria-label="Comment thread level 2: Reply from RecognitionOwn4214 7 months ago">
+            {//* <!-- Avatar and User Info --> /
+            }
+            <div className="reddit_rsharp_singleton_scoped_transient_comment_avatar">
+                <a href="/user/RecognitionOwn4214/" aria-label="RecognitionOwn4214's profile" aria-haspopup="dialog" aria-expanded="false">
+                    <div className="reddit_rsharp_singleton_scoped_transient_avatar_container">
+                        <img src="https://styles.redditmedia.com/t5_178waq/styles/profileIcon_snooefa26ab7-a5a1-463c-b9b7-c590b74a10f7-headshot.png?width=64&height=64&frame=1&auto=webp&crop=64:64,smart&s=ee46a32c8708da6de4be8374850bf381ac265eee"></img>
+                    </div>
+                </a>
+            </div>
+            {//* <!-- Comment Meta Information --> /
+            }
+            <div className="reddit_rsharp_singleton_scoped_transient_comment_meta">
+                <a href="/user/RecognitionOwn4214/" className="reddit_rsharp_singleton_scoped_transient_author" aria-label="RecognitionOwn4214's profile">RecognitionOwn4214</a>
+                <span className="reddit_rsharp_singleton_scoped_transient_separator">•</span>
+                <a href="/r/csharp/comments/1acwtar/comment/kjxdwif/" className="reddit_rsharp_singleton_scoped_transient_timestamp" rel="nofollow noopener noreferrer">
+                <p>7mo ago</p>
+                   {//* <time datetime="2024-01-28T08:25:57.166Z">7mo ago</time> /
+                   }
+                </a>
+            </div>
+            {//* <!-- Comment Content --> /
+            }
+            <div className="reddit_rsharp_singleton_scoped_transient_comment_content">
+                <p>Agreed, always ensure to close the connection in a `finally` block or use a `using` statement to manage the database connection lifecycle.</p>
+            </div>
+            {//* <!-- Comment Action Row --> /
+            }
+            <div className="reddit_rsharp_singleton_scoped_transient_vote_buttons">
+                  <button className="reddit_rsharp_singleton_scoped_transient_vote_button upvote" aria-label="Upvote this comment">
+                      <span className="arrow-up">▲</span>
+                  </button>
+                  <span className="reddit_rsharp_singleton_scoped_transient_vote_count" aria-label="Comment score: 1">1</span>
+                  <button className="reddit_rsharp_singleton_scoped_transient_vote_button downvote" aria-label="Downvote this comment">
+                      <span className="arrow-down">▼</span>
+                  </button>
+            </div>
+            <div className="reddit_rsharp_singleton_scoped_transient_comment_action_row">
+                <button className="reddit_rsharp_singleton_scoped_transient_reply_button" aria-label="Reply to RecognitionOwn4214's comment">Reply</button>
+                <button className="reddit_rsharp_singleton_scoped_transient_award_button" aria-label="Award RecognitionOwn4214's comment">Award</button>
+                <button className="reddit_rsharp_singleton_scoped_transient_share_button" aria-label="Share RecognitionOwn4214's comment">Share</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="" />
+        </div>
+      </div>
+      */}
+
+
+      { <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-sm-12">
+<p>https://www.reddit.com/r/csharp/comments/1acwtar/can_someone_explain_when_to_use_singleton_scoped/
+  </p>
+              <RedditRSharpSingletonScopedTransient />
+        </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="" />
+        </div>
+      </div> }
+{/* 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+          <div className="col-sm-12">
+          <RedditRCSharpCommentsSection comments={comments} />
+          </div>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="" />
+        </div>
+      </div>  */}
+
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
