@@ -675,6 +675,130 @@ Because there&#39;s a low coupling between the application code and test code, i
 </div>
 
 
+
+{/* <div className="a row pr-2" style={{ padding: '.75em 1em', margin: '0', height: '100vh' }}>
+        <div className="col-sm-12">
+
+<div className="quote-container" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+               <div className="twitter-tweet"><p lang="en" dir="ltr"> <a href="https://twitter.com/mjovanovictech/status/1831271891954254260" style={{ textDecoration: 'underline' }}>Using Scoped Services From Singletons in ASP.NET Core</a> </p></div> <script async src="https://platform.twitter.com/widgets.js"></script>
+                  <div dir="auto" lang="en" className="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-1inkyih r-16dba41 r-bnwqim r-135wba7" id="id__s2f1pqdw8h" data-testid="tweetText" style={{textOverflow: 'unset', color: 'rgb(15, 20, 25)', fontSize: '20px' }}>
+                
+                      <span className="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3" style={{textOverflow: 'unset', color: 'rgb(15, 20, 25)'}}>
+                          Did you ever need to inject a scoped service into a singleton service?
+                          ASP .NET Core has three service lifetimes:
+                          <ul>
+                            <li>Transient</li>
+                            <li>Singleton</li>
+                            <li>Scoped</li>
+                          </ul>
+                          Here&#39;s how they work.
+                      </span>
+                    
+
+                      <img alt="👇" draggable="false" src="https://abs-0.twimg.com/emoji/v2/svg/1f447.svg" className="r-4qtqp9 r-dflpy8 r-k4bwe5 r-1kpi4qh r-pp5qcn r-h9hxbl"></img>
+                  </div>
+
+                  <div className="r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-ipm5af r-13qz1uu">
+                  <a href="https://pbs.twimg.com/media/GWn8E_sWIAA2eBz?format=jpg&name=small" target="_blank" rel="noopener noreferrer">
+                    <div aria-label="Image" className="css-175oi2r r-1mlwlqe r-1udh08x r-417010 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" data-testid="tweetPhoto" style={{margin: '0px'}}><div className="css-175oi2r r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv"  style={{
+                        backgroundImage: `url("https://pbs.twimg.com/media/GWn8E_sWIAA2eBz?format=jpg&name=small")`,
+                        backgroundSize: 'cover', // Optional: Adjusts the background image to cover the div
+                        backgroundPosition: 'center', // Optional: Centers the background image
+                        backgroundRepeat: 'no-repeat' // Optional: Prevents the background image from repeating
+                      }}></div><img alt="Image" draggable="true" src="https://pbs.twimg.com/media/GWn8E_sWIAA2eBz?format=jpg&amp;name=small" className="css-9pa8cd"></img></div></a></div>
+                                
+            </div>
+
+           
+          </div>
+
+
+
+
+    <div className="">
+    <span className="">Tags: Using Scoped Services From Singletons in ASP.NET Core</span> 
+    <Tag value="" />
+    </div>
+</div> */}
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em', margin: '0', height: '100vh', display: 'flex', flexDirection: 'column' }}>
+  <div className="col-sm-12" style={{ flex: '1', overflow: 'auto' }}>
+    <div className="quote-container" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div className="twitter-tweet">
+        <p lang="en" dir="ltr">
+          <a href="https://twitter.com/mjovanovictech/status/1831271891954254260" style={{ textDecoration: 'underline' }}>
+            Using Scoped Services From Singletons in ASP.NET Core
+          </a>
+        </p>
+      </div>
+      <script async src="https://platform.twitter.com/widgets.js"></script>
+
+      <div
+        dir="auto"
+        lang="en"
+        className="css-146c3p1 r-bcqeeo r-1ttztb7 r-qvutc0 r-37j5jr r-1inkyih r-16dba41 r-bnwqim r-135wba7"
+        id="id__s2f1pqdw8h"
+        data-testid="tweetText"
+        style={{ textOverflow: 'unset', color: 'rgb(15, 20, 25)', fontSize: '20px', marginBottom: '1em' }} // Added margin-bottom to prevent overlap
+      >
+        <span className="css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3" style={{ textOverflow: 'unset', color: 'rgb(15, 20, 25)' }}>
+          Did you ever need to inject a scoped service into a singleton service?
+          ASP .NET Core has three service lifetimes:
+          <ul>
+            <li>Transient</li>
+            <li>Singleton</li>
+            <li>Scoped</li>
+          </ul>
+          Here's how they work.
+        </span>
+        <img
+          alt="👇"
+          draggable="false"
+          src="https://abs-0.twimg.com/emoji/v2/svg/1f447.svg"
+          className="r-4qtqp9 r-dflpy8 r-k4bwe5 r-1kpi4qh r-pp5qcn r-h9hxbl"
+          style={{ marginTop: '0.5em' }} // Added margin-top to space from text
+        />
+      </div>
+
+      <div className="r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-ipm5af r-13qz1uu" style={{ marginTop: '1em' }}> {/* Added margin-top to space from previous content */}
+        <a href="https://pbs.twimg.com/media/GWn8E_sWIAA2eBz?format=jpg&name=small" target="_blank" rel="noopener noreferrer">
+          <div
+            aria-label="Image"
+            className="css-175oi2r r-1mlwlqe r-1udh08x r-417010 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af"
+            data-testid="tweetPhoto"
+            style={{ margin: '0px' }}
+          >
+            {/* <div
+              className="css-175oi2r r-1niwhzg r-vvn4in r-u6sd8q r-1p0dtai r-1pi2tsx r-1d2f490 r-u8s1d r-zchlnj r-ipm5af r-13qz1uu r-1wyyakw r-4gszlv"
+              style={{
+                backgroundImage: `url("https://pbs.twimg.com/media/GWn8E_sWIAA2eBz?format=jpg&name=small")`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                height: '200px', // Adjust height as needed
+                width: '100%' // Ensures full width of the container
+              }}
+            ></div> */}
+            <img
+              alt="Image"
+              draggable="true"
+              src="https://pbs.twimg.com/media/GWn8E_sWIAA2eBz?format=jpg&amp;name=small"
+              className="css-9pa8cd"
+              style={{ maxWidth: '100%', height: 'auto' }} // Ensures image scales properly
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style={{ marginTop: '1em' }}> {/* Added margin-top to space from previous content */}
+    <span>Tags: Using Scoped Services From Singletons in ASP.NET Core</span>
+    <Tag value="" />
+  </div>
+</div>
+
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
             <p className="font-size: 28px;">
