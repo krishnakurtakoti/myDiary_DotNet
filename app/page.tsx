@@ -52,6 +52,9 @@ import ItzamiAccordion from "./ItzamiAccordian";
 import MikaelGRAAccordion from "./MikaelGRAAccordian";
 import RedditRSharpSingletonScopedTransient from "./RedditRSharpSingletonScopedTransient";
 import RedditRCSharpCommentsSection from "./RedditRCSharpCommentsSection";
+import MilanJovanovicAccordion from "./MilanJovanovicAccordion";
+
+
 
 export default function Home() {
   const comments = [
@@ -946,18 +949,18 @@ Because there&#39;s a low coupling between the application code and test code, i
       </div>
       */}
 
-
+{/* 
       { <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
-<p>https://www.reddit.com/r/csharp/comments/1acwtar/can_someone_explain_when_to_use_singleton_scoped/
-  </p>
+          <p>https://www.reddit.com/r/csharp/comments/1acwtar/can_someone_explain_when_to_use_singleton_scoped/
+            </p>
               <RedditRSharpSingletonScopedTransient />
         </div>
         <div className="tags">
             <span className="bold">Tags: </span> 
             <Tag value="" />
         </div>
-      </div> }
+      </div> } */}
 {/* 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
           <div className="col-sm-12">
@@ -968,6 +971,19 @@ Because there&#39;s a low coupling between the application code and test code, i
             <Tag value="" />
         </div>
       </div>  */}
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+      <h2 className="step bold">Can_someone_explain_when_to_use_singleton_scoped</h2>
+
+                  
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+
+        <MilanJovanovicAccordion />          
+      </div>
+  </div>
+</div>
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
