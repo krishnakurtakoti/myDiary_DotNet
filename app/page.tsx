@@ -53,6 +53,7 @@ import MikaelGRAAccordion from "./MikaelGRAAccordian";
 import RedditRSharpSingletonScopedTransient from "./RedditRSharpSingletonScopedTransient";
 import RedditRCSharpCommentsSection from "./RedditRCSharpCommentsSection";
 import MilanJovanovicAccordion from "./MilanJovanovicAccordion";
+import BrainPedersonAccordion from "./BrianPedersonAccordion";
 
 
 
@@ -984,6 +985,21 @@ Because there&#39;s a low coupling between the application code and test code, i
       </div>
   </div>
 </div>
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+      <h2 className="step bold">C# Azure TelemetryClient will leak memory if not implemented as a singleton</h2>
+
+                  
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+
+        <BrainPedersonAccordion />          
+      </div>
+  </div>
+</div>
+
+
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
