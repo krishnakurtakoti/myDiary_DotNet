@@ -65,7 +65,7 @@ const AnaHoverbearAccordion = () => {
                             <div className="excerpt">
                               <p>Reaching for something like <code>SUM(vals)</code> or <code>AVG(vals)</code> is a common habit when using PostgreSQL. These <a rel="noopener" target="_blank" href="https://www.postgresql.org/docs/current/functions-aggregate.html">aggregate functions</a> offer users an easy, efficient way to compute results from a set of inputs.</p>
                           <p>How do they work? What makes them different than a function? How do we make one? What kinds of other uses exist?</p>
-                          <p>We'll explore creating some basic ones using SQL, then create an extension that defines aggregates in Rust using <a rel="noopener" target="_blank" href="https://github.com/zombodb/pgx"><code>pgx</code></a> 0.3.0's new aggregate support.</p>
+                          <p>We&#39;ll explore creating some basic ones using SQL, then create an extension that defines aggregates in Rust using <a rel="noopener" target="_blank" href="https://github.com/zombodb/pgx"><code>pgx</code></a> 0.3.0&#39;s new aggregate support.</p>
 
                               <a className="continue-reading" href="https://hoverbear.org/blog/postgresql-aggregates-with-rust/#continue-reading">Continue reading...</a>
                             </div>
