@@ -54,6 +54,8 @@ import RedditRSharpSingletonScopedTransient from "./RedditRSharpSingletonScopedT
 import RedditRCSharpCommentsSection from "./RedditRCSharpCommentsSection";
 import MilanJovanovicAccordion from "./MilanJovanovicAccordion";
 import BrainPedersonAccordion from "./BrianPedersonAccordion";
+import ShayRojanskyAccordion from "./ShayRojanskyAccordion";
+import AnaHoverbearAccordion from "./AnaHoverbearAccordian";
 
 
 
@@ -999,8 +1001,25 @@ Because there&#39;s a low coupling between the application code and test code, i
   </div>
 </div>
 
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+          
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
 
+        <ShayRojanskyAccordion />          
+      </div>
+  </div>
+</div>
 
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+          
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+
+        <AnaHoverbearAccordion />          
+      </div>
+  </div>
+</div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">

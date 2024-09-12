@@ -729,3 +729,130 @@ ul {
   font-size: 16px;
   margin-bottom: 4px;
 }
+
+/* Apply the ShayRojansky prefix to each selector */
+.ShayRojansky a:hover {
+  color: #2b2f35;
+  outline: 0;
+}
+
+.ShayRojansky a:hover, .ShayRojansky a:active {
+  outline: 0;
+}
+
+.ShayRojansky b, .ShayRojansky i, .ShayRojansky strong, .ShayRojansky em, .ShayRojansky blockquote, .ShayRojansky p, .ShayRojansky q, .ShayRojansky span, .ShayRojansky figure, .ShayRojansky img, .ShayRojansky h1, .ShayRojansky h2, .ShayRojansky header, .ShayRojansky input, .ShayRojansky a, .ShayRojansky tr, .ShayRojansky td, .ShayRojansky form button, .ShayRojansky input[type="submit"], .ShayRojansky .btn, .ShayRojansky .highlight, .ShayRojansky .archive__item-teaser {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.ShayRojansky a {
+  color: #393e46;
+}
+
+.ShayRojansky * {
+  box-sizing: border-box;
+}
+
+/* Note: `user agent stylesheet` is a comment and not part of the actual CSS selectors */
+.ShayRojansky a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ShayRojansky .archive__item-title {
+  margin-bottom: 0.25em;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  line-height: initial;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ShayRojansky h2 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.ShayRojansky ShayRojansky .archive__item-excerpt {
+  font-size: 0.25em;
+}
+.ana-hoverbear {
+  --color-link: rgb(114, 63, 137); /* Ensure these variables are set */
+  --color-link-muted: rgb(185, 166, 194);
+  /* Other variable definitions */
+}
+.ana-hoverbear a {
+  text-decoration: var(--color-link) dotted underline;
+  color: var(--color-link-muted);
+  animation: link-color-shift-reverse;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: .2s;
+}
+/* Scoped Variables and Styles for .ana-hoverbear */
+.ana-hoverbear {
+  --color-background: rgb(38, 39, 43); /* Specific background color */
+  --color-muted: rgb(42, 42, 42);
+  --color-accent: rgb(114, 63, 137);
+  --color-link: rgb(164, 118, 186);
+  --color-link-muted: rgb(185, 166, 194);
+  --color-text: #CCCCCC;
+  --font-text: "Delius", sans-serif;
+  --font-heading: "Architects Daughter", cursive;
+  --font-code: "Fira Code";
+  --font-size-text: 14pt;
+  --margins: 2vw;
+  --gradient-fade-up: linear-gradient(0deg, rgba(38, 39, 43, 1) 0%, rgba(38, 39, 43, .9) 20%, rgba(38, 39, 43, .8) 50%, rgba(38, 39, 43, 0) 100%);
+  --gradient-fade-down: linear-gradient(0deg, rgba(38, 39, 43, 0) 0%, rgba(38, 39, 43, .7) 50%, rgba(38, 39, 43, .9) 80%, rgba(38, 39, 43, 1) 100%);
+  --gradient-splash-background: linear-gradient(336deg, rgba(0, 0, 0, 0) 40%, rgba(58, 54, 24, 0.4), rgba(0, 0, 0, 0)), linear-gradient(127deg, rgba(0, 0, 0, 0) 40%, rgba(39, 57, 31, .4), rgba(0, 0, 0, 0)), radial-gradient(rgba(51, 32, 50), rgb(17, 17, 17));
+  
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-text);
+  font-size: var(--font-size-text);
+  margin: var(--margins);
+}
+
+/* Styles for links within .ana-hoverbear */
+.ana-hoverbear a {
+  text-decoration: var(--color-link) dotted underline;
+  color: var(--color-link-muted);
+  animation: link-color-shift-reverse;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-duration: .2s;
+}
+
+/* Example of keyframes for animation */
+@keyframes link-color-shift-reverse {
+  from {
+      color: var(--color-link);
+  }
+  to {
+      color: var(--color-link-muted);
+  }
+}
+
+/* Additional specific styles for other elements within .ana-hoverbear */
+.ana-hoverbear .post-title a {
+  /* Specific styles for post-title links */
+}
+
+.ana-hoverbear .description {
+  /* Specific styles for description */
+}
+
+.ana-hoverbear .excerpt {
+  /* Specific styles for excerpt */
+}
+
+.ana-hoverbear .post-meta {
+  /* Specific styles for post-meta */
+}
+
+.ana-hoverbear .posted-on,
+.ana-hoverbear .reading-time,
+.ana-hoverbear .tags {
+  /* Specific styles for posted-on, reading-time, and tags */
+}
