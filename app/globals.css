@@ -856,3 +856,213 @@ ul {
 .ana-hoverbear .tags {
   /* Specific styles for posted-on, reading-time, and tags */
 }
+/* Avatar */
+.status-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.account__avatar img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
+.status-avatar img {
+  border-radius: 50%;
+}
+
+.status-avatar img:first-child {
+  width: 36px;
+  height: 36px;
+}
+
+.status-avatar img:last-child {
+  width: 24px;
+  height: 24px;
+}
+
+.display-name {
+  margin-left: 0.5rem;
+}
+/* Status Content */
+.status-content {
+  margin-top: 1rem;
+}
+
+.status-content-text p {
+  margin: 0.5rem 0;
+}
+
+/* Status Card */
+.status-card {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.status-card-image {
+  background-color: #f4f4f4;
+  padding: 0.5rem;
+}
+
+.status-card-image i {
+  font-size: 1.5rem;
+}
+
+.status-card-content {
+  padding: 0.5rem 1rem;
+  flex: 1;
+}
+
+.status-card-host {
+  color: #777;
+}
+
+.status-card-title {
+  font-weight: bold;
+}
+
+/* Hashtag Bar */
+.hashtag-bar {
+  margin-top: 1rem;
+}
+
+.hashtag-bar a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.hashtag-bar button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* Status Action Bar */
+.status-action-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.status-action-bar-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.status-action-bar-button.disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.icon-button-counter {
+  margin-left: 0.5rem;
+}
+/* General article styling */
+article {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Status Wrapper */
+.status-wrapper {
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.status-public {
+  background-color: #f9f9f9;
+}
+
+.focusable {
+  cursor: pointer;
+}
+
+/* Status Prepend */
+.status-prepend {
+  display: flex;
+  align-items: center;
+}
+
+.status-prepend-icon-wrapper {
+  margin-right: 0.5rem;
+}
+
+.status-prepend-icon {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Status Info */
+.status-info {
+  display: flex;
+  align-items: center;
+}
+
+.status-relative-time {
+  margin-right: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.status-visibility-icon {
+  margin-right: 0.5rem;
+}
+
+/* Styles for specific lists */
+.nicholas-hug-home > .list > .item,
+.nicholas-hug-blog > .list > .item,
+.nicholas-hug-projects > .list > .item {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* Basic styling for item container */
+.nicholas-hug-item {
+    padding: 0.75em 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 1em;
+}
+
+/* Styling for links */
+.nicholas-hug-url {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Styling for date */
+.nicholas-hug-date {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Styling for title */
+.nicholas-hug-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: #222;
+}
+
+/* Page styling */
+.nicholas-hug-page {
+    text-align: justify;
+}

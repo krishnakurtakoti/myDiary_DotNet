@@ -1021,6 +1021,9 @@ Because there&#39;s a low coupling between the application code and test code, i
   </div>
 </div>
 
+
+
+
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
             <p className="font-size: 28px;">
@@ -5620,6 +5623,174 @@ reweighting with gradient boosting</a>
       </div>
 
 
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+    <div className="nicholas-hug-item">
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/ffcv">
+        <aside className="nicholas-hug-date"><time>Sep 30 2022</time></aside>
+        <h3 className="nicholas-hug-title">Deep dive into FFCV internals</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/pdps">
+        <aside className="nicholas-hug-date"><time>Dec 04 2019</time></aside>
+        <h3 className="nicholas-hug-title">Efficient Partial Dependence Plots with decision trees</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/cython_notes">
+        <aside className="nicholas-hug-date"><time>Oct 07 2019</time></aside>
+        <h3 className="nicholas-hug-title">Cython notes and tips</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/around_gradient_boosting">
+        <aside className="nicholas-hug-date"><time>Jun 02 2019</time></aside>
+        <h3 className="nicholas-hug-title">Around gradient boosting: classification, missing values, second order derivatives, and line search.</h3>
+      </a>
+
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/gradient_boosting_descent">
+        <aside className="nicholas-hug-date"><time>Jun 01 2019</time></aside>
+        <h3 className="nicholas-hug-title">Understanding Gradient Boosting as a gradient descent</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/matrix_facto_4" style={{ textDecoration: 'underline'}}>
+        <aside className="nicholas-hug-date"><time>Jun 17 2017</time></aside>
+        <h3 className="nicholas-hug-title">Understanding matrix factorization for recommendation (part 4) - algorithm implementation</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/matrix_facto_3"  style={{ textDecoration: 'underline'}}>
+        <aside className="nicholas-hug-date"><time>Jun 16 2019</time></aside>
+        <h3 className="nicholas-hug-title">Understanding matrix factorization for recommendation (part 3) - algorithm implementation.</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/matrix_facto_2"  style={{ textDecoration: 'underline'}}>
+        <aside className="nicholas-hug-date"><time>Jun 15 2017</time></aside>
+        <h3 className="nicholas-hug-title">Understanding matrix factorization for recommendation (part 2) - algorithm implementation.</h3>
+      </a>
+
+      <a className="nicholas-hug-url" href="https://nicolas-hug.com/blog/matrix_facto_1"  style={{ textDecoration: 'underline'}}>
+        <aside className="nicholas-hug-date"><time>Jun 14 2017</time></aside>
+        <h3 className="nicholas-hug-title">Understanding matrix factorization for recommendation (part 1) - algorithm implementation.</h3>
+      </a>
+
+    </div>
+
+    {/* <div className="nicholas-hug-item">
+    
+    </div>
+
+    <div className="nicholas-hug-item">
+     
+    </div>
+
+    <div className="nicholas-hug-item">
+     
+    </div> */}
+
+
+  </div>
+</div>
+
+
+
+      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+          
+
+     <div 
+      //tabindex="-1"
+      >
+        <div className="status-wrapper status-public focusable" 
+        //tabindex="0" 
+        aria-label="Olivier Grisel, A short technical blog post by Christian Lorentzen on some computational aspects of histograms in Gradient Boosting Trees">
+          <div className="status-prepend">
+            <div className="status-prepend-icon-wrapper">
+              <i className="fa fa-retweet status-prepend-icon"></i>
+            </div>
+            <span>
+              <a href="https://sigmoid.social/@jfpuget" className="status-display-name muted" data-id="109314062894426450">
+                <strong>JFPuget</strong>
+              </a>
+              boosted
+            </span>
+          </div>
+          <div className="status status-public" data-id="109637298950872856">
+            <div className="status-info">
+              <a href="@ogrisel/109637298950872856" className="status-relative-time" target="_blank" rel="noopener noreferrer">
+                <span className="status-visibility-icon">
+                  <i className="fa fa-globe" title="Public"></i>
+                </span>
+                <time 
+                //datetime="2023-01-05T15:26:58.083Z" title="Jan 05, 2023, 20:56"
+                >Jan 5, 2023</time>
+                <abbr title="Edited Jan 05, 2023, 21:57"> *</abbr>
+              </a>
+              <a href="https://sigmoid.social/@ogrisel" title="ogrisel" className="status-display-name" target="_blank" rel="noopener noreferrer">
+                <div className="status-avatar">
+                  <img src="https://cdn.masto.host/sigmoidsocial/accounts/avatars/109/394/163/369/992/770/original/c471f5d679dace8d.jpg" alt="ogrisel"></img>
+                  <img src="https://cdn.masto.host/sigmoidsocial/accounts/avatars/109/314/062/894/426/450/original/b74af512eb8d6b1c.jpg" alt="jfpuget"></img>
+                  <span className="display-name">
+                    <strong>Olivier Grisel</strong>
+                    <span>@ogrisel</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div className="status-content" 
+            //</a>tabindex="0"
+            >
+              <div className="status-content-text">
+                <p>A short technical blog post by Christian Lorentzen on some computational aspects of histograms used in Gradient Boosting Trees in scikit-learn / xgboost / lightgbm:</p>
+                <p>Histograms, Gradient Boosted Trees, Group-By Queries and One-Hot Encoding</p>
+                <p><a href="https://lorentzen.ch/index.php/2022/10/31/histograms-gradient-boosted-trees-group-by-queries-and-one-hot-encoding/" target="_blank" rel="nofollow noopener noreferrer">Read more</a></p>
+              </div>
+            </div>
+            <a href="https://lorentzen.ch/index.php/2022/10/31/histograms-gradient-boosted-trees-group-by-queries-and-one-hot-encoding/" className="status-card" target="_blank" rel="noopener noreferrer">
+              <div className="status-card-image">
+                <i className="fa fa-file-text"></i>
+              </div>
+              <div className="status-card-content">
+                <span className="status-card-host">lorentzen.ch</span>
+                <strong className="status-card-title">Histograms, Gradient Boosted Trees, Group-By Queries and One-Hot Encoding – Michael&#39;s and Christian&#39;s Blog</strong>
+              </div>
+            </a>
+            <div className="hashtag-bar">
+              <a href="/tags/DuckDB">#DuckDB</a>
+              <a href="/tags/ApacheArrow">#ApacheArrow</a>
+              <a href="/tags/tabmat">#tabmat</a>
+              <a href="/tags/sklearn">#sklearn</a>
+              <a href="/tags/PyData">#PyData</a>
+              <a href="/tags/MachineLearning">#MachineLearning</a>
+              
+
+
+              {/* <button className="link-button">…and 3 more</button> */}
+            </div>
+            <div className="status-action-bar">
+              <button type="button" aria-label="Reply" className="status-action-bar-button">
+                <i className="fa fa-reply"></i> <span className="icon-button-counter">0</span>
+              </button>
+              <button type="button" aria-label="Boost" className="status-action-bar-button">
+                <i className="fa fa-retweet"></i>
+              </button>
+              <button type="button" aria-label="Favorite" className="status-action-bar-button">
+                <i className="fa fa-star"></i>
+              </button>
+              <button type="button" aria-label="Bookmark" className="status-action-bar-button disabled" disabled>
+                <i className="fa fa-bookmark"></i>
+              </button>
+              <div className="status-action-bar-dropdown">
+                <button type="button" aria-label="More" className="icon-button">
+                  <i className="fa fa-ellipsis-h"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </div>
+</div>
 
 
 
