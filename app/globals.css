@@ -1066,3 +1066,69 @@ article {
 .nicholas-hug-page {
     text-align: justify;
 }
+.custom-links a {
+  color: blue;
+  text-decoration: underline; /* Ensures underline is applied */
+}
+/* styles.css */
+.custom-links {
+  /* Your custom styles */
+}
+
+.custom-links a {
+  color: blue; /* Example style */
+  text-decoration: underline;
+}
+
+.custom-links .account__header__extra__links a {
+  color: green; /* Example style for links within this class */
+}
+
+.custom-links .account__header__bio p {
+  color: #9baec8; /* Example style */
+}
+
+.post-link {
+  font-size: 16px;
+}
+/* CSS with prefix for specific styling */
+
+.account__header__tabs__name h1 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+.account__header__tabs__name h1 small {
+    color: #9baec8;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+  } */
+
+   .account__header__bio .account__header__content {
+    /* color: #fff; */
+  }
+  .account__header__content {
+    word-wrap: break-word;
+    color: #9baec8;
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    word-break: normal;
+}

@@ -5692,6 +5692,1326 @@ reweighting with gradient boosting</a>
 
 
 
+<div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+<h1 className="page-heading">Blog</h1>
+
+<ul className="post-list">
+    
+      <li>
+        <span className="post-meta">Jun 22, 2024</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2024/06/22/icml-2024-abstracts-selection.html">Preparing for ICML 2024: Main themes</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Apr 16, 2024</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2024/04/16/dspy-dg-blogs-rag.html">Basic DSPy RAG tutorial on DataGrapple blog posts</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 11, 2024</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2024/02/11/dg-lmql.html">Prompting is Programming with LMQL</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jul 9, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2023/07/09/icml-2023-papers-selection.html">Selected ML Papers from ICML 2023</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 3, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2023/06/03/systematic-investing-in-credit.html">[Active Reading with ChatGPT] Systematic Investing in Credit</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 28, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2023/05/28/qpm-stat-arb.html">[Active Reading with ChatGPT] Quantitative Portfolio Management: The Art and Science of Statistical Arbitrage</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 7, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2023/05/07/wikipedia-network-companies-sentence-transformers.html">Building a S&amp;P 500 company classification from Wikipedia articles (guided by ChatGPT)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 30, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2023/04/30/book-volatility-trading-sinclair.html">[Book] Volatility Trading</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 11, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2023/03/11/setfit-llm-10-lines-of-code.html">SetFit: Fine-tuning a LLM in 10 lines of code and little labeled data</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 27, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2023/02/27/performance-attribution-statistical-risk-model-market-neutral-crypto.html">Performance attribution of a crypto market-neutral book on a statistical risk model</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 4, 2023</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2023/01/04/interview-chatgpt-book-ml4qt.html">[Book] Interview with ChatGPT about its book 'From Data to Trade: A Machine Learning Approach to Quantitative Trading'</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 17, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/aws/2022/12/17/s3-lambda-rds-aurora-serverless.html">AWS S3 to Lambda to Aurora to Lambda to Binance | Serverless architecture for crypto trading</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Nov 13, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/11/13/conf-complex-networks-2022-takeaways.html">Takeaways from Complex Networks 2022 in Palermo, Italy</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Nov 5, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/11/05/conf-complex-networks-2022.html">Getting ready for Complex Networks 2022 in Palermo, Italy</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Sep 17, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/09/17/hierarchical-pca-crypto-clustering.html">Hierarchical PCA x Hierarchical clustering on crypto perpetual futures</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Sep 17, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/09/17/crypto-pca-first-eigenvector.html">Crypto PCA First Eigenvector</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 16, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/05/16/bayes-net-boparan.html">Bayesian net and Boparan 7.625% 30 Nov 2025 Prospectus</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 20, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/04/20/speaker-identification-french-presidential-debate-2017.html">Speaker identification in 'Marine Le Pen vs. Emmanuel Macron 2017 French Presidential Debate'</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 19, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2022/02/19/test-readability-measures.html">Standard readability measures (applied on Shakespeare's plays)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 8, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2022/02/08/matalan-24-pyagrum.html">Naive modelling of Matalan defaulting on its MTNLN 9.5 01/31/24 Notes</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 30, 2022</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2022/01/30/default-distribution-mrf.html">Naive modelling of credit defaults using a Markov Random Field</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Dec 11, 2021</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/quant/2021/12/11/pca-5-factors-equity-risk-model.html">Back to basics: PCA on stocks returns</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Nov 29, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2021/11/29/book-quant-guide-funda-investors.html">[Book] Advanced Portfolio Management -- A Quant's Guide for Fundamental Investors</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Nov 14, 2021</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2021/11/14/top2vec-10k-business.html">[paper] Top2Vec: Distributed Representations of Topics</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Oct 27, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2021/10/27/hkml-s4e2.html">[HKML] Hong Kong Machine Learning Meetup Season 4 Episode 2</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 13, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2021/08/13/gnn-sector-embedding.html">Embeddings of Sectors and Industries using Graph Neural Networks</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 10, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2021/04/10/mind-the-jensen-gap.html">Mind the Jensen Gap!</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 13, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2021/02/13/swelling-effect-spd-covariance.html">The Swelling Effect: Think twice before averaging covariance matrices</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Feb 5, 2021</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2021/02/05/conditional-corrgan-colab-example.html">Conditional CorrGAN: An example in Google Colab</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jan 22, 2021</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2021/01/22/spdtorchnet.html">Classification of Correlation Matrices using SPDNet with Riemannian Batch Normalization</a>
+        </h2>
+      </li>
+{/*     
+      <li>
+        <span class="post-meta">Jan 9, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2021/01/09/summary-paper-interpretable-machine-learning.html">[Paper] Summary of 'Interpretable Machine Learning – A Brief History, State-of-the-Art and Challenges'</a>
+        </h2>
+      </li> */}
+    
+      {/* <li>
+        <span class="post-meta">Jan 2, 2021</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2021/01/02/AutoGL-open-graph-benchmark.html">AutoGL and the Open Graph Benchmark: Datasets for Machine Learning on Graphs</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 18, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/12/18/corrgan-validation-pca-features.html">Some further assessment of the original CorrGAN model (2019)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 3, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2020/12/03/summary-paper-explaining-by-removing.html">[Paper] Summary of 'Explaining by Removing: A Unified Framework for Model Explanation'</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Nov 11, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/quant/2020/11/11/from-fundamental-to-quantamental-thoughts.html">From Fundamental To Quantamental Investing</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Nov 4, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/hkml/2020/11/04/hkml-s3e4.html">[HKML] Hong Kong Machine Learning Meetup Season 3 Episode 4</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Oct 28, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/hkml/2020/10/28/hkml-s3e3.html">[HKML] Hong Kong Machine Learning Meetup Season 3 Episode 3</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Oct 8, 2020</span>
+
+        <h2>
+          <a class="post-link"
+ href="/hkml/2020/10/08/hkml-s3e2.html">[HKML] Hong Kong Machine Learning Meetup Season 3 Episode 2</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Sep 30, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2020/09/30/hkml-s3e1.html">[HKML] Hong Kong Machine Learning Meetup Season 3 Episode 1</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Sep 27, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2020/09/27/thoughts-gans-finance.html">Some Thoughts on the Applications of Deep Generative Models in Finance</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Sep 4, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/09/04/correlation-matrix-features-market-regimes.html">Can we predict a market regime from correlation matrix features?</a>
+        </h2>
+      </li>
+{/*     
+      <li>
+        <span class="post-meta">Aug 30, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/08/30/book-probabilistic-graphical-models-finance-denev.html">[Book] Commented summary of Probabilistic Graphical Models -- A New Way of Thinking in Financial Modelling</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 17, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/08/17/empirical-matrices-portfolio-comparisons.html">Which portfolio allocation method to choose? Look at the correlation matrix!</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 15, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/08/15/portfolio-allocation-risk.html">Portfolio construction methods and risk metrics: in- and out-of-sample comparisons on simulated data</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Aug 14, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/08/14/correlation-matrix-features.html">Extraction of features from a given correlation matrix</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Aug 11, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/08/11/corrgan-pretrained-models.html">Release of a few pretrained CorrGAN models</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 9, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/08/09/predictors-copula-combined.html">How to combine a handful of predictors using empirical copulas and maximum likelihood</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Aug 1, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/08/01/gan-copula-3d.html">CopulaGAN (the 3d case) - A first naive attempt</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Jul 29, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/07/29/wasserstein-barycenter-margins-stocks-sampling.html">Clustering Marginal Distributions of Stocks Returns, and Sampling from their Wasserstein Barycenter</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jul 28, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/07/28/sampling-from-empirical-copulas.html">Sampling from Empirical Copulas of Stocks</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jul 26, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/07/26/wasserstein-barycenter-copula-stocks.html">Wasserstein Barycenters of Stocks Empirical Copulas</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jul 15, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/hkml/2020/07/15/hkml-s2e8.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 8</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Jul 5, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/07/05/hierarchical-pca-avellaneda-paper.html">[Paper + Implementation] Hierarchical PCA and Applications to Portfolio Management</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jul 1, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/07/01/mutual-information-is-copula-entropy.html">Mutual Information Is Copula Entropy</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 25, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/06/25/copula-optimal-transport-dependence.html">Measuring non-linear dependence with Optimal Transport</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 10, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2020/06/10/hkml-s2e7.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 7</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 19, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/05/19/commented-summary-machine-learning-for-factor-investing.html">[Book] Commented summary of Machine Learning for Factor Investing by Guillaume Coqueret and Tony Guida</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 13, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2020/05/13/hkml-s2e6.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 6</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 29, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2020/04/29/hkml-s2e5.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 5</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 12, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/04/12/commented-summary-machine-learning-for-asset-managers.html">[Book] Commented summary of Machine Learning for Asset Managers by Marcos Lopez de Prado</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 8, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2020/04/08/hkml-s2e4.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 4</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 22, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2020/03/22/herc-part-i-implementation.html">[Paper + Implementation] The Hierarchical Equal Risk Contribution Portfolio (Part I)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 22, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/deep-learning/2020/03/22/cartoongan-hk-landscapes.html">[Paper + Experimentation] CartoonGAN applied to Hong Kong landscapes using Streamlit</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Feb 17, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/02/17/corrvae-financial-correlation-matrices-tentative-2.html">CorrVAE: A VAE for sampling realistic financial correlation matrices (Tentative II)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Feb 4, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/02/04/corrvae-financial-correlation-matrices-tentative-1.html">CorrVAE: A VAE for sampling realistic financial correlation matrices (Tentative I)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Feb 3, 2020</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2020/02/03/sp500-sharpe-vs-corrmats.html">S&amp;P 500 Sharpe vs. Correlation Matrices - Building a dataset for generating stressed/rally/normal scenarios</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Jan 22, 2020</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2020/01/22/hkml-s2e3.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 3</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Dec 25, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/math/2019/12/25/riemannian-mean-correlation.html">How to define an intrisic Mean of Correlation Matrices in a Riemannian sense?</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Dec 21, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2019/12/21/corrgan-network-mv-portfolios.html">Comparison of Network-based and Minimum Variance Portfolios Using CorrGAN</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Dec 4, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2019/12/04/hierarchical-risk-parity-part-3.html">Hierarchical Risk Parity - Implementation &amp; Experiments (Part III)</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Oct 17, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/10/17/hkml-s2e2.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 2</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Oct 13, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/10/13/tf-dcgan-financial-correlation-matrices.html">TF 2.0 DCGAN for 100x100 financial correlation matrices</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Sep 25, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/09/25/hkml-s2e1.html">[HKML] Hong Kong Machine Learning Meetup Season 2 Episode 1</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Sep 22, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/09/22/tf-mlp-gan-repr-correlation-matrices.html">TF 2.0 GAN MLP for 100x100 financial correlation matrices</a>
+        </h2>
+      </li>
+
+{/*     
+      <li>
+        <span class="post-meta">Sep 5, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/09/05/hkml-s2o1-ml-marketing.html">[HKML] Supercharge your Marketing with Data &amp; ML . [HKML &lt;&gt; IAB] . Off-Season #1</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Sep 1, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/09/01/correl-invariance-permutations-nn.html">Permutation invariance in Neural networks</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Aug 4, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/08/04/lime-credit-sentiment-snorkel.html">Using LIME to &#39;explain&#39; Snorkel Labeler</a>
+        </h2>
+      </li>
+{/*     
+      <li>
+        <span class="post-meta">Jul 17, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/07/17/hkml-s1e12.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 12 (Season Finale)</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Jul 15, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/07/15/financial-correlations-stylized-facts.html">Stylized Facts of Financial Correlations</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jul 1, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/07/01/CorrGan-3D-empirical.html">CorrGAN: A GAN for sampling correlation matrices (Part II)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jun 23, 2019</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2019/06/23/CorrGan-3D.html">CorrGAN: A GAN for sampling correlation matrices (Part I)</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Jun 14, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/06/14/icml19-day-5.html">[ICML 2019] Day 5 - Workshop Time Series</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 13, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/06/13/icml19-day-4.html">[ICML 2019] Day 4 - Interpretability, Natural Language Processing, Smarter than AI four year old kids, Unsupervised Learning</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 12, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/06/12/icml19-day-3.html">[ICML 2019] Day 3 - Robotics, Good ol' Sparse Coding, misc. applications, Transfer, Multitask and Active Learning</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 12, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/06/12/hkml-s1e11.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 11</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 11, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/06/11/icml19-day-2.html">[ICML 2019] Day 2 - U.S. Census, Time Series, Hawkes Processes, Shapley values, Topological Data Analysis, Deep Learning &amp; Logic, Random Matrices, Optimal Transport for Graphs</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 11, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/06/11/icml19-tutorials.html">[ICML 2019] Day 1 - Tutorials</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 26, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/05/26/lime-credit-sentiment.html">Experimenting with LIME -  A tool for model-agnostic explanations of Machine Learning models</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 19, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/05/19/icml-19-reading-list.html">[ICML 2019] Reading list of accepted papers</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 15, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/05/15/hkml-s1e10.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 10</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 4, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/05/04/credit-sentiment-vader.html">May the Fourth: VADER for Credit Sentiment?</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 1, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2019/05/01/snorkel-credit-sentiment-part-1.html">Snorkel Credit Sentiment - Part 1</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Apr 17, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/04/17/hkml-s1e9.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 9</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 12, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/03/12/hkml-s1e8.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 8</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 20, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/02/20/hkml-s1e7.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 7</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jan 23, 2019</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2019/01/23/hkml-s1e6.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 6</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 19, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2018/12/19/hkml-s1e5.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 5</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 9, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2018/12/09/backtesting-protocol.html">[Paper] A Backtesting Protocol in the Era of Machine Learning</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Nov 21, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2018/11/21/hkml-s1e4.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 4</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Oct 16, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2018/10/16/book-the-unrules.html">[Book] The UnRules - Man, Machines and the Quest to Master Markets</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Oct 15, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2018/10/15/hierarchical-risk-parity-part-2.html">Hierarchical Risk Parity - Implementation &amp; Experiments (Part II)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Oct 10, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2018/10/10/centrality-network-portfolios.html">Network-based vs. Minimum Variance portfolios: Any deep connections?</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Oct 9, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2018/10/09/hkml-s1e3.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 3</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Oct 5, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/stats/2018/10/05/onion-method.html">How to sample uniformly over the space of correlation matrices? The onion method</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Oct 2, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2018/10/02/hierarchical-risk-parity-part-1.html">Hierarchical Risk Parity - Implementation &amp; Experiments (Part I)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Sep 20, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2018/09/20/book-nn-nlp.html">[Book] Neural Network Methods for Natural Language Processing</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Sep 5, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2018/09/05/combination-rankings-stationary-distribution.html">&#39;&#39;Combination of Rankings&#39;&#39; - The Stationary Distribution</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Sep 2, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2018/09/02/full-coverage-combination-rankings.html">&#39;&#39;Combination of Rankings&#39;&#39; - The Full Coverage Case</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Sep 1, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2018/09/01/BBG-ml.html">[Bloomberg Meetup] The Forefront of Technologies in Finance</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Aug 31, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2018/08/31/combination-rankings-mc-study.html">A Monte Carlo study of the &#39;Combination of Rankings&#39; methods</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Aug 21, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2018/08/21/hkml-s1e2.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 2</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Aug 16, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2018/08/16/combination-rankings.html">Combination of Rankings</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Jul 18, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/hkml/2018/07/18/hkml-s1e1.html">[HKML] Hong Kong Machine Learning Meetup Season 1 Episode 1</a>
+        </h2>
+
+      </li>
+    
+      <li>
+        <span class="post-meta">Jul 16, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2018/07/16/icml18-retrospectives.html">[ICML 2018] Retrospectives</a>
+        </h2>
+      </li> */}
+{/*     
+      <li>
+        <span class="post-meta">Jul 13, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2018/07/13/icml18-day-4.html">[ICML 2018] Day 4 - Time-Series Analysis, NLP, and More Human-like Learning Machines</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jul 12, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2018/07/12/icml18-day-3.html">[ICML 2018] Day 3 - Energy, GANs, Rankings, Curriculum Learning, and our paper</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jul 11, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2018/07/11/icml18-day-2.html">[ICML 2018] Day 2 - Representation Learning, Networks and Relational Learning</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jul 10, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2018/07/10/icml18-tutorials.html">[ICML 2018] Day 1 - Tutorials</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Jun 25, 2018</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/deep-learning/2018/06/25/seq2seq-number-translation.html">On the difficulty of reading numbers in different languages</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Jun 23, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/deep-learning/2018/06/23/neural-style-transfer.html">Neural Style Transfer applied to paintings</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Jun 3, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/networks/2018/06/03/pmfg-algorithm.html">How to compute the Planar Maximally Filtered Graph (PMFG)</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 30, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/qfin/2018/05/30/deflated-sharpe-ratio.html">How to detect false strategies? The Deflated Sharpe Ratio</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">May 14, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/cryptocurrency/2018/05/14/api-crypto.html">APIs for getting crypto related data</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Mar 4, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/healthtech/2018/03/04/healthtech-firstbeat-garmin.html">Physiological analytics for sports</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 17, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2018/02/17/aqr-academic-factors.html">AQR Academic Factors</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Feb 13, 2018</span>
+
+        <h2>
+          <a class="post-link" href="/quant/2018/02/13/quant-blogs.html">Quant Blogs</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span class="post-meta">Dec 4, 2017</span>
+
+        <h2>
+          <a class="post-link" href="/stats/2017/12/04/tail-dependence-coefficients.html">Tail Dependence Coefficients</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Nov 13, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/stats/2017/11/13/riemannian-geometry-correlations.html">Riemannian Geometry of Correlation Matrices</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Nov 11, 2017</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2017/11/11/phd-defense.html">PhD defense - Some contributions to the clustering of financial time series</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Nov 5, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/stats/2017/11/05/visualize-dependence.html">[Correlation] How to visualize dependence between two variables?</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Sep 7, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2017/09/07/how-to-sort-distance-matrix.html">[Clustering] How to sort a distance matrix</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Sep 2, 2017</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2017/09/02/ds3-datascience-polytechnique.html">[Field report] Data Science Summer School at Ecole Polytechnique (with Bengio, Russell, Bousquet, Archambeau and others)</a>
+        </h2>
+      </li> */}
+    
+      <li>
+        <span className="post-meta">Aug 25, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/cryptocurrency/2017/08/25/download-cryptocoins-api-python.html">Download &amp; Play with Cryptocurrencies Historical Data in Python</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Aug 24, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2017/08/24/NLP-reading-list.html">Reading list of NLP stuff</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Aug 22, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2017/08/22/correl-BTC-ETH.html">Quick correlation study between BTC/USD and ETH/USD</a>
+        </h2>
+      </li>
+    
+      {/* <li>
+        <span class="post-meta">Aug 11, 2017</span>
+
+        <h2>
+          <a class="post-link" href="/ml/2017/08/11/ICML-2017-field-reports.html">Field reports from ICML 2017 in Sydney</a>
+        </h2>
+      </li>
+     */}
+      <li>
+        <span className="post-meta">Jul 24, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2017/07/24/US-Stocks-correlations.html">Study of US Stocks Correlations, Hierarchies and Clusters</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jun 28, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ethereum/2017/06/28/ETH-vs-BTC-part-0-bis.html">Ether vs. Bitcoin -- Part 0 bis</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jun 22, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ethereum/2017/06/22/ETH-vs-BTC-part-0.html">Ether vs. Bitcoin -- Part 0</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">Jun 16, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ethereum/2017/06/16/june-ethereum-meetup-london.html">June Ethereum London Meetup at Imperial College</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">May 28, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/qfin/2017/05/28/swap-data-repositories.html">Swap Data Repositories for Credit Default Swaps</a>
+        </h2>
+      </li>
+    
+      <li>
+        <span className="post-meta">May 12, 2017</span>
+
+        <h2>
+          <a className="post-link" href="https://gautier.marti.ai/ml/2017/05/12/cut-a-dendrogram.html">[Clustering] How and Where should you cut a dendrogram?</a>
+        </h2>
+      </li>
+    
+  </ul>
+
+  </div>
+</div>
+
+
+
+<div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+
+
+
+
+</div>
+</div> 
+
+
+
+
+<div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
+    <div className="col-sm-12">
+      <span>@demofox@mastodon.gamedev.place</span>
+      <p>
+        <a href="https://mastodon.gamedev.place/@demofox">https://mastodon.gamedev.place/@demofox</a>
+      </p>
+      <div className="account__header__extra">
+        <div className="account__header__bio">
+          <div className="account__header__account-note">
+            <label htmlFor="account-note-8079">
+              <span>Note</span>
+              <span aria-live="polite" role="status" className="inline-alert" style={{ opacity: 0 }}></span>
+            </label>
+            <textarea
+              id="account-note-8079"
+              className="account__header__account-note__content"
+              placeholder="Click to add note"
+              style={{ height: '37px' }}
+              data-has-listeners="true"
+            ></textarea>
+          </div>
+          <div className="account__header__content translate">
+            <p>
+              Graphics and game dev research. Previously NVIDIA, Blizzard, Monolith, others. Graphics, audio synth, exotic computation. No gods, no masters.
+              <a href="http://blog.demofox.org" target="_blank" rel="nofollow noopener noreferrer" translate="no">
+                <span className="invisible">http://</span>
+                <span className="">blog.demofox.org</span>
+                <span className="invisible"></span>
+              </a>.
+            </p>
+          </div>
+          <div className="account__header__fields">
+            <dl>
+              <dt><span>Joined</span></dt>
+              <dd>Nov 20, 2017</dd>
+            </dl>
+          </div>
+        </div>
+        <div className="account__header__extra__links">
+          <a className="active" aria-current="page" title="7,270" href="https://mastodon.gamedev.place/@demofox">
+            <span><strong><span><span>7.3</span>K</span></strong> Posts</span>
+          </a>
+          <a title="1,030" href="https://mastodon.gamedev.place/@demofox/following">
+            <span><strong><span><span>1</span>K</span></strong> Following</span>
+          </a>
+          <a title="2,487" href="https://mastodon.gamedev.place/@demofox/followers">
+            <span><strong><span><span>2.5</span>K</span></strong> Followers</span>
+          </a>
+        </div>
+<p>260 posts grouped by the following categories:</p>
+<h3>Math</h3>
+  <p>
+    <a href="https://blog.demofox.org/2023/12/24/deriving-the-inverse-cdf-of-a-rotated-square-projected-onto-a-line/">2024-12-24 Deriving the Inverse CDF of a Rotated Square Projected onto a Line</a><br />
+    <a href="https://blog.demofox.org/2023/10/20/when-there-are-too-many-experiments-tests-to-do-part-2-orthogonal-arrays/">2023-10-20 When There Are Too Many Experiments (Tests) To Do! Part 2: Orthogonal Arrays</a><br />
+    <a href="https://blog.demofox.org/2023/10/17/fractional-factorial-experiment-design-when-there-are-too-many-experiments-to-do/">2023-10-17 Fractional Factorial Experiment Design: When There Are Too Many Experiments To Do</a><br />
+    <a href="https://blog.demofox.org/2023/09/11/generating-hamiltonian-cycles-on-graphs-with-prime-numbers-of-nodes-without-repeating-edges/">2023-09-11 Generating Hamiltonian Cycles on Graphs with Prime Numbers of Nodes, Without Repeating Edges</a><br />
+    <a href="https://blog.demofox.org/2023/09/01/sparse-pairwise-voting-or-tournaments-implementing-some3-voting/">2023-09-01 Sparse Pairwise Voting or Tournaments (Implementing SoME3 Voting)</a><br />
+    <a href="https://blog.demofox.org/2023/08/22/permutation-iteration-and-random-access/">2023-08-22 Permutation Iteration and Random Access</a><br />
+    <a href="https://blog.demofox.org/2023/08/21/inverting-gauss-formula/">2023-08-21 Inverting Gauss&#39; Formula</a><br />
+    <a href="https://blog.demofox.org/2023/03/12/eulers-number-probability/">2023-03-12 Euler&#39; Number & Probability</a><br />
+    <a href="https://blog.demofox.org/2023/03/06/uniform-1d-red-noise-blue-noise-part-2/">2023-03-06 Uniform 1D Red Noise & Blue Noise Part 2</a><br />
+    <a href="https://blog.demofox.org/2023/02/20/uniform-1d-red-noise-blue-noise/">2023-02-20 Uniform 1D Red Noise & Blue Noise</a><br />
+    <a href="https://blog.demofox.org/2023/02/17/fibonacci-word-sampling-a-sorted-golden-ratio-low-discrepancy-sequence/">2023-02-17 Fibonacci Word Sampling: A Sorted Golden Ratio Low Discrepancy Sequence</a><br />
+    <a href="https://blog.demofox.org/2022/08/09/calculating-discrete-sums-with-umbral-calculus/">2022-08-09 Calculating Discrete Sums With Umbral Calculus</a><br />
+    <a href="https://blog.demofox.org/2022/07/27/calculating-the-similarity-of-histograms-or-pdfs-using-the-p-wasserstein-distance/">2022-08-02 Calculating the Similarity of Histograms or PDFs & Interpolating Them Using the p-Wasserstein Distance</a><br />
+    <a href="https://blog.demofox.org/2022/07/12/calculating-svd-and-pca-in-c/">2022-07-12 Calculating SVD and PCA in C++</a><br />
+    <a href="https://blog.demofox.org/2022/07/10/programming-pca-from-scratch-in-c/">2022-07-10 Programming PCA From Scratch In C++</a><br />
+    <a href="https://blog.demofox.org/2022/06/29/piecewise-least-squares-curve-fitting/">2022-06-29 Piecewise Least Squares Curve Fitting</a><br />
+    <a href="https://blog.demofox.org/2022/06/06/fitting-data-points-with-weighted-least-squares/">2022-06-06 Fitting Data Points With Weighted Least Squares</a><br />
+    <a href="https://blog.demofox.org/2022/03/02/sampling-importance-resampling/">2022-03-02 Sampling Importance Resampling</a><br />
+    <a href="https://blog.demofox.org/2022/03/01/picking-fairly-from-a-list-of-unknown-size-with-reservoir-sampling/">2022-03-01 Picking Fairly From A List of Unknown Size With Reservoir Sampling</a><br />
+    <a href="https://blog.demofox.org/2022/02/26/the-discrete-cosine-transform-and-derivatives/">2022-02-26 The Discrete Cosine Transform, and Derivatives</a><br />
+    <a href="https://blog.demofox.org/2022/02/20/adjusting-point-sets-in-frequency-space-using-a-differentiable-fourier-transform/">2022-02-20 Adjusting Point Sets in Frequency Space Using a Differentiable Fourier Transform</a><br />
+    <a href="https://blog.demofox.org/2022/01/29/distance-between-points-on-a-toroidal-disk/">2022-01-29 Distance Between Points on a “Toroidal Disk”</a><br />
+    <a href="https://blog.demofox.org/2021/04/01/mean-squared-error-is-variance/">2021-04-01 Mean Squared Error is Variance</a><br />
+    <a href="https://blog.demofox.org/2020/11/25/multiple-importance-sampling-in-1d/" target="_blank" rel="noopener">2020-11-25 Multiple Importance Sampling in 1D</a><br />
+    <a href="https://blog.demofox.org/2020/07/26/irrational-numbers/" target="_blank" rel="noopener">2020-07-26 Irrational Numbers</a><br />
+    <a href="https://blog.demofox.org/2020/07/17/using-low-discrepancy-sequences-with-rejection-sampling/" target="_blank" rel="noopener">2020-07-17 Using Low Discrepancy Sequences With Rejection Sampling</a><br />
+    <a href="https://blog.demofox.org/2020/06/04/a-link-between-russian-roulette-and-rejection-sampling-importance-sampling/" target="_blank" rel="noopener">2020-06-04 A Link Between Russian Roulette and Rejection Sampling / Importance Sampling</a><br />
+    <a href="https://blog.demofox.org/2020/05/03/guess-a-number-between-1-and-10/" target="_blank" rel="noopener">2020-05-03 Guess a Number Between 1 and 10</a><br />
+    <a href="https://blog.demofox.org/2020/03/17/basic-methods-for-finding-zeroes-and-mins-maxes-of-functions/" target="_blank" rel="noopener">2020-03-17 Basic Methods For Finding Zeroes and Mins / Maxes of Functions</a><br />
+    <a href="https://blog.demofox.org/2020/03/12/using-white-noise-to-choose-between-red-noise-and-blue-noise/" target="_blank" rel="noopener">2020-03-12 Using White Noise to Choose Between Red Noise and Blue Noise</a><br />
+    <a href="https://blog.demofox.org/2020/03/10/how-do-i-calculate-variance-in-1-pass/" target="_blank" rel="noopener">2020-03-10 How Do I Calculate Variance in 1 Pass?</a><br />
+    <a href="https://blog.demofox.org/2020/02/09/a-fun-2d-rotation-matrix-derivation/" target="_blank" rel="noopener">2020-02-09 A Fun 2d Rotation Matrix Derivation</a><br />
+    <a href="https://blog.demofox.org/2019/12/01/calculating-information-entropy/" target="_blank" rel="noopener">2019-12-01 Calculating Information Entropy</a><br />
+    <a href="https://blog.demofox.org/2019/10/25/bayes-theorem-intuition/" target="_blank" rel="noopener">2019-10-25 Bayes&#39; Theorem Intuition</a><br />
+    <a href="https://blog.demofox.org/2019/07/30/dice-distributions-noise-colors/" target="_blank" rel="noopener">2019-07-30 Dice, Distributions & Noise Colors</a><br />
+    <a href="https://blog.demofox.org/2019/06/29/meaning-of-the-sine-function/" target="_blank" rel="noopener">2019-06-29 Meaning of the Sine Function</a><br />
+    <a href="https://blog.demofox.org/2019/05/29/quantifying-uncertainty/" target="_blank" rel="noopener">2019-05-29 Quantifying Uncertainty</a><br />
+</p>
+
+      </div>
+    </div>
+  </div>
+{/* 
+<div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+
+<div className="account__header__extra"><div className="account__header__bio">
+  <div className="account__header__account-note">
+    <label for="account-note-8079"><span>Note</span> <span aria-live="polite" role="status" className="inline-alert" style="opacity: 0;"></span></label><textarea id="account-note-8079" class="account__header__account-note__content" placeholder="Click to add note" style="height: 37px !important;" data-has-listeners="true"></textarea>
+    </div>
+    <div className="account__header__content translate"><p>Graphics and game dev research. previously nvidia, blizzard, monolith, others. graphics, audio synth, exotic computation. No gods, no masters. <a href="http://blog.demofox.org" target="_blank" rel="nofollow noopener noreferrer" translate="no"><span className="invisible">http://</span><span class="">blog.demofox.org</span><span class="invisible"></span></a>.</p></div><div class="account__header__fields"><dl><dt><span>Joined</span></dt><dd>Nov 20, 2017</dd></dl>
+    </div>
+    </div>
+    <div class="account__header__extra__links">
+  <a className="active" aria-current="page" title="7,270" href="/@demofox"><span><strong><span><span>7.3</span>K</span></strong> Posts</span></a><a title="1,030" href="/@demofox/following"><span><strong><span><span>1</span>K</span></strong> Following</span></a><a title="2,487" href="/@demofox/followers"><span><strong><span><span>2.5</span>K</span></strong> Followers</span></a></div></div>
+
+</div>
+</div> */}
+
+<div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+
+
+  <h2>
+          <a className="post-link" href="https://github.com/vinjn?tab=following">https://github.com/vinjn?tab=following</a>
+        </h2>
+    <h2 className="heading-element" dir="auto">Hi, Want to know something?</h2>
+
+    <p dir="auto">I&#39;m an open-source software developer and <a href="https://soulteary.com/?from-github" rel="nofollow">blogger</a>, I&#39;m often active <a href="https://zhuanlan.zhihu.com/p/706303216" rel="nofollow">on the Zhihu community</a>. Since late 2022, I&#39;ve been studying at an investment institution while collaborating with its partners and tech community allies to research and implement cutting-edge technologies.</p>
+    <p dir="auto">I also serve as an ambassador for <a href="https://github.com/langgenius/dify">Dify</a> and <a href="https://cloud.perfxlab.cn/" rel="nofollow">PerfXCloud</a> in China. If you&#39;re interested in community partnerships, I welcome the opportunity to discuss potential collaborations. 👋</p>
+    <p dir="auto">Previously, I held roles as: Open-Source Evangelist of <a href="https://github.com/milvus-io">Milvus</a>, Technical Director of <a href="https://www.baai.ac.cn" rel="nofollow">Beijing Artificial Intelligence Research Institutes</a> Community R&amp;D and IT, <a href="https://tech.meituan.com/" rel="nofollow">Meituan Technical</a> Evangelist, <a href="https://ir.xiaoyinggroup.com/" rel="nofollow">X Financial</a> Front End Architect, Senior Front End Development Engineer at <a href="https://www.aliyun.com/" rel="nofollow">Alibaba Cloud</a>, <a href="https://about.meituan.com/" rel="nofollow">Meituan</a>, <a href="https://www.taobao.com/" rel="nofollow">Taobao</a> and <a href="https://www.sinacloud.com/doc/about.html" rel="nofollow">Sina Cloud</a>.</p>
+  
+  
+
+    <ul className="vcard-details">
+
+<li className="vcard-detail pt-1 hide-sm hide-md" 
+// itemprop="homeLocation" show_title="false" aria-label="Home location: Beijing, China"
+>
+   {/* <svg class="octicon octicon-location" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m12.596 11.596-3.535 3.536a1.5 1.5 0 0 1-2.122 0l-3.535-3.536a6.5 6.5 0 1 1 9.192-9.193 6.5 6.5 0 0 1 0 9.193Zm-1.06-8.132v-.001a5 5 0 1 0-7.072 7.072L8 14.07l3.536-3.534a5 5 0 0 0 0-7.072ZM8 9a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 9Z"></path></svg> */}
+  <span className="p-label">Beijing, China</span>
+</li>
+
+<li 
+//itemprop="url" data-test-selector="profile-website-url" 
+className="vcard-detail pt-1 ">
+  {/* <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-link"> */}
+    {/* <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path> */}
+{/* </svg> */}
+      <a rel="nofollow me" className="Link--primary" href="https://soulteary.com">https://soulteary.com</a>
+</li>
+
+  <li 
+  // itemprop="social" 
+  className="vcard-detail pt-1 ">
+    <a rel="nofollow me" className="Link--primary" style={{overflowWrap: 'anywhere'}} href="https://twitter.com/soulteary">@soulteary</a>
+  </li>
+</ul>
+  
+  </div>
+</div>
+
+
+
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
   <div className="col-sm-12">
           
