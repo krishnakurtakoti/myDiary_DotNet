@@ -5695,7 +5695,7 @@ reweighting with gradient boosting</a>
 <div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
   <div className="col-sm-12">
 <h1 className="page-heading">Blog</h1>
-
+<p>
 <ul className="post-list">
     
       <li>
@@ -6838,7 +6838,7 @@ reweighting with gradient boosting</a>
       </li>
     
   </ul>
-
+</p>
   </div>
 </div>
 
