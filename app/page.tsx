@@ -1021,8 +1021,67 @@ Because there&#39;s a low coupling between the application code and test code, i
   </div>
 </div>
 
+<div className="custom-links  row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+  <h1 className="title">Welcome To My New Blog</h1>
+  <p>I&#39;ve been blogging since 2005 and have written hundreds of posts in that time, but my blogging output has declined somewhat over the last few years. That&#39;s partly laziness on my part, and partly because Twitter provides a much more convenient platform for the quick take, but it&#39;s also because there&#39;s too much friction in publishing a post on my long running <a href="https://www.blogger.com/about/">Google Blogger</a> site <a href="https://mikehadlow.blogspot.com/">Code Rant</a>. Google has done little to update the ancient Blogspot platform over the years and it’s showing its age. The effort required to upload and format a blog post is too high, and has effectively disincentivised me from blogging. In the last few years I’ve sometimes managed just a single post per year. So, long overdue, I&#39;ve decided to start a new blog here at <strong>mikehadlow.com</strong> using modern developer platform technologies. This is the first post.</p>
+  <h1 className="title">Mike Hadlow</h1>
+      <li className="mikehadlow-card">
+      <div className="mikehadlow-card-content">
+        <div className="mikehadlow-content">
+          <p>
+            <a href="https://mikehadlow.com/posts/2022-06-24-writing-dotnet-services-for-kubernetes/">
+              <strong>Writing .NET Application Services for Kubernetes</strong>
+            </a><br /><em>Jun 24, 2022</em>
+          </p>
+          <p></p>
+          <p>
+            In a traditional .NET distributed application, application services (not to be confused with the Kubernetes service object) would either be written as IIS hosted web applications or Windows Services. When building .NET (micro)services to be deployed in a <a href="https://kubernetes.io/">Kubernetes</a> cluster pretty much every facet of the service needs to be reconsidered, not only the hosting environment but the way configuration is accessed, how logging and monitoring work, and the options for state management and memory considerations. In this post I will bring my experience of migrating .NET applications to Kubernetes to enumerate some of the main ways that you will need to change the way you write them.
+          </p>
+          <p></p>
+          <p>
+            <a href="https://mikehadlow.com/posts/2022-06-24-writing-dotnet-services-for-kubernetes/">
+              <em>Read more...</em>
+            </a>
+          </p>
+        </div>
+      </div>
+    </li>
 
+    <li className="mikehadlow-card">
+      <div className="mikehadlow-card-content">
+        <div className="mikehadlow-content">
+          <p>
+            <a href="https://mikehadlow.com/posts/2022-04-28-event-handlers-by-reflection/">
+            <strong>C#: Add event handlers dynamically using reflection</strong>
+            </a><br /><em>Apr 28, 2022</em>
+            </p>
+            <p></p>
+            <p>Recently I had a situation where I needed to test a class with dozens of event handlers. Rather than manually write the repetitive code to attach the handlers I decided to cheat and use reflection. Since there wasn&#39;t anything immediately available online that I could find, I&#39;m sharing an example here to show how to do it.
+              </p>
+              <p></p>
+              <p><a href="https://mikehadlow.com/posts/2022-04-28-event-handlers-by-reflection/"><em>Read more...</em></a>
+              </p>
+              </div>
+            </div>
+      </li>
 
+      <li className="mikehadlow-card">
+        <div className="mikehadlow-card-content">
+          <div className="mikehadlow-content">
+            <p><a href="https://mikehadlow.com/posts/2022-02-18-xread-from-a-redis-stream-using-stackexchange-redis/"><strong>Blocking XREAD From A Redis Stream Using StackExchange.Redis</strong></a><br /><em>Feb 18, 2022</em>
+            </p>
+            <p></p>
+            <p>The <a href="https://github.com/StackExchange/StackExchange.Redis">StackExchange.Redis</a> NuGet package is the most popular .NET client for <a href="https://redis.io/">Redis</a>. It&#39;s stable, high-performance, with a great community and wide usage. One of it&#39;s most interesting features is the way it does network <a href="https://stackexchange.github.io/StackExchange.Redis/PipelinesMultiplexers.html#multiplexing">multiplexing</a>. This allows multi-threaded applications to use a single TCP/IP connection without blocking. Unfortunately this also means that the library does not support blocking operations such as <code>XREAD BLOCK</code>, which is important if you want to leverage <a href="https://redis.io/topics/streams-intro">Redis Streams</a> on .NET. This post offers a work-around for this.
+            </p>
+            <p></p>
+            <p><a href="https://mikehadlow.com/posts/2022-02-18-xread-from-a-redis-stream-using-stackexchange-redis/"><em>Read more...</em></a></p>
+          </div>
+        </div>
+      </li>
+
+</div>
+</div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
         <div className="col-sm-12">
