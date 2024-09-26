@@ -57,6 +57,7 @@ import BrainPedersonAccordion from "./BrianPedersonAccordion";
 import ShayRojanskyAccordion from "./ShayRojanskyAccordion";
 import AnaHoverbearAccordion from "./AnaHoverbearAccordian";
 import SuYangGolangGinStaticMiddlewareImproves from "./SuYangGolangGinStaticMiddlewareImproves";
+import StevenGieselMyMiddleware from "./StevenGieselMyMiddleware";
 
 
 
@@ -1106,6 +1107,32 @@ Because there&#39;s a low coupling between the application code and test code, i
       </li>
 
 </div>
+</div>
+
+
+<div className="custom-links  row pr-2" style={{ padding: '.75em 1em' }}>
+  <div className="col-sm-12">
+
+  <h1 className="custom-links fw-bold">
+        <a href="https://steven-giesel.com/blogPost/f531dded-44af-4341-871c-d54875877900" className="link-style">
+          .NET Framework 4.8 to .NET 6 migration
+        </a>
+  </h1>
+  <h2 id="asp.net-web-api-migrate-to-asp.net-core-6">ASP.NET Web API - Migrate to ASP.NET Core 6</h2>
+  
+    <p className="steven-giesel-paragraph">
+            Global.asax has some entry points like 
+            <code className="steven-giesel-code">Begin_Request</code>, 
+            <code className="steven-giesel-code">Application_Start</code> and so on. 
+            <code className="steven-giesel-code">Application_Start</code> is now in your 
+            <code className="steven-giesel-code">Program.cs</code> where you configure the application. 
+            <code className="steven-giesel-code">Begin_Request</code> and 
+            <code className="steven-giesel-code">End_Request</code> are now middlewares. 
+            Here&#39;s an example of such middleware:
+          </p>
+
+          <StevenGieselMyMiddleware />
+      </div>
 </div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
@@ -7210,7 +7237,7 @@ className="vcard-detail pt-1 ">
                       </p>
 
                   <h3 id="关于-go-gin-和-gin-社区的静态文件处理" className="SuYang-custom-h3">
-                          About Go-Gin and the Gin community's static file processing
+                          About Go-Gin and the Gin community&#39;s static file processing
                       </h3>
 
                   <SuYangGolangGinStaticMiddlewareImproves />

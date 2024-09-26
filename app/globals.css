@@ -1203,3 +1203,47 @@ article {
   padding: 2px 4px; /* Optional: adds padding */
   border-radius: 4px; /* Optional: rounds corners */
 }
+.steven-giesel-code {
+  font-size: 0.875em;
+  color: var(--bs-code-color);
+  word-wrap: break-word;
+}
+
+.steven-giesel-code,
+.steven-giesel-kbd,
+.steven-giesel-pre,
+.steven-giesel-samp {
+  font-family: var(--bs-font-monospace);
+  font-size: 1em;
+}
+
+.steven-giesel-code {
+  font-family: var(--code-font), cursive;
+  color: #d63384;
+}
+
+.steven-giesel-pre,
+.steven-giesel-code {
+  font-family: var(--bs-font-monospace);
+  font-size: 0.875em;
+}
+
+.steven-giesel-paragraph {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+.steven-giesel-pre {
+  background-color: #f5f5f5; /* Light background for code */
+  padding: 10px; /* Padding around the code */
+  border-radius: 5px; /* Rounded corners */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.steven-giesel-code-section {
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+  color: #333; /* Text color for code */
+}
