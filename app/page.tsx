@@ -56,6 +56,7 @@ import MilanJovanovicAccordion from "./MilanJovanovicAccordion";
 import BrainPedersonAccordion from "./BrianPedersonAccordion";
 import ShayRojanskyAccordion from "./ShayRojanskyAccordion";
 import AnaHoverbearAccordion from "./AnaHoverbearAccordian";
+import SuYangGolangGinStaticMiddlewareImproves from "./SuYangGolangGinStaticMiddlewareImproves";
 
 
 
@@ -338,6 +339,30 @@ export default function Home() {
 
 
         <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+        <div className="col-lg-4 col-md-4">
+                <div className="sidebar-item MarkSeeman-sidebar-item">
+              <img src="https://blog.ploeh.dk/assets/themes/ploeh/images/Portrait15.jpg" alt="Mark Seemann" title="Mark Seemann"></img>
+            </div>
+            <div className="sidebar-item MarkSeeman-sidebar-item">
+              <a href="https://blog.ploeh.dk/support">Support the blog</a>
+            </div>
+            <div className="sidebar-item MarkSeeman-sidebar-item">
+              <a href="https://blog.ploeh.dk/code-that-fits-in-your-head">Buy my book <em>Code That Fits in Your Head</em></a>
+            </div>
+            <div className="sidebar-item MarkSeeman-sidebar-item">
+              <a href="https://blog.ploeh.dk/dippp">Buy my book about <em>Dependency Injection</em></a>
+            </div>
+            <div className="sidebar-item MarkSeeman-sidebar-item">
+              <a href="https://blog.ploeh.dk/pluralsight-courses">Watch my Pluralsight courses</a>
+            </div>
+            <div className="sidebar-item MarkSeeman-sidebar-item">
+              <a href="https://cleancoders.com/videos/humane-code-real">Watch my Clean Coders videos</a>
+            </div>
+            <div className="sidebar-item MarkSeeman-sidebar-item">
+              <a href="https://blog.ploeh.dk/schedule">Public speaking schedule</a>
+            </div>
+          </div>
+
         <div className="col-sm-12">
                       <div className="amanarora-post quarto-post image-right" data-index="26" data-categories="Computer Vision" data-listing-date-sort="1595030400000" data-listing-file-modified-sort="1688187490333" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2801">
                        
@@ -7066,10 +7091,131 @@ className="vcard-detail pt-1 ">
   </li>
 </ul>
   
+
+
+        {/* <div className="Su Yang-post-container">
+            <h2 className="Su Yang-post-title">
+                <a href="https://soulteary.com/2024/01/03/golang-gin-static-middleware-improves.html" rel="bookmark">
+                    Improve the static middleware of Golang Gin framework: Gin-Static
+                </a>
+            </h2>
+            <div className="Su Yang-meta-box">
+                <span className="Su Yang-m-post-date">
+                    <i className="fa fa-calendar-o"></i>
+                    <span style={{ verticalAlign: 'inherit' }}>
+                        January 03, 2024
+                    </span>
+                </span>
+                <span className="Su Yang-tag-links">
+                    <i className="fa fa-tags" aria-hidden="true"></i>
+                    <a href="/tags/go-embed.html" rel="tag">
+                        <span style={{ verticalAlign: 'inherit' }}>
+                            go-embed
+                        </span>
+                    </a>
+                    <span style={{ verticalAlign: 'inherit' }}> , </span>
+                    <a href="/tags/gin-static.html" rel="tag">
+                        <span style={{ verticalAlign: 'inherit' }}>
+                            Gin-Static
+                        </span>
+                    </a>
+                    <span style={{ verticalAlign: 'inherit' }}> , </span>
+                    <a href="/tags/golang.html" rel="tag">
+                        <span style={{ verticalAlign: 'inherit' }}>
+                            Golang
+                        </span>
+                    </a>
+                    <span style={{ verticalAlign: 'inherit' }}> , </span>
+                    <a href="/tags/linux.html" rel="tag">
+                        <span style={{ verticalAlign: 'inherit' }}>
+                            Linux
+                        </span>
+                    </a>
+                </span>
+            </div>
+            <div className="Su Yang-post-content Su Yang-post-expect">
+                <span style={{ verticalAlign: 'inherit' }}>
+                    Gin is the most popular and concerned web framework in the Golang ecosystem, but the Static middleware in the ecosystem has always been difficult to use. So, I modified it and then open sourced this improved version.
+                </span>
+                <a className="Su Yang-more-link btn btn-primary btn-xs" href="https://soulteary.com/2024/01/03/golang-gin-static-middleware-improves.html">
+                    <span style={{ verticalAlign: 'inherit' }}>
+                        Read more
+                    </span>
+                </a>
+            </div>
+        </div> */}
+
+
+
   </div>
 </div>
+<div className="custom-links row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+          <div className="Su-Yang-post-container">
+                      <div className="Su-Yang-post-title">
+                          <a href="https://soulteary.com/2024/01/03/golang-gin-static-middleware-improves.html" rel="bookmark">
+                              Improve the static middleware of Golang Gin framework: Gin-Static
+                          </a>
+                      </div>
+                      <div className="Su-Yang-meta-box">
+                          <span className="Su-Yang-m-post-date">
+                              <i className="fa fa-calendar-o"></i>
+                              <span style={{ verticalAlign: 'inherit' }}>
+                                  January 03, 2024
+                              </span>
+                          </span>
+                          <span className="Su-Yang-tag-links">
+                              <i className="fa fa-tags" aria-hidden="true"></i>
+                              <a href="/tags/go-embed.html" rel="tag">
+                                  <span style={{ verticalAlign: 'inherit' }}>
+                                      go-embed
+                                  </span>
+                              </a>
+                              <span style={{ verticalAlign: 'inherit' }}> , </span>
+                              <a href="/tags/gin-static.html" rel="tag">
+                                  <span style={{ verticalAlign: 'inherit' }}>
+                                      Gin-Static
+                                  </span>
+                              </a>
+                              <span style={{ verticalAlign: 'inherit' }}> , </span>
+                              <a href="/tags/golang.html" rel="tag">
+                                  <span style={{ verticalAlign: 'inherit' }}>
+                                      Golang
+                                  </span>
+                              </a>
+                              <span style={{ verticalAlign: 'inherit' }}> , </span>
+                              <a href="/tags/linux.html" rel="tag">
+                                  <span style={{ verticalAlign: 'inherit' }}>
+                                      Linux
+                                  </span>
+                              </a>
+                          </span>
+                      </div>
+                      <div className="Su-Yang-post-content Su-Yang-post-expect">
+                          <span style={{ verticalAlign: 'inherit' }}>
+                              Gin is the most popular and concerned web framework in the Golang ecosystem, but the Static middleware in the ecosystem has always been difficult to use. So, I modified it and then open sourced this improved version.
+                          </span>
+                          <a className="Su-Yang-more-link btn btn-primary btn-xs" href="https://soulteary.com/2024/01/03/golang-gin-static-middleware-improves.html">
+                              <span style={{ verticalAlign: 'inherit' }}>
+                                  Read more
+                              </span>
+                          </a>
+                      </div>
+                  </div>
 
+                  <p className="SuYang-custom-paragraph">
+                        Gin is currently the most popular and concerned web framework in the Golang ecosystem, but 
+                        <code className="SuYang-code-style">Static</code>
+                        the middleware in the ecosystem has always been difficult to use.
+                      </p>
 
+                  <h3 id="关于-go-gin-和-gin-社区的静态文件处理" className="SuYang-custom-h3">
+                          About Go-Gin and the Gin community's static file processing
+                      </h3>
+
+                  <SuYangGolangGinStaticMiddlewareImproves />
+        </div>
+        </div>
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
   <div className="col-sm-12">

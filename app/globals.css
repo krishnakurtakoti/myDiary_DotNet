@@ -1142,3 +1142,64 @@ article {
   position: relative;
   margin-top: 0.5em;
 }
+.MarkSeeman-sidebar-item a {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  color: inherit; /* Use the inherited color for text */
+}
+.Su-Yang-post-container .Su-Yang-post-title a {
+  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
+  margin-top: 24px;
+  margin-top: 2.4rem;
+  color: #d83c07;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  font-size: 24px;
+  font-weight: 500;
+  /* color: inherit; Use the inherited color for text */
+}
+.Su-Yang-tag-links {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  color: inherit;
+}
+.Su-Yang-post-content{
+  font-size: 18px;
+  font-weight: 300;
+}
+.Su-Yang-post-container h1,
+.Su-Yang-post-container h2,
+.Su-Yang-post-container h3,
+.Su-Yang-post-container h4,
+.Su-Yang-post-container h5,
+.Su-Yang-post-container h6 {
+  margin: 10px 0;
+  margin: 1rem 0;
+}
+.SuYang-custom-h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+  vertical-align: inherit; /* This won't have effect on h3 but can be included if needed */
+}
+.SuYang-custom-paragraph {
+  /* Add any custom styles you want for the paragraph here */
+  font-size: 1.125em; /* Font size for h6 and p *
+  line-height: 1.5; /* Example line height */
+  text-align: justify;
+  margin: 1em 0 0; /* Top margin */
+  margin-bottom: 1em; /* Bottom margin */
+}
+
+.SuYang-code-style {
+  font-family: monospace; /* Ensures it looks like code */
+  background-color: #f0f0f0; /* Optional: gives a background to the code */
+  padding: 2px 4px; /* Optional: adds padding */
+  border-radius: 4px; /* Optional: rounds corners */
+}
