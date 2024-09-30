@@ -2,34 +2,26 @@
 
 import React, { useState } from "react";
 import "./ItzamiAccordian.css";
+import Accordion from "./DefaultAccordian";
 
-const AnaHoverbearAccordion = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+interface MilanJovanovicAccordionProps {
+  openIndex: number | null;
+  toggleAccordion: (index: number) => void;
+}
 
-  const toggleAccordion = (index : any) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+const AnaHoverbearAccordionCopy: React.FC<MilanJovanovicAccordionProps> = ({ openIndex, toggleAccordion }) => {
+  // const [openIndex, setOpenIndex] = useState(null);
+
+  // const toggleAccordion = (index : any) => {
+  //   setOpenIndex(openIndex === index ? null : index);
+  // };
 
   return (
+    <Accordion
+    title=" Ana, Hoverbear 🐻"
+    content={
     <div className="itzami-accordionContainer">
-      <h1>Accordion</h1>
-
-      <div className="itzami-accordionItem">
      
-          <h1
-            className={`itzami-accordionTitle ${
-              openIndex === 0 ? "itzami-is-open" : ""
-            }`}
-            onClick={() => toggleAccordion(0)}
-          >
-             Ana, Hoverbear 🐻
-          </h1>
-    <h3><p>I&#39;ve been involved with by checking the rest of this site, as well as my <a rel="noopener" target="_blank" href="https://github.com/hoverbear/">Github profile</a>. Things like Rust, distributed consensus, storage, networking, automation, operations, WASM, and embedded are within my interests.</p></h3>
-        <div
-          className={`itzami-accordionContent ${
-            openIndex === 0 ? "itzami-show" : ""
-          }`}
-        >
 
 
 <p>
@@ -82,9 +74,11 @@ const AnaHoverbearAccordion = () => {
 
 
         </div>
-      </div>
-    </div>
+    } index={0}
+    openIndex={openIndex}
+    toggleAccordion={toggleAccordion}
+    />
   );
 };
 
-export default AnaHoverbearAccordion;
+export default AnaHoverbearAccordionCopy;

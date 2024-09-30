@@ -1,3 +1,6 @@
+// ParentComponent.tsx
+"use client"; // Add this at the top
+
 import Image from "next/image";
 import Tag
  from "./Tag";
@@ -58,6 +61,7 @@ import ShayRojanskyAccordion from "./ShayRojanskyAccordion";
 import AnaHoverbearAccordion from "./AnaHoverbearAccordian";
 import SuYangGolangGinStaticMiddlewareImproves from "./SuYangGolangGinStaticMiddlewareImproves";
 import StevenGieselMyMiddleware from "./StevenGieselMyMiddleware";
+import ParentAccordianControlComponent from "./ParentAccordianControlComponent";
 
 
 
@@ -132,6 +136,12 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div className="row pr-2">
+      <div className="col-sm-12">
+         <ParentAccordianControlComponent />
+      </div>
       </div>
 
       <div className="row pr-2">
@@ -1009,7 +1019,9 @@ Because there&#39;s a low coupling between the application code and test code, i
                   
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
 
-        <MilanJovanovicAccordion />          
+        <MilanJovanovicAccordion openIndex={null} toggleAccordion={function (index: number): void {
+              throw new Error("Function not implemented.");
+            } } />          
       </div>
   </div>
 </div>
