@@ -1247,3 +1247,32 @@ article {
   font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
   color: #333; /* Text color for code */
 }
+.rob-conery {
+  font-size: 1.875rem; /* Set the font size for all text within .rob-conery */
+}
+
+.rob-conery ul {
+  margin-top: 12px !important;
+}
+
+.rob-conery ol,
+.rob-conery dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.rob-conery ol,
+.rob-conery ul {
+  padding-left: 2rem;
+}
+.tim-heuer-link {
+  color: #007bff; /* Customize the color */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Make the text bold */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.tim-heuer-link:hover {
+  color: #0056b3; /* Change color on hover */
+  text-decoration: underline; /* Optional: add underline on hover */
+}

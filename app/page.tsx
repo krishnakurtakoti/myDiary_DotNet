@@ -1122,8 +1122,360 @@ Because there&#39;s a low coupling between the application code and test code, i
 </div>
 
 
+
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+
+
+<div className="col-sm-12 col-lg-4 mt-6">
+<div className="rob-conery-card card shadow h-100">
+
+<div className="Box d-flex p-3 width-full public source">
+  <div className="pinned-item-list-item-content">
+    <div className="d-flex width-full position-relative">
+      <div className="flex-1">
+        <svg
+          aria-hidden="true"
+          height="16"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="16"
+          data-view-component="true"
+          className="octicon octicon-repo mr-1 color-fg-muted"
+        >
+          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
+        </svg>
+        <span data-view-component="true" className="position-relative">
+          <a
+            data-hydro-click='{"event_type":"user_profile.click","payload":{"profile_user_id":78586,"target":"PINNED_REPO","user_id":30724917,"originating_url":"https://github.com/robconery"}}'
+            data-hydro-click-hmac="1f9793af5daf9aa151c02f784c543bdb5bdb533fb74150089f7e507bc1329cd0"
+            id="42259641"
+            href="https://github.com/robconery/pg_docs_api"
+            data-view-component="true"
+            className="Link mr-1 text-bold wb-break-word"
+            aria-labelledby="tooltip-6baf9a22-427b-4407-9260-e2fbc25d7c37"
+          >
+            <span className="repo">pg_docs_api</span>
+          </a>
+          {/* <tool-tip
+            id="tooltip-6baf9a22-427b-4407-9260-e2fbc25d7c37"
+            for="42259641"
+            popover="manual"
+            data-direction="s"
+            data-type="label"
+            data-view-component="true"
+            className="sr-only position-absolute"
+            aria-hidden="true"
+            role="tooltip"
+          >
+            pg_docs_api
+          </tool-tip> */}
+        </span>
+        <span></span>
+        <span className="Label Label--attention v-align-middle mt-1 no-wrap v-align-baseline Label--inline">
+          Public archive
+        </span>
+      </div>
+    </div>
+
+    <p className="pinned-item-desc color-fg-muted text-small mt-2 mb-0">
+      A simple abstraction for working with PostgreSQL as a Document Database
+    </p>
+  
+    <p className="mb-0 mt-2 f6 color-fg-muted">
+      <a href="https://github.com/robconery/pg_docs_api/stargazers" className="pinned-item-meta Link--muted">
+        <svg
+          aria-label="stars"
+          role="img"
+          height="16"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="16"
+          data-view-component="true"
+          className="octicon octicon-star"
+        >
+          <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+        </svg>
+        41
+      </a>
+      <a href="https://github.com/robconery/pg_docs_api/forks" className="pinned-item-meta Link--muted">
+        <svg
+          aria-label="forks"
+          role="img"
+          height="16"
+          viewBox="0 0 16 16"
+          version="1.1"
+          width="16"
+          data-view-component="true"
+          className="octicon octicon-repo-forked"
+        >
+          <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>
+        </svg>
+        8
+      </a>
+    </p>
+
+    <p dir="auto">I deprecated this project in favor a more streamlined approach, <a href="https://github.com/robconery/dox">which you can see here</a>.</p>
+
+    </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div className="rob-conery row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+
+<h2>Postgres</h2>
+<ul>
+
+        <li>
+          <a href="https://bigmachine.io/postgres/schedules-and-timespans-in-postgresql">Using Constraints to Protect Calendar Data in PostgreSQL</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/handling-dates-and-times-properly-in-postgres">Handling Dates and Times Properly in Postgres</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/striking-gold">Striking Gold in My Archives</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/the-easiest-postgres-experience-youve-ever-seen">The Easiest Postgres Experience You&#39;ve Ever Seen</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/creating-a-full-text-search-engine-in-postgresql-2022">Creating a Full Text Search Engine in PostgreSQL, 2022</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/importing-a-csv-into-postgresql-like-a-pro">Importing a CSV Into PostgreSQL Like a Pro</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/postgresql-tools-for-the-visually-inclined">PostgreSQL Tools for the Visually Inclined</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/a-pure-postgresql-document-database-api">A Pure PostgreSQL Document Database API</a>
+        </li>
+        <li>
+          <a href="/postgres/interview-on-net-rocks-about-a-curious-moon">Interview On .NET Rocks About A Curious Moon</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/my-new-book-about-postgresql-data-and-saturn-a-curious-moon">My New Book About PostgreSQL, Data and Saturn: A Curious Moon</a>
+        </li>
+        <li>
+          <a href="https://bigmachine.io/postgres/my-writing-process-this-week">My Writing Process (This Week)</a>
+        </li>
+        <li>
+          <a href="/postgres/jsonb-and-postgresql">JSONB and PostgreSQL: Work Faster By Ditching Migrations</a>
+        </li>
+        <li>
+          <a href="/postgres/postgresql-document-api-part-4-complex-queries">PostgreSQL Document API Part 4: Complex Queries</a>
+        </li>
+        <li>
+          <a href="/postgres/postgresql-document-api-part-3-finding-things">PostgreSQL Document API Part 3: Finding Things</a>
+        </li>
+        <li>
+          <a href="/postgres/postgresql-document-api-part-2-full-text-search-and-bulk-save">PostgreSQL Document API Part 2: Full Text Search and Bulk Save</a>
+        </li>
+        <li>
+          <a href="/postgres/designing-a-postgresql-document-api">Designing a PostgreSQL Document API</a>
+        </li>
+        <li>
+          <a href="/postgres/membership-in-a-box-with-pg-auth">Membership In a Box with PG-Auth</a>
+        </li>
+        <li>
+          <a href="/postgres/document-storage-gymnastics-in-postgres">Document Storage Gymnastics with Postgres</a>
+        </li>
+        <li>
+          <a href="/postgres/embracing-sql-in-postgres">Embracing SQL In Postgres</a>
+        </li>
+        <li>
+          <a href="/postgres/its-time-to-get-over-that-stored-procedure-aversion-you-have">It&#39;s Time To Get Over That Stored Procedure Aversion You Have</a>
+        </li>
+        <li>
+          <a href="/postgres/inserting-using-new-record-postgres">Inserting And Using A New Record In Postgres</a>
+        </li>
+        <li>
+          <a href="/postgres/using-custom-types-with-postgres">Using Custom Types in Postgres</a>
+        </li>
+        <li>
+          <a href="/postgres/pulling-documents-from-a-relational-query-in-postgres">Pulling Documents From a Relational Query in Postgres</a>
+        </li>
+        <li>
+          <a href="/postgres/a-better-id-generator-for-postgresql">A Better ID Generator For PostgreSQL</a>
+        </li>
+        <li>
+          <a href="/postgres/using-entity-framework-6-with-postgresql">Using Entity Framework 6 with PostgreSQL</a>
+        </li>
+        <li>
+          <a href="/postgres/postgresql-rising">PostgreSQL Rising</a>
+        </li>
+        <li>
+          <a href="/postgres/how-to-backup-your-postgres-db-to-amazon-nightly">How To Backup Your Postgres DB To Amazon Nightly</a>
+        </li>
+      </ul>
+
+
+
+</div>
+</div>
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-l-2">
+
+
+<div className="col-sm-12 col-lg-4 mt-6">
+        <div className="rob-conery-card card shadow h-100">
+          {/* Image */}
+          <a href="/courses/sql-orbit">
+            <img
+              src="https://bigmachine.io/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6Mjc4LCJwdXIiOiJibG9iX2lkIn19--eccb4609c8605c55d8edc14ab29c813ba9ee2fab/eyJfcmFpbHMiOnsiZGF0YSI6e30sInB1ciI6InZhcmlhdGlvbiJ9fQ==--743878b0228ee81b4587d6ab790a4e67ea599217/sql-orbit.jpg"
+              className="card-img-top"
+              alt="course image"
+            />
+          </a>
+          {/* Card body */}
+          <div className="card-body pb-0">
+            {/* Title */}
+            <a href="https://bigmachine.io/courses/sql-orbit">
+              <h5 className="card-title fw-normal">PostgreSQL Fundamentals</h5>
+            </a>
+            <p className="mb-2 text-sm" style={{ fontSize: '.8em' }}>
+              You&#39;ll learn the basics of SQL and databases using PostgreSQL and you&#39;ll have the time of your life doing it. We use a real set of data: the analysis data from Cassini&#39;s flybys of Enceladus. There might actually be life up there and you&#39;re going to query the data to find out!
+            </p>
+          </div>
+
+          <div className="card-footer pt-0 pb-3">
+            <hr />
+            <div className="d-flex justify-content-between">
+              <span className="h6 fw-light mb-0">
+                <i className="far fa-clock text-danger me-2"></i>
+              </span>
+              <span className="h6 fw-light mb-0">
+                <i className="fas fa-table text-orange me-2"></i>28 Videos
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+</div>
+</div>
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+
+<p>
+  Hey, I&#39;m <strong>Steven</strong>, a <strong>.NET Developer</strong>, and 
+  <a href="https://giesel.engineering"><strong>Freelancer</strong></a> in Zurich, Switzerland. 
+  I am a Microsoft MVP.
+</p>
+<br></br>
+<p>
+  Also, this blog is open source on  
+  <a href="https://github.com/linkdotnet/Blog">GitHub</a>.
+</p>
+
+<ul className="list-group"><li className="list-group-item"><a href="https://steven-giesel.com/blogPost/669d5aa2-b86a-4096-948c-9a767b7071e3/xunit-v3-and-some-stuff-about-tunit" className="text-decoration-none">xUnit v3 and some stuff about TUnit</a></li>
+
+<li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/c5b4262e-fa6b-4b45-848c-cb5b44c8435c/fullstack-web-applications-with-net-nx-and-angular-seminar" className="text-decoration-none">Fullstack Web Applications with .NET, Nx and Angular Seminar</a>
+      <span className="text-muted small ps-2">(Sep 27, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/777776a2-a13c-46bb-bf6b-89316d88508c/swagger-replacement-in-aspnet-9" className="text-decoration-none">Swagger Replacement in ASP.NET 9</a>
+      <span className="text-muted small ps-2">(Sep 23, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/cacc60e5-4fbf-473a-a5af-c9fb333d9183/managing-taskcancellationtokens-in-a-central-service-in-aspnet" className="text-decoration-none">Managing TaskCancellationTokens in a central service in ASP.NET</a>
+      <span className="text-muted small ps-2">(Sep 16, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/78753461-d80f-4f81-9b4d-6484066aa43e/linq-joins-on-multiple-columns-in-entity-framework" className="text-decoration-none">LINQ Joins on multiple columns in Entity Framework</a>
+      <span className="text-muted small ps-2">(Sep 09, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/47e4a351-0f1b-4bb5-a3d5-0ce4d7c1fa61/how-to-test-httpclient-inside-api-tests" className="text-decoration-none">How to test HttpClient inside API Tests</a>
+      <span className="text-muted small ps-2">(Sep 02, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/a807373c-dcc6-42f9-995f-e69dcea1cd47/to-soft-delete-or-not-to-soft-delete" className="text-decoration-none">To Soft Delete or Not to Soft Delete</a>
+      <span className="text-muted small ps-2">(Aug 26, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/f824cfce-2da4-4037-9f4e-ff652f0ee124/formattablestringfactory-creating-dynamic-formattablestring-instances" className="text-decoration-none">FormattableStringFactory - Creating dynamic FormattableString instances</a>
+      <span className="text-muted small ps-2">(Aug 19, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/59752c38-9c99-4641-9853-9cfa97bb2d29/async2-the-net-runtime-async-experiment-concludes" className="text-decoration-none">async2 - The .NET Runtime Async experiment concludes</a>
+      <span className="text-muted small ps-2">(Aug 12, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/ee26a396-8f5a-40a7-9dd5-f08cd8c03518/organizing-parameters-in-minimal-api-with-the-asparametersattribute" className="text-decoration-none">Organizing Parameters in Minimal API with the AsParametersAttribute</a>
+      <span className="text-muted small ps-2">(Aug 05, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/09952d3c-6bbe-477b-b0ea-07276cdb3ba6/how-many-apis-does-net-have" className="text-decoration-none">How many APIs does .NET have?</a>
+      <span className="text-muted small ps-2">(Jul 29, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/720a48fd-0abe-4c32-83ac-26926d501895/the-state-machine-in-c-with-asyncawait" className="text-decoration-none">The state machine in C# with async/await</a>
+      <span className="text-muted small ps-2">(Jul 22, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/98458f74-5205-4b2b-9f5b-535e34ec2fea/how-not-to-benchmark" className="text-decoration-none">How not to benchmark!</a>
+      <span className="text-muted small ps-2">(Jul 15, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/ea42a518-4d8b-4e08-8f73-e542bdd3b983/uuid-v7-in-net-9" className="text-decoration-none">UUID v7 in .NET 9</a>
+      <span className="text-muted small ps-2">(Jul 08, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/3b993efb-5f70-4d71-8ac9-89f4b85a3dfa/codespaces-for-your-opensource-project" className="text-decoration-none">Codespaces for your open-source project</a>
+      <span className="text-muted small ps-2">(Jul 02, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/f368c7d3-488e-4bea-92b4-abf176353fa3/readonlysett-in-net-9" className="text-decoration-none">ReadOnlySet&lt;T&gt; in .NET 9</a>
+      <span className="text-muted small ps-2">(Jun 26, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/40647b2f-6efa-4bc2-a7ab-53df460dd6fe/ncronjob-june-edition" className="text-decoration-none">NCronJob - June Edition</a>
+      <span className="text-muted small ps-2">(Jun 21, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/35ec8819-220a-42bc-9224-a812ec358434/are-my-ef-linq-to-sql-queries-safe" className="text-decoration-none">Are my EF LINQ to SQL queries safe?</a>
+      <span className="text-muted small ps-2">(Jun 17, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/e2c3bcba-4f81-42b0-9b25-060da5e819fa/does-an-httpclient-await-the-header-and-the-body" className="text-decoration-none">Does an HttpClient await the Header and the body?</a>
+      <span className="text-muted small ps-2">(Jun 10, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/58e68e12-8e67-472f-a560-01a0041e8f01/solving-duplicate-requests-in-microservices" className="text-decoration-none">Solving Duplicate Requests in Microservices</a>
+      <span className="text-muted small ps-2">(May 27, 2024)</span>
+    </li>
+    <li className="list-group-item">
+      <a href="https://steven-giesel.com/blogPost/206b0e38-6c9e-4095-8106-0e53c60ff803/pipeline-in-aspnet-6" className="text-decoration-none">Pipeline in ASP.NET 6</a>
+      <span className="text-muted small ps-2">(May 20, 2024)</span>
+    </li>
+</ul>
+<div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="" />
+        </div>
+      </div>
+</div>
 <div className="custom-links  row pr-2" style={{ padding: '.75em 1em' }}>
   <div className="col-sm-12">
+
+
 
   <h1 className="custom-links fw-bold">
         <a href="https://steven-giesel.com/blogPost/f531dded-44af-4341-871c-d54875877900" className="link-style">
@@ -1144,6 +1496,53 @@ Because there&#39;s a low coupling between the application code and test code, i
           </p>
 
           <StevenGieselMyMiddleware />
+      </div>
+</div>
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+
+{ <h1 
+// *tabindex="-1" / 
+className="heading-element" dir="auto">Awesome .NET!</h1> }
+<a href="https://github.com/quozd/awesome-dotnet" className="a heading-link" 
+//</div>tabindex="-1"
+ dir="auto">
+  <h1 className="heading-element">Awesome .NET!</h1>
+</a>
+
+<p className="f4 my-3">
+        A collection of awesome .NET libraries, tools, frameworks and software
+      </p>
+<div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="" />
+        </div>
+      </div>
+</div>
+
+
+<div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+<div className="col-sm-12">
+  <h1>
+  <a href="https://timheuer.com/blog/deploy-dotnet-apps-with-containers-in-visual-studio-fast-and-easy/" 
+          rel="canonical" 
+          // itemprop="url" 
+          className="a tim-heuer-link">
+          Contain your excitement for ASP.NET on Azure
+        </a>
+  </h1>
+   
+  <h2 id="creating-and-deploying-a-container">Creating and deploying a container<a className="heading-link" title="Bookmark link for creating-and-deploying-a-container" href="#creating-and-deploying-a-container"><i className="fa fa-link"></i></a></h2>
+  <p>If you havent spent time working with containers, you will be likely introduced to new concepts like Docker, Dockerfile, compose, and perhaps even YAML. In creating a container, you typically need to have a definition of what your container is, and generally this will be a Dockerfile.&nbsp; A typical Docker file for a .NET Web API looks like this:</p>
+  
+  <h2 id="leveraging-continuous-integration-and-deployment-(ci/cd)">Leveraging continuous integration and deployment (CI/CD)<a className="heading-link" title="Bookmark link for leveraging-continuous-integration-and-deployment-(ci/cd)" href="#leveraging-continuous-integration-and-deployment-(ci/cd)"><i className="fa fa-link"></i></a></h2>
+  <p>And the resulting workflow in an Actions YAML file in your project:</p>
+        <div className="tags">
+            <span className="bold">Tags: </span> 
+            <Tag value="" />
+        </div>
       </div>
 </div>
 
