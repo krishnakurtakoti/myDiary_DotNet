@@ -149,7 +149,7 @@ const ShayRojanskyAccordion = () => {
         <h2 className="ShayRojansky archive__item-title no_toc" 
         // <!-- itemprop="headline" -->
         >
-            <a href="https://www.roji.org/storing-timezones-in-the-db" rel="permalink" style={{ textDecoration: 'underline' }}>
+            <a href="https://www.roji.org/queryable-pg-arrays-in-ef8" rel="permalink" style={{ textDecoration: 'underline' }}>
             Queryable PostgreSQL arrays in EF Core 8.0
             </a>
         </h2>
