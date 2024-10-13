@@ -48,7 +48,7 @@ const ArticlesListComponent = () => {
           </li>
           <li>
             <a href="#bigmachine_io_courses_sql-orbit" style={{ textDecoration: 'underline' }}>
-            Rob Conery - PostgreSQL Fundamentals - You'll learn the basics of SQL and databases using PostgreSQL and you'll have the time of your life doing it. We use a real set of data: the analysis data from Cassini's flybys of Enceladus. There might actually be life up there and you're going to query the data to find out!
+            Rob Conery - PostgreSQL Fundamentals - You&#39;ll learn the basics of SQL and databases using PostgreSQL and you&#39;ll have the time of your life doing it. We use a real set of data: the analysis data from Cassini&#39;s flybys of Enceladus. There might actually be life up there and you&#39;re going to query the data to find out!
             </a>
           </li>
           
