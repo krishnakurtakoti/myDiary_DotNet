@@ -64,6 +64,7 @@ import StevenGieselMyMiddleware from "./StevenGieselMyMiddleware";
 import ParentAccordianControlComponent from "./ParentAccordianControlComponent";
 import SampleComponent from "./SampleComponent";
 import ArticlesListComponent from "./ArticleList";
+import ScottHanselmanCodeHighlighter from "./ScottHanselman1";
 
 
 
@@ -521,91 +522,6 @@ export default function Home() {
       </div> */}
 
 
-      <div className="timdeschryver-row pr-2" style={{ padding: '.75em 1em', background: 'var(--timdeschryver-background-color)' }}>
-    <div className="timdeschryver-col-sm-12">
-        <h1>Hi, I&#39;m Tim <div className="timdeschryver-wave">👋</div></h1>
-        <p>A software engineer from Belgium who enjoys to <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://timdeschryver.dev/blog" style={{ textDecoration: 'underline' }}>blog</a></strong>
-            about my experiences with the aim to help others and my future self, primarily on
-            <strong> Angular</strong> and
-            <strong> .NET</strong>.</p>
-
-        <p>Lifelong learner and <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://github.com/timdeschryver" rel="external">open-source enthusiast</a></strong>, mainly working on <a className="timdeschryver-mark timdeschryver-mark-hover" href="https://ngrx.io/" rel="external" style={{ textDecoration: 'underline' }}>NgRx</a> and <a className="timdeschryver-mark timdeschryver-mark-hover" href="https://testing-library.com/angular" rel="external" style={{ textDecoration: 'underline' }}>Angular Testing Library</a>.</p>
-
-        <p style={{ fontSize: '28px' }}>
-            <a href="https://timdeschryver.dev/blog/how-to-test-your-csharp-web-api#" style={{ textDecoration: 'underline' }}>How to test your C# Web API by Tim Deschryver</a>
-            <i className="bi bi-calendar-date flex">2/8/2024</i>
-        </p>
-        
-        <span className="timdeschryver-bold">Extra: </span>
-        <p style={{ fontSize: '28px' }}>The full example can be found on 
-        <a href="https://github.com/timdeschryver/HowToTestYourCsharpWebApi" style={{ textDecoration: 'underline' }}> GitHub.</a>
-        </p>
-
-        <p style={{ fontSize: '28px' }}>
-        <a href="https://timdeschryver.dev/blog/why-i-stopped-worrying-about-test-setups-by-using-autofixture#" style={{ textDecoration: 'underline' }}>Why I stopped worrying about test setups by using AutoFixture</a>
-            <i className="bi bi-calendar-date flex">5/11/2022</i>
-        </p>
-        <h2 id="conclusion">
-          <a href="#conclusion" className="anchor mark-hover">Conclusion</a>
-          <span className="material-symbols-outlined">
-          link
-          </span>
-        </h2>
-        <p>Because AutoFixture does all of the heavy liftings for me, I stopped overthinking my test setups and I have more time to implement new features.</p>
-        <p>Most of the properties of an object don&#39;t affect the business logic, thus these can just be ignored during the test setup.
-This drastically reduced the noise of my tests, and I was able to remove a lot of test setup code.
-Because there&#39;s a low coupling between the application code and test code, it also means that I don&#39;t have to go back to my tests every time a model is refactored.</p>
-
-
-<p>The default generated model is perfect for quick and simple test cases, while the model can still be overwritten in a clean way for specific test cases. The customizations are a great way to create default prerequisites of a model in complex domains.</p>
-
-<p>
-    Since there&#39;s only a little bit of documentation that can be found in the AutoFixture repository, I really liked and learned a lot from 
-    the <a 
-        className="mark mark-hover" 
-        href="https://blog.ploeh.dk/tags/#AutoFixture-ref" 
-        rel="external" 
-        style={{
-            textDecoration: 'underline', 
-          //  '--favicon': 'url(https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fblog.ploeh.dk)'
-        }}
-    >
-        blog posts
-    </a> written by <a 
-        className="mark mark-hover" 
-        href="https://twitter.com/ploeh" 
-        rel="external" 
-        style={{
-            textDecoration: 'underline', 
-          //  '--favicon': 'url(https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Ftwitter.com)'
-        }}
-    >
-        Mark Seemann
-    </a>, who is also the creator of AutoFixture. So definitely make sure to check those out!
-</p>
-
-<p>Lastly, here are some highlights of why I think you should be using AutoFixture as a test fixture builder:</p>
-<p>
-    <ul>
-    <li>  <span className="article-post">1.  </span> tests remain clean and focused; the requirements are clearly visible</li>
-    <li>  <span className="article-post">2.  </span> low coupling between test code and application code; application code can change without having an impact on the existing tests</li>
-    <li>  <span className="article-post">3.  </span>test setup code doesn&#39;t need to be discussed, implemented, nor maintained; the defaults values of AutoFixture provide a good baseline that can be patched where needed, you also don&#39;t need to reflect on providing proper test data because constrained non-deterministic data is everything you need for your test data</li>
-    <li>  <span className="article-post">4.  </span> AutoFixture&#39;s API is extensible for manual overwrites; properties can be overwritten with Customizations and SpecimenBuilders. For specific one-off tests, the object under test can be overwritten in the test</li>
-    <li>  <span className="article-post">5.  </span> it can detect quirks in your application code that you haven&#39;t thought of; can your application handle unexpected user inputs?</li>
-    <li>  <span className="article-post">6.  </span> it&#39;s a quick and simple way to explore a new code base that has little to no tests; if you don&#39;t know the domain and the relations between the models, it&#39;s hard to provide test data. Luckily this is one of the strong points of AutoFixture, providing fixture</li>
-    </ul>
-</p>
-
-      
-        <p>Extra_End</p>
-    </div>
-    <div className="timdeschryver-tags">
-        <span className="timdeschryver-bold">Tags: </span> 
-        <Tag value="Entity-Framework" />
-    </div>
-</div>
-
-
 
 
 
@@ -1043,6 +959,22 @@ Because there&#39;s a low coupling between the application code and test code, i
           </p>
 
           <StevenGieselMyMiddleware />
+
+          <div dir="auto" className="markdown gsc-comment-content steveGiesel">
+              <p dir="auto">Hi,</p>
+              <p dir="auto">I recently released a GitHub project for a local conference presentation with detailed steps to upgrade an old .NET Framework WinForms app to .NET WinForms and then upgrade with Blazor Hybrid.</p>
+              <p dir="auto">So also what to do after Upgrade Assistant and how Upgrade Assistant is not always right :)</p>
+              <p dir="auto">
+                  <a href="https://github.com/MPrtenjak/WinForms_2_BlazorHybrid" rel="noopener noreferrer nofollow" target="_top">
+                      https://github.com/MPrtenjak/WinForms_2_BlazorHybrid
+                  </a> 
+              </p>
+              <p className="font-size: 28px;">
+                Stars: 14
+            </p>
+              <p dir="auto">PS: Great article and a picture that I will (also) use on the conference ;)</p>
+          </div>
+
       </div>
 </div>
 
@@ -1069,6 +1001,8 @@ className="heading-element" dir="auto">Awesome .NET!</h1> }
       </div>
 </div>
 
+
+     
 
 
 
@@ -2461,51 +2395,6 @@ The major differences between my classes and yours, is that the one-to-many rela
 
 
 
-
-      <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
-        <div className="col-sm-12">
-            <p className="font-size: 28px;">
-                <a href="https://twitter.com/pim_brouwers/status/1731747678004941061" style={{ textDecoration: 'underline' }}>A reverse proxy as a configurable package on top of Kestrel</a>
-            
-            </p>
-            <p className="font-size: 28px;">
-            Sign me up! Maybe I live under a rock, but I feel like this deserves a ton more attention.
-            </p>
-            <p>
-            About 
-            </p>             
-            <p className="font-size: 28px;">
-              <a href="https://github.com/microsoft/reverse-proxy" style={{ textDecoration: 'underline' }}>A toolkit for developing high-performance HTTP reverse proxy applications.   
-              </a>
-            </p>
-            <span className="bold">Extra: </span>
-            <p className="font-size: 28px;">
-            Stars: 7.6k 
-            </p>
-             
-            <p className="font-size: 28px;">
-            One popular Author,  <a href="https://twitter.com/mjovanovictech" style={{ textDecoration: 'underline' }}>Milan Jovanović @mjovanovictech
-              </a>,  Practical .NET and Software Architecture Tips | Microsoft MVP   
-            </p>
-
-            <p className="quote">
-                <a href="https://twitter.com/mjovanovictech/status/1731790455249973524" style={{ textDecoration: 'underline' }}>It&#39;s so cool! I wrote an article about it a few months ago. I used it for load balancing, and it was a breeze to set up.  
-                  </a>
-            </p>
-            <p className="font-size: 28px;">
-             Link to the article:
-            </p>
-            <p className="font-size: 28px;">
-              <a href="https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp" style={{ textDecoration: 'underline' }}>https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp 
-              </a>
-            </p>
-            <p>Extra_End</p>
-        </div>
-        <div className="tags">
-            <span className="bold">Tags: </span> 
-            <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
-        </div>
-      </div>
 
 
       <div className="a row pr-2" style={{ padding: '.75em 1em' }}>

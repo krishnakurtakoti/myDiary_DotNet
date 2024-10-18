@@ -6,6 +6,7 @@ import { MikeHadlowWritingDotnetServicesForKubernetes1 } from './MikeHadlowWriti
 import { MikeHadlowWritingDotnetServicesForKubernetes4 } from './MikeHadlowWritingDotnetServicesForKubernetes4';
 import { MikeHadlowWritingDotnetServicesForKubernetes3 } from './MikeHadlowWritingDotnetServicesForKubernetes3';
 import { MikeHadlowWritingDotnetServicesForKubernetes2 } from './MikeHadlowWritingDotnetServicesForKubernetes2';
+import ScottHanselmanCodeHighlighter from './ScottHanselman1';
 
 const ArticlesListComponent = () => {
   return (
@@ -24,18 +25,67 @@ const ArticlesListComponent = () => {
             Back to .NET Basics: How to properly use HttpClient
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#jimmybogard" style={{ textDecoration: 'underline' }}>
             Jimmy Bogard - Testing <strong>End-to-End Integration Testing with NServiceBus: How It Works</strong> 14/6/2020 <strong> Avoid In-Memory Databases for Tests </strong> 18/3/2020
             <strong> Integration Testing with xUnit</strong> 27/8/2019 <strong>Respawn vs SQL Server Snapshots</strong> 05/10/2017 <strong>Respawn 1.0.0 released</strong> 27/9/2017
             </a>
-          </li>
+          </li> */}
           <li>
+                <a href="#jimmybogard" style={{ textDecoration: 'underline' }}>
+                    Jimmy Bogard - Testing
+                </a>
+                <ul>
+                    <li>
+                        <strong>End-to-End Integration Testing with NServiceBus: How It Works</strong> 14/6/2020
+                    </li>
+                    <li>
+                        <strong>Avoid In-Memory Databases for Tests</strong> 18/3/2020
+                    </li>
+                    <li>
+                        <strong>Integration Testing with xUnit</strong> 27/8/2019
+                    </li>
+                    <li>
+                        <strong>Respawn vs SQL Server Snapshots</strong> 05/10/2017
+                    </li>
+                    <li>
+                        <strong>Respawn 1.0.0 released</strong> 27/9/2017
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#jasonWatmore" style={{ textDecoration: 'underline' }}>
+                Jason Watmore - .NET + VS Code + XUnit - Setup Unit Testing & Code Coverage in ASP.NET Core | 14 March 2023 
+                </a>
+            </li>
+            <li>
+                <a href="#scott-hanselman" style={{ textDecoration: 'underline' }}>
+                Scott Hanselman - Updating to .NET 8, updating to IHostBuilder, and running Playwright Tests within NUnit headless or headed on any OS | 7 March 2024 
+                </a>
+            </li>
+          {/* <li>
             <a href="#shayRojanskyAccordion" style={{ textDecoration: 'underline' }}>
             Shay Rojansky - Microsoft software engineer working on .NET data access and perf, member of the Entity Framework team. Lead dev of Npgsql, the PostgreSQL provider.
             <strong>Queryable PostgreSQL arrays in EF Core 8.0</strong> 2023 <strong>When &#34;UTC everywhere&#34; isn&#39;t enough - storing time zones in PostgreSQL and SQL Server</strong>
             2021 <strong>Query parameters, batching and SQL rewriting</strong> 7 minute read, 2021</a> 
-          </li>
+          </li> */}
+          <li>
+                <a href="#shayRojanskyAccordion" style={{ textDecoration: 'underline' }}>
+                    Shay Rojansky - Microsoft software engineer working on .NET data access and perf, member of the Entity Framework team. Lead dev of Npgsql, the PostgreSQL provider.
+                </a>
+                <ul>
+                    <li>
+                        <strong>Queryable PostgreSQL arrays in EF Core 8.0</strong> 2023
+                    </li>
+                    <li>
+                        <strong>When &#34;UTC everywhere&#34; isn&#39;t enough - storing time zones in PostgreSQL and SQL Server</strong> 2021
+                    </li>
+                    <li>
+                        <strong>Query parameters, batching and SQL rewriting</strong> 7 minute read, 2021
+                    </li>
+                </ul>
+            </li>
+
           <li>
             <a href="#robconery_github_repo" style={{ textDecoration: 'underline' }}>
             Rob Conery - A simple abstraction for working with PostgreSQL as a Document Database
@@ -61,11 +111,50 @@ const ArticlesListComponent = () => {
             <a href="#Writing-NET-Application-Services-for-Kubernetes-By-Mike-Hadlow" style={{ textDecoration: 'underline' }}>
             Mike Hadlow - Writing .NET Application Services for Kubernetes By  | 24 06 2023 | Comments | Posted in .net dotnet devops kubernetes 
             </a>
-          </li>       <li>
+          </li>       
+          {/* <li>
             <a href="#Mike-Hadlow" style={{ textDecoration: 'underline' }}>
             Mike Hadlow - <strong>Writing .NET Application Services for Kubernetes</strong> 24/6/2023  <strong>C#: Add event handlers dynamically using reflection</strong> 28/4/2022 <strong>Blocking XREAD From A Redis Stream Using StackExchange.Redis</strong> 18/2/2022 
-            </a>
+            </a> 
           </li>
+          */}
+          <li>
+            <a href="#Mike-Hadlow" style={{ textDecoration: 'underline' }}>
+                Mike Hadlow - 
+            </a>
+            <ul>
+                <li>
+                    <strong>Writing .NET Application Services for Kubernetes</strong> 24/6/2023
+                </li>
+                <li>
+                    <strong>C#: Add event handlers dynamically using reflection</strong> 28/4/2022
+                </li>
+                <li>
+                    <strong>Blocking XREAD From A Redis Stream Using StackExchange.Redis</strong> 18/2/2022
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#Milan-Jovanović-@mjovanovictech" style={{ textDecoration: 'underline' }}>
+            Milan-Jovanović- @mjovanovictech - A reverse proxy as a configurable package on top of Kestrel  | 5 December 2023 | Reverse Proxy
+            </a>
+          </li>  
+          <li>
+            <a href="#timdeschryver" style={{ textDecoration: 'underline' }}>Tim Deschryver
+            </a>
+            <ul>
+                <li>
+                    <strong>How to test your C# Web API by Tim Deschryver</strong> 2/8/2024
+                </li>
+                <li>
+                    <strong>Why I stopped worrying about test setups by using AutoFixture</strong> 5/11/2022
+                </li>
+
+  
+            </ul>
+          </li> 
+          
+
           
         </ul>
        
@@ -777,6 +866,225 @@ const ArticlesListComponent = () => {
 
                                     </div>
                                     </div>
+
+                                </div>
+
+                                <div id="jasonWatmore">
+
+                                <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+                                    <div className="col-sm-12">
+
+                                        { <h1 
+                                        // *tabindex="-1" / https://jasonwatmore.com/net-vs-code-xunit-setup-unit-testing-code-coverage-in-aspnet-core
+                                        className="heading-element" dir="auto"></h1> }
+
+                                        {
+                                        <a href="https://jasonwatmore.com/net-vs-code-xunit-setup-unit-testing-code-coverage-in-aspnet-core" className="a heading-link" 
+                                        //</div>tabindex="-1"
+                                        dir="auto">
+                                            <h1 className="heading-element">.NET + VS Code + XUnit - Setup Unit Testing & Code Coverage in ASP.NET Core</h1>
+                                        </a> }
+                                        <ul>
+                                            <li><a href="#tools-required">Tools required for this tutorial</a></li>
+                                            <li><a href="#download-example">Download example .NET API project</a></li>
+                                            <li><a href="#create-test-project">Create unit test project with XUnit</a></li>
+                                            <li><a href="#add-some-tests">Add some unit tests</a></li>
+                                            <li><a href="#install-test-runner">Install VS Code test runner</a></li>
+                                            <li><a href="#run-tests">Run tests and view code coverage</a></li>
+                                            </ul>
+                                            <h2>Run tests and view code coverage</h2>
+                                            <p>Now we&#39;ll run the tests and view the code coverage information a couple of different ways, first with the <a href="https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters" rel="nofollow" target="_blank">Coverage Gutters</a> VS Code extension that highlights covered/uncovered lines within the VS Code editor pane, then we&#39;ll generate a code coverage HTML report for the whole project using the <a href="https://github.com/danielpalme/ReportGenerator" rel="nofollow" target="_blank">ReportGenerator</a> dotnet tool.</p>
+                                        
+                                            <div  className="fs-headline1 ow-break-word mb8 flex--item fl1">
+                                                <a href="https://stackoverflow.com/questions/40377654/how-to-create-and-init-vscode-in-vscode" className="question-hyperlink">
+                                                    How to create and init &#34;.vscode&#34; in VSCode?
+                                                </a>
+                                            </div>
+                                        
+                                            <div        className="fs-headline1 ow-break-word mb8 flex--item fl1">
+                                                <a href="https://stackoverflow.com/questions/63954663/coverlet-lcov-info-file-not-generated-for-dotnet-core-project" className="question-hyperlink">
+                                                Coverlet lcov.info file not generated for dotnet core project
+                                                </a>
+                                            </div>
+                                        <p className="heading-element">
+                                                        <a href="https://www.hanselman.com/blog/automatic-unit-testing-in-net-core-plus-code-coverage-in-visual-studio-code" style={{ textDecoration: 'underline' }}>Automatic Unit Testing in .NET Core plus Code Coverage in Visual Studio Code</a>
+                                                        <i className="bi bi-calendar-date flex">22/3/2018</i>
+                                                    </p>
+                                                    
+                                    <div className="tags">
+                                                <span className="bold">Tags: </span> 
+                                                <Tag value="" />
+                                            </div>
+                                            </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div id="scott-hanselman">
+                                        <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+                                        <div className="col-sm-12">
+
+                                            { <h1 
+                                            // *tabindex="-1" / 
+                                            className="heading-element" dir="auto">Updating to .NET 8, updating to IHostBuilder, and running Playwright Tests within NUnit headless or headed on any OS</h1> }
+
+                                            {/* <a href="https://www.hanselman.com/blog/updating-to-net-8-updating-to-ihostbuilder-and-running-playwright-tests-within-nunit-headless-or-headed-on-any-os" className="a heading-link" 
+                                            //</div>tabindex="-1"
+                                            dir="auto">
+                                                <h1 className="heading-element">Updating to .NET 8, updating to IHostBuilder, and running Playwright Tests within NUnit headless or headed on any OS</h1>
+                                            </a> */}
+                                            <p className="heading-element">
+                                                            <a href="https://www.hanselman.com/blog/updating-to-net-8-updating-to-ihostbuilder-and-running-playwright-tests-within-nunit-headless-or-headed-on-any-os" style={{ textDecoration: 'underline' }}>Updating to .NET 8, updating to IHostBuilder, and running Playwright Tests within NUnit headless or headed on any OS</a>
+                                                            <i className="bi bi-calendar-date flex">07/3/2024</i>
+                                                        </p>
+                                                        <p>Now that I&#39;m on .NET 8, I scandalously discovered (as my unit tests stopped working) <a href="https://learn.microsoft.com/en-us/aspnet/core/migration/22-to-30?view=aspnetcore-3.1&amp;tabs=visual-studio&amp;WT.mc_id=-blog-scottha#hostbuilder-replaces-webhostbuilder">that the rest of the world had moved from IWebHostBuilder to IHostBuilder five version of .NET ago</a>. Gulp. Say what you will, but the backward compatibility is impressive. </p>
+                                                        <ScottHanselmanCodeHighlighter />
+
+                                        <div className="tags">
+                                                    <span className="bold">Tags: </span> 
+                                                    <Tag value="" />
+                                                </div>
+                                                </div>
+                                        </div>
+
+                                </div>
+                                <div id="Milan-Jovanović-@mjovanovictech">
+
+                                                            <div className="a row pr-2" style={{ padding: '.75em 1em' }}>
+                                    <div className="col-sm-12">
+                                        <p className="font-size: 28px;">
+                                            <a href="https://twitter.com/pim_brouwers/status/1731747678004941061" style={{ textDecoration: 'underline' }}>A reverse proxy as a configurable package on top of Kestrel</a>
+                                        
+                                        </p>
+                                        <p className="font-size: 28px;">
+                                        Sign me up! Maybe I live under a rock, but I feel like this deserves a ton more attention.
+                                        </p>
+                                        <p>
+                                        About 
+                                        </p>             
+                                        <p className="font-size: 28px;">
+                                        <a href="https://github.com/microsoft/reverse-proxy" style={{ textDecoration: 'underline' }}>A toolkit for developing high-performance HTTP reverse proxy applications.   
+                                        </a>
+                                        </p>
+                                        <span className="bold">Extra: </span>
+                                        <p className="font-size: 28px;">
+                                        Stars: 7.6k 
+                                        </p>
+                                        
+                                        <p className="font-size: 28px;">
+                                        One popular Author,  <a href="https://twitter.com/mjovanovictech" style={{ textDecoration: 'underline' }}>Milan Jovanović @mjovanovictech
+                                        </a>,  Practical .NET and Software Architecture Tips | Microsoft MVP   
+                                        </p>
+
+                                        <p className="quote">
+                                            <a href="https://twitter.com/mjovanovictech/status/1731790455249973524" style={{ textDecoration: 'underline' }}>It&#39;s so cool! I wrote an article about it a few months ago. I used it for load balancing, and it was a breeze to set up.  
+                                            </a>
+                                        </p>
+                                        <p className="font-size: 28px;">
+                                        Link to the article:
+                                        </p>
+                                        <p className="font-size: 28px;">
+                                        <a href="https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp" style={{ textDecoration: 'underline' }}>https://www.milanjovanovic.tech/blog/implementing-an-api-gateway-for-microservices-with-yarp 
+                                        </a>
+                                        </p>
+                                        <p>Extra_End</p>
+                                    </div>
+                                    <div className="tags">
+                                        <span className="bold">Tags: </span> 
+                                        <Tag value="toolkit for  high-performance HTTP reverse proxy by Microsoft" />
+                                    </div>
+                                </div>
+
+                                </div>
+
+                                <div id="timdeschryver">
+                                    
+                                    <div className="timdeschryver-row pr-2" style={{ padding: '.75em 1em', background: 'var(--timdeschryver-background-color)' }}>
+                                    <div className="timdeschryver-col-sm-12">
+                                        <h1>Hi, I&#39;m Tim <div className="timdeschryver-wave">👋</div></h1>
+                                        <p>A software engineer from Belgium who enjoys to <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://timdeschryver.dev/blog" style={{ textDecoration: 'underline' }}>blog</a></strong>
+                                            about my experiences with the aim to help others and my future self, primarily on
+                                            <strong> Angular</strong> and
+                                            <strong> .NET</strong>.</p>
+
+                                        <p>Lifelong learner and <strong><a className="timdeschryver-mark timdeschryver-mark-hover" href="https://github.com/timdeschryver" rel="external">open-source enthusiast</a></strong>, mainly working on <a className="timdeschryver-mark timdeschryver-mark-hover" href="https://ngrx.io/" rel="external" style={{ textDecoration: 'underline' }}>NgRx</a> and <a className="timdeschryver-mark timdeschryver-mark-hover" href="https://testing-library.com/angular" rel="external" style={{ textDecoration: 'underline' }}>Angular Testing Library</a>.</p>
+
+                                        <p style={{ fontSize: '28px' }}>
+                                            <a href="https://timdeschryver.dev/blog/how-to-test-your-csharp-web-api#" style={{ textDecoration: 'underline' }}>How to test your C# Web API by Tim Deschryver</a>
+                                            <i className="bi bi-calendar-date flex">2/8/2024</i>
+                                        </p>
+                                        
+                                        <span className="timdeschryver-bold">Extra: </span>
+                                        <p style={{ fontSize: '28px' }}>The full example can be found on 
+                                        <a href="https://github.com/timdeschryver/HowToTestYourCsharpWebApi" style={{ textDecoration: 'underline' }}> GitHub.</a>
+                                        </p>
+
+                                        <p style={{ fontSize: '28px' }}>
+                                        <a href="https://timdeschryver.dev/blog/why-i-stopped-worrying-about-test-setups-by-using-autofixture#" style={{ textDecoration: 'underline' }}>Why I stopped worrying about test setups by using AutoFixture</a>
+                                            <i className="bi bi-calendar-date flex">5/11/2022</i>
+                                        </p>
+                                        <h2 id="conclusion">
+                                        <a href="#conclusion" className="anchor mark-hover">Conclusion</a>
+                                        <span className="material-symbols-outlined">
+                                        link
+                                        </span>
+                                        </h2>
+                                        <p>Because AutoFixture does all of the heavy liftings for me, I stopped overthinking my test setups and I have more time to implement new features.</p>
+                                        <p>Most of the properties of an object don&#39;t affect the business logic, thus these can just be ignored during the test setup.
+                                This drastically reduced the noise of my tests, and I was able to remove a lot of test setup code.
+                                Because there&#39;s a low coupling between the application code and test code, it also means that I don&#39;t have to go back to my tests every time a model is refactored.</p>
+
+
+                                <p>The default generated model is perfect for quick and simple test cases, while the model can still be overwritten in a clean way for specific test cases. The customizations are a great way to create default prerequisites of a model in complex domains.</p>
+
+                                <p>
+                                    Since there&#39;s only a little bit of documentation that can be found in the AutoFixture repository, I really liked and learned a lot from 
+                                    the <a 
+                                        className="mark mark-hover" 
+                                        href="https://blog.ploeh.dk/tags/#AutoFixture-ref" 
+                                        rel="external" 
+                                        style={{
+                                            textDecoration: 'underline', 
+                                        //  '--favicon': 'url(https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Fblog.ploeh.dk)'
+                                        }}
+                                    >
+                                        blog posts
+                                    </a> written by <a 
+                                        className="mark mark-hover" 
+                                        href="https://twitter.com/ploeh" 
+                                        rel="external" 
+                                        style={{
+                                            textDecoration: 'underline', 
+                                        //  '--favicon': 'url(https://v1.indieweb-avatar.11ty.dev/https%3A%2F%2Ftwitter.com)'
+                                        }}
+                                    >
+                                        Mark Seemann
+                                    </a>, who is also the creator of AutoFixture. So definitely make sure to check those out!
+                                </p>
+
+                                <p>Lastly, here are some highlights of why I think you should be using AutoFixture as a test fixture builder:</p>
+                                <p>
+                                    <ul>
+                                    <li>  <span className="article-post">1.  </span> tests remain clean and focused; the requirements are clearly visible</li>
+                                    <li>  <span className="article-post">2.  </span> low coupling between test code and application code; application code can change without having an impact on the existing tests</li>
+                                    <li>  <span className="article-post">3.  </span>test setup code doesn&#39;t need to be discussed, implemented, nor maintained; the defaults values of AutoFixture provide a good baseline that can be patched where needed, you also don&#39;t need to reflect on providing proper test data because constrained non-deterministic data is everything you need for your test data</li>
+                                    <li>  <span className="article-post">4.  </span> AutoFixture&#39;s API is extensible for manual overwrites; properties can be overwritten with Customizations and SpecimenBuilders. For specific one-off tests, the object under test can be overwritten in the test</li>
+                                    <li>  <span className="article-post">5.  </span> it can detect quirks in your application code that you haven&#39;t thought of; can your application handle unexpected user inputs?</li>
+                                    <li>  <span className="article-post">6.  </span> it&#39;s a quick and simple way to explore a new code base that has little to no tests; if you don&#39;t know the domain and the relations between the models, it&#39;s hard to provide test data. Luckily this is one of the strong points of AutoFixture, providing fixture</li>
+                                    </ul>
+                                </p>
+
+                                    
+                                        <p>Extra_End</p>
+                                    </div>
+                                    <div className="timdeschryver-tags">
+                                        <span className="timdeschryver-bold">Tags: </span> 
+                                        <Tag value="Entity-Framework" />
+                                    </div>
+                                </div>
+
 
                                 </div>
 
